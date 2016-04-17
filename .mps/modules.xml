@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MPSProject">
+    <projectModules>
+      <modulePath path="$PROJECT_DIR$/languages/me.tomassetti.bytecode/me.tomassetti.bytecode.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/me.tomassetti.bytecode/runtime/me.tomassetti.bytecode.runtime.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/me.tomassetti.bytecode/sandbox/me.tomassetti.bytecode.sandbox.msd" folder="" />
+    </projectModules>
+  </component>
+</project>

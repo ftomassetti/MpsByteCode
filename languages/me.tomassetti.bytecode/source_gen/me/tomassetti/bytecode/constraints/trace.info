@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info>
+  <concept fqn="jetbrains.mps.baseLanguage.structure.BlockStatement" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+  <root>
+    <file name="ConstraintsAspectDescriptor.java">
+      <unit at="9,0,20,0" name="me.tomassetti.bytecode.constraints.ConstraintsAspectDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="r:9555cae9-d142-4f3a-bdb4-1f6bc4b47530(me.tomassetti.bytecode.constraints)/1627386486403338134">
+    <file name="Unsigned1Byte_Constraints.java">
+      <node id="1627386486403338134" at="16,38,17,98" concept="6" />
+      <node id="1627386486403338134" at="20,88,21,123" concept="4" />
+      <node id="1627386486403338134" at="24,40,25,20" concept="5" />
+      <node id="1627386486403338134" at="28,70,29,38" concept="4" />
+      <node id="1627386486403338134" at="29,38,30,224" concept="0" />
+      <node id="1627386486403338207" at="29,38,30,224" concept="5" />
+      <node id="1627386486403338134" at="32,7,33,22" concept="5" />
+      <node id="1627386486403338134" at="16,0,19,0" concept="1" trace="Unsigned1Byte_Constraints#()V" />
+      <node id="1627386486403338134" at="23,0,27,0" concept="3" trace="hasOwnValidator#()Z" />
+      <node id="1627386486403338134" at="27,0,32,0" concept="3" trace="validateValue#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/String;)Z" />
+      <node id="1627386486403338134" at="21,123,32,7" concept="2" />
+      <node id="1627386486403338134" at="19,0,35,0" concept="3" trace="getNotDefaultSProperties#()Ljava/util/Map;" />
+      <scope id="1627386486403338134" at="16,38,17,98" />
+      <scope id="1627386486403338134" at="24,40,25,20" />
+      <scope id="1627386486403338138" at="29,38,30,224" />
+      <scope id="1627386486403338134" at="28,70,30,224">
+        <var name="propertyName" id="1627386486403338134" />
+      </scope>
+      <scope id="1627386486403338134" at="16,0,19,0" />
+      <scope id="1627386486403338134" at="23,0,27,0" />
+      <scope id="1627386486403338134" at="27,0,32,0">
+        <var name="node" id="1627386486403338134" />
+        <var name="propertyValue" id="1627386486403338134" />
+      </scope>
+      <scope id="1627386486403338134" at="20,88,33,22">
+        <var name="properties" id="1627386486403338134" />
+      </scope>
+      <scope id="1627386486403338134" at="19,0,35,0" />
+      <unit id="1627386486403338134" at="22,129,32,5" name="me.tomassetti.bytecode.constraints.Unsigned1Byte_Constraints$1" />
+      <unit id="1627386486403338134" at="15,0,36,0" name="me.tomassetti.bytecode.constraints.Unsigned1Byte_Constraints" />
+    </file>
+  </root>
+</debug-info>
+

@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info>
+  <concept fqn="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.FieldDeclaration" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.WhileStatement" />
+  <root>
+    <file name="StructureAspectDescriptor.java">
+      <unit at="13,0,151,0" name="me.tomassetti.bytecode.structure.StructureAspectDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="r:94eb28e2-16c0-487a-a9c5-75573ddbe808(me.tomassetti.bytecode.structure)/1627386486402419524">
+    <file name="AccessFlag.java">
+      <node id="1627386486402419524" at="26,0,27,0" concept="2" trace="myName" />
+      <node id="1627386486402419524" at="27,27,28,18" concept="6" />
+      <node id="1627386486402419524" at="30,0,31,0" concept="2" trace="myValue" />
+      <node id="1627386486402419524" at="31,49,32,18" concept="1" />
+      <node id="1627386486402419524" at="32,18,33,20" concept="1" />
+      <node id="1627386486402419524" at="35,28,36,19" concept="6" />
+      <node id="1627386486402419524" at="38,36,39,19" concept="6" />
+      <node id="1627386486402419524" at="41,49,42,80" concept="5" />
+      <node id="1627386486402419524" at="42,80,43,66" concept="1" />
+      <node id="1627386486402419524" at="43,66,44,67" concept="1" />
+      <node id="1627386486402419524" at="44,67,45,69" concept="1" />
+      <node id="1627386486402419524" at="45,69,46,66" concept="1" />
+      <node id="1627386486402419524" at="46,66,47,65" concept="1" />
+      <node id="1627386486402419524" at="47,65,48,65" concept="1" />
+      <node id="1627386486402419524" at="48,65,49,72" concept="1" />
+      <node id="1627386486402419524" at="49,72,50,66" concept="1" />
+      <node id="1627386486402419524" at="50,66,51,67" concept="1" />
+      <node id="1627386486402419524" at="51,67,52,69" concept="1" />
+      <node id="1627386486402419524" at="52,69,53,68" concept="1" />
+      <node id="1627386486402419524" at="53,68,54,66" concept="1" />
+      <node id="1627386486402419524" at="54,66,55,69" concept="1" />
+      <node id="1627386486402419524" at="55,69,56,70" concept="1" />
+      <node id="1627386486402419524" at="56,70,57,64" concept="1" />
+      <node id="1627386486402419524" at="57,64,58,16" concept="6" />
+      <node id="1627386486402419524" at="60,41,61,16" concept="6" />
+      <node id="1627386486402419524" at="64,24,65,37" concept="6" />
+      <node id="1627386486402419524" at="67,65,68,35" concept="6" />
+      <node id="1627386486402419524" at="70,66,71,36" concept="6" />
+      <node id="1627386486402419524" at="73,68,74,38" concept="6" />
+      <node id="1627386486402419524" at="76,65,77,35" concept="6" />
+      <node id="1627386486402419524" at="79,64,80,34" concept="6" />
+      <node id="1627386486402419524" at="82,64,83,34" concept="6" />
+      <node id="1627386486402419524" at="85,71,86,41" concept="6" />
+      <node id="1627386486402419524" at="88,65,89,35" concept="6" />
+      <node id="1627386486402419524" at="91,66,92,36" concept="6" />
+      <node id="1627386486402419524" at="94,68,95,38" concept="6" />
+      <node id="1627386486402419524" at="97,67,98,37" concept="6" />
+      <node id="1627386486402419524" at="100,65,101,35" concept="6" />
+      <node id="1627386486402419524" at="103,68,104,38" concept="6" />
+      <node id="1627386486402419524" at="106,69,107,39" concept="6" />
+      <node id="1627386486402419524" at="109,63,110,33" concept="6" />
+      <node id="1627386486402419524" at="111,5,112,35" concept="6" />
+      <node id="1627386486402419524" at="27,0,30,0" concept="4" trace="getName#()Ljava/lang/String;" />
+      <node id="1627386486402419524" at="35,0,38,0" concept="4" trace="getValue#()Ljava/lang/String;" />
+      <node id="1627386486402419524" at="38,0,41,0" concept="4" trace="getValueAsString#()Ljava/lang/String;" />
+      <node id="1627386486402419524" at="60,0,63,0" concept="7" trace="getDefault#()Lme/tomassetti/bytecode/structure/AccessFlag;" />
+      <node id="1627386486402419524" at="63,53,66,5" concept="3" />
+      <node id="1627386486402419524" at="66,5,69,5" concept="3" />
+      <node id="1627386486402419524" at="69,5,72,5" concept="3" />
+      <node id="1627386486402419524" at="72,5,75,5" concept="3" />
+      <node id="1627386486402419524" at="75,5,78,5" concept="3" />
+      <node id="1627386486402419524" at="78,5,81,5" concept="3" />
+      <node id="1627386486402419524" at="81,5,84,5" concept="3" />
+      <node id="1627386486402419524" at="84,5,87,5" concept="3" />
+      <node id="1627386486402419524" at="87,5,90,5" concept="3" />
+      <node id="1627386486402419524" at="90,5,93,5" concept="3" />
+      <node id="1627386486402419524" at="93,5,96,5" concept="3" />
+      <node id="1627386486402419524" at="96,5,99,5" concept="3" />
+      <node id="1627386486402419524" at="99,5,102,5" concept="3" />
+      <node id="1627386486402419524" at="102,5,105,5" concept="3" />
+      <node id="1627386486402419524" at="105,5,108,5" concept="3" />
+      <node id="1627386486402419524" at="108,5,111,5" concept="3" />
+      <node id="1627386486402419524" at="31,0,35,0" concept="0" trace="AccessFlag#(Ljava/lang/String;Ljava/lang/String;)V" />
+      <node id="1627386486402419524" at="41,0,60,0" concept="7" trace="getConstants#()Ljava/util/List;" />
+      <node id="1627386486402419524" at="63,0,114,0" concept="7" trace="parseValue#(Ljava/lang/String;)Lme/tomassetti/bytecode/structure/AccessFlag;" />
+      <scope id="1627386486402419524" at="27,27,28,18" />
+      <scope id="1627386486402419524" at="35,28,36,19" />
+      <scope id="1627386486402419524" at="38,36,39,19" />
+      <scope id="1627386486402419524" at="60,41,61,16" />
+      <scope id="1627386486402419524" at="64,24,65,37" />
+      <scope id="1627386486402419524" at="67,65,68,35" />
+      <scope id="1627386486402419524" at="70,66,71,36" />
+      <scope id="1627386486402419524" at="73,68,74,38" />
+      <scope id="1627386486402419524" at="76,65,77,35" />
+      <scope id="1627386486402419524" at="79,64,80,34" />
+      <scope id="1627386486402419524" at="82,64,83,34" />
+      <scope id="1627386486402419524" at="85,71,86,41" />
+      <scope id="1627386486402419524" at="88,65,89,35" />
+      <scope id="1627386486402419524" at="91,66,92,36" />
+      <scope id="1627386486402419524" at="94,68,95,38" />
+      <scope id="1627386486402419524" at="97,67,98,37" />
+      <scope id="1627386486402419524" at="100,65,101,35" />
+      <scope id="1627386486402419524" at="103,68,104,38" />
+      <scope id="1627386486402419524" at="106,69,107,39" />
+      <scope id="1627386486402419524" at="109,63,110,33" />
+      <scope id="1627386486402419524" at="31,49,33,20" />
+      <scope id="1627386486402419524" at="27,0,30,0" />
+      <scope id="1627386486402419524" at="35,0,38,0" />
+      <scope id="1627386486402419524" at="38,0,41,0" />
+      <scope id="1627386486402419524" at="60,0,63,0" />
+      <scope id="1627386486402419524" at="31,0,35,0">
+        <var name="name" id="1627386486402419524" />
+        <var name="value" id="1627386486402419524" />
+      </scope>
+      <scope id="1627386486402419524" at="41,49,58,16">
+        <var name="list" id="1627386486402419524" />
+      </scope>
+      <scope id="1627386486402419524" at="41,0,60,0" />
+      <scope id="1627386486402419524" at="63,53,112,35" />
+      <scope id="1627386486402419524" at="63,0,114,0">
+        <var name="value" id="1627386486402419524" />
+      </scope>
+      <unit id="1627386486402419524" at="9,0,115,0" name="me.tomassetti.bytecode.structure.AccessFlag" />
+    </file>
+    <file name="AccessFlag_PropertySupport.java">
+      <node id="1627386486402419524" at="11,24,12,18" concept="6" />
+      <node id="1627386486402419524" at="13,5,14,97" concept="5" />
+      <node id="1627386486402419524" at="15,33,16,45" concept="5" />
+      <node id="1627386486402419524" at="17,45,18,20" concept="6" />
+      <node id="1627386486402419524" at="20,5,21,17" concept="6" />
+      <node id="1627386486402419524" at="24,24,25,18" concept="6" />
+      <node id="1627386486402419524" at="26,5,27,97" concept="5" />
+      <node id="1627386486402419524" at="28,33,29,45" concept="5" />
+      <node id="1627386486402419524" at="30,45,31,43" concept="6" />
+      <node id="1627386486402419524" at="33,5,34,16" concept="6" />
+      <node id="1627386486402419524" at="36,49,37,55" concept="5" />
+      <node id="1627386486402419524" at="38,27,39,32" concept="6" />
+      <node id="1627386486402419524" at="40,5,41,14" concept="6" />
+      <node id="1627386486402419524" at="10,44,13,5" concept="3" />
+      <node id="1627386486402419524" at="16,45,19,7" concept="3" />
+      <node id="1627386486402419524" at="23,47,26,5" concept="3" />
+      <node id="1627386486402419524" at="29,45,32,7" concept="3" />
+      <node id="1627386486402419524" at="37,55,40,5" concept="3" />
+      <node id="1627386486402419524" at="14,97,20,5" concept="8" />
+      <node id="1627386486402419524" at="27,97,33,5" concept="8" />
+      <node id="1627386486402419524" at="36,0,43,0" concept="4" trace="fromInternalValue#(Ljava/lang/String;)Ljava/lang/String;" />
+      <node id="1627386486402419524" at="10,0,23,0" concept="4" trace="canSetValue#(Ljava/lang/String;)Z" />
+      <node id="1627386486402419524" at="23,0,36,0" concept="4" trace="toInternalValue#(Ljava/lang/String;)Ljava/lang/String;" />
+      <scope id="1627386486402419524" at="11,24,12,18" />
+      <scope id="1627386486402419524" at="17,45,18,20" />
+      <scope id="1627386486402419524" at="24,24,25,18" />
+      <scope id="1627386486402419524" at="30,45,31,43" />
+      <scope id="1627386486402419524" at="38,27,39,32" />
+      <scope id="1627386486402419524" at="15,33,19,7">
+        <var name="constant" id="1627386486402419524" />
+      </scope>
+      <scope id="1627386486402419524" at="28,33,32,7">
+        <var name="constant" id="1627386486402419524" />
+      </scope>
+      <scope id="1627386486402419524" at="36,49,41,14">
+        <var name="constant" id="1627386486402419524" />
+      </scope>
+      <scope id="1627386486402419524" at="36,0,43,0">
+        <var name="value" id="1627386486402419524" />
+      </scope>
+      <scope id="1627386486402419524" at="10,44,21,17">
+        <var name="constants" id="1627386486402419524" />
+      </scope>
+      <scope id="1627386486402419524" at="23,47,34,16">
+        <var name="constants" id="1627386486402419524" />
+      </scope>
+      <scope id="1627386486402419524" at="10,0,23,0">
+        <var name="value" id="1627386486402419524" />
+      </scope>
+      <scope id="1627386486402419524" at="23,0,36,0">
+        <var name="value" id="1627386486402419524" />
+      </scope>
+      <unit id="1627386486402419524" at="9,0,44,0" name="me.tomassetti.bytecode.structure.AccessFlag_PropertySupport" />
+    </file>
+  </root>
+</debug-info>
+
