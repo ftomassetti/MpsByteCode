@@ -13,6 +13,7 @@ public class FacetManifest implements IFacetManifest {
   private List<IFacet> facets = ListSequence.fromList(new ArrayList<IFacet>());
   public FacetManifest() {
     ListSequence.fromList(facets).addElement(new ClassFile_Facet());
+    ListSequence.fromList(facets).addElement(new Sample_Facet());
   }
   public Iterable<IFacet> facets() {
     return facets;

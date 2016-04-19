@@ -54,7 +54,6 @@
       <concept id="1627386486402419604" name="me.tomassetti.bytecode.structure.AccessFlagHolder" flags="ng" index="cR2zR">
         <property id="1627386486402419605" name="flag" index="cR2zQ" />
       </concept>
-      <concept id="4649981497883958485" name="me.tomassetti.bytecode.structure.U2" flags="ng" index="1x2L5s" />
       <concept id="4649981497883958484" name="me.tomassetti.bytecode.structure.ClassFile" flags="ng" index="1x2L5t">
         <child id="1627386486402959909" name="attributeInfos" index="cL6_6" />
         <child id="1627386486402095495" name="constantPool" index="cOjF$" />
@@ -62,9 +61,7 @@
         <child id="4649981497883958491" name="major_version" index="1x2L5i" />
         <child id="4649981497883958486" name="minor_version" index="1x2L5v" />
         <child id="4649981497883958509" name="access_flags" index="1x2L5$" />
-        <child id="4649981497883958497" name="constant_pool_count" index="1x2L5C" />
         <child id="4649981497883958520" name="super_class" index="1x2L5L" />
-        <child id="4649981497883958527" name="interfaces_count" index="1x2L5Q" />
         <child id="4649981497883958514" name="this_class" index="1x2L5V" />
       </concept>
       <concept id="486623176542111991" name="me.tomassetti.bytecode.structure.AALOAD_0" flags="ng" index="1JwLR4" />
@@ -89,15 +86,6 @@
       <concept id="486623176541349509" name="me.tomassetti.bytecode.structure.ExceptionTable" flags="ng" index="1JYfeQ" />
     </language>
   </registry>
-  <node concept="1x2L5t" id="4283o$xwNPD">
-    <node concept="1x2L5s" id="4283o$xwNPE" role="1x2L5V" />
-    <node concept="1x2L5s" id="4283o$xwNPF" role="1x2L5C" />
-    <node concept="1x2L5s" id="4283o$xwNPG" role="1x2L5v" />
-    <node concept="1x2L5s" id="4283o$xwNPH" role="1x2L5i" />
-    <node concept="1x2L5s" id="4283o$xwNPI" role="1x2L5L" />
-    <node concept="1x2L5s" id="4283o$xwNPJ" role="1x2L5Q" />
-    <node concept="1x2L5s" id="4283o$xwNPK" role="1x2L5$" />
-  </node>
   <node concept="cPmif" id="1qlCQcqgtHT">
     <property role="cPmic" value="/home/federico/repos/mps-bytecode/languages/me.tomassetti.bytecode/classes_gen/me/tomassetti/bytecode/behavior/ClassFile_BehaviorDescriptor.class" />
     <node concept="1x2L5t" id="r0PjdDiE9Y" role="cPmie">

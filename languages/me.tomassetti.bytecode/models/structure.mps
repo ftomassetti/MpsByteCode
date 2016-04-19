@@ -509,6 +509,7 @@
   <node concept="1TIwiD" id="r0PjdDe2q5">
     <property role="1pbfSe" value="1878588344" />
     <property role="TrG5h" value="ExceptionTable" />
+    <property role="3GE5qa" value="exceptions" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="r0PjdDe2q7" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -520,6 +521,7 @@
   <node concept="1TIwiD" id="r0PjdDe2q6">
     <property role="1pbfSe" value="1878588345" />
     <property role="TrG5h" value="ExceptionTableElement" />
+    <property role="3GE5qa" value="exceptions" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
   <node concept="1TIwiD" id="r0PjdDeGD0">

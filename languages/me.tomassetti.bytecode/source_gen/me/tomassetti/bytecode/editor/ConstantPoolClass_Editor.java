@@ -7,6 +7,12 @@ import jetbrains.mps.openapi.editor.cells.EditorCell;
 import jetbrains.mps.openapi.editor.EditorContext;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.nodeEditor.cells.EditorCell_Collection;
+import jetbrains.mps.nodeEditor.cells.EditorCell_Property;
+import jetbrains.mps.nodeEditor.cells.ModelAccessor;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
+import jetbrains.mps.util.EqualUtil;
+import jetbrains.mps.openapi.editor.cells.CellActionType;
+import jetbrains.mps.editor.runtime.cells.EmptyCellAction;
 import jetbrains.mps.nodeEditor.cells.EditorCell_Constant;
 import jetbrains.mps.lang.editor.cellProviders.SingleRoleCellProvider;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
@@ -21,22 +27,46 @@ public class ConstantPoolClass_Editor extends DefaultNodeEditor {
     EditorCell_Collection editorCell = EditorCell_Collection.createHorizontal(editorContext, node);
     editorCell.setCellId("Collection_9hh82y_a");
     editorCell.setBig(true);
-    editorCell.addEditorCell(this.createConstant_9hh82y_a0(editorContext, node));
-    editorCell.addEditorCell(this.createRefNode_9hh82y_b0(editorContext, node));
+    editorCell.addEditorCell(this.createReadOnlyModelAccessor_9hh82y_a0(editorContext, node));
+    editorCell.addEditorCell(this.createConstant_9hh82y_b0(editorContext, node));
+    editorCell.addEditorCell(this.createConstant_9hh82y_c0(editorContext, node));
+    editorCell.addEditorCell(this.createRefNode_9hh82y_d0(editorContext, node));
     return editorCell;
   }
-  private EditorCell createConstant_9hh82y_a0(EditorContext editorContext, SNode node) {
-    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "class");
-    editorCell.setCellId("Constant_9hh82y_a0");
+  private EditorCell createReadOnlyModelAccessor_9hh82y_a0(final EditorContext editorContext, final SNode node) {
+    EditorCell_Property editorCell = EditorCell_Property.create(editorContext, new ModelAccessor() {
+      public String getText() {
+        return Long.toString(SNodeOperations.getIndexInParent(node) + 1);
+      }
+      public void setText(String s) {
+      }
+      public boolean isValidText(String s) {
+        return EqualUtil.equals(s, getText());
+      }
+    }, node);
+    editorCell.setAction(CellActionType.DELETE, EmptyCellAction.getInstance());
+    editorCell.setAction(CellActionType.BACKSPACE, EmptyCellAction.getInstance());
+    editorCell.setCellId("ReadOnlyModelAccessor_9hh82y_a0");
+    return editorCell;
+  }
+  private EditorCell createConstant_9hh82y_b0(EditorContext editorContext, SNode node) {
+    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "=");
+    editorCell.setCellId("Constant_9hh82y_b0");
     editorCell.setDefaultText("");
     return editorCell;
   }
-  private EditorCell createRefNode_9hh82y_b0(EditorContext editorContext, SNode node) {
-    SingleRoleCellProvider provider = new ConstantPoolClass_Editor.nameIndexSingleRoleHandler_9hh82y_b0(node, MetaAdapterFactory.getContainmentLink(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a43d9beL, 0x1695a3631a47ef15L, "nameIndex"), editorContext);
+  private EditorCell createConstant_9hh82y_c0(EditorContext editorContext, SNode node) {
+    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "CP Class");
+    editorCell.setCellId("Constant_9hh82y_c0");
+    editorCell.setDefaultText("");
+    return editorCell;
+  }
+  private EditorCell createRefNode_9hh82y_d0(EditorContext editorContext, SNode node) {
+    SingleRoleCellProvider provider = new ConstantPoolClass_Editor.nameIndexSingleRoleHandler_9hh82y_d0(node, MetaAdapterFactory.getContainmentLink(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a43d9beL, 0x1695a3631a47ef15L, "nameIndex"), editorContext);
     return provider.createCell();
   }
-  private class nameIndexSingleRoleHandler_9hh82y_b0 extends SingleRoleCellProvider {
-    public nameIndexSingleRoleHandler_9hh82y_b0(SNode ownerNode, SContainmentLink containmentLink, EditorContext context) {
+  private class nameIndexSingleRoleHandler_9hh82y_d0 extends SingleRoleCellProvider {
+    public nameIndexSingleRoleHandler_9hh82y_d0(SNode ownerNode, SContainmentLink containmentLink, EditorContext context) {
       super(ownerNode, containmentLink, context);
     }
     protected EditorCell createChildCell(SNode child) {

@@ -28,11 +28,12 @@ public final class BehaviorAspectDescriptor extends BaseBehaviorAspectDescriptor
   private final BHDescriptor myConstantPoolUtf8__BehaviorDescriptor = new ConstantPoolUtf8__BehaviorDescriptor();
   private final BHDescriptor myConstantPoolFloat__BehaviorDescriptor = new ConstantPoolFloat__BehaviorDescriptor();
   private final BHDescriptor myUnsigned2Bytes__BehaviorDescriptor = new Unsigned2Bytes__BehaviorDescriptor();
+  private final BHDescriptor myClassFile__BehaviorDescriptor = new ClassFile__BehaviorDescriptor();
 
   private final long[] myConceptBehaviorIds;
 
   public BehaviorAspectDescriptor() {
-    myConceptBehaviorIds = new long[16];
+    myConceptBehaviorIds = new long[17];
     myConceptBehaviorIds[0] = 0x1695a3631a40c7ecL;
     myConceptBehaviorIds[1] = 0x1695a3631a43d37eL;
     myConceptBehaviorIds[2] = 0x1695a3631a43d9bcL;
@@ -49,6 +50,7 @@ public final class BehaviorAspectDescriptor extends BaseBehaviorAspectDescriptor
     myConceptBehaviorIds[13] = 0x1695a3631a43d9c7L;
     myConceptBehaviorIds[14] = 0x1695a3631a43d9c8L;
     myConceptBehaviorIds[15] = 0x1695a3631a47ef12L;
+    myConceptBehaviorIds[16] = 0x40880d8921831cd4L;
   }
 
   @Deprecated
@@ -94,6 +96,8 @@ public final class BehaviorAspectDescriptor extends BaseBehaviorAspectDescriptor
         return myConstantPoolFloat__BehaviorDescriptor;
       case 15:
         return myUnsigned2Bytes__BehaviorDescriptor;
+      case 16:
+        return myClassFile__BehaviorDescriptor;
       default:
         return null;
     }
