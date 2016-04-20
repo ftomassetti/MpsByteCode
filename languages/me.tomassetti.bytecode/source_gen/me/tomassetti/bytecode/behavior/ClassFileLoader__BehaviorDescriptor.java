@@ -33,12 +33,9 @@ import jetbrains.mps.internal.collections.runtime.IMapping;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
 import jetbrains.mps.internal.collections.runtime.CollectionSequence;
 import java.util.ArrayList;
-import jetbrains.mps.lang.typesystem.runtime.HUtil;
 import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
-import org.jetbrains.mps.openapi.persistence.PersistenceFacade;
-import jetbrains.mps.smodel.SModelUtil_new;
 
 public final class ClassFileLoader__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a40c7ecL, "me.tomassetti.bytecode.structure.ClassFileLoader");
@@ -453,33 +450,12 @@ public final class ClassFileLoader__BehaviorDescriptor extends BaseBHDescriptor 
           i = ClassFileLoader__BehaviorDescriptor.parse_idOFkQGRVb6M.invoke(__thisNode__, mds, i, MapSequence.fromMap(OpCodeToInstructionMapping.OPCODE_TO_INSTRUCTION).get(code), instructions);
         } else {
           switch (code) {
-            case 18:
-              ListSequence.fromList(instructions).addElement(createLdc_pw462t_a0a0a0a0a0a2a4a0a71(SNodeOperations.cast(HUtil.copyIfNecessary(mds.readInt1AsNode()), MetaAdapterFactory.getConcept(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a534cdcL, "me.tomassetti.bytecode.structure.Unsigned1Byte"))));
-              i = i.add(BigInteger.ONE);
-              break;
-            case 42:
-              ListSequence.fromList(instructions).addElement(SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x6c0d5336943c8f7L, "me.tomassetti.bytecode.structure.Aload_0"))));
-              break;
-            case 43:
-              ListSequence.fromList(instructions).addElement(SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x6c0d5336943c8f8L, "me.tomassetti.bytecode.structure.Aload_1"))));
-              break;
-            case 44:
-              ListSequence.fromList(instructions).addElement(SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x6c0d5336943c8faL, "me.tomassetti.bytecode.structure.Aload_2"))));
-              break;
-            case 45:
-              ListSequence.fromList(instructions).addElement(SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x6c0d5336943c8f9L, "me.tomassetti.bytecode.structure.Aload_3"))));
-              break;
-            case 176:
-              ListSequence.fromList(instructions).addElement(SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x6c0d53369489e94L, "me.tomassetti.bytecode.structure.Areturn"))));
-              break;
-            case 177:
-              ListSequence.fromList(instructions).addElement(SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x6c0d5336947a20bL, "me.tomassetti.bytecode.structure.Return"))));
-              break;
-            case 183:
-              ListSequence.fromList(instructions).addElement(createInvokeSpecial_pw462t_a0a0a0a7a0a2a4a0a71(SNodeOperations.cast(HUtil.copyIfNecessary(mds.readInt2AsNode()), MetaAdapterFactory.getConcept(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a47ef12L, "me.tomassetti.bytecode.structure.Unsigned2Bytes"))));
-              i = i.add(BigInteger.ONE);
-              i = i.add(BigInteger.ONE);
-              break;
+            case 170:
+              throw new UnsupportedOperationException("TABLE SWITCH NOT IMPLEMENTED");
+            case 171:
+              throw new UnsupportedOperationException("SWITCH NOT IMPLEMENTED");
+            case 196:
+              throw new UnsupportedOperationException("WIDE NOT IMPLEMENTED");
             default:
               throw new RuntimeException("Unknown instruction " + code);
           }
@@ -602,21 +578,5 @@ public final class ClassFileLoader__BehaviorDescriptor extends BaseBHDescriptor 
   @Override
   public SAbstractConcept getConcept() {
     return CONCEPT;
-  }
-  private static SNode createLdc_pw462t_a0a0a0a0a0a2a4a0a71(Object p0) {
-    PersistenceFacade facade = PersistenceFacade.getInstance();
-    SNode n1 = SModelUtil_new.instantiateConceptDeclaration(MetaAdapterFactory.getConcept(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x6c0d53369480935L, "me.tomassetti.bytecode.structure.Ldc"), null, null, false);
-    if (p0 != null) {
-      n1.addChild(MetaAdapterFactory.getContainmentLink(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x6c0d53369480935L, 0x6c0d53369480936L, "index"), (SNode) p0);
-    }
-    return n1;
-  }
-  private static SNode createInvokeSpecial_pw462t_a0a0a0a7a0a2a4a0a71(Object p0) {
-    PersistenceFacade facade = PersistenceFacade.getInstance();
-    SNode n1 = SModelUtil_new.instantiateConceptDeclaration(MetaAdapterFactory.getConcept(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x6c0d5336946de49L, "me.tomassetti.bytecode.structure.InvokeSpecial"), null, null, false);
-    if (p0 != null) {
-      n1.addChild(MetaAdapterFactory.getContainmentLink(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x6c0d5336946de49L, 0x6c0d5336946de4aL, "index"), (SNode) p0);
-    }
-    return n1;
   }
 }

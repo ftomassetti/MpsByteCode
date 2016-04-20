@@ -944,35 +944,35 @@
     </node>
   </node>
   <node concept="24kQdi" id="r0PjdDjmzi">
-    <property role="3GE5qa" value="instruction" />
+    <property role="3GE5qa" value="instruction.load" />
     <ref role="1XX52x" to="uwnb:r0PjdDgWzR" resolve="Aload_0" />
     <node concept="3F0ifn" id="r0PjdDjmzn" role="2wV5jI">
       <property role="3F0ifm" value="AALOAD_0" />
     </node>
   </node>
   <node concept="24kQdi" id="r0PjdDjmzv">
-    <property role="3GE5qa" value="instruction" />
+    <property role="3GE5qa" value="instruction.load" />
     <ref role="1XX52x" to="uwnb:r0PjdDgWzS" resolve="Aload_1" />
     <node concept="3F0ifn" id="r0PjdDjmzx" role="2wV5jI">
       <property role="3F0ifm" value="AALOAD_1" />
     </node>
   </node>
   <node concept="24kQdi" id="r0PjdDjmzD">
-    <property role="3GE5qa" value="instruction" />
+    <property role="3GE5qa" value="instruction.load" />
     <ref role="1XX52x" to="uwnb:r0PjdDgWzU" resolve="Aload_2" />
     <node concept="3F0ifn" id="r0PjdDjmzF" role="2wV5jI">
       <property role="3F0ifm" value="AALOAD_2" />
     </node>
   </node>
   <node concept="24kQdi" id="r0PjdDjmzN">
-    <property role="3GE5qa" value="instruction" />
+    <property role="3GE5qa" value="instruction.load" />
     <ref role="1XX52x" to="uwnb:r0PjdDgWzT" resolve="Aload_3" />
     <node concept="3F0ifn" id="r0PjdDjmzP" role="2wV5jI">
       <property role="3F0ifm" value="AALOAD_3" />
     </node>
   </node>
   <node concept="24kQdi" id="r0PjdDjmzX">
-    <property role="3GE5qa" value="instruction" />
+    <property role="3GE5qa" value="instruction.return" />
     <ref role="1XX52x" to="uwnb:r0PjdDi9Uk" resolve="Areturn" />
     <node concept="3F0ifn" id="r0PjdDjmzZ" role="2wV5jI">
       <property role="3F0ifm" value="AReturn" />
@@ -993,7 +993,7 @@
   </node>
   <node concept="24kQdi" id="r0PjdDjm$v">
     <property role="3GE5qa" value="instruction" />
-    <ref role="1XX52x" to="uwnb:r0PjdDi0$P" resolve="LDC" />
+    <ref role="1XX52x" to="uwnb:r0PjdDi0$P" resolve="Ldc" />
     <node concept="3EZMnI" id="r0PjdDjm$x" role="2wV5jI">
       <node concept="3F0ifn" id="r0PjdDjm$C" role="3EZMnx">
         <property role="3F0ifm" value="LDC" />
@@ -1005,7 +1005,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="r0PjdDjm$R">
-    <property role="3GE5qa" value="instruction" />
+    <property role="3GE5qa" value="instruction.return" />
     <ref role="1XX52x" to="uwnb:r0PjdDhU8b" resolve="Return" />
     <node concept="3F0ifn" id="r0PjdDjm$T" role="2wV5jI">
       <property role="3F0ifm" value="Return" />

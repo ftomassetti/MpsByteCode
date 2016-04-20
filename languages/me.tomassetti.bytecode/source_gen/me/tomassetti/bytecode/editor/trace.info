@@ -4253,7 +4253,7 @@
     </file>
   </root>
   <root nodeRef="r:23d96f06-f257-4f72-a398-e2a2bb85b9d9(me.tomassetti.bytecode.editor)/486623176542742791">
-    <file name="InvokeSpecial_Editor.java">
+    <file name="Invokespecial_Editor.java">
       <node id="486623176542742791" at="17,79,18,63" concept="6" />
       <node id="486623176542742791" at="20,89,21,99" concept="5" />
       <node id="486623176542742791" at="21,99,22,48" concept="2" />
@@ -4281,15 +4281,15 @@
       <node id="486623176542742791" at="57,40,58,24" concept="6" />
       <node id="486623176542742791" at="60,40,61,26" concept="6" />
       <node id="486623176542742791" at="17,0,20,0" concept="4" trace="createEditorCell#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <node id="486623176542742791" at="39,0,42,0" concept="1" trace="indexSingleRoleHandler_8o1av9_b0#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/language/SContainmentLink;Ljetbrains/mps/openapi/editor/EditorContext;)V" />
+      <node id="486623176542742791" at="39,0,42,0" concept="1" trace="indexSingleRoleHandler_gybeb9_b0#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/language/SContainmentLink;Ljetbrains/mps/openapi/editor/EditorContext;)V" />
       <node id="486623176542742791" at="48,137,51,7" concept="3" />
       <node id="486623176542742791" at="60,0,63,0" concept="4" trace="getNoTargetText#()Ljava/lang/String;" />
-      <node id="486623176542742791" at="34,0,38,0" concept="4" trace="createRefNode_8o1av9_b0#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
+      <node id="486623176542742791" at="34,0,38,0" concept="4" trace="createRefNode_gybeb9_b0#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="486623176542742791" at="42,0,47,0" concept="4" trace="createChildCell#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <node id="486623176542742800" at="28,0,34,0" concept="4" trace="createConstant_8o1av9_a0#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
+      <node id="486623176542742800" at="28,0,34,0" concept="4" trace="createConstant_gybeb9_a0#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="486623176542742791" at="47,0,53,0" concept="4" trace="installCellInfo#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/openapi/editor/cells/EditorCell;)V" />
       <node id="486623176542742791" at="53,0,60,0" concept="4" trace="createEmptyCell#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <node id="486623176542742791" at="20,0,28,0" concept="4" trace="createCollection_8o1av9_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
+      <node id="486623176542742791" at="20,0,28,0" concept="4" trace="createCollection_gybeb9_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <scope id="486623176542742791" at="17,79,18,63" />
       <scope id="486623176542742791" at="23,28,24,81" />
       <scope id="486623176542742791" at="24,81,25,80" />
@@ -4342,8 +4342,8 @@
         <var name="editorContext" id="486623176542742791" />
         <var name="node" id="486623176542742791" />
       </scope>
-      <unit id="486623176542742791" at="38,0,64,0" name="me.tomassetti.bytecode.editor.InvokeSpecial_Editor$indexSingleRoleHandler_8o1av9_b0" />
-      <unit id="486623176542742791" at="16,0,65,0" name="me.tomassetti.bytecode.editor.InvokeSpecial_Editor" />
+      <unit id="486623176542742791" at="38,0,64,0" name="me.tomassetti.bytecode.editor.Invokespecial_Editor$indexSingleRoleHandler_gybeb9_b0" />
+      <unit id="486623176542742791" at="16,0,65,0" name="me.tomassetti.bytecode.editor.Invokespecial_Editor" />
     </file>
   </root>
   <root nodeRef="r:23d96f06-f257-4f72-a398-e2a2bb85b9d9(me.tomassetti.bytecode.editor)/486623176542742815">
