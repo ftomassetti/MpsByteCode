@@ -21,7 +21,9 @@ public enum AccessFlag {
   ACC_NATIVE("ACC_NATIVE", "native"),
   ACC_SYNTHETIC("ACC_SYNTHETIC", "synthetic"),
   ACC_ANNOTATION("ACC_ANNOTATION", "annotation"),
-  ACC_ENUM("ACC_ENUM", "enum");
+  ACC_ENUM("ACC_ENUM", "enum"),
+  ACC_VOLATILE("ACC_VOLATILE", "volatile"),
+  ACC_TRANSIENT("ACC_TRANSIENT", "transient");
 
   private final String myName;
   public String getName() {
@@ -55,6 +57,8 @@ public enum AccessFlag {
     ListSequence.fromList(list).addElement(AccessFlag.ACC_SYNTHETIC);
     ListSequence.fromList(list).addElement(AccessFlag.ACC_ANNOTATION);
     ListSequence.fromList(list).addElement(AccessFlag.ACC_ENUM);
+    ListSequence.fromList(list).addElement(AccessFlag.ACC_VOLATILE);
+    ListSequence.fromList(list).addElement(AccessFlag.ACC_TRANSIENT);
     return list;
   }
   public static AccessFlag getDefault() {
@@ -108,6 +112,12 @@ public enum AccessFlag {
     }
     if (value.equals(AccessFlag.ACC_ENUM.getValueAsString())) {
       return AccessFlag.ACC_ENUM;
+    }
+    if (value.equals(AccessFlag.ACC_VOLATILE.getValueAsString())) {
+      return AccessFlag.ACC_VOLATILE;
+    }
+    if (value.equals(AccessFlag.ACC_TRANSIENT.getValueAsString())) {
+      return AccessFlag.ACC_TRANSIENT;
     }
     return AccessFlag.getDefault();
   }

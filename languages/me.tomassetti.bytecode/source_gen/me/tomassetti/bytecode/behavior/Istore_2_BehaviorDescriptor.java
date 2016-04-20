@@ -9,11 +9,11 @@ package me.tomassetti.bytecode.behavior;
  * This class is not involved in the actual method invocation
  */
 @Deprecated
-public class LDC_BehaviorDescriptor extends Instruction_BehaviorDescriptor {
+public class Istore_2_BehaviorDescriptor extends Instruction_BehaviorDescriptor {
 
   @Override
   public String getConceptFqName() {
-    return "me.tomassetti.bytecode.structure.LDC";
+    return "me.tomassetti.bytecode.structure.Istore_2";
   }
 
 }

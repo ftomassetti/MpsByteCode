@@ -4,6 +4,8 @@ package me.tomassetti.bytecode.behavior;
 
 import org.jetbrains.mps.openapi.model.SNode;
 import java.util.Map;
+import java.math.BigInteger;
+import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import java.util.List;
 
 /**
@@ -39,14 +41,29 @@ public class ClassFileLoader_Behavior {
   public static SNode call_loadMethodInfo_1627386486402772426(SNode __thisNode__, MyDataStream mds) {
     return ClassFileLoader__BehaviorDescriptor.loadMethodInfo_id1qlCQcqjIRa(__thisNode__, mds);
   }
+  public static SNode call_toUtf8Reference_948943866455876226(SNode __thisNode__, long index) {
+    return ClassFileLoader__BehaviorDescriptor.toUtf8Reference_idOFkQGRSQa2(__thisNode__, index);
+  }
+  public static SNode call_loadFieldInfo_948943866455813894(SNode __thisNode__, MyDataStream mds) {
+    return ClassFileLoader__BehaviorDescriptor.loadFieldInfo_idOFkQGRSAW6(__thisNode__, mds);
+  }
   public static SNode call_getConstantPoolElement_486623176541192300(SNode __thisNode__, SNode index) {
     return ClassFileLoader__BehaviorDescriptor.getConstantPoolElement_idr0PjdDds1G(__thisNode__, index);
   }
   public static SNode call_loadAttributeInfo_1627386486402964245(SNode __thisNode__, MyDataStream mds) {
     return ClassFileLoader__BehaviorDescriptor.loadAttributeInfo_id1qlCQcqktGl(__thisNode__, mds);
   }
+  public static SNode call_readSignature_948943866456273354(SNode __thisNode__, MyDataStream mds) {
+    return ClassFileLoader__BehaviorDescriptor.readSignature_idOFkQGRUn7a(__thisNode__, mds);
+  }
   public static SNode call_readCode_486623176541363249(SNode __thisNode__, MyDataStream mds) {
     return ClassFileLoader__BehaviorDescriptor.readCode_idr0PjdDe5KL(__thisNode__, mds);
+  }
+  public static SNode call_readExceptionTableElement_948943866458328803(SNode __thisNode__, MyDataStream mds) {
+    return ClassFileLoader__BehaviorDescriptor.readExceptionTableElement_idOFkQGS2cVz(__thisNode__, mds);
+  }
+  public static BigInteger call_parse_948943866456486322(SNode __thisNode__, MyDataStream mds, BigInteger i, SAbstractConcept concept, List<SNode> instructions) {
+    return ClassFileLoader__BehaviorDescriptor.parse_idOFkQGRVb6M(__thisNode__, mds, i, concept, instructions);
   }
   public static List<SNode> call_readCodeArray_486623176541932422(SNode __thisNode__, MyDataStream mds) {
     return ClassFileLoader__BehaviorDescriptor.readCodeArray_idr0PjdDggI6(__thisNode__, mds);
