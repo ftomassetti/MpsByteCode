@@ -143,6 +143,18 @@
     <property role="TrG5h" value="ConstantPoolLong" />
     <property role="3GE5qa" value="constantPool" />
     <ref role="1TJDcQ" node="1qlCQcqgXdY" resolve="ConstantPoolElement" />
+    <node concept="1TJgyj" id="6vIFDs2L_bv" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="highBytes" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="1qlCQcqkOJN" resolve="Unsigned4Bytes" />
+    </node>
+    <node concept="1TJgyj" id="6vIFDs2L_bw" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="lowBytes" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="1qlCQcqkOJN" resolve="Unsigned4Bytes" />
+    </node>
   </node>
   <node concept="1TIwiD" id="1qlCQcqgXAX">
     <property role="1pbfSe" value="819559712" />
@@ -233,6 +245,18 @@
     <property role="TrG5h" value="ConstantPoolInvokeDynamic" />
     <property role="3GE5qa" value="constantPool" />
     <ref role="1TJDcQ" node="1qlCQcqgXdY" resolve="ConstantPoolElement" />
+    <node concept="1TJgyj" id="6vIFDs2MeSd" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="bootstrapMethodAttrIndex" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="1qlCQcqhYWi" resolve="Unsigned2Bytes" />
+    </node>
+    <node concept="1TJgyj" id="6vIFDs2MeSf" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="nameAndTypeIndex" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="1qlCQcqhYWi" resolve="Unsigned2Bytes" />
+    </node>
   </node>
   <node concept="1TIwiD" id="1qlCQcqgXB3">
     <property role="1pbfSe" value="819559718" />
@@ -251,18 +275,42 @@
     <property role="TrG5h" value="ConstantPoolMethodType" />
     <property role="3GE5qa" value="constantPool" />
     <ref role="1TJDcQ" node="1qlCQcqgXdY" resolve="ConstantPoolElement" />
+    <node concept="1TJgyj" id="6vIFDs2McLo" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="descriptorIndex" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="1qlCQcqhYWi" resolve="Unsigned2Bytes" />
+    </node>
   </node>
   <node concept="1TIwiD" id="1qlCQcqgXB5">
     <property role="1pbfSe" value="819559720" />
     <property role="TrG5h" value="ConstantPoolMethodHandle" />
     <property role="3GE5qa" value="constantPool" />
     <ref role="1TJDcQ" node="1qlCQcqgXdY" resolve="ConstantPoolElement" />
+    <node concept="1TJgyj" id="6vIFDs2M93t" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="referenceKind" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="1qlCQcqkONs" resolve="Unsigned1Byte" />
+    </node>
+    <node concept="1TJgyj" id="6vIFDs2M93v" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="referenceIndex" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="1qlCQcqhYWi" resolve="Unsigned2Bytes" />
+    </node>
   </node>
   <node concept="1TIwiD" id="1qlCQcqgXB6">
     <property role="1pbfSe" value="819559721" />
     <property role="TrG5h" value="ConstantPoolInteger" />
     <property role="3GE5qa" value="constantPool" />
     <ref role="1TJDcQ" node="1qlCQcqgXdY" resolve="ConstantPoolElement" />
+    <node concept="1TJgyj" id="6vIFDs2M61T" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="bytes" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="1qlCQcqkOJN" resolve="Unsigned4Bytes" />
+    </node>
   </node>
   <node concept="1TIwiD" id="1qlCQcqgXB7">
     <property role="1pbfSe" value="819559722" />
@@ -279,6 +327,12 @@
     <property role="TrG5h" value="ConstantPoolFloat" />
     <property role="3GE5qa" value="constantPool" />
     <ref role="1TJDcQ" node="1qlCQcqgXdY" resolve="ConstantPoolElement" />
+    <node concept="1TJgyj" id="6vIFDs2M61Z" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="bytes" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="1qlCQcqkOJN" resolve="Unsigned4Bytes" />
+    </node>
   </node>
   <node concept="1TIwiD" id="1qlCQcqhYWi">
     <property role="1pbfSe" value="819827317" />
@@ -955,6 +1009,24 @@
     <property role="3GE5qa" value="instruction" />
     <property role="TrG5h" value="Dup2_x2" />
     <ref role="1TJDcQ" node="r0PjdDge82" resolve="Instruction" />
+  </node>
+  <node concept="1TIwiD" id="6vIFDs2LAOt">
+    <property role="1pbfSe" value="1790254004" />
+    <property role="TrG5h" value="ConstantPoolDouble" />
+    <property role="3GE5qa" value="constantPool" />
+    <ref role="1TJDcQ" node="1qlCQcqgXdY" resolve="ConstantPoolElement" />
+    <node concept="1TJgyj" id="6vIFDs2LAOu" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="highBytes" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="1qlCQcqkOJN" resolve="Unsigned4Bytes" />
+    </node>
+    <node concept="1TJgyj" id="6vIFDs2LAOv" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="lowBytes" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="1qlCQcqkOJN" resolve="Unsigned4Bytes" />
+    </node>
   </node>
 </model>
 

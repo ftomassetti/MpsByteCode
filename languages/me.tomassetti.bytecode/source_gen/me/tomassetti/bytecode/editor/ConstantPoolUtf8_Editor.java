@@ -7,12 +7,6 @@ import jetbrains.mps.openapi.editor.cells.EditorCell;
 import jetbrains.mps.openapi.editor.EditorContext;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.nodeEditor.cells.EditorCell_Collection;
-import jetbrains.mps.nodeEditor.cells.EditorCell_Property;
-import jetbrains.mps.nodeEditor.cells.ModelAccessor;
-import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
-import jetbrains.mps.util.EqualUtil;
-import jetbrains.mps.openapi.editor.cells.CellActionType;
-import jetbrains.mps.editor.runtime.cells.EmptyCellAction;
 import jetbrains.mps.nodeEditor.cells.EditorCell_Constant;
 import jetbrains.mps.openapi.editor.style.Style;
 import jetbrains.mps.editor.runtime.style.StyleImpl;
@@ -29,48 +23,30 @@ public class ConstantPoolUtf8_Editor extends DefaultNodeEditor {
     EditorCell_Collection editorCell = EditorCell_Collection.createHorizontal(editorContext, node);
     editorCell.setCellId("Collection_gxm7el_a");
     editorCell.setBig(true);
-    editorCell.addEditorCell(this.createReadOnlyModelAccessor_gxm7el_a0(editorContext, node));
+    editorCell.addEditorCell(this.createComponent_gxm7el_a0(editorContext, node));
     editorCell.addEditorCell(this.createConstant_gxm7el_b0(editorContext, node));
-    editorCell.addEditorCell(this.createConstant_gxm7el_c0(editorContext, node));
-    editorCell.addEditorCell(this.createProperty_gxm7el_d0(editorContext, node));
-    editorCell.addEditorCell(this.createConstant_gxm7el_e0(editorContext, node));
+    editorCell.addEditorCell(this.createProperty_gxm7el_c0(editorContext, node));
+    editorCell.addEditorCell(this.createConstant_gxm7el_d0(editorContext, node));
     return editorCell;
   }
-  private EditorCell createReadOnlyModelAccessor_gxm7el_a0(final EditorContext editorContext, final SNode node) {
-    EditorCell_Property editorCell = EditorCell_Property.create(editorContext, new ModelAccessor() {
-      public String getText() {
-        return Long.toString(SNodeOperations.getIndexInParent(node) + 1);
-      }
-      public void setText(String s) {
-      }
-      public boolean isValidText(String s) {
-        return EqualUtil.equals(s, getText());
-      }
-    }, node);
-    editorCell.setAction(CellActionType.DELETE, EmptyCellAction.getInstance());
-    editorCell.setAction(CellActionType.BACKSPACE, EmptyCellAction.getInstance());
-    editorCell.setCellId("ReadOnlyModelAccessor_gxm7el_a0");
+  private EditorCell createComponent_gxm7el_a0(EditorContext editorContext, SNode node) {
+    EditorCell editorCell = editorContext.getCellFactory().createEditorComponentCell(node, "me.tomassetti.bytecode.editor.ConstantPoolElementIndex");
     return editorCell;
   }
   private EditorCell createConstant_gxm7el_b0(EditorContext editorContext, SNode node) {
-    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "=");
-    editorCell.setCellId("Constant_gxm7el_b0");
-    editorCell.setDefaultText("");
-    return editorCell;
-  }
-  private EditorCell createConstant_gxm7el_c0(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "\"");
-    editorCell.setCellId("Constant_gxm7el_c0");
+    editorCell.setCellId("Constant_gxm7el_b0");
     Style style = new StyleImpl();
     style.set(StyleAttributes.PUNCTUATION_RIGHT, 0, true);
     editorCell.getStyle().putAll(style);
     editorCell.setDefaultText("");
     return editorCell;
   }
-  private EditorCell createProperty_gxm7el_d0(EditorContext editorContext, SNode node) {
+  private EditorCell createProperty_gxm7el_c0(EditorContext editorContext, SNode node) {
     CellProviderWithRole provider = new PropertyCellProvider(node, editorContext);
     provider.setRole("value");
     provider.setNoTargetText("<no value>");
+    provider.setAllowsEmptyTarget(true);
     EditorCell editorCell;
     editorCell = provider.createEditorCell(editorContext);
     editorCell.setCellId("property_value");
@@ -83,9 +59,9 @@ public class ConstantPoolUtf8_Editor extends DefaultNodeEditor {
     } else
     return editorCell;
   }
-  private EditorCell createConstant_gxm7el_e0(EditorContext editorContext, SNode node) {
+  private EditorCell createConstant_gxm7el_d0(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "\"");
-    editorCell.setCellId("Constant_gxm7el_e0");
+    editorCell.setCellId("Constant_gxm7el_d0");
     Style style = new StyleImpl();
     style.set(StyleAttributes.PUNCTUATION_LEFT, 0, true);
     editorCell.getStyle().putAll(style);

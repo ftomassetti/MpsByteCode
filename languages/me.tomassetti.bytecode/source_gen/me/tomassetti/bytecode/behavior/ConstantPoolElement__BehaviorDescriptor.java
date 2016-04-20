@@ -16,6 +16,9 @@ import java.util.List;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.mps.openapi.model.SNode;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
+import jetbrains.mps.internal.collections.runtime.ListSequence;
+import jetbrains.mps.internal.collections.runtime.IWhereFilter;
 import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
@@ -25,12 +28,24 @@ public final class ConstantPoolElement__BehaviorDescriptor extends BaseBHDescrip
   private static final BehaviorRegistry REGISTRY = ConceptRegistry.getInstance().getBehaviorRegistry();
 
   public static final SMethod<ConstantPoolElementType> tag_id1qlCQcqgXe2 = new SMethodBuilder<ConstantPoolElementType>(new SJavaCompoundTypeImpl(ConstantPoolElementType.class)).name("tag").modifiers(SModifiersImpl.create(12, AccessPrivileges.PUBLIC)).concept(CONCEPT).id("1qlCQcqgXe2").registry(REGISTRY).build();
+  public static final SMethod<Boolean> isDoubleElement_id6vIFDs2N3yE = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isDoubleElement").modifiers(SModifiersImpl.create(0, AccessPrivileges.PUBLIC)).concept(CONCEPT).id("6vIFDs2N3yE").registry(REGISTRY).build();
+  public static final SMethod<Long> index_idOFkQGRQU2Z = new SMethodBuilder<Long>(new SJavaCompoundTypeImpl(Long.TYPE)).name("index").modifiers(SModifiersImpl.create(0, AccessPrivileges.PUBLIC)).concept(CONCEPT).id("OFkQGRQU2Z").registry(REGISTRY).build();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(tag_id1qlCQcqgXe2);
+  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(tag_id1qlCQcqgXe2, isDoubleElement_id6vIFDs2N3yE, index_idOFkQGRQU2Z);
 
   private static void ___init___(@NotNull SNode __thisNode__) {
   }
 
+  /*package*/ static boolean isDoubleElement_id6vIFDs2N3yE(@NotNull SNode __thisNode__) {
+    return false;
+  }
+  /*package*/ static long index_idOFkQGRQU2Z(@NotNull SNode __thisNode__) {
+    return 1 + SNodeOperations.getIndexInParent(__thisNode__) + ListSequence.fromList(SNodeOperations.getPrevSiblings(__thisNode__, false)).where(new IWhereFilter<SNode>() {
+      public boolean accept(SNode it) {
+        return SNodeOperations.isInstanceOf(it, MetaAdapterFactory.getConcept(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x67eeae9702c66d1dL, "me.tomassetti.bytecode.structure.ConstantPoolDouble")) || SNodeOperations.isInstanceOf(it, MetaAdapterFactory.getConcept(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a43d9bcL, "me.tomassetti.bytecode.structure.ConstantPoolLong"));
+      }
+    }).count();
+  }
 
   /*package*/ ConstantPoolElement__BehaviorDescriptor() {
     super(REGISTRY);
@@ -48,6 +63,10 @@ public final class ConstantPoolElement__BehaviorDescriptor extends BaseBHDescrip
       throw new BHMethodNotFoundException(this, method);
     }
     switch (methodIndex) {
+      case 1:
+        return (T) ((Boolean) isDoubleElement_id6vIFDs2N3yE(node));
+      case 2:
+        return (T) ((Long) index_idOFkQGRQU2Z(node));
       default:
         throw new BHMethodNotFoundException(this, method);
     }

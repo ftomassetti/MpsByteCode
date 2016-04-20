@@ -10,31 +10,32 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import java.util.Collections;
+import jetbrains.mps.openapi.editor.descriptor.ConceptEditorComponent;
 
 public class EditorAspectDescriptorImpl extends EditorAspectDescriptorBase {
   public Collection<ConceptEditor> getDeclaredEditors(SAbstractConcept concept) {
     {
       SAbstractConcept cncpt = ((SAbstractConcept) concept);
-      if (SConceptOperations.isExactly(SNodeOperations.asSConcept(cncpt), MetaAdapterFactory.getConcept(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x6c0d5336943c8f7L, "me.tomassetti.bytecode.structure.AALOAD_0"))) {
-        return Collections.<ConceptEditor>singletonList(new AALOAD_0_Editor());
-      }
-      if (SConceptOperations.isExactly(SNodeOperations.asSConcept(cncpt), MetaAdapterFactory.getConcept(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x6c0d5336943c8f8L, "me.tomassetti.bytecode.structure.AALOAD_1"))) {
-        return Collections.<ConceptEditor>singletonList(new AALOAD_1_Editor());
-      }
-      if (SConceptOperations.isExactly(SNodeOperations.asSConcept(cncpt), MetaAdapterFactory.getConcept(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x6c0d5336943c8faL, "me.tomassetti.bytecode.structure.AALOAD_2"))) {
-        return Collections.<ConceptEditor>singletonList(new AALOAD_2_Editor());
-      }
-      if (SConceptOperations.isExactly(SNodeOperations.asSConcept(cncpt), MetaAdapterFactory.getConcept(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x6c0d5336943c8f9L, "me.tomassetti.bytecode.structure.AALOAD_3"))) {
-        return Collections.<ConceptEditor>singletonList(new AALOAD_3_Editor());
-      }
-      if (SConceptOperations.isExactly(SNodeOperations.asSConcept(cncpt), MetaAdapterFactory.getConcept(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x6c0d53369489e94L, "me.tomassetti.bytecode.structure.AReturn"))) {
-        return Collections.<ConceptEditor>singletonList(new AReturn_Editor());
-      }
       if (SConceptOperations.isExactly(SNodeOperations.asSConcept(cncpt), MetaAdapterFactory.getConcept(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a498b94L, "me.tomassetti.bytecode.structure.AccessFlagHolder"))) {
         return Collections.<ConceptEditor>singletonList(new AccessFlagHolder_Editor());
       }
       if (SConceptOperations.isExactly(SNodeOperations.asSConcept(cncpt), MetaAdapterFactory.getConcept(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a4fb665L, "me.tomassetti.bytecode.structure.AccessFlags"))) {
         return Collections.<ConceptEditor>singletonList(new AccessFlags_Editor());
+      }
+      if (SConceptOperations.isExactly(SNodeOperations.asSConcept(cncpt), MetaAdapterFactory.getConcept(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x6c0d5336943c8f7L, "me.tomassetti.bytecode.structure.Aload_0"))) {
+        return Collections.<ConceptEditor>singletonList(new Aload_0_Editor());
+      }
+      if (SConceptOperations.isExactly(SNodeOperations.asSConcept(cncpt), MetaAdapterFactory.getConcept(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x6c0d5336943c8f8L, "me.tomassetti.bytecode.structure.Aload_1"))) {
+        return Collections.<ConceptEditor>singletonList(new Aload_1_Editor());
+      }
+      if (SConceptOperations.isExactly(SNodeOperations.asSConcept(cncpt), MetaAdapterFactory.getConcept(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x6c0d5336943c8faL, "me.tomassetti.bytecode.structure.Aload_2"))) {
+        return Collections.<ConceptEditor>singletonList(new Aload_2_Editor());
+      }
+      if (SConceptOperations.isExactly(SNodeOperations.asSConcept(cncpt), MetaAdapterFactory.getConcept(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x6c0d5336943c8f9L, "me.tomassetti.bytecode.structure.Aload_3"))) {
+        return Collections.<ConceptEditor>singletonList(new Aload_3_Editor());
+      }
+      if (SConceptOperations.isExactly(SNodeOperations.asSConcept(cncpt), MetaAdapterFactory.getConcept(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x6c0d53369489e94L, "me.tomassetti.bytecode.structure.Areturn"))) {
+        return Collections.<ConceptEditor>singletonList(new Areturn_Editor());
       }
       if (SConceptOperations.isExactly(SNodeOperations.asSConcept(cncpt), MetaAdapterFactory.getConcept(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a51ca20L, "me.tomassetti.bytecode.structure.AttributeInfo"))) {
         return Collections.<ConceptEditor>singletonList(new AttributeInfo_Editor());
@@ -50,6 +51,33 @@ public class EditorAspectDescriptorImpl extends EditorAspectDescriptorBase {
       }
       if (SConceptOperations.isExactly(SNodeOperations.asSConcept(cncpt), MetaAdapterFactory.getConcept(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a43d9beL, "me.tomassetti.bytecode.structure.ConstantPoolClass"))) {
         return Collections.<ConceptEditor>singletonList(new ConstantPoolClass_Editor());
+      }
+      if (SConceptOperations.isExactly(SNodeOperations.asSConcept(cncpt), MetaAdapterFactory.getConcept(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x67eeae9702c66d1dL, "me.tomassetti.bytecode.structure.ConstantPoolDouble"))) {
+        return Collections.<ConceptEditor>singletonList(new ConstantPoolDouble_Editor());
+      }
+      if (SConceptOperations.isExactly(SNodeOperations.asSConcept(cncpt), MetaAdapterFactory.getConcept(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a43d9bdL, "me.tomassetti.bytecode.structure.ConstantPoolFieldref"))) {
+        return Collections.<ConceptEditor>singletonList(new ConstantPoolFieldref_Editor());
+      }
+      if (SConceptOperations.isExactly(SNodeOperations.asSConcept(cncpt), MetaAdapterFactory.getConcept(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a43d9c8L, "me.tomassetti.bytecode.structure.ConstantPoolFloat"))) {
+        return Collections.<ConceptEditor>singletonList(new ConstantPoolFloat_Editor());
+      }
+      if (SConceptOperations.isExactly(SNodeOperations.asSConcept(cncpt), MetaAdapterFactory.getConcept(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a43d9c6L, "me.tomassetti.bytecode.structure.ConstantPoolInteger"))) {
+        return Collections.<ConceptEditor>singletonList(new ConstantPoolInteger_Editor());
+      }
+      if (SConceptOperations.isExactly(SNodeOperations.asSConcept(cncpt), MetaAdapterFactory.getConcept(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a43d9c1L, "me.tomassetti.bytecode.structure.ConstantPoolInterfaceMethodref"))) {
+        return Collections.<ConceptEditor>singletonList(new ConstantPoolInterfaceMethodref_Editor());
+      }
+      if (SConceptOperations.isExactly(SNodeOperations.asSConcept(cncpt), MetaAdapterFactory.getConcept(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a43d9c2L, "me.tomassetti.bytecode.structure.ConstantPoolInvokeDynamic"))) {
+        return Collections.<ConceptEditor>singletonList(new ConstantPoolInvokeDynamic_Editor());
+      }
+      if (SConceptOperations.isExactly(SNodeOperations.asSConcept(cncpt), MetaAdapterFactory.getConcept(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a43d9bcL, "me.tomassetti.bytecode.structure.ConstantPoolLong"))) {
+        return Collections.<ConceptEditor>singletonList(new ConstantPoolLong_Editor());
+      }
+      if (SConceptOperations.isExactly(SNodeOperations.asSConcept(cncpt), MetaAdapterFactory.getConcept(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a43d9c5L, "me.tomassetti.bytecode.structure.ConstantPoolMethodHandle"))) {
+        return Collections.<ConceptEditor>singletonList(new ConstantPoolMethodHandle_Editor());
+      }
+      if (SConceptOperations.isExactly(SNodeOperations.asSConcept(cncpt), MetaAdapterFactory.getConcept(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a43d9c4L, "me.tomassetti.bytecode.structure.ConstantPoolMethodType"))) {
+        return Collections.<ConceptEditor>singletonList(new ConstantPoolMethodType_Editor());
       }
       if (SConceptOperations.isExactly(SNodeOperations.asSConcept(cncpt), MetaAdapterFactory.getConcept(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a43d9bfL, "me.tomassetti.bytecode.structure.ConstantPoolMethodref"))) {
         return Collections.<ConceptEditor>singletonList(new ConstantPoolMethodref_Editor());
@@ -97,6 +125,17 @@ public class EditorAspectDescriptorImpl extends EditorAspectDescriptorBase {
     return Collections.<ConceptEditor>emptyList();
   }
 
+  public Collection<ConceptEditorComponent> getDeclaredEditorComponents(SAbstractConcept concept, String editorComponentId) {
+    {
+      SAbstractConcept cncpt = ((SAbstractConcept) concept);
+      if (SConceptOperations.isExactly(SNodeOperations.asSConcept(cncpt), MetaAdapterFactory.getConcept(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a43d37eL, "me.tomassetti.bytecode.structure.ConstantPoolElement"))) {
+        if ("me.tomassetti.bytecode.editor.ConstantPoolElementIndex".equals(editorComponentId)) {
+          return Collections.<ConceptEditorComponent>singletonList(new ConstantPoolElementIndex());
+        }
+      }
+    }
+    return Collections.<ConceptEditorComponent>emptyList();
+  }
 
 
 }

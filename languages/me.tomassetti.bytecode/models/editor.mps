@@ -30,6 +30,10 @@
         <child id="1080736633877" name="cellModel" index="2wV5jI" />
       </concept>
       <concept id="1239814640496" name="jetbrains.mps.lang.editor.structure.CellLayout_VerticalGrid" flags="nn" index="2EHx9g" />
+      <concept id="1078938745671" name="jetbrains.mps.lang.editor.structure.EditorComponentDeclaration" flags="ig" index="PKFIW" />
+      <concept id="1078939183254" name="jetbrains.mps.lang.editor.structure.CellModel_Component" flags="sg" stub="3162947552742194261" index="PMmxH">
+        <reference id="1078939183255" name="editorComponent" index="PMmxG" />
+      </concept>
       <concept id="1186414536763" name="jetbrains.mps.lang.editor.structure.BooleanStyleSheetItem" flags="ln" index="VOi$J">
         <property id="1186414551515" name="flag" index="VOm3f" />
       </concept>
@@ -40,6 +44,7 @@
         <child id="1176475119347" name="componentProvider" index="3FoqZy" />
       </concept>
       <concept id="1139848536355" name="jetbrains.mps.lang.editor.structure.CellModel_WithRole" flags="ng" index="1$h60E">
+        <property id="1140114345053" name="allowEmptyText" index="1O74Pk" />
         <reference id="1140103550593" name="relationDeclaration" index="1NtTu8" />
       </concept>
       <concept id="1073389214265" name="jetbrains.mps.lang.editor.structure.EditorCellModel" flags="ng" index="3EYTF0">
@@ -122,7 +127,6 @@
       <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
         <property id="1068580320021" name="value" index="3cmrfH" />
       </concept>
-      <concept id="1068581242875" name="jetbrains.mps.baseLanguage.structure.PlusExpression" flags="nn" index="3cpWs3" />
       <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6">
         <child id="1068581517676" name="expression" index="3cqZAk" />
       </concept>
@@ -157,7 +161,6 @@
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
-      <concept id="1179168000618" name="jetbrains.mps.lang.smodel.structure.Node_GetIndexInParentOperation" flags="nn" index="2bSWHS" />
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="1138056282393" name="jetbrains.mps.lang.smodel.structure.SLinkListAccess" flags="nn" index="3Tsc0h">
         <reference id="1138056546658" name="link" index="3TtcxE" />
@@ -443,8 +446,11 @@
           <node concept="2EHx9g" id="r0PjdDeG$c" role="2iSdaV" />
         </node>
       </node>
-      <node concept="3F0ifn" id="r0PjdDiLs3" role="3EZMnx">
-        <property role="3F0ifm" value="}" />
+      <node concept="3EZMnI" id="29s2aQfjeMa" role="3EZMnx">
+        <node concept="2iRfu4" id="29s2aQfjeMb" role="2iSdaV" />
+        <node concept="3F0ifn" id="r0PjdDiLs3" role="3EZMnx">
+          <property role="3F0ifm" value="}" />
+        </node>
       </node>
       <node concept="2iRkQZ" id="r0PjdDeGzL" role="2iSdaV" />
     </node>
@@ -478,31 +484,8 @@
     <property role="3GE5qa" value="constantPool" />
     <ref role="1XX52x" to="uwnb:1qlCQcqgXAY" resolve="ConstantPoolClass" />
     <node concept="3EZMnI" id="r0PjdDfp6Q" role="2wV5jI">
-      <node concept="1HlG4h" id="r0PjdDj83p" role="3EZMnx">
-        <node concept="1HfYo3" id="r0PjdDj83q" role="1HlULh">
-          <node concept="3TQlhw" id="r0PjdDj83r" role="1Hhtcw">
-            <node concept="3clFbS" id="r0PjdDj83s" role="2VODD2">
-              <node concept="3clFbF" id="r0PjdDj83t" role="3cqZAp">
-                <node concept="2YIFZM" id="r0PjdDj83u" role="3clFbG">
-                  <ref role="1Pybhc" to="wyt6:~Long" resolve="Long" />
-                  <ref role="37wK5l" to="wyt6:~Long.toString(long):java.lang.String" resolve="toString" />
-                  <node concept="3cpWs3" id="r0PjdDj83v" role="37wK5m">
-                    <node concept="3cmrfG" id="r0PjdDj83w" role="3uHU7w">
-                      <property role="3cmrfH" value="1" />
-                    </node>
-                    <node concept="2OqwBi" id="r0PjdDj83x" role="3uHU7B">
-                      <node concept="pncrf" id="r0PjdDj83y" role="2Oq$k0" />
-                      <node concept="2bSWHS" id="r0PjdDj83z" role="2OqNvi" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="3F0ifn" id="r0PjdDj83$" role="3EZMnx">
-        <property role="3F0ifm" value="=" />
+      <node concept="PMmxH" id="3Ez5cycAmd5" role="3EZMnx">
+        <ref role="PMmxG" node="29s2aQfhT6i" resolve="ConstantPoolElementIndex" />
       </node>
       <node concept="3F0ifn" id="r0PjdDfp6X" role="3EZMnx">
         <property role="3F0ifm" value="CP Class" />
@@ -517,31 +500,8 @@
     <property role="3GE5qa" value="constantPool" />
     <ref role="1XX52x" to="uwnb:1qlCQcqgXB7" resolve="ConstantPoolUtf8" />
     <node concept="3EZMnI" id="r0PjdDfqhH" role="2wV5jI">
-      <node concept="1HlG4h" id="r0PjdDj8h4" role="3EZMnx">
-        <node concept="1HfYo3" id="r0PjdDj8h5" role="1HlULh">
-          <node concept="3TQlhw" id="r0PjdDj8h6" role="1Hhtcw">
-            <node concept="3clFbS" id="r0PjdDj8h7" role="2VODD2">
-              <node concept="3clFbF" id="r0PjdDj8h8" role="3cqZAp">
-                <node concept="2YIFZM" id="r0PjdDj8h9" role="3clFbG">
-                  <ref role="1Pybhc" to="wyt6:~Long" resolve="Long" />
-                  <ref role="37wK5l" to="wyt6:~Long.toString(long):java.lang.String" resolve="toString" />
-                  <node concept="3cpWs3" id="r0PjdDj8ha" role="37wK5m">
-                    <node concept="3cmrfG" id="r0PjdDj8hb" role="3uHU7w">
-                      <property role="3cmrfH" value="1" />
-                    </node>
-                    <node concept="2OqwBi" id="r0PjdDj8hc" role="3uHU7B">
-                      <node concept="pncrf" id="r0PjdDj8hd" role="2Oq$k0" />
-                      <node concept="2bSWHS" id="r0PjdDj8he" role="2OqNvi" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="3F0ifn" id="r0PjdDj8hf" role="3EZMnx">
-        <property role="3F0ifm" value="=" />
+      <node concept="PMmxH" id="3Ez5cycAmEL" role="3EZMnx">
+        <ref role="PMmxG" node="29s2aQfhT6i" resolve="ConstantPoolElementIndex" />
       </node>
       <node concept="3F0ifn" id="r0PjdDfqhO" role="3EZMnx">
         <property role="3F0ifm" value="&quot;" />
@@ -551,6 +511,7 @@
       </node>
       <node concept="2iRfu4" id="r0PjdDfqhK" role="2iSdaV" />
       <node concept="3F0A7n" id="r0PjdDfqi2" role="3EZMnx">
+        <property role="1O74Pk" value="true" />
         <ref role="1NtTu8" to="uwnb:1qlCQcqhKwU" resolve="value" />
       </node>
       <node concept="3F0ifn" id="r0PjdDfqhU" role="3EZMnx">
@@ -788,6 +749,9 @@
     <node concept="3EZMnI" id="r0PjdDiEhq" role="2wV5jI">
       <node concept="3F0ifn" id="r0PjdDiEhx" role="3EZMnx">
         <property role="3F0ifm" value="[" />
+        <node concept="11LMrY" id="6vIFDs2Liuo" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
       </node>
       <node concept="3F2HdR" id="r0PjdDiEhJ" role="3EZMnx">
         <ref role="1NtTu8" to="uwnb:1qlCQcqkONw" />
@@ -796,6 +760,9 @@
       <node concept="2iRfu4" id="r0PjdDiEht" role="2iSdaV" />
       <node concept="3F0ifn" id="r0PjdDiEhB" role="3EZMnx">
         <property role="3F0ifm" value="]" />
+        <node concept="11L4FC" id="6vIFDs2Liw2" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
       </node>
     </node>
   </node>
@@ -810,31 +777,8 @@
     <property role="3GE5qa" value="constantPool" />
     <ref role="1XX52x" to="uwnb:1qlCQcqgXAZ" resolve="ConstantPoolMethodref" />
     <node concept="3EZMnI" id="r0PjdDiVkP" role="2wV5jI">
-      <node concept="1HlG4h" id="r0PjdDj87I" role="3EZMnx">
-        <node concept="1HfYo3" id="r0PjdDj87J" role="1HlULh">
-          <node concept="3TQlhw" id="r0PjdDj87K" role="1Hhtcw">
-            <node concept="3clFbS" id="r0PjdDj87L" role="2VODD2">
-              <node concept="3clFbF" id="r0PjdDj87M" role="3cqZAp">
-                <node concept="2YIFZM" id="r0PjdDj87N" role="3clFbG">
-                  <ref role="1Pybhc" to="wyt6:~Long" resolve="Long" />
-                  <ref role="37wK5l" to="wyt6:~Long.toString(long):java.lang.String" resolve="toString" />
-                  <node concept="3cpWs3" id="r0PjdDj87O" role="37wK5m">
-                    <node concept="3cmrfG" id="r0PjdDj87P" role="3uHU7w">
-                      <property role="3cmrfH" value="1" />
-                    </node>
-                    <node concept="2OqwBi" id="r0PjdDj87Q" role="3uHU7B">
-                      <node concept="pncrf" id="r0PjdDj87R" role="2Oq$k0" />
-                      <node concept="2bSWHS" id="r0PjdDj87S" role="2OqNvi" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="3F0ifn" id="r0PjdDj87T" role="3EZMnx">
-        <property role="3F0ifm" value="=" />
+      <node concept="PMmxH" id="3Ez5cycAmyE" role="3EZMnx">
+        <ref role="PMmxG" node="29s2aQfhT6i" resolve="ConstantPoolElementIndex" />
       </node>
       <node concept="3F0ifn" id="r0PjdDiVkW" role="3EZMnx">
         <property role="3F0ifm" value="CP MethodRef" />
@@ -861,31 +805,8 @@
     <property role="3GE5qa" value="constantPool" />
     <ref role="1XX52x" to="uwnb:1qlCQcqgXB0" resolve="ConstantPoolNameAndType" />
     <node concept="3EZMnI" id="r0PjdDiXWC" role="2wV5jI">
-      <node concept="1HlG4h" id="r0PjdDj8c7" role="3EZMnx">
-        <node concept="1HfYo3" id="r0PjdDj8c8" role="1HlULh">
-          <node concept="3TQlhw" id="r0PjdDj8c9" role="1Hhtcw">
-            <node concept="3clFbS" id="r0PjdDj8ca" role="2VODD2">
-              <node concept="3clFbF" id="r0PjdDj8cb" role="3cqZAp">
-                <node concept="2YIFZM" id="r0PjdDj8cc" role="3clFbG">
-                  <ref role="1Pybhc" to="wyt6:~Long" resolve="Long" />
-                  <ref role="37wK5l" to="wyt6:~Long.toString(long):java.lang.String" resolve="toString" />
-                  <node concept="3cpWs3" id="r0PjdDj8cd" role="37wK5m">
-                    <node concept="3cmrfG" id="r0PjdDj8ce" role="3uHU7w">
-                      <property role="3cmrfH" value="1" />
-                    </node>
-                    <node concept="2OqwBi" id="r0PjdDj8cf" role="3uHU7B">
-                      <node concept="pncrf" id="r0PjdDj8cg" role="2Oq$k0" />
-                      <node concept="2bSWHS" id="r0PjdDj8ch" role="2OqNvi" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="3F0ifn" id="r0PjdDj8ci" role="3EZMnx">
-        <property role="3F0ifm" value="=" />
+      <node concept="PMmxH" id="3Ez5cycAm_o" role="3EZMnx">
+        <ref role="PMmxG" node="29s2aQfhT6i" resolve="ConstantPoolElementIndex" />
       </node>
       <node concept="3F0ifn" id="r0PjdDiXWD" role="3EZMnx">
         <property role="3F0ifm" value="CP NameAndType" />
@@ -912,31 +833,8 @@
     <property role="3GE5qa" value="constantPool" />
     <ref role="1XX52x" to="uwnb:1qlCQcqgXB3" resolve="ConstantPoolString" />
     <node concept="3EZMnI" id="r0PjdDj0CO" role="2wV5jI">
-      <node concept="1HlG4h" id="r0PjdDj3pE" role="3EZMnx">
-        <node concept="1HfYo3" id="r0PjdDj3pG" role="1HlULh">
-          <node concept="3TQlhw" id="r0PjdDj3pI" role="1Hhtcw">
-            <node concept="3clFbS" id="r0PjdDj3pK" role="2VODD2">
-              <node concept="3clFbF" id="r0PjdDj3TY" role="3cqZAp">
-                <node concept="2YIFZM" id="r0PjdDj3VQ" role="3clFbG">
-                  <ref role="37wK5l" to="wyt6:~Long.toString(long):java.lang.String" resolve="toString" />
-                  <ref role="1Pybhc" to="wyt6:~Long" resolve="Long" />
-                  <node concept="3cpWs3" id="r0PjdDj3Lp" role="37wK5m">
-                    <node concept="3cmrfG" id="r0PjdDj3Lv" role="3uHU7w">
-                      <property role="3cmrfH" value="1" />
-                    </node>
-                    <node concept="2OqwBi" id="r0PjdDj3tF" role="3uHU7B">
-                      <node concept="pncrf" id="r0PjdDj3r1" role="2Oq$k0" />
-                      <node concept="2bSWHS" id="r0PjdDj3Az" role="2OqNvi" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="3F0ifn" id="r0PjdDj3pw" role="3EZMnx">
-        <property role="3F0ifm" value="=" />
+      <node concept="PMmxH" id="3Ez5cycAmC4" role="3EZMnx">
+        <ref role="PMmxG" node="29s2aQfhT6i" resolve="ConstantPoolElementIndex" />
       </node>
       <node concept="3F0ifn" id="r0PjdDj0CV" role="3EZMnx">
         <property role="3F0ifm" value="CP String" />
@@ -1039,35 +937,35 @@
   </node>
   <node concept="24kQdi" id="r0PjdDjmzi">
     <property role="3GE5qa" value="instruction" />
-    <ref role="1XX52x" to="uwnb:r0PjdDgWzR" resolve="AALOAD_0" />
+    <ref role="1XX52x" to="uwnb:r0PjdDgWzR" resolve="Aload_0" />
     <node concept="3F0ifn" id="r0PjdDjmzn" role="2wV5jI">
       <property role="3F0ifm" value="AALOAD_0" />
     </node>
   </node>
   <node concept="24kQdi" id="r0PjdDjmzv">
     <property role="3GE5qa" value="instruction" />
-    <ref role="1XX52x" to="uwnb:r0PjdDgWzS" resolve="AALOAD_1" />
+    <ref role="1XX52x" to="uwnb:r0PjdDgWzS" resolve="Aload_1" />
     <node concept="3F0ifn" id="r0PjdDjmzx" role="2wV5jI">
       <property role="3F0ifm" value="AALOAD_1" />
     </node>
   </node>
   <node concept="24kQdi" id="r0PjdDjmzD">
     <property role="3GE5qa" value="instruction" />
-    <ref role="1XX52x" to="uwnb:r0PjdDgWzU" resolve="AALOAD_2" />
+    <ref role="1XX52x" to="uwnb:r0PjdDgWzU" resolve="Aload_2" />
     <node concept="3F0ifn" id="r0PjdDjmzF" role="2wV5jI">
       <property role="3F0ifm" value="AALOAD_2" />
     </node>
   </node>
   <node concept="24kQdi" id="r0PjdDjmzN">
     <property role="3GE5qa" value="instruction" />
-    <ref role="1XX52x" to="uwnb:r0PjdDgWzT" resolve="AALOAD_3" />
+    <ref role="1XX52x" to="uwnb:r0PjdDgWzT" resolve="Aload_3" />
     <node concept="3F0ifn" id="r0PjdDjmzP" role="2wV5jI">
       <property role="3F0ifm" value="AALOAD_3" />
     </node>
   </node>
   <node concept="24kQdi" id="r0PjdDjmzX">
     <property role="3GE5qa" value="instruction" />
-    <ref role="1XX52x" to="uwnb:r0PjdDi9Uk" resolve="AReturn" />
+    <ref role="1XX52x" to="uwnb:r0PjdDi9Uk" resolve="Areturn" />
     <node concept="3F0ifn" id="r0PjdDjmzZ" role="2wV5jI">
       <property role="3F0ifm" value="AReturn" />
     </node>
@@ -1103,6 +1001,216 @@
     <ref role="1XX52x" to="uwnb:r0PjdDhU8b" resolve="Return" />
     <node concept="3F0ifn" id="r0PjdDjm$T" role="2wV5jI">
       <property role="3F0ifm" value="Return" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="6vIFDs2MQG3">
+    <property role="3GE5qa" value="constantPool" />
+    <ref role="1XX52x" to="uwnb:6vIFDs2LAOt" resolve="ConstantPoolDouble" />
+    <node concept="3EZMnI" id="6vIFDs2MQG5" role="2wV5jI">
+      <node concept="PMmxH" id="3Ez5cycAmdc" role="3EZMnx">
+        <ref role="PMmxG" node="29s2aQfhT6i" resolve="ConstantPoolElementIndex" />
+      </node>
+      <node concept="3F0ifn" id="6vIFDs2MQGi" role="3EZMnx">
+        <property role="3F0ifm" value="CP Double" />
+      </node>
+      <node concept="3F1sOY" id="6vIFDs2MQPa" role="3EZMnx">
+        <ref role="1NtTu8" to="uwnb:6vIFDs2LAOu" />
+      </node>
+      <node concept="3F1sOY" id="6vIFDs2MR9V" role="3EZMnx">
+        <ref role="1NtTu8" to="uwnb:6vIFDs2LAOv" />
+      </node>
+      <node concept="2iRfu4" id="6vIFDs2MQGk" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="6vIFDs2MRej">
+    <property role="3GE5qa" value="constantPool" />
+    <ref role="1XX52x" to="uwnb:1qlCQcqgXAX" resolve="ConstantPoolFieldref" />
+    <node concept="3EZMnI" id="6vIFDs2MRel" role="2wV5jI">
+      <node concept="PMmxH" id="3Ez5cycAmdk" role="3EZMnx">
+        <ref role="PMmxG" node="29s2aQfhT6i" resolve="ConstantPoolElementIndex" />
+      </node>
+      <node concept="3F0ifn" id="6vIFDs2MRey" role="3EZMnx">
+        <property role="3F0ifm" value="CP Fieldref" />
+      </node>
+      <node concept="3F1sOY" id="6vIFDs2MRez" role="3EZMnx">
+        <ref role="1NtTu8" to="uwnb:1qlCQcqhYWp" />
+      </node>
+      <node concept="2iRfu4" id="6vIFDs2MRe$" role="2iSdaV" />
+      <node concept="3F0ifn" id="6vIFDs2MRe_" role="3EZMnx">
+        <property role="3F0ifm" value="." />
+        <node concept="11L4FC" id="6vIFDs2MReA" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="11LMrY" id="6vIFDs2MReB" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F1sOY" id="6vIFDs2MReC" role="3EZMnx">
+        <ref role="1NtTu8" to="uwnb:1qlCQcqhYWn" />
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="6vIFDs2MRr6">
+    <property role="3GE5qa" value="constantPool" />
+    <ref role="1XX52x" to="uwnb:1qlCQcqgXB8" resolve="ConstantPoolFloat" />
+    <node concept="3EZMnI" id="6vIFDs2MRr8" role="2wV5jI">
+      <node concept="PMmxH" id="3Ez5cycAmg1" role="3EZMnx">
+        <ref role="PMmxG" node="29s2aQfhT6i" resolve="ConstantPoolElementIndex" />
+      </node>
+      <node concept="3F0ifn" id="6vIFDs2MRrl" role="3EZMnx">
+        <property role="3F0ifm" value="CP Float" />
+      </node>
+      <node concept="3F1sOY" id="6vIFDs2MRrm" role="3EZMnx">
+        <ref role="1NtTu8" to="uwnb:6vIFDs2M61Z" />
+      </node>
+      <node concept="2iRfu4" id="6vIFDs2MRrn" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="6vIFDs2MRGq">
+    <property role="3GE5qa" value="constantPool" />
+    <ref role="1XX52x" to="uwnb:1qlCQcqgXB6" resolve="ConstantPoolInteger" />
+    <node concept="3EZMnI" id="6vIFDs2MRGs" role="2wV5jI">
+      <node concept="PMmxH" id="3Ez5cycAmiD" role="3EZMnx">
+        <ref role="PMmxG" node="29s2aQfhT6i" resolve="ConstantPoolElementIndex" />
+      </node>
+      <node concept="3F0ifn" id="6vIFDs2MRGD" role="3EZMnx">
+        <property role="3F0ifm" value="CP Integer" />
+      </node>
+      <node concept="3F1sOY" id="6vIFDs2MRT8" role="3EZMnx">
+        <ref role="1NtTu8" to="uwnb:6vIFDs2M61T" />
+      </node>
+      <node concept="2iRfu4" id="6vIFDs2MRGF" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="6vIFDs2MS66">
+    <property role="3GE5qa" value="constantPool" />
+    <ref role="1XX52x" to="uwnb:1qlCQcqgXB1" resolve="ConstantPoolInterfaceMethodref" />
+    <node concept="3EZMnI" id="6vIFDs2MS68" role="2wV5jI">
+      <node concept="PMmxH" id="3Ez5cycAmlj" role="3EZMnx">
+        <ref role="PMmxG" node="29s2aQfhT6i" resolve="ConstantPoolElementIndex" />
+      </node>
+      <node concept="3F0ifn" id="6vIFDs2MS6l" role="3EZMnx">
+        <property role="3F0ifm" value="CP MethodRef" />
+      </node>
+      <node concept="3F1sOY" id="6vIFDs2MS6m" role="3EZMnx">
+        <ref role="1NtTu8" to="uwnb:1qlCQcqhYWt" />
+      </node>
+      <node concept="2iRfu4" id="6vIFDs2MS6n" role="2iSdaV" />
+      <node concept="3F0ifn" id="6vIFDs2MS6o" role="3EZMnx">
+        <property role="3F0ifm" value="." />
+        <node concept="11L4FC" id="6vIFDs2MS6p" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="11LMrY" id="6vIFDs2MS6q" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F1sOY" id="6vIFDs2MS6r" role="3EZMnx">
+        <ref role="1NtTu8" to="uwnb:1qlCQcqhYWu" />
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="6vIFDs2MSiT">
+    <property role="3GE5qa" value="constantPool" />
+    <ref role="1XX52x" to="uwnb:1qlCQcqgXB2" resolve="ConstantPoolInvokeDynamic" />
+    <node concept="3EZMnI" id="6vIFDs2MSiV" role="2wV5jI">
+      <node concept="PMmxH" id="3Ez5cycAmqz" role="3EZMnx">
+        <ref role="PMmxG" node="29s2aQfhT6i" resolve="ConstantPoolElementIndex" />
+      </node>
+      <node concept="3F0ifn" id="6vIFDs2MSj8" role="3EZMnx">
+        <property role="3F0ifm" value="CP InvokeDynamic" />
+      </node>
+      <node concept="3F1sOY" id="6vIFDs2MSj9" role="3EZMnx">
+        <ref role="1NtTu8" to="uwnb:6vIFDs2MeSd" />
+      </node>
+      <node concept="2iRfu4" id="6vIFDs2MSja" role="2iSdaV" />
+      <node concept="3F1sOY" id="6vIFDs2MSje" role="3EZMnx">
+        <ref role="1NtTu8" to="uwnb:6vIFDs2MeSf" />
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="6vIFDs2MS$9">
+    <property role="3GE5qa" value="constantPool" />
+    <ref role="1XX52x" to="uwnb:1qlCQcqgXAW" resolve="ConstantPoolLong" />
+    <node concept="3EZMnI" id="6vIFDs2MS$b" role="2wV5jI">
+      <node concept="PMmxH" id="3Ez5cycAmqI" role="3EZMnx">
+        <ref role="PMmxG" node="29s2aQfhT6i" resolve="ConstantPoolElementIndex" />
+      </node>
+      <node concept="3F0ifn" id="6vIFDs2MS$o" role="3EZMnx">
+        <property role="3F0ifm" value="CP Long" />
+      </node>
+      <node concept="3F1sOY" id="6vIFDs2MS$p" role="3EZMnx">
+        <ref role="1NtTu8" to="uwnb:6vIFDs2L_bv" />
+      </node>
+      <node concept="2iRfu4" id="6vIFDs2MS$q" role="2iSdaV" />
+      <node concept="3F1sOY" id="6vIFDs2MS$u" role="3EZMnx">
+        <ref role="1NtTu8" to="uwnb:6vIFDs2L_bw" />
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="6vIFDs2MSPf">
+    <property role="3GE5qa" value="constantPool" />
+    <ref role="1XX52x" to="uwnb:1qlCQcqgXB5" resolve="ConstantPoolMethodHandle" />
+    <node concept="3EZMnI" id="6vIFDs2MSPh" role="2wV5jI">
+      <node concept="PMmxH" id="3Ez5cycAmtn" role="3EZMnx">
+        <ref role="PMmxG" node="29s2aQfhT6i" resolve="ConstantPoolElementIndex" />
+      </node>
+      <node concept="3F0ifn" id="6vIFDs2MSPu" role="3EZMnx">
+        <property role="3F0ifm" value="CP MethodHandle" />
+      </node>
+      <node concept="3F1sOY" id="6vIFDs2MSPv" role="3EZMnx">
+        <ref role="1NtTu8" to="uwnb:6vIFDs2M93t" />
+      </node>
+      <node concept="2iRfu4" id="6vIFDs2MSPw" role="2iSdaV" />
+      <node concept="3F1sOY" id="6vIFDs2MSP$" role="3EZMnx">
+        <ref role="1NtTu8" to="uwnb:6vIFDs2M93v" />
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="6vIFDs2MTep">
+    <property role="3GE5qa" value="constantPool" />
+    <ref role="1XX52x" to="uwnb:1qlCQcqgXB4" resolve="ConstantPoolMethodType" />
+    <node concept="3EZMnI" id="6vIFDs2MTer" role="2wV5jI">
+      <node concept="PMmxH" id="3Ez5cycAmw0" role="3EZMnx">
+        <ref role="PMmxG" node="29s2aQfhT6i" resolve="ConstantPoolElementIndex" />
+      </node>
+      <node concept="3F0ifn" id="6vIFDs2MTeC" role="3EZMnx">
+        <property role="3F0ifm" value="CP MethodType" />
+      </node>
+      <node concept="3F1sOY" id="6vIFDs2MTeD" role="3EZMnx">
+        <ref role="1NtTu8" to="uwnb:6vIFDs2McLo" />
+      </node>
+      <node concept="2iRfu4" id="6vIFDs2MTeE" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="PKFIW" id="29s2aQfhT6i">
+    <property role="TrG5h" value="ConstantPoolElementIndex" />
+    <ref role="1XX52x" to="uwnb:1qlCQcqgXdY" resolve="ConstantPoolElement" />
+    <node concept="3EZMnI" id="29s2aQfhT6t" role="2wV5jI">
+      <node concept="1HlG4h" id="29s2aQfhT6$" role="3EZMnx">
+        <node concept="1HfYo3" id="29s2aQfhT6_" role="1HlULh">
+          <node concept="3TQlhw" id="29s2aQfhT6A" role="1Hhtcw">
+            <node concept="3clFbS" id="29s2aQfhT6B" role="2VODD2">
+              <node concept="3clFbF" id="3Ez5cycA_8V" role="3cqZAp">
+                <node concept="2YIFZM" id="3Ez5cycA_aS" role="3clFbG">
+                  <ref role="37wK5l" to="wyt6:~Long.toString(long):java.lang.String" resolve="toString" />
+                  <ref role="1Pybhc" to="wyt6:~Long" resolve="Long" />
+                  <node concept="2OqwBi" id="OFkQGRR6oH" role="37wK5m">
+                    <node concept="pncrf" id="OFkQGRR6lY" role="2Oq$k0" />
+                    <node concept="2qgKlT" id="OFkQGRR6w3" role="2OqNvi">
+                      <ref role="37wK5l" to="juvg:OFkQGRQU2Z" resolve="index" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3F0ifn" id="29s2aQfhT6I" role="3EZMnx">
+        <property role="3F0ifm" value="=" />
+      </node>
+      <node concept="2iRfu4" id="29s2aQfhT6w" role="2iSdaV" />
     </node>
   </node>
 </model>

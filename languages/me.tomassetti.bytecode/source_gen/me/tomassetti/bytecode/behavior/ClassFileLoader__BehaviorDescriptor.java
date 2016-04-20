@@ -119,8 +119,48 @@ public final class ClassFileLoader__BehaviorDescriptor extends BaseBHDescriptor 
         System.out.println("Constant pool index " + constantPoolIndex);
         dis.readFully(u1);
         long tag = ((long) ClassFileLoader__BehaviorDescriptor.toInteger_id1qlCQcqgEyg.invoke(__thisNode__, u1));
-        System.out.println("TAG " + tag);
+        System.out.println("  TAG " + tag);
         switch ((int) tag) {
+          case 1:
+            {
+              SNode cp = SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a43d9c7L, "me.tomassetti.bytecode.structure.ConstantPoolUtf8")));
+              SPropertyOperations.set(cp, MetaAdapterFactory.getProperty(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a43d9c7L, 0x1695a3631a47083aL, "value"), mds.readString((int) mds.readInt2AsLong()));
+              System.out.println("  STR[" + SPropertyOperations.getString(cp, MetaAdapterFactory.getProperty(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a43d9c7L, 0x1695a3631a47083aL, "value")) + "]");
+              ListSequence.fromList(SLinkOperations.getChildren(SLinkOperations.getTarget(__thisNode__, MetaAdapterFactory.getContainmentLink(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a40c7ecL, 0x1695a3631a40c7edL, "classFile")), MetaAdapterFactory.getContainmentLink(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x40880d8921831cd4L, 0x1695a3631a449987L, "constantPool"))).addElement(cp);
+            }
+            break;
+          case 3:
+            {
+              SNode cp = SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a43d9c6L, "me.tomassetti.bytecode.structure.ConstantPoolInteger")));
+              SLinkOperations.setTarget(cp, MetaAdapterFactory.getContainmentLink(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a43d9c6L, 0x67eeae9702c86079L, "bytes"), mds.readInt4AsNode());
+              ListSequence.fromList(SLinkOperations.getChildren(SLinkOperations.getTarget(__thisNode__, MetaAdapterFactory.getContainmentLink(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a40c7ecL, 0x1695a3631a40c7edL, "classFile")), MetaAdapterFactory.getContainmentLink(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x40880d8921831cd4L, 0x1695a3631a449987L, "constantPool"))).addElement(cp);
+            }
+            break;
+          case 4:
+            {
+              SNode cp = SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a43d9c8L, "me.tomassetti.bytecode.structure.ConstantPoolFloat")));
+              SLinkOperations.setTarget(cp, MetaAdapterFactory.getContainmentLink(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a43d9c8L, 0x67eeae9702c8607fL, "bytes"), mds.readInt4AsNode());
+              ListSequence.fromList(SLinkOperations.getChildren(SLinkOperations.getTarget(__thisNode__, MetaAdapterFactory.getContainmentLink(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a40c7ecL, 0x1695a3631a40c7edL, "classFile")), MetaAdapterFactory.getContainmentLink(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x40880d8921831cd4L, 0x1695a3631a449987L, "constantPool"))).addElement(cp);
+            }
+            break;
+          case 5:
+            {
+              SNode cp = SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a43d9bcL, "me.tomassetti.bytecode.structure.ConstantPoolLong")));
+              SLinkOperations.setTarget(cp, MetaAdapterFactory.getContainmentLink(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a43d9bcL, 0x67eeae9702c652dfL, "highBytes"), mds.readInt4AsNode());
+              SLinkOperations.setTarget(cp, MetaAdapterFactory.getContainmentLink(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a43d9bcL, 0x67eeae9702c652e0L, "lowBytes"), mds.readInt4AsNode());
+              ListSequence.fromList(SLinkOperations.getChildren(SLinkOperations.getTarget(__thisNode__, MetaAdapterFactory.getContainmentLink(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a40c7ecL, 0x1695a3631a40c7edL, "classFile")), MetaAdapterFactory.getContainmentLink(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x40880d8921831cd4L, 0x1695a3631a449987L, "constantPool"))).addElement(cp);
+              constantPoolIndex++;
+            }
+            break;
+          case 6:
+            {
+              SNode cp = SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x67eeae9702c66d1dL, "me.tomassetti.bytecode.structure.ConstantPoolDouble")));
+              SLinkOperations.setTarget(cp, MetaAdapterFactory.getContainmentLink(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x67eeae9702c66d1dL, 0x67eeae9702c66d1eL, "highBytes"), mds.readInt4AsNode());
+              SLinkOperations.setTarget(cp, MetaAdapterFactory.getContainmentLink(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x67eeae9702c66d1dL, 0x67eeae9702c66d1fL, "lowBytes"), mds.readInt4AsNode());
+              ListSequence.fromList(SLinkOperations.getChildren(SLinkOperations.getTarget(__thisNode__, MetaAdapterFactory.getContainmentLink(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a40c7ecL, 0x1695a3631a40c7edL, "classFile")), MetaAdapterFactory.getContainmentLink(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x40880d8921831cd4L, 0x1695a3631a449987L, "constantPool"))).addElement(cp);
+              constantPoolIndex++;
+            }
+            break;
           case 7:
             {
               SNode cp = SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a43d9beL, "me.tomassetti.bytecode.structure.ConstantPoolClass")));
@@ -128,10 +168,10 @@ public final class ClassFileLoader__BehaviorDescriptor extends BaseBHDescriptor 
               ListSequence.fromList(SLinkOperations.getChildren(SLinkOperations.getTarget(__thisNode__, MetaAdapterFactory.getContainmentLink(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a40c7ecL, 0x1695a3631a40c7edL, "classFile")), MetaAdapterFactory.getContainmentLink(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x40880d8921831cd4L, 0x1695a3631a449987L, "constantPool"))).addElement(cp);
             }
             break;
-          case 1:
+          case 8:
             {
-              SNode cp = SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a43d9c7L, "me.tomassetti.bytecode.structure.ConstantPoolUtf8")));
-              SPropertyOperations.set(cp, MetaAdapterFactory.getProperty(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a43d9c7L, 0x1695a3631a47083aL, "value"), mds.readString((int) mds.readInt2AsLong()));
+              SNode cp = SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a43d9c3L, "me.tomassetti.bytecode.structure.ConstantPoolString")));
+              SLinkOperations.setTarget(cp, MetaAdapterFactory.getContainmentLink(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a43d9c3L, 0x1695a3631a4936dbL, "stringIndex"), mds.readInt2AsNode());
               ListSequence.fromList(SLinkOperations.getChildren(SLinkOperations.getTarget(__thisNode__, MetaAdapterFactory.getContainmentLink(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a40c7ecL, 0x1695a3631a40c7edL, "classFile")), MetaAdapterFactory.getContainmentLink(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x40880d8921831cd4L, 0x1695a3631a449987L, "constantPool"))).addElement(cp);
             }
             break;
@@ -167,10 +207,26 @@ public final class ClassFileLoader__BehaviorDescriptor extends BaseBHDescriptor 
               ListSequence.fromList(SLinkOperations.getChildren(SLinkOperations.getTarget(__thisNode__, MetaAdapterFactory.getContainmentLink(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a40c7ecL, 0x1695a3631a40c7edL, "classFile")), MetaAdapterFactory.getContainmentLink(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x40880d8921831cd4L, 0x1695a3631a449987L, "constantPool"))).addElement(cp);
             }
             break;
-          case 8:
+          case 15:
             {
-              SNode cp = SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a43d9c3L, "me.tomassetti.bytecode.structure.ConstantPoolString")));
-              SLinkOperations.setTarget(cp, MetaAdapterFactory.getContainmentLink(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a43d9c3L, 0x1695a3631a4936dbL, "stringIndex"), mds.readInt2AsNode());
+              SNode cp = SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a43d9c5L, "me.tomassetti.bytecode.structure.ConstantPoolMethodHandle")));
+              SLinkOperations.setTarget(cp, MetaAdapterFactory.getContainmentLink(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a43d9c5L, 0x67eeae9702c890ddL, "referenceKind"), mds.readInt1AsNode());
+              SLinkOperations.setTarget(cp, MetaAdapterFactory.getContainmentLink(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a43d9c5L, 0x67eeae9702c890dfL, "referenceIndex"), mds.readInt2AsNode());
+              ListSequence.fromList(SLinkOperations.getChildren(SLinkOperations.getTarget(__thisNode__, MetaAdapterFactory.getContainmentLink(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a40c7ecL, 0x1695a3631a40c7edL, "classFile")), MetaAdapterFactory.getContainmentLink(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x40880d8921831cd4L, 0x1695a3631a449987L, "constantPool"))).addElement(cp);
+            }
+            break;
+          case 16:
+            {
+              SNode cp = SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a43d9c4L, "me.tomassetti.bytecode.structure.ConstantPoolMethodType")));
+              SLinkOperations.setTarget(cp, MetaAdapterFactory.getContainmentLink(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a43d9c4L, 0x67eeae9702c8cc58L, "descriptorIndex"), mds.readInt2AsNode());
+              ListSequence.fromList(SLinkOperations.getChildren(SLinkOperations.getTarget(__thisNode__, MetaAdapterFactory.getContainmentLink(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a40c7ecL, 0x1695a3631a40c7edL, "classFile")), MetaAdapterFactory.getContainmentLink(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x40880d8921831cd4L, 0x1695a3631a449987L, "constantPool"))).addElement(cp);
+            }
+            break;
+          case 18:
+            {
+              SNode cp = SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a43d9c2L, "me.tomassetti.bytecode.structure.ConstantPoolInvokeDynamic")));
+              SLinkOperations.setTarget(cp, MetaAdapterFactory.getContainmentLink(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a43d9c2L, 0x67eeae9702c8ee0dL, "bootstrapMethodAttrIndex"), mds.readInt2AsNode());
+              SLinkOperations.setTarget(cp, MetaAdapterFactory.getContainmentLink(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a43d9c2L, 0x67eeae9702c8ee0fL, "nameAndTypeIndex"), mds.readInt2AsNode());
               ListSequence.fromList(SLinkOperations.getChildren(SLinkOperations.getTarget(__thisNode__, MetaAdapterFactory.getContainmentLink(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a40c7ecL, 0x1695a3631a40c7edL, "classFile")), MetaAdapterFactory.getContainmentLink(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x40880d8921831cd4L, 0x1695a3631a449987L, "constantPool"))).addElement(cp);
             }
             break;
@@ -323,19 +379,19 @@ public final class ClassFileLoader__BehaviorDescriptor extends BaseBHDescriptor 
             i = i.add(BigInteger.ONE);
             break;
           case 42:
-            ListSequence.fromList(instructions).addElement(SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x6c0d5336943c8f7L, "me.tomassetti.bytecode.structure.AALOAD_0"))));
+            ListSequence.fromList(instructions).addElement(SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x6c0d5336943c8f7L, "me.tomassetti.bytecode.structure.Aload_0"))));
             break;
           case 43:
-            ListSequence.fromList(instructions).addElement(SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x6c0d5336943c8f8L, "me.tomassetti.bytecode.structure.AALOAD_1"))));
+            ListSequence.fromList(instructions).addElement(SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x6c0d5336943c8f8L, "me.tomassetti.bytecode.structure.Aload_1"))));
             break;
           case 44:
-            ListSequence.fromList(instructions).addElement(SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x6c0d5336943c8faL, "me.tomassetti.bytecode.structure.AALOAD_2"))));
+            ListSequence.fromList(instructions).addElement(SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x6c0d5336943c8faL, "me.tomassetti.bytecode.structure.Aload_2"))));
             break;
           case 45:
-            ListSequence.fromList(instructions).addElement(SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x6c0d5336943c8f9L, "me.tomassetti.bytecode.structure.AALOAD_3"))));
+            ListSequence.fromList(instructions).addElement(SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x6c0d5336943c8f9L, "me.tomassetti.bytecode.structure.Aload_3"))));
             break;
           case 176:
-            ListSequence.fromList(instructions).addElement(SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x6c0d53369489e94L, "me.tomassetti.bytecode.structure.AReturn"))));
+            ListSequence.fromList(instructions).addElement(SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x6c0d53369489e94L, "me.tomassetti.bytecode.structure.Areturn"))));
             break;
           case 177:
             ListSequence.fromList(instructions).addElement(SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x6c0d5336947a20bL, "me.tomassetti.bytecode.structure.Return"))));

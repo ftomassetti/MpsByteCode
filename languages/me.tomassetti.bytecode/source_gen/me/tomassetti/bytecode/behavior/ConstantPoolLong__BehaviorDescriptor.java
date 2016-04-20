@@ -25,14 +25,18 @@ public final class ConstantPoolLong__BehaviorDescriptor extends BaseBHDescriptor
   private static final BehaviorRegistry REGISTRY = ConceptRegistry.getInstance().getBehaviorRegistry();
 
   public static final SMethod<ConstantPoolElementType> tag_id1qlCQcqgXe2 = new SMethodBuilder<ConstantPoolElementType>(new SJavaCompoundTypeImpl(ConstantPoolElementType.class)).name("tag").modifiers(SModifiersImpl.create(8, AccessPrivileges.PUBLIC)).concept(CONCEPT).id("1qlCQcqgXe2").registry(REGISTRY).build();
+  public static final SMethod<Boolean> isDoubleElement_id6vIFDs2N3Ak = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isDoubleElement").modifiers(SModifiersImpl.create(0, AccessPrivileges.PUBLIC)).concept(CONCEPT).id("6vIFDs2N3Ak").registry(REGISTRY).build();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(tag_id1qlCQcqgXe2);
+  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(tag_id1qlCQcqgXe2, isDoubleElement_id6vIFDs2N3Ak);
 
   private static void ___init___(@NotNull SNode __thisNode__) {
   }
 
   /*package*/ static ConstantPoolElementType tag_id1qlCQcqgXe2(@NotNull SNode __thisNode__) {
     return ConstantPoolElementType.CONSTANT_Long;
+  }
+  /*package*/ static boolean isDoubleElement_id6vIFDs2N3Ak(@NotNull SNode __thisNode__) {
+    return true;
   }
 
   /*package*/ ConstantPoolLong__BehaviorDescriptor() {
@@ -53,6 +57,8 @@ public final class ConstantPoolLong__BehaviorDescriptor extends BaseBHDescriptor
     switch (methodIndex) {
       case 0:
         return (T) ((ConstantPoolElementType) tag_id1qlCQcqgXe2(node));
+      case 1:
+        return (T) ((Boolean) isDoubleElement_id6vIFDs2N3Ak(node));
       default:
         throw new BHMethodNotFoundException(this, method);
     }
