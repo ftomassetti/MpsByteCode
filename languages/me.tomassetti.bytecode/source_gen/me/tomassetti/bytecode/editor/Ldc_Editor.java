@@ -26,7 +26,7 @@ public class Ldc_Editor extends DefaultNodeEditor {
     return editorCell;
   }
   private EditorCell createConstant_pqf680_a0(EditorContext editorContext, SNode node) {
-    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "LDC");
+    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "ldc");
     editorCell.setCellId("Constant_pqf680_a0");
     editorCell.setDefaultText("");
     return editorCell;

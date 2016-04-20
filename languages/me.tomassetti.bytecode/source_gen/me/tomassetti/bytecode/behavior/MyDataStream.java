@@ -66,12 +66,21 @@ public class MyDataStream {
       return pow(256, exp) * asUnsigned(b[index]) + toInteger(b, index + 1);
     }
   }
+
+  private static int unsignedByte(byte b) {
+    if (b < 0) {
+      return 256 + b;
+    } else {
+      return b;
+    }
+  }
+
   private static BigInteger toBigInteger(byte[] b, int index) {
     int exp = b.length - index - 1;
     if (exp == 0) {
-      return BigInteger.valueOf(b[index]);
+      return BigInteger.valueOf(unsignedByte(b[index]));
     } else {
-      return BigInteger.valueOf(256).pow(exp).multiply(BigInteger.valueOf(b[index])).add(toBigInteger(b, index + 1));
+      return BigInteger.valueOf(256).pow(exp).multiply(BigInteger.valueOf(unsignedByte(b[index]))).add(toBigInteger(b, index + 1));
     }
   }
 
@@ -122,6 +131,16 @@ public class MyDataStream {
       dis.readFully(u4);
       SNode node = SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a534bf3L, "me.tomassetti.bytecode.structure.Unsigned4Bytes")));
       SPropertyOperations.set(node, MetaAdapterFactory.getProperty(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a534bf3L, 0x1695a3631a534bf4L, "value"), toBigInteger(u4).toString());
+      return node;
+    } catch (IOException e) {
+      throw new RuntimeException(e);
+    }
+  }
+  public SNode readInt4AsSignedNode() throws IOException {
+    try {
+      int value = dis.readInt();
+      SNode node = SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x153bbfb0a63f2540L, "me.tomassetti.bytecode.structure.Signed4Bytes")));
+      SPropertyOperations.set(node, MetaAdapterFactory.getProperty(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x153bbfb0a63f2540L, 0x153bbfb0a63f2541L, "value"), "" + (value));
       return node;
     } catch (IOException e) {
       throw new RuntimeException(e);

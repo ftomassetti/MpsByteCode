@@ -33,6 +33,7 @@ import jetbrains.mps.internal.collections.runtime.IMapping;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
 import jetbrains.mps.internal.collections.runtime.CollectionSequence;
 import java.util.ArrayList;
+import jetbrains.mps.internal.collections.runtime.IRightCombinator;
 import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
@@ -297,15 +298,11 @@ public final class ClassFileLoader__BehaviorDescriptor extends BaseBHDescriptor 
     try {
       SNode methodInfo = SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a4ea152L, "me.tomassetti.bytecode.structure.MethodInfo")));
       SLinkOperations.setTarget(methodInfo, MetaAdapterFactory.getContainmentLink(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a4ea152L, 0x1695a3631a4ea153L, "accessFlags"), ClassFileLoader__BehaviorDescriptor.loadMethodAccessFlags_id1qlCQcqkGIa.invoke(__thisNode__, mds));
-      SLinkOperations.setTarget(methodInfo, MetaAdapterFactory.getContainmentLink(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a4ea152L, 0x1695a3631a4ea158L, "nameIndex"), mds.readInt2AsNode());
-      System.out.println("Method name " + (long) Unsigned2Bytes__BehaviorDescriptor.toLong_id1qlCQcqjgik.invoke(SLinkOperations.getTarget(methodInfo, MetaAdapterFactory.getContainmentLink(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a4ea152L, 0x1695a3631a4ea158L, "nameIndex"))));
-      SLinkOperations.setTarget(methodInfo, MetaAdapterFactory.getContainmentLink(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a4ea152L, 0x1695a3631a4ea155L, "descriptorIndex"), mds.readInt2AsNode());
+      SLinkOperations.setTarget(methodInfo, MetaAdapterFactory.getContainmentLink(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a4ea152L, 0x1695a3631a4ea158L, "nameIndex"), ClassFileLoader__BehaviorDescriptor.toUtf8Reference_idOFkQGRSQa2.invoke(__thisNode__, ((long) (long) Unsigned2Bytes__BehaviorDescriptor.toLong_id1qlCQcqjgik.invoke(mds.readInt2AsNode()))));
+      System.out.println("Method name " + SLinkOperations.getTarget(SLinkOperations.getTarget(methodInfo, MetaAdapterFactory.getContainmentLink(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a4ea152L, 0x1695a3631a4ea158L, "nameIndex")), MetaAdapterFactory.getReferenceLink(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0xd2b536b37df3897L, 0xd2b536b37df3898L, "element")));
+      SLinkOperations.setTarget(methodInfo, MetaAdapterFactory.getContainmentLink(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a4ea152L, 0x1695a3631a4ea155L, "descriptorIndex"), ClassFileLoader__BehaviorDescriptor.toUtf8Reference_idOFkQGRSQa2.invoke(__thisNode__, ((long) (long) Unsigned2Bytes__BehaviorDescriptor.toLong_id1qlCQcqjgik.invoke(mds.readInt2AsNode()))));
       long attributesCount = mds.readInt2AsLong();
-      System.out.println("Method att count " + attributesCount);
-
       for (int i = 0; i < attributesCount; i++) {
-        System.out.println("Reading method attribute " + i + " of " + attributesCount);
-
         ListSequence.fromList(SLinkOperations.getChildren(methodInfo, MetaAdapterFactory.getContainmentLink(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a4ea152L, 0x1695a3631a525217L, "attributes"))).addElement(ClassFileLoader__BehaviorDescriptor.loadAttributeInfo_id1qlCQcqktGl.invoke(__thisNode__, mds));
       }
 
@@ -388,6 +385,7 @@ public final class ClassFileLoader__BehaviorDescriptor extends BaseBHDescriptor 
       ListSequence.fromList(SLinkOperations.getChildren(data, MetaAdapterFactory.getContainmentLink(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x6c0d53369382668L, 0x6c0d53369382676L, "instructions"))).addSequence(ListSequence.fromList(ClassFileLoader__BehaviorDescriptor.readCodeArray_idr0PjdDggI6.invoke(__thisNode__, mds)));
       SLinkOperations.setTarget(data, MetaAdapterFactory.getContainmentLink(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x6c0d53369382668L, 0x6c0d5336938267aL, "exceptionTable"), SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x6c0d53369382685L, "me.tomassetti.bytecode.structure.ExceptionTable"))));
       long excTableLength = mds.readInt2AsLong();
+      System.out.println("EXC TABLE LENGTH " + excTableLength);
       for (long i = 0; i < excTableLength; i++) {
         ListSequence.fromList(SLinkOperations.getChildren(SLinkOperations.getTarget(data, MetaAdapterFactory.getContainmentLink(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x6c0d53369382668L, 0x6c0d5336938267aL, "exceptionTable")), MetaAdapterFactory.getContainmentLink(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x6c0d53369382685L, 0x6c0d53369382687L, "elements"))).addElement(ClassFileLoader__BehaviorDescriptor.readExceptionTableElement_idOFkQGS2cVz.invoke(__thisNode__, mds));
       }
@@ -419,7 +417,7 @@ public final class ClassFileLoader__BehaviorDescriptor extends BaseBHDescriptor 
       for (SContainmentLink link : CollectionSequence.fromCollection(concept.getContainmentLinks())) {
         if (!(link.getName().equals("smodelAttribute"))) {
           if (link.isMultiple() || link.isOptional()) {
-            throw new RuntimeException("link multiple or optional " + link.getName());
+            throw new RuntimeException("link multiple or optional " + link.getName() + " for concept " + concept.getQualifiedName());
           }
           if (link.getTargetConcept().equals(MetaAdapterFactory.getConcept(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a534cdcL, "me.tomassetti.bytecode.structure.Unsigned1Byte"))) {
             SNode param = mds.readInt1AsNode();
@@ -459,13 +457,65 @@ public final class ClassFileLoader__BehaviorDescriptor extends BaseBHDescriptor 
         int code = mds.readInt1AsInt();
         i = i.add(BigInteger.ONE);
         if (MapSequence.fromMap(OpCodeToInstructionMapping.OPCODE_TO_INSTRUCTION).containsKey(code) && MapSequence.fromMap(OpCodeToInstructionMapping.OPCODE_TO_INSTRUCTION).get(code) != null) {
+          int startingIndex = ListSequence.fromList(instructions).foldRight(0, new IRightCombinator<SNode, Integer>() {
+            public Integer combine(SNode it, Integer s) {
+              return s + (int) Instruction__BehaviorDescriptor.length_id1kVJV2A9Wse.invoke(it);
+            }
+          });
+
+          System.out.println("READING " + startingIndex + " " + MapSequence.fromMap(OpCodeToInstructionMapping.OPCODE_TO_INSTRUCTION).get(code).getName() + " array length " + length);
           i = ClassFileLoader__BehaviorDescriptor.parse_idOFkQGRVb6M.invoke(__thisNode__, mds, i, MapSequence.fromMap(OpCodeToInstructionMapping.OPCODE_TO_INSTRUCTION).get(code), instructions);
         } else {
           switch (code) {
             case 170:
-              throw new UnsupportedOperationException("TABLE SWITCH NOT IMPLEMENTED");
+              {
+                int startingIndex = ListSequence.fromList(instructions).foldRight(0, new IRightCombinator<SNode, Integer>() {
+                  public Integer combine(SNode it, Integer s) {
+                    return s + (int) Instruction__BehaviorDescriptor.length_id1kVJV2A9Wse.invoke(it);
+                  }
+                });
+                int padding = (startingIndex + 1) % 4;
+                for (int pi = 0; pi < padding; pi++) {
+                  mds.readInt1AsInt();
+                }
+                i = i.add(BigInteger.valueOf(padding));
+                SNode node = SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x153bbfb0a617d3c9L, "me.tomassetti.bytecode.structure.Tableswitch")));
+                SLinkOperations.setTarget(node, MetaAdapterFactory.getContainmentLink(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x153bbfb0a617d3c9L, 0x153bbfb0a617d3cbL, "default"), mds.readInt4AsSignedNode());
+                SLinkOperations.setTarget(node, MetaAdapterFactory.getContainmentLink(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x153bbfb0a617d3c9L, 0x153bbfb0a617d3ccL, "low"), mds.readInt4AsSignedNode());
+                SLinkOperations.setTarget(node, MetaAdapterFactory.getContainmentLink(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x153bbfb0a617d3c9L, 0x153bbfb0a617d3cdL, "high"), mds.readInt4AsSignedNode());
+                i = i.add(BigInteger.valueOf(12));
+                int howManyJumpOffsets = SPropertyOperations.getInteger(SLinkOperations.getTarget(node, MetaAdapterFactory.getContainmentLink(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x153bbfb0a617d3c9L, 0x153bbfb0a617d3cdL, "high")), MetaAdapterFactory.getProperty(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x153bbfb0a63f2540L, 0x153bbfb0a63f2541L, "value")) - SPropertyOperations.getInteger(SLinkOperations.getTarget(node, MetaAdapterFactory.getContainmentLink(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x153bbfb0a617d3c9L, 0x153bbfb0a617d3ccL, "low")), MetaAdapterFactory.getProperty(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x153bbfb0a63f2540L, 0x153bbfb0a63f2541L, "value")) + 1;
+
+
+                for (int ji = 0; ji < howManyJumpOffsets; ji++) {
+                  ListSequence.fromList(SLinkOperations.getChildren(node, MetaAdapterFactory.getContainmentLink(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x153bbfb0a617d3c9L, 0x153bbfb0a617d3d2L, "jumpOffsets"))).addElement(mds.readInt4AsNode());
+                  i = i.add(BigInteger.valueOf(4));
+                }
+                ListSequence.fromList(instructions).addElement(node);
+              }
+              break;
             case 171:
-              throw new UnsupportedOperationException("SWITCH NOT IMPLEMENTED");
+              {
+                int startingIndex = ListSequence.fromList(instructions).foldRight(0, new IRightCombinator<SNode, Integer>() {
+                  public Integer combine(SNode it, Integer s) {
+                    return s + (int) Instruction__BehaviorDescriptor.length_id1kVJV2A9Wse.invoke(it);
+                  }
+                });
+                int padding = (startingIndex + 1) % 4;
+                for (int pi = 0; pi < padding; pi++) {
+                  mds.readInt1AsInt();
+                }
+                i = i.add(BigInteger.valueOf(padding));
+                SNode node = SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x153bbfb0a6164e38L, "me.tomassetti.bytecode.structure.Lookupswitch")));
+                SLinkOperations.setTarget(node, MetaAdapterFactory.getContainmentLink(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x153bbfb0a6164e38L, 0x153bbfb0a6164e3bL, "default"), mds.readInt4AsSignedNode());
+                int npairs = SPropertyOperations.getInteger(mds.readInt4AsSignedNode(), MetaAdapterFactory.getProperty(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x153bbfb0a63f2540L, 0x153bbfb0a63f2541L, "value"));
+                i = i.add(BigInteger.valueOf(8));
+                for (int ji = 0; ji < npairs; ji++) {
+                  ListSequence.fromList(SLinkOperations.getChildren(node, MetaAdapterFactory.getContainmentLink(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x153bbfb0a6164e38L, 0x153bbfb0a6164e42L, "matchOffsetPairs"))).addElement(mds.readInt4AsSignedNode());
+                  i = i.add(BigInteger.valueOf(4));
+                }
+                ListSequence.fromList(instructions).addElement(node);
+              }
             case 196:
               throw new UnsupportedOperationException("WIDE NOT IMPLEMENTED");
             default:

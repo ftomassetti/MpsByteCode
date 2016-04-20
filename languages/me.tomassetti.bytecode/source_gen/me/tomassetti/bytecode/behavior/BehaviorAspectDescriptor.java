@@ -13,6 +13,9 @@ import java.util.Arrays;
 
 public final class BehaviorAspectDescriptor extends BaseBehaviorAspectDescriptor {
   private final BHDescriptor myInstruction__BehaviorDescriptor = new Instruction__BehaviorDescriptor();
+  private final BHDescriptor myLookupswitch__BehaviorDescriptor = new Lookupswitch__BehaviorDescriptor();
+  private final BHDescriptor myTableswitch__BehaviorDescriptor = new Tableswitch__BehaviorDescriptor();
+  private final BHDescriptor mySigned4Bytes__BehaviorDescriptor = new Signed4Bytes__BehaviorDescriptor();
   private final BHDescriptor myClassFileLoader__BehaviorDescriptor = new ClassFileLoader__BehaviorDescriptor();
   private final BHDescriptor myConstantPoolElement__BehaviorDescriptor = new ConstantPoolElement__BehaviorDescriptor();
   private final BHDescriptor myConstantPoolLong__BehaviorDescriptor = new ConstantPoolLong__BehaviorDescriptor();
@@ -29,32 +32,37 @@ public final class BehaviorAspectDescriptor extends BaseBehaviorAspectDescriptor
   private final BHDescriptor myConstantPoolUtf8__BehaviorDescriptor = new ConstantPoolUtf8__BehaviorDescriptor();
   private final BHDescriptor myConstantPoolFloat__BehaviorDescriptor = new ConstantPoolFloat__BehaviorDescriptor();
   private final BHDescriptor myUnsigned2Bytes__BehaviorDescriptor = new Unsigned2Bytes__BehaviorDescriptor();
+  private final BHDescriptor myUnsigned4Bytes__BehaviorDescriptor = new Unsigned4Bytes__BehaviorDescriptor();
   private final BHDescriptor myClassFile__BehaviorDescriptor = new ClassFile__BehaviorDescriptor();
   private final BHDescriptor myConstantPoolDouble__BehaviorDescriptor = new ConstantPoolDouble__BehaviorDescriptor();
 
   private final long[] myConceptBehaviorIds;
 
   public BehaviorAspectDescriptor() {
-    myConceptBehaviorIds = new long[19];
+    myConceptBehaviorIds = new long[23];
     myConceptBehaviorIds[0] = 0x6c0d5336940e202L;
-    myConceptBehaviorIds[1] = 0x1695a3631a40c7ecL;
-    myConceptBehaviorIds[2] = 0x1695a3631a43d37eL;
-    myConceptBehaviorIds[3] = 0x1695a3631a43d9bcL;
-    myConceptBehaviorIds[4] = 0x1695a3631a43d9bdL;
-    myConceptBehaviorIds[5] = 0x1695a3631a43d9beL;
-    myConceptBehaviorIds[6] = 0x1695a3631a43d9bfL;
-    myConceptBehaviorIds[7] = 0x1695a3631a43d9c0L;
-    myConceptBehaviorIds[8] = 0x1695a3631a43d9c1L;
-    myConceptBehaviorIds[9] = 0x1695a3631a43d9c2L;
-    myConceptBehaviorIds[10] = 0x1695a3631a43d9c3L;
-    myConceptBehaviorIds[11] = 0x1695a3631a43d9c4L;
-    myConceptBehaviorIds[12] = 0x1695a3631a43d9c5L;
-    myConceptBehaviorIds[13] = 0x1695a3631a43d9c6L;
-    myConceptBehaviorIds[14] = 0x1695a3631a43d9c7L;
-    myConceptBehaviorIds[15] = 0x1695a3631a43d9c8L;
-    myConceptBehaviorIds[16] = 0x1695a3631a47ef12L;
-    myConceptBehaviorIds[17] = 0x40880d8921831cd4L;
-    myConceptBehaviorIds[18] = 0x67eeae9702c66d1dL;
+    myConceptBehaviorIds[1] = 0x153bbfb0a6164e38L;
+    myConceptBehaviorIds[2] = 0x153bbfb0a617d3c9L;
+    myConceptBehaviorIds[3] = 0x153bbfb0a63f2540L;
+    myConceptBehaviorIds[4] = 0x1695a3631a40c7ecL;
+    myConceptBehaviorIds[5] = 0x1695a3631a43d37eL;
+    myConceptBehaviorIds[6] = 0x1695a3631a43d9bcL;
+    myConceptBehaviorIds[7] = 0x1695a3631a43d9bdL;
+    myConceptBehaviorIds[8] = 0x1695a3631a43d9beL;
+    myConceptBehaviorIds[9] = 0x1695a3631a43d9bfL;
+    myConceptBehaviorIds[10] = 0x1695a3631a43d9c0L;
+    myConceptBehaviorIds[11] = 0x1695a3631a43d9c1L;
+    myConceptBehaviorIds[12] = 0x1695a3631a43d9c2L;
+    myConceptBehaviorIds[13] = 0x1695a3631a43d9c3L;
+    myConceptBehaviorIds[14] = 0x1695a3631a43d9c4L;
+    myConceptBehaviorIds[15] = 0x1695a3631a43d9c5L;
+    myConceptBehaviorIds[16] = 0x1695a3631a43d9c6L;
+    myConceptBehaviorIds[17] = 0x1695a3631a43d9c7L;
+    myConceptBehaviorIds[18] = 0x1695a3631a43d9c8L;
+    myConceptBehaviorIds[19] = 0x1695a3631a47ef12L;
+    myConceptBehaviorIds[20] = 0x1695a3631a534bf3L;
+    myConceptBehaviorIds[21] = 0x40880d8921831cd4L;
+    myConceptBehaviorIds[22] = 0x67eeae9702c66d1dL;
   }
 
   @Deprecated
@@ -71,40 +79,48 @@ public final class BehaviorAspectDescriptor extends BaseBehaviorAspectDescriptor
       case 0:
         return myInstruction__BehaviorDescriptor;
       case 1:
-        return myClassFileLoader__BehaviorDescriptor;
+        return myLookupswitch__BehaviorDescriptor;
       case 2:
-        return myConstantPoolElement__BehaviorDescriptor;
+        return myTableswitch__BehaviorDescriptor;
       case 3:
-        return myConstantPoolLong__BehaviorDescriptor;
+        return mySigned4Bytes__BehaviorDescriptor;
       case 4:
-        return myConstantPoolFieldref__BehaviorDescriptor;
+        return myClassFileLoader__BehaviorDescriptor;
       case 5:
-        return myConstantPoolClass__BehaviorDescriptor;
+        return myConstantPoolElement__BehaviorDescriptor;
       case 6:
-        return myConstantPoolMethodref__BehaviorDescriptor;
+        return myConstantPoolLong__BehaviorDescriptor;
       case 7:
-        return myConstantPoolNameAndType__BehaviorDescriptor;
+        return myConstantPoolFieldref__BehaviorDescriptor;
       case 8:
-        return myConstantPoolInterfaceMethodref__BehaviorDescriptor;
+        return myConstantPoolClass__BehaviorDescriptor;
       case 9:
-        return myConstantPoolInvokeDynamic__BehaviorDescriptor;
+        return myConstantPoolMethodref__BehaviorDescriptor;
       case 10:
-        return myConstantPoolString__BehaviorDescriptor;
+        return myConstantPoolNameAndType__BehaviorDescriptor;
       case 11:
-        return myConstantPoolMethodType__BehaviorDescriptor;
+        return myConstantPoolInterfaceMethodref__BehaviorDescriptor;
       case 12:
-        return myConstantPoolMethodHandle__BehaviorDescriptor;
+        return myConstantPoolInvokeDynamic__BehaviorDescriptor;
       case 13:
-        return myConstantPoolInteger__BehaviorDescriptor;
+        return myConstantPoolString__BehaviorDescriptor;
       case 14:
-        return myConstantPoolUtf8__BehaviorDescriptor;
+        return myConstantPoolMethodType__BehaviorDescriptor;
       case 15:
-        return myConstantPoolFloat__BehaviorDescriptor;
+        return myConstantPoolMethodHandle__BehaviorDescriptor;
       case 16:
-        return myUnsigned2Bytes__BehaviorDescriptor;
+        return myConstantPoolInteger__BehaviorDescriptor;
       case 17:
-        return myClassFile__BehaviorDescriptor;
+        return myConstantPoolUtf8__BehaviorDescriptor;
       case 18:
+        return myConstantPoolFloat__BehaviorDescriptor;
+      case 19:
+        return myUnsigned2Bytes__BehaviorDescriptor;
+      case 20:
+        return myUnsigned4Bytes__BehaviorDescriptor;
+      case 21:
+        return myClassFile__BehaviorDescriptor;
+      case 22:
         return myConstantPoolDouble__BehaviorDescriptor;
       default:
         return null;

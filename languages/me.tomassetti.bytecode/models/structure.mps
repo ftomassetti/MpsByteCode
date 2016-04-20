@@ -367,13 +367,13 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="nameIndex" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="1qlCQcqhYWi" resolve="Unsigned2Bytes" />
+      <ref role="20lvS9" node="OFkQGRRNyk" resolve="ConstantPoolUtf8Reference" />
     </node>
     <node concept="1TJgyj" id="1qlCQcqjE5l" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="descriptorIndex" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="1qlCQcqhYWi" resolve="Unsigned2Bytes" />
+      <ref role="20lvS9" node="OFkQGRRNyk" resolve="ConstantPoolUtf8Reference" />
     </node>
     <node concept="1TJgyj" id="1qlCQcqk_8n" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -1131,15 +1131,9 @@
     <ref role="1TJDcQ" node="r0PjdDge82" resolve="Instruction" />
     <node concept="1TJgyj" id="OFkQGRV6m5" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="indexbyte1" />
+      <property role="20kJfa" value="index" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="1qlCQcqkONs" resolve="Unsigned1Byte" />
-    </node>
-    <node concept="1TJgyj" id="OFkQGRV6m7" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="indexbyte2" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="1qlCQcqkONs" resolve="Unsigned1Byte" />
+      <ref role="20lvS9" node="1qlCQcqhYWi" resolve="Unsigned2Bytes" />
     </node>
   </node>
   <node concept="1TIwiD" id="OFkQGRXM4k">
@@ -1424,15 +1418,9 @@
     <ref role="1TJDcQ" node="r0PjdDge82" resolve="Instruction" />
     <node concept="1TJgyj" id="OFkQGS5L5I" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="indexbyte1" />
+      <property role="20kJfa" value="index" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="1qlCQcqkONs" resolve="Unsigned1Byte" />
-    </node>
-    <node concept="1TJgyj" id="OFkQGS5L5J" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="indexbyte2" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="1qlCQcqkONs" resolve="Unsigned1Byte" />
+      <ref role="20lvS9" node="1qlCQcqhYWi" resolve="Unsigned2Bytes" />
     </node>
     <node concept="1TJgyj" id="OFkQGS5L5K" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -1955,6 +1943,7 @@
     <node concept="1TJgyj" id="OFkQGS7Wj0" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="const" />
+      <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="1qlCQcqkONs" resolve="Unsigned1Byte" />
     </node>
   </node>
@@ -2195,19 +2184,13 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="default" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="1qlCQcqkOJN" resolve="Unsigned4Bytes" />
-    </node>
-    <node concept="1TJgyj" id="1kVJV2A5$SY" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="npairs" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="1qlCQcqkOJN" resolve="Unsigned4Bytes" />
+      <ref role="20lvS9" node="1kVJV2AfMl0" resolve="Signed4Bytes" />
     </node>
     <node concept="1TJgyj" id="1kVJV2A5$T2" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="matchOffsetPairs" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="1qlCQcqkOJN" resolve="Unsigned4Bytes" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="1kVJV2AfMl0" resolve="Signed4Bytes" />
     </node>
   </node>
   <node concept="1TIwiD" id="1kVJV2A5Xe_">
@@ -2376,35 +2359,29 @@
     <property role="3GE5qa" value="instruction" />
     <property role="TrG5h" value="Tableswitch" />
     <ref role="1TJDcQ" node="r0PjdDge82" resolve="Instruction" />
-    <node concept="1TJgyj" id="1kVJV2A5Xfa" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="padding" />
-      <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" node="1qlCQcqkONs" resolve="Unsigned1Byte" />
-    </node>
     <node concept="1TJgyj" id="1kVJV2A5Xfb" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="default" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="1qlCQcqkOJN" resolve="Unsigned4Bytes" />
+      <ref role="20lvS9" node="1kVJV2AfMl0" resolve="Signed4Bytes" />
     </node>
     <node concept="1TJgyj" id="1kVJV2A5Xfc" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="low" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="1qlCQcqkOJN" resolve="Unsigned4Bytes" />
+      <ref role="20lvS9" node="1kVJV2AfMl0" resolve="Signed4Bytes" />
     </node>
     <node concept="1TJgyj" id="1kVJV2A5Xfd" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="high" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="1qlCQcqkOJN" resolve="Unsigned4Bytes" />
+      <ref role="20lvS9" node="1kVJV2AfMl0" resolve="Signed4Bytes" />
     </node>
     <node concept="1TJgyj" id="1kVJV2A5Xfi" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="jumpOffsets" />
       <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" node="1qlCQcqhYWi" resolve="Unsigned2Bytes" />
+      <ref role="20lvS9" node="1qlCQcqkOJN" resolve="Unsigned4Bytes" />
     </node>
   </node>
   <node concept="1TIwiD" id="1kVJV2A62Yf">
@@ -2478,6 +2455,15 @@
     <property role="3GE5qa" value="instruction.math" />
     <property role="TrG5h" value="Imul" />
     <ref role="1TJDcQ" node="r0PjdDge82" resolve="Instruction" />
+  </node>
+  <node concept="1TIwiD" id="1kVJV2AfMl0">
+    <property role="1pbfSe" value="1149573904" />
+    <property role="TrG5h" value="Signed4Bytes" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="1kVJV2AfMl1" role="1TKVEl">
+      <property role="TrG5h" value="value" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
   </node>
 </model>
 
