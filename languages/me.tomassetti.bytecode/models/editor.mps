@@ -12,6 +12,7 @@
     <import index="uwnb" ref="r:94eb28e2-16c0-487a-a9c5-75573ddbe808(me.tomassetti.bytecode.structure)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="juvg" ref="r:52cba171-eedf-4a77-80f4-8d9827029f92(me.tomassetti.bytecode.behavior)" implicit="true" />
+    <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" implicit="true" />
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
@@ -33,6 +34,9 @@
       <concept id="1078938745671" name="jetbrains.mps.lang.editor.structure.EditorComponentDeclaration" flags="ig" index="PKFIW" />
       <concept id="1078939183254" name="jetbrains.mps.lang.editor.structure.CellModel_Component" flags="sg" stub="3162947552742194261" index="PMmxH">
         <reference id="1078939183255" name="editorComponent" index="PMmxG" />
+      </concept>
+      <concept id="1186403751766" name="jetbrains.mps.lang.editor.structure.FontStyleStyleClassItem" flags="ln" index="Vb9p2">
+        <property id="1186403771423" name="style" index="Vbekb" />
       </concept>
       <concept id="1186414536763" name="jetbrains.mps.lang.editor.structure.BooleanStyleSheetItem" flags="ln" index="VOi$J">
         <property id="1186414551515" name="flag" index="VOm3f" />
@@ -167,6 +171,7 @@
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
+      <concept id="7453996997717780434" name="jetbrains.mps.lang.smodel.structure.Node_GetSConceptOperation" flags="nn" index="2yIwOk" />
       <concept id="1138056143562" name="jetbrains.mps.lang.smodel.structure.SLinkAccess" flags="nn" index="3TrEf2">
         <reference id="1138056516764" name="link" index="3Tt5mk" />
       </concept>
@@ -943,44 +948,9 @@
       <node concept="2iRkQZ" id="r0PjdDjbkX" role="2iSdaV" />
     </node>
   </node>
-  <node concept="24kQdi" id="r0PjdDjmzi">
-    <property role="3GE5qa" value="instruction.load" />
-    <ref role="1XX52x" to="uwnb:r0PjdDgWzR" resolve="Aload_0" />
-    <node concept="3F0ifn" id="r0PjdDjmzn" role="2wV5jI">
-      <property role="3F0ifm" value="AALOAD_0" />
-    </node>
-  </node>
-  <node concept="24kQdi" id="r0PjdDjmzv">
-    <property role="3GE5qa" value="instruction.load" />
-    <ref role="1XX52x" to="uwnb:r0PjdDgWzS" resolve="Aload_1" />
-    <node concept="3F0ifn" id="r0PjdDjmzx" role="2wV5jI">
-      <property role="3F0ifm" value="AALOAD_1" />
-    </node>
-  </node>
-  <node concept="24kQdi" id="r0PjdDjmzD">
-    <property role="3GE5qa" value="instruction.load" />
-    <ref role="1XX52x" to="uwnb:r0PjdDgWzU" resolve="Aload_2" />
-    <node concept="3F0ifn" id="r0PjdDjmzF" role="2wV5jI">
-      <property role="3F0ifm" value="AALOAD_2" />
-    </node>
-  </node>
-  <node concept="24kQdi" id="r0PjdDjmzN">
-    <property role="3GE5qa" value="instruction.load" />
-    <ref role="1XX52x" to="uwnb:r0PjdDgWzT" resolve="Aload_3" />
-    <node concept="3F0ifn" id="r0PjdDjmzP" role="2wV5jI">
-      <property role="3F0ifm" value="AALOAD_3" />
-    </node>
-  </node>
-  <node concept="24kQdi" id="r0PjdDjmzX">
-    <property role="3GE5qa" value="instruction.return" />
-    <ref role="1XX52x" to="uwnb:r0PjdDi9Uk" resolve="Areturn" />
-    <node concept="3F0ifn" id="r0PjdDjmzZ" role="2wV5jI">
-      <property role="3F0ifm" value="AReturn" />
-    </node>
-  </node>
   <node concept="24kQdi" id="r0PjdDjm$7">
     <property role="3GE5qa" value="instruction" />
-    <ref role="1XX52x" to="uwnb:r0PjdDhHT9" resolve="InvokeSpecial" />
+    <ref role="1XX52x" to="uwnb:r0PjdDhHT9" resolve="Invokespecial" />
     <node concept="3EZMnI" id="r0PjdDjm$9" role="2wV5jI">
       <node concept="3F0ifn" id="r0PjdDjm$g" role="3EZMnx">
         <property role="3F0ifm" value="InvokeSpecial" />
@@ -1002,13 +972,6 @@
       <node concept="3F1sOY" id="r0PjdDjm$I" role="3EZMnx">
         <ref role="1NtTu8" to="uwnb:r0PjdDi0$Q" />
       </node>
-    </node>
-  </node>
-  <node concept="24kQdi" id="r0PjdDjm$R">
-    <property role="3GE5qa" value="instruction.return" />
-    <ref role="1XX52x" to="uwnb:r0PjdDhU8b" resolve="Return" />
-    <node concept="3F0ifn" id="r0PjdDjm$T" role="2wV5jI">
-      <property role="3F0ifm" value="Return" />
     </node>
   </node>
   <node concept="24kQdi" id="6vIFDs2MQG3">
@@ -1337,6 +1300,32 @@
       <node concept="2iRfu4" id="OFkQGRUVHF" role="2iSdaV" />
       <node concept="3F1sOY" id="OFkQGRUVHP" role="3EZMnx">
         <ref role="1NtTu8" to="uwnb:OFkQGRUhox" />
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="1kVJV2A9mMP">
+    <property role="3GE5qa" value="instruction" />
+    <ref role="1XX52x" to="uwnb:r0PjdDge82" resolve="Instruction" />
+    <node concept="1HlG4h" id="1kVJV2A9mMV" role="2wV5jI">
+      <node concept="1HfYo3" id="1kVJV2A9mMX" role="1HlULh">
+        <node concept="3TQlhw" id="1kVJV2A9mMZ" role="1Hhtcw">
+          <node concept="3clFbS" id="1kVJV2A9mN1" role="2VODD2">
+            <node concept="3clFbF" id="1kVJV2A9mOg" role="3cqZAp">
+              <node concept="2OqwBi" id="1kVJV2A9n0z" role="3clFbG">
+                <node concept="2OqwBi" id="1kVJV2A9mQt" role="2Oq$k0">
+                  <node concept="pncrf" id="1kVJV2A9mOf" role="2Oq$k0" />
+                  <node concept="2yIwOk" id="1kVJV2A9mVf" role="2OqNvi" />
+                </node>
+                <node concept="liA8E" id="1kVJV2A9n9N" role="2OqNvi">
+                  <ref role="37wK5l" to="c17a:~SAbstractConcept.getName():java.lang.String" resolve="getName" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="Vb9p2" id="1kVJV2A9xCa" role="3F10Kt">
+        <property role="Vbekb" value="BOLD" />
       </node>
     </node>
   </node>
