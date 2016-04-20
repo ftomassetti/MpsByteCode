@@ -22,21 +22,6 @@ public class EditorAspectDescriptorImpl extends EditorAspectDescriptorBase {
       if (SConceptOperations.isExactly(SNodeOperations.asSConcept(cncpt), MetaAdapterFactory.getConcept(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a4fb665L, "me.tomassetti.bytecode.structure.AccessFlags"))) {
         return Collections.<ConceptEditor>singletonList(new AccessFlags_Editor());
       }
-      if (SConceptOperations.isExactly(SNodeOperations.asSConcept(cncpt), MetaAdapterFactory.getConcept(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x6c0d5336943c8f7L, "me.tomassetti.bytecode.structure.Aload_0"))) {
-        return Collections.<ConceptEditor>singletonList(new Aload_0_Editor());
-      }
-      if (SConceptOperations.isExactly(SNodeOperations.asSConcept(cncpt), MetaAdapterFactory.getConcept(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x6c0d5336943c8f8L, "me.tomassetti.bytecode.structure.Aload_1"))) {
-        return Collections.<ConceptEditor>singletonList(new Aload_1_Editor());
-      }
-      if (SConceptOperations.isExactly(SNodeOperations.asSConcept(cncpt), MetaAdapterFactory.getConcept(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x6c0d5336943c8faL, "me.tomassetti.bytecode.structure.Aload_2"))) {
-        return Collections.<ConceptEditor>singletonList(new Aload_2_Editor());
-      }
-      if (SConceptOperations.isExactly(SNodeOperations.asSConcept(cncpt), MetaAdapterFactory.getConcept(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x6c0d5336943c8f9L, "me.tomassetti.bytecode.structure.Aload_3"))) {
-        return Collections.<ConceptEditor>singletonList(new Aload_3_Editor());
-      }
-      if (SConceptOperations.isExactly(SNodeOperations.asSConcept(cncpt), MetaAdapterFactory.getConcept(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x6c0d53369489e94L, "me.tomassetti.bytecode.structure.Areturn"))) {
-        return Collections.<ConceptEditor>singletonList(new Areturn_Editor());
-      }
       if (SConceptOperations.isExactly(SNodeOperations.asSConcept(cncpt), MetaAdapterFactory.getConcept(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a51ca20L, "me.tomassetti.bytecode.structure.AttributeInfo"))) {
         return Collections.<ConceptEditor>singletonList(new AttributeInfo_Editor());
       }
@@ -100,6 +85,9 @@ public class EditorAspectDescriptorImpl extends EditorAspectDescriptorBase {
       if (SConceptOperations.isExactly(SNodeOperations.asSConcept(cncpt), MetaAdapterFactory.getConcept(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x6c0d533693aca41L, "me.tomassetti.bytecode.structure.FieldInfo"))) {
         return Collections.<ConceptEditor>singletonList(new FieldInfo_Editor());
       }
+      if (SConceptOperations.isExactly(SNodeOperations.asSConcept(cncpt), MetaAdapterFactory.getConcept(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x6c0d5336940e202L, "me.tomassetti.bytecode.structure.Instruction"))) {
+        return Collections.<ConceptEditor>singletonList(new Instruction_Editor());
+      }
       if (SConceptOperations.isExactly(SNodeOperations.asSConcept(cncpt), MetaAdapterFactory.getConcept(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x6c0d5336946de49L, "me.tomassetti.bytecode.structure.Invokespecial"))) {
         return Collections.<ConceptEditor>singletonList(new Invokespecial_Editor());
       }
@@ -111,9 +99,6 @@ public class EditorAspectDescriptorImpl extends EditorAspectDescriptorBase {
       }
       if (SConceptOperations.isExactly(SNodeOperations.asSConcept(cncpt), MetaAdapterFactory.getConcept(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x6c0d5336931d741L, "me.tomassetti.bytecode.structure.RawAttributeInfoData"))) {
         return Collections.<ConceptEditor>singletonList(new RawAttributeInfoData_Editor());
-      }
-      if (SConceptOperations.isExactly(SNodeOperations.asSConcept(cncpt), MetaAdapterFactory.getConcept(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x6c0d5336947a20bL, "me.tomassetti.bytecode.structure.Return"))) {
-        return Collections.<ConceptEditor>singletonList(new Return_Editor());
       }
       if (SConceptOperations.isExactly(SNodeOperations.asSConcept(cncpt), MetaAdapterFactory.getConcept(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0xd2b536b37e91620L, "me.tomassetti.bytecode.structure.SignatureAttributeInfoData"))) {
         return Collections.<ConceptEditor>singletonList(new SignatureAttributeInfoData_Editor());

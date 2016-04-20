@@ -425,6 +425,18 @@ public final class ClassFileLoader__BehaviorDescriptor extends BaseBHDescriptor 
             SNode param = mds.readInt1AsNode();
             instruction.addChild(link, param);
             i = i.add(BigInteger.ONE);
+          } else if (link.getTargetConcept().equals(MetaAdapterFactory.getConcept(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a47ef12L, "me.tomassetti.bytecode.structure.Unsigned2Bytes"))) {
+            SNode param = mds.readInt2AsNode();
+            instruction.addChild(link, param);
+            i = i.add(BigInteger.ONE);
+            i = i.add(BigInteger.ONE);
+          } else if (link.getTargetConcept().equals(MetaAdapterFactory.getConcept(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a534bf3L, "me.tomassetti.bytecode.structure.Unsigned4Bytes"))) {
+            SNode param = mds.readInt4AsNode();
+            instruction.addChild(link, param);
+            i = i.add(BigInteger.ONE);
+            i = i.add(BigInteger.ONE);
+            i = i.add(BigInteger.ONE);
+            i = i.add(BigInteger.ONE);
           } else {
             throw new RuntimeException("Type " + link.getTargetConcept().getQualifiedName() + " for link " + link.getName());
           }
@@ -446,7 +458,7 @@ public final class ClassFileLoader__BehaviorDescriptor extends BaseBHDescriptor 
       for (BigInteger i = BigInteger.ONE; i.compareTo(length) <= 0;) {
         int code = mds.readInt1AsInt();
         i = i.add(BigInteger.ONE);
-        if (MapSequence.fromMap(OpCodeToInstructionMapping.OPCODE_TO_INSTRUCTION).containsKey(code)) {
+        if (MapSequence.fromMap(OpCodeToInstructionMapping.OPCODE_TO_INSTRUCTION).containsKey(code) && MapSequence.fromMap(OpCodeToInstructionMapping.OPCODE_TO_INSTRUCTION).get(code) != null) {
           i = ClassFileLoader__BehaviorDescriptor.parse_idOFkQGRVb6M.invoke(__thisNode__, mds, i, MapSequence.fromMap(OpCodeToInstructionMapping.OPCODE_TO_INSTRUCTION).get(code), instructions);
         } else {
           switch (code) {

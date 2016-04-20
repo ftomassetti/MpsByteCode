@@ -11,7 +11,53 @@
   <concept fqn="jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
   <root>
     <file name="EditorAspectDescriptorImpl.java">
-      <unit at="15,0,151,0" name="me.tomassetti.bytecode.editor.EditorAspectDescriptorImpl" />
+      <unit at="15,0,136,0" name="me.tomassetti.bytecode.editor.EditorAspectDescriptorImpl" />
+    </file>
+  </root>
+  <root nodeRef="r:23d96f06-f257-4f72-a398-e2a2bb85b9d9(me.tomassetti.bytecode.editor)/1530027263845035189">
+    <file name="Instruction_Editor.java">
+      <node id="1530027263845035189" at="21,79,22,73" concept="6" />
+      <node id="1530027263845035280" at="26,31,27,72" concept="6" />
+      <node id="1530027263845035195" at="31,44,32,46" concept="6" />
+      <node id="1530027263845035195" at="34,13,35,79" concept="2" />
+      <node id="1530027263845035195" at="35,79,36,82" concept="2" />
+      <node id="1530027263845035195" at="36,82,37,58" concept="2" />
+      <node id="1530027263845035195" at="37,58,38,28" concept="2" />
+      <node id="1530027263845035195" at="38,28,39,34" concept="5" />
+      <node id="1530027263845035195" at="39,34,40,60" concept="2" />
+      <node id="1530027263845035195" at="40,60,41,40" concept="2" />
+      <node id="1530027263845035195" at="41,40,42,22" concept="6" />
+      <node id="1530027263845035195" at="29,0,31,0" concept="4" trace="setText#(Ljava/lang/String;)V" />
+      <node id="1530027263845035189" at="21,0,24,0" concept="4" trace="createEditorCell#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
+      <node id="1530027263845035195" at="26,0,29,0" concept="4" trace="getText#()Ljava/lang/String;" />
+      <node id="1530027263845035195" at="31,0,34,0" concept="4" trace="isValidText#(Ljava/lang/String;)Z" />
+      <node id="1530027263845035195" at="24,111,34,13" concept="5" />
+      <node id="1530027263845035195" at="24,0,44,0" concept="4" trace="createReadOnlyModelAccessor_tof27_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
+      <scope id="1530027263845035195" at="29,37,29,37" />
+      <scope id="1530027263845035189" at="21,79,22,73" />
+      <scope id="1530027263845035201" at="26,31,27,72" />
+      <scope id="1530027263845035195" at="31,44,32,46" />
+      <scope id="1530027263845035195" at="29,0,31,0">
+        <var name="s" id="1530027263845035195" />
+      </scope>
+      <scope id="1530027263845035189" at="21,0,24,0">
+        <var name="editorContext" id="1530027263845035189" />
+        <var name="node" id="1530027263845035189" />
+      </scope>
+      <scope id="1530027263845035195" at="26,0,29,0" />
+      <scope id="1530027263845035195" at="31,0,34,0">
+        <var name="s" id="1530027263845035195" />
+      </scope>
+      <scope id="1530027263845035195" at="24,111,42,22">
+        <var name="editorCell" id="1530027263845035195" />
+        <var name="style" id="1530027263845035195" />
+      </scope>
+      <scope id="1530027263845035195" at="24,0,44,0">
+        <var name="editorContext" id="1530027263845035195" />
+        <var name="node" id="1530027263845035195" />
+      </scope>
+      <unit id="1530027263845035195" at="25,83,34,5" name="me.tomassetti.bytecode.editor.Instruction_Editor$1" />
+      <unit id="1530027263845035189" at="20,0,45,0" name="me.tomassetti.bytecode.editor.Instruction_Editor" />
     </file>
   </root>
   <root nodeRef="r:23d96f06-f257-4f72-a398-e2a2bb85b9d9(me.tomassetti.bytecode.editor)/1627386486401845238">
@@ -4127,131 +4173,6 @@
       <unit id="486623176542696760" at="27,0,134,0" name="me.tomassetti.bytecode.editor.ExceptionTable_Editor" />
     </file>
   </root>
-  <root nodeRef="r:23d96f06-f257-4f72-a398-e2a2bb85b9d9(me.tomassetti.bytecode.editor)/486623176542742738">
-    <file name="Aload_0_Editor.java">
-      <node id="486623176542742738" at="12,79,13,61" concept="6" />
-      <node id="486623176542742743" at="15,87,16,94" concept="5" />
-      <node id="486623176542742743" at="16,94,17,46" concept="2" />
-      <node id="486623176542742743" at="17,46,18,28" concept="2" />
-      <node id="486623176542742743" at="18,28,19,34" concept="2" />
-      <node id="486623176542742743" at="19,34,20,22" concept="6" />
-      <node id="486623176542742738" at="12,0,15,0" concept="4" trace="createEditorCell#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <node id="486623176542742743" at="15,0,22,0" concept="4" trace="createConstant_qz68ay_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <scope id="486623176542742738" at="12,79,13,61" />
-      <scope id="486623176542742738" at="12,0,15,0">
-        <var name="editorContext" id="486623176542742738" />
-        <var name="node" id="486623176542742738" />
-      </scope>
-      <scope id="486623176542742743" at="15,87,20,22">
-        <var name="editorCell" id="486623176542742743" />
-      </scope>
-      <scope id="486623176542742743" at="15,0,22,0">
-        <var name="editorContext" id="486623176542742743" />
-        <var name="node" id="486623176542742743" />
-      </scope>
-      <unit id="486623176542742738" at="11,0,23,0" name="me.tomassetti.bytecode.editor.Aload_0_Editor" />
-    </file>
-  </root>
-  <root nodeRef="r:23d96f06-f257-4f72-a398-e2a2bb85b9d9(me.tomassetti.bytecode.editor)/486623176542742751">
-    <file name="Aload_1_Editor.java">
-      <node id="486623176542742751" at="12,79,13,61" concept="6" />
-      <node id="486623176542742753" at="15,87,16,94" concept="5" />
-      <node id="486623176542742753" at="16,94,17,46" concept="2" />
-      <node id="486623176542742753" at="17,46,18,28" concept="2" />
-      <node id="486623176542742753" at="18,28,19,34" concept="2" />
-      <node id="486623176542742753" at="19,34,20,22" concept="6" />
-      <node id="486623176542742751" at="12,0,15,0" concept="4" trace="createEditorCell#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <node id="486623176542742753" at="15,0,22,0" concept="4" trace="createConstant_5vffuh_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <scope id="486623176542742751" at="12,79,13,61" />
-      <scope id="486623176542742751" at="12,0,15,0">
-        <var name="editorContext" id="486623176542742751" />
-        <var name="node" id="486623176542742751" />
-      </scope>
-      <scope id="486623176542742753" at="15,87,20,22">
-        <var name="editorCell" id="486623176542742753" />
-      </scope>
-      <scope id="486623176542742753" at="15,0,22,0">
-        <var name="editorContext" id="486623176542742753" />
-        <var name="node" id="486623176542742753" />
-      </scope>
-      <unit id="486623176542742751" at="11,0,23,0" name="me.tomassetti.bytecode.editor.Aload_1_Editor" />
-    </file>
-  </root>
-  <root nodeRef="r:23d96f06-f257-4f72-a398-e2a2bb85b9d9(me.tomassetti.bytecode.editor)/486623176542742761">
-    <file name="Aload_2_Editor.java">
-      <node id="486623176542742761" at="12,79,13,61" concept="6" />
-      <node id="486623176542742763" at="15,87,16,94" concept="5" />
-      <node id="486623176542742763" at="16,94,17,46" concept="2" />
-      <node id="486623176542742763" at="17,46,18,28" concept="2" />
-      <node id="486623176542742763" at="18,28,19,34" concept="2" />
-      <node id="486623176542742763" at="19,34,20,22" concept="6" />
-      <node id="486623176542742761" at="12,0,15,0" concept="4" trace="createEditorCell#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <node id="486623176542742763" at="15,0,22,0" concept="4" trace="createConstant_ka8odl_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <scope id="486623176542742761" at="12,79,13,61" />
-      <scope id="486623176542742761" at="12,0,15,0">
-        <var name="editorContext" id="486623176542742761" />
-        <var name="node" id="486623176542742761" />
-      </scope>
-      <scope id="486623176542742763" at="15,87,20,22">
-        <var name="editorCell" id="486623176542742763" />
-      </scope>
-      <scope id="486623176542742763" at="15,0,22,0">
-        <var name="editorContext" id="486623176542742763" />
-        <var name="node" id="486623176542742763" />
-      </scope>
-      <unit id="486623176542742761" at="11,0,23,0" name="me.tomassetti.bytecode.editor.Aload_2_Editor" />
-    </file>
-  </root>
-  <root nodeRef="r:23d96f06-f257-4f72-a398-e2a2bb85b9d9(me.tomassetti.bytecode.editor)/486623176542742771">
-    <file name="Aload_3_Editor.java">
-      <node id="486623176542742771" at="12,79,13,61" concept="6" />
-      <node id="486623176542742773" at="15,87,16,94" concept="5" />
-      <node id="486623176542742773" at="16,94,17,46" concept="2" />
-      <node id="486623176542742773" at="17,46,18,28" concept="2" />
-      <node id="486623176542742773" at="18,28,19,34" concept="2" />
-      <node id="486623176542742773" at="19,34,20,22" concept="6" />
-      <node id="486623176542742771" at="12,0,15,0" concept="4" trace="createEditorCell#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <node id="486623176542742773" at="15,0,22,0" concept="4" trace="createConstant_yp1wwo_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <scope id="486623176542742771" at="12,79,13,61" />
-      <scope id="486623176542742771" at="12,0,15,0">
-        <var name="editorContext" id="486623176542742771" />
-        <var name="node" id="486623176542742771" />
-      </scope>
-      <scope id="486623176542742773" at="15,87,20,22">
-        <var name="editorCell" id="486623176542742773" />
-      </scope>
-      <scope id="486623176542742773" at="15,0,22,0">
-        <var name="editorContext" id="486623176542742773" />
-        <var name="node" id="486623176542742773" />
-      </scope>
-      <unit id="486623176542742771" at="11,0,23,0" name="me.tomassetti.bytecode.editor.Aload_3_Editor" />
-    </file>
-  </root>
-  <root nodeRef="r:23d96f06-f257-4f72-a398-e2a2bb85b9d9(me.tomassetti.bytecode.editor)/486623176542742781">
-    <file name="Areturn_Editor.java">
-      <node id="486623176542742781" at="12,79,13,61" concept="6" />
-      <node id="486623176542742783" at="15,87,16,93" concept="5" />
-      <node id="486623176542742783" at="16,93,17,46" concept="2" />
-      <node id="486623176542742783" at="17,46,18,28" concept="2" />
-      <node id="486623176542742783" at="18,28,19,34" concept="2" />
-      <node id="486623176542742783" at="19,34,20,22" concept="6" />
-      <node id="486623176542742781" at="12,0,15,0" concept="4" trace="createEditorCell#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <node id="486623176542742783" at="15,0,22,0" concept="4" trace="createConstant_h7jsz1_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <scope id="486623176542742781" at="12,79,13,61" />
-      <scope id="486623176542742781" at="12,0,15,0">
-        <var name="editorContext" id="486623176542742781" />
-        <var name="node" id="486623176542742781" />
-      </scope>
-      <scope id="486623176542742783" at="15,87,20,22">
-        <var name="editorCell" id="486623176542742783" />
-      </scope>
-      <scope id="486623176542742783" at="15,0,22,0">
-        <var name="editorContext" id="486623176542742783" />
-        <var name="node" id="486623176542742783" />
-      </scope>
-      <unit id="486623176542742781" at="11,0,23,0" name="me.tomassetti.bytecode.editor.Areturn_Editor" />
-    </file>
-  </root>
   <root nodeRef="r:23d96f06-f257-4f72-a398-e2a2bb85b9d9(me.tomassetti.bytecode.editor)/486623176542742791">
     <file name="Invokespecial_Editor.java">
       <node id="486623176542742791" at="17,79,18,63" concept="6" />
@@ -4438,31 +4359,6 @@
       </scope>
       <unit id="486623176542742815" at="38,0,64,0" name="me.tomassetti.bytecode.editor.Ldc_Editor$indexSingleRoleHandler_pqf680_b0" />
       <unit id="486623176542742815" at="16,0,65,0" name="me.tomassetti.bytecode.editor.Ldc_Editor" />
-    </file>
-  </root>
-  <root nodeRef="r:23d96f06-f257-4f72-a398-e2a2bb85b9d9(me.tomassetti.bytecode.editor)/486623176542742839">
-    <file name="Return_Editor.java">
-      <node id="486623176542742839" at="12,79,13,61" concept="6" />
-      <node id="486623176542742841" at="15,87,16,92" concept="5" />
-      <node id="486623176542742841" at="16,92,17,46" concept="2" />
-      <node id="486623176542742841" at="17,46,18,28" concept="2" />
-      <node id="486623176542742841" at="18,28,19,34" concept="2" />
-      <node id="486623176542742841" at="19,34,20,22" concept="6" />
-      <node id="486623176542742839" at="12,0,15,0" concept="4" trace="createEditorCell#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <node id="486623176542742841" at="15,0,22,0" concept="4" trace="createConstant_bfbt7y_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <scope id="486623176542742839" at="12,79,13,61" />
-      <scope id="486623176542742839" at="12,0,15,0">
-        <var name="editorContext" id="486623176542742839" />
-        <var name="node" id="486623176542742839" />
-      </scope>
-      <scope id="486623176542742841" at="15,87,20,22">
-        <var name="editorCell" id="486623176542742841" />
-      </scope>
-      <scope id="486623176542742841" at="15,0,22,0">
-        <var name="editorContext" id="486623176542742841" />
-        <var name="node" id="486623176542742841" />
-      </scope>
-      <unit id="486623176542742839" at="11,0,23,0" name="me.tomassetti.bytecode.editor.Return_Editor" />
     </file>
   </root>
   <root nodeRef="r:23d96f06-f257-4f72-a398-e2a2bb85b9d9(me.tomassetti.bytecode.editor)/7489115193973893891">

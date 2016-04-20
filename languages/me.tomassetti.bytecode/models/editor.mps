@@ -953,7 +953,7 @@
     <ref role="1XX52x" to="uwnb:r0PjdDhHT9" resolve="Invokespecial" />
     <node concept="3EZMnI" id="r0PjdDjm$9" role="2wV5jI">
       <node concept="3F0ifn" id="r0PjdDjm$g" role="3EZMnx">
-        <property role="3F0ifm" value="InvokeSpecial" />
+        <property role="3F0ifm" value="invokespecial" />
       </node>
       <node concept="3F1sOY" id="r0PjdDjm$m" role="3EZMnx">
         <ref role="1NtTu8" to="uwnb:r0PjdDhHTa" />
@@ -966,7 +966,7 @@
     <ref role="1XX52x" to="uwnb:r0PjdDi0$P" resolve="Ldc" />
     <node concept="3EZMnI" id="r0PjdDjm$x" role="2wV5jI">
       <node concept="3F0ifn" id="r0PjdDjm$C" role="3EZMnx">
-        <property role="3F0ifm" value="LDC" />
+        <property role="3F0ifm" value="ldc" />
       </node>
       <node concept="2iRfu4" id="r0PjdDjm$$" role="2iSdaV" />
       <node concept="3F1sOY" id="r0PjdDjm$I" role="3EZMnx">
@@ -1311,13 +1311,18 @@
         <node concept="3TQlhw" id="1kVJV2A9mMZ" role="1Hhtcw">
           <node concept="3clFbS" id="1kVJV2A9mN1" role="2VODD2">
             <node concept="3clFbF" id="1kVJV2A9mOg" role="3cqZAp">
-              <node concept="2OqwBi" id="1kVJV2A9n0z" role="3clFbG">
-                <node concept="2OqwBi" id="1kVJV2A9mQt" role="2Oq$k0">
-                  <node concept="pncrf" id="1kVJV2A9mOf" role="2Oq$k0" />
-                  <node concept="2yIwOk" id="1kVJV2A9mVf" role="2OqNvi" />
+              <node concept="2OqwBi" id="1kVJV2A9NtJ" role="3clFbG">
+                <node concept="2OqwBi" id="1kVJV2A9n0z" role="2Oq$k0">
+                  <node concept="2OqwBi" id="1kVJV2A9mQt" role="2Oq$k0">
+                    <node concept="pncrf" id="1kVJV2A9mOf" role="2Oq$k0" />
+                    <node concept="2yIwOk" id="1kVJV2A9mVf" role="2OqNvi" />
+                  </node>
+                  <node concept="liA8E" id="1kVJV2A9n9N" role="2OqNvi">
+                    <ref role="37wK5l" to="c17a:~SAbstractConcept.getName():java.lang.String" resolve="getName" />
+                  </node>
                 </node>
-                <node concept="liA8E" id="1kVJV2A9n9N" role="2OqNvi">
-                  <ref role="37wK5l" to="c17a:~SAbstractConcept.getName():java.lang.String" resolve="getName" />
+                <node concept="liA8E" id="1kVJV2A9NBm" role="2OqNvi">
+                  <ref role="37wK5l" to="wyt6:~String.toLowerCase():java.lang.String" resolve="toLowerCase" />
                 </node>
               </node>
             </node>

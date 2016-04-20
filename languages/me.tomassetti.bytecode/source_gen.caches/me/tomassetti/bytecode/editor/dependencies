@@ -33,41 +33,6 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.nodeEditor.DefaultNodeEditor" />
   </dependency>
-  <dependency className="me.tomassetti.bytecode.editor.Aload_0_Editor" file="Aload_0_Editor.java">
-    <classNode dependClassName="jetbrains.mps.nodeEditor.cells.EditorCell_Constant" />
-    <classNode dependClassName="jetbrains.mps.openapi.editor.EditorContext" />
-    <classNode dependClassName="jetbrains.mps.openapi.editor.cells.EditorCell" />
-    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
-    <classNode extendsClassName="jetbrains.mps.nodeEditor.DefaultNodeEditor" />
-  </dependency>
-  <dependency className="me.tomassetti.bytecode.editor.Aload_1_Editor" file="Aload_1_Editor.java">
-    <classNode dependClassName="jetbrains.mps.nodeEditor.cells.EditorCell_Constant" />
-    <classNode dependClassName="jetbrains.mps.openapi.editor.EditorContext" />
-    <classNode dependClassName="jetbrains.mps.openapi.editor.cells.EditorCell" />
-    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
-    <classNode extendsClassName="jetbrains.mps.nodeEditor.DefaultNodeEditor" />
-  </dependency>
-  <dependency className="me.tomassetti.bytecode.editor.Aload_2_Editor" file="Aload_2_Editor.java">
-    <classNode dependClassName="jetbrains.mps.nodeEditor.cells.EditorCell_Constant" />
-    <classNode dependClassName="jetbrains.mps.openapi.editor.EditorContext" />
-    <classNode dependClassName="jetbrains.mps.openapi.editor.cells.EditorCell" />
-    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
-    <classNode extendsClassName="jetbrains.mps.nodeEditor.DefaultNodeEditor" />
-  </dependency>
-  <dependency className="me.tomassetti.bytecode.editor.Aload_3_Editor" file="Aload_3_Editor.java">
-    <classNode dependClassName="jetbrains.mps.nodeEditor.cells.EditorCell_Constant" />
-    <classNode dependClassName="jetbrains.mps.openapi.editor.EditorContext" />
-    <classNode dependClassName="jetbrains.mps.openapi.editor.cells.EditorCell" />
-    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
-    <classNode extendsClassName="jetbrains.mps.nodeEditor.DefaultNodeEditor" />
-  </dependency>
-  <dependency className="me.tomassetti.bytecode.editor.Areturn_Editor" file="Areturn_Editor.java">
-    <classNode dependClassName="jetbrains.mps.nodeEditor.cells.EditorCell_Constant" />
-    <classNode dependClassName="jetbrains.mps.openapi.editor.EditorContext" />
-    <classNode dependClassName="jetbrains.mps.openapi.editor.cells.EditorCell" />
-    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
-    <classNode extendsClassName="jetbrains.mps.nodeEditor.DefaultNodeEditor" />
-  </dependency>
   <dependency className="me.tomassetti.bytecode.editor.AttributeInfo_Editor" file="AttributeInfo_Editor.java">
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />
@@ -427,11 +392,6 @@
     <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
     <classNode dependClassName="me.tomassetti.bytecode.editor.AccessFlagHolder_Editor" />
     <classNode dependClassName="me.tomassetti.bytecode.editor.AccessFlags_Editor" />
-    <classNode dependClassName="me.tomassetti.bytecode.editor.Aload_0_Editor" />
-    <classNode dependClassName="me.tomassetti.bytecode.editor.Aload_1_Editor" />
-    <classNode dependClassName="me.tomassetti.bytecode.editor.Aload_2_Editor" />
-    <classNode dependClassName="me.tomassetti.bytecode.editor.Aload_3_Editor" />
-    <classNode dependClassName="me.tomassetti.bytecode.editor.Areturn_Editor" />
     <classNode dependClassName="me.tomassetti.bytecode.editor.AttributeInfo_Editor" />
     <classNode dependClassName="me.tomassetti.bytecode.editor.ClassFileLoader_Editor" />
     <classNode dependClassName="me.tomassetti.bytecode.editor.ClassFile_Editor" />
@@ -454,11 +414,11 @@
     <classNode dependClassName="me.tomassetti.bytecode.editor.ConstantPoolUtf8_Editor" />
     <classNode dependClassName="me.tomassetti.bytecode.editor.ExceptionTable_Editor" />
     <classNode dependClassName="me.tomassetti.bytecode.editor.FieldInfo_Editor" />
+    <classNode dependClassName="me.tomassetti.bytecode.editor.Instruction_Editor" />
     <classNode dependClassName="me.tomassetti.bytecode.editor.Invokespecial_Editor" />
     <classNode dependClassName="me.tomassetti.bytecode.editor.Ldc_Editor" />
     <classNode dependClassName="me.tomassetti.bytecode.editor.MethodInfo_Editor" />
     <classNode dependClassName="me.tomassetti.bytecode.editor.RawAttributeInfoData_Editor" />
-    <classNode dependClassName="me.tomassetti.bytecode.editor.Return_Editor" />
     <classNode dependClassName="me.tomassetti.bytecode.editor.SignatureAttributeInfoData_Editor" />
     <classNode dependClassName="me.tomassetti.bytecode.editor.Unsigned1Byte_Editor" />
     <classNode dependClassName="me.tomassetti.bytecode.editor.Unsigned1BytesArray_Editor" />
@@ -513,6 +473,23 @@
     <classNode dependClassName="jetbrains.mps.smodel.action.NodeFactoryManager" />
     <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
     <classNode dependClassName="org.jetbrains.mps.openapi.language.SContainmentLink" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+    <classNode extendsClassName="jetbrains.mps.nodeEditor.DefaultNodeEditor" />
+  </dependency>
+  <dependency className="me.tomassetti.bytecode.editor.Instruction_Editor" file="Instruction_Editor.java">
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="jetbrains.mps.editor.runtime.cells.EmptyCellAction" />
+    <classNode dependClassName="jetbrains.mps.editor.runtime.style.StyleAttributes" />
+    <classNode dependClassName="jetbrains.mps.editor.runtime.style.StyleImpl" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations" />
+    <classNode dependClassName="jetbrains.mps.nodeEditor.MPSFonts" />
+    <classNode dependClassName="jetbrains.mps.nodeEditor.cells.EditorCell_Property" />
+    <classNode dependClassName="jetbrains.mps.nodeEditor.cells.ModelAccessor" />
+    <classNode dependClassName="jetbrains.mps.openapi.editor.EditorContext" />
+    <classNode dependClassName="jetbrains.mps.openapi.editor.cells.CellActionType" />
+    <classNode dependClassName="jetbrains.mps.openapi.editor.cells.EditorCell" />
+    <classNode dependClassName="jetbrains.mps.openapi.editor.style.Style" />
+    <classNode dependClassName="jetbrains.mps.util.EqualUtil" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.nodeEditor.DefaultNodeEditor" />
   </dependency>
@@ -579,13 +556,6 @@
     <classNode dependClassName="jetbrains.mps.openapi.editor.cells.EditorCell" />
     <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
     <classNode dependClassName="org.jetbrains.mps.openapi.language.SContainmentLink" />
-    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
-    <classNode extendsClassName="jetbrains.mps.nodeEditor.DefaultNodeEditor" />
-  </dependency>
-  <dependency className="me.tomassetti.bytecode.editor.Return_Editor" file="Return_Editor.java">
-    <classNode dependClassName="jetbrains.mps.nodeEditor.cells.EditorCell_Constant" />
-    <classNode dependClassName="jetbrains.mps.openapi.editor.EditorContext" />
-    <classNode dependClassName="jetbrains.mps.openapi.editor.cells.EditorCell" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.nodeEditor.DefaultNodeEditor" />
   </dependency>
