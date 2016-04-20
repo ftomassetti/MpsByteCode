@@ -466,6 +466,7 @@ public final class ClassFileLoader__BehaviorDescriptor extends BaseBHDescriptor 
           System.out.println("READING " + startingIndex + " " + MapSequence.fromMap(OpCodeToInstructionMapping.OPCODE_TO_INSTRUCTION).get(code).getName() + " array length " + length);
           i = ClassFileLoader__BehaviorDescriptor.parse_idOFkQGRVb6M.invoke(__thisNode__, mds, i, MapSequence.fromMap(OpCodeToInstructionMapping.OPCODE_TO_INSTRUCTION).get(code), instructions);
         } else {
+          System.out.println("READING CODE " + code + " at " + i);
           switch (code) {
             case 170:
               {
@@ -474,7 +475,10 @@ public final class ClassFileLoader__BehaviorDescriptor extends BaseBHDescriptor 
                     return s + (int) Instruction__BehaviorDescriptor.length_id1kVJV2A9Wse.invoke(it);
                   }
                 });
-                int padding = (startingIndex + 1) % 4;
+                System.out.println("startingIndex " + startingIndex);
+
+                int padding = (4 - ((startingIndex + 1) % 4)) % 4;
+                System.out.println("PADDING " + padding);
                 for (int pi = 0; pi < padding; pi++) {
                   mds.readInt1AsInt();
                 }
@@ -485,6 +489,7 @@ public final class ClassFileLoader__BehaviorDescriptor extends BaseBHDescriptor 
                 SLinkOperations.setTarget(node, MetaAdapterFactory.getContainmentLink(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x153bbfb0a617d3c9L, 0x153bbfb0a617d3cdL, "high"), mds.readInt4AsSignedNode());
                 i = i.add(BigInteger.valueOf(12));
                 int howManyJumpOffsets = SPropertyOperations.getInteger(SLinkOperations.getTarget(node, MetaAdapterFactory.getContainmentLink(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x153bbfb0a617d3c9L, 0x153bbfb0a617d3cdL, "high")), MetaAdapterFactory.getProperty(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x153bbfb0a63f2540L, 0x153bbfb0a63f2541L, "value")) - SPropertyOperations.getInteger(SLinkOperations.getTarget(node, MetaAdapterFactory.getContainmentLink(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x153bbfb0a617d3c9L, 0x153bbfb0a617d3ccL, "low")), MetaAdapterFactory.getProperty(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x153bbfb0a63f2540L, 0x153bbfb0a63f2541L, "value")) + 1;
+                System.out.println("howManyJumpOffsets " + howManyJumpOffsets);
 
 
                 for (int ji = 0; ji < howManyJumpOffsets; ji++) {
@@ -496,12 +501,13 @@ public final class ClassFileLoader__BehaviorDescriptor extends BaseBHDescriptor 
               break;
             case 171:
               {
+                System.out.println("lookupswitch start " + i);
                 int startingIndex = ListSequence.fromList(instructions).foldRight(0, new IRightCombinator<SNode, Integer>() {
                   public Integer combine(SNode it, Integer s) {
                     return s + (int) Instruction__BehaviorDescriptor.length_id1kVJV2A9Wse.invoke(it);
                   }
                 });
-                int padding = (startingIndex + 1) % 4;
+                int padding = (4 - ((startingIndex + 1) % 4)) % 4;
                 for (int pi = 0; pi < padding; pi++) {
                   mds.readInt1AsInt();
                 }
@@ -509,13 +515,20 @@ public final class ClassFileLoader__BehaviorDescriptor extends BaseBHDescriptor 
                 SNode node = SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x153bbfb0a6164e38L, "me.tomassetti.bytecode.structure.Lookupswitch")));
                 SLinkOperations.setTarget(node, MetaAdapterFactory.getContainmentLink(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x153bbfb0a6164e38L, 0x153bbfb0a6164e3bL, "default"), mds.readInt4AsSignedNode());
                 int npairs = SPropertyOperations.getInteger(mds.readInt4AsSignedNode(), MetaAdapterFactory.getProperty(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x153bbfb0a63f2540L, 0x153bbfb0a63f2541L, "value"));
+                System.out.println("NPAIRS " + npairs);
                 i = i.add(BigInteger.valueOf(8));
                 for (int ji = 0; ji < npairs; ji++) {
-                  ListSequence.fromList(SLinkOperations.getChildren(node, MetaAdapterFactory.getContainmentLink(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x153bbfb0a6164e38L, 0x153bbfb0a6164e42L, "matchOffsetPairs"))).addElement(mds.readInt4AsSignedNode());
-                  i = i.add(BigInteger.valueOf(4));
+                  SNode matchOffsetPair = SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x153bbfb0a686ac13L, "me.tomassetti.bytecode.structure.MatchOffsetPair")));
+                  SLinkOperations.setTarget(matchOffsetPair, MetaAdapterFactory.getContainmentLink(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x153bbfb0a686ac13L, 0x153bbfb0a686ac14L, "match"), mds.readInt4AsSignedNode());
+                  SLinkOperations.setTarget(matchOffsetPair, MetaAdapterFactory.getContainmentLink(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x153bbfb0a686ac13L, 0x153bbfb0a686ac16L, "offset"), mds.readInt4AsSignedNode());
+                  ListSequence.fromList(SLinkOperations.getChildren(node, MetaAdapterFactory.getContainmentLink(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x153bbfb0a6164e38L, 0x153bbfb0a6164e42L, "matchOffsetPairs"))).addElement(matchOffsetPair);
+                  i = i.add(BigInteger.valueOf(8));
                 }
+                System.out.println("lookupswitch end " + i);
+
                 ListSequence.fromList(instructions).addElement(node);
               }
+              break;
             case 196:
               throw new UnsupportedOperationException("WIDE NOT IMPLEMENTED");
             default:

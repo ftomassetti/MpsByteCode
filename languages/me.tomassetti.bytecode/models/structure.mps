@@ -2190,7 +2190,7 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="matchOffsetPairs" />
       <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" node="1kVJV2AfMl0" resolve="Signed4Bytes" />
+      <ref role="20lvS9" node="1kVJV2AxEKj" resolve="MatchOffsetPair" />
     </node>
   </node>
   <node concept="1TIwiD" id="1kVJV2A5Xe_">
@@ -2463,6 +2463,24 @@
     <node concept="1TJgyi" id="1kVJV2AfMl1" role="1TKVEl">
       <property role="TrG5h" value="value" />
       <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1kVJV2AxEKj">
+    <property role="1pbfSe" value="1144886333" />
+    <property role="3GE5qa" value="instruction" />
+    <property role="TrG5h" value="MatchOffsetPair" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="1kVJV2AxEKk" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="match" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="1kVJV2AfMl0" resolve="Signed4Bytes" />
+    </node>
+    <node concept="1TJgyj" id="1kVJV2AxEKm" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="offset" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="1kVJV2AfMl0" resolve="Signed4Bytes" />
     </node>
   </node>
 </model>
