@@ -39,10 +39,11 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptCaload = new ConceptDescriptorBuilder("me.tomassetti.bytecode.structure.Caload", MetaIdFactory.conceptId(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x67eeae9702c416afL)).super_("me.tomassetti.bytecode.structure.Instruction").super_(MetaIdFactory.conceptId(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x6c0d5336940e202L)).parents("me.tomassetti.bytecode.structure.Instruction").parentIds(MetaIdFactory.conceptId(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x6c0d5336940e202L)).create();
   /*package*/ final ConceptDescriptor myConceptCastore = new ConceptDescriptorBuilder("me.tomassetti.bytecode.structure.Castore", MetaIdFactory.conceptId(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x67eeae9702c416b0L)).super_("me.tomassetti.bytecode.structure.Instruction").super_(MetaIdFactory.conceptId(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x6c0d5336940e202L)).parents("me.tomassetti.bytecode.structure.Instruction").parentIds(MetaIdFactory.conceptId(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x6c0d5336940e202L)).create();
   /*package*/ final ConceptDescriptor myConceptCheckcast = new ConceptDescriptorBuilder("me.tomassetti.bytecode.structure.Checkcast", MetaIdFactory.conceptId(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x67eeae9702c416b1L)).super_("me.tomassetti.bytecode.structure.Instruction").super_(MetaIdFactory.conceptId(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x6c0d5336940e202L)).parents("me.tomassetti.bytecode.structure.Instruction").parentIds(MetaIdFactory.conceptId(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x6c0d5336940e202L)).childDescriptors(new ConceptDescriptorBuilder.Link(7489115193973413556L, "indexbyte1", MetaIdFactory.conceptId(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a534cdcL), false, false, false), new ConceptDescriptorBuilder.Link(7489115193973413554L, "indexbyte2", MetaIdFactory.conceptId(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a534cdcL), false, false, false)).children(new String[]{"indexbyte1", "indexbyte2"}, new boolean[]{false, false}).create();
-  /*package*/ final ConceptDescriptor myConceptClassFile = new ConceptDescriptorBuilder("me.tomassetti.bytecode.structure.ClassFile", MetaIdFactory.conceptId(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x40880d8921831cd4L)).super_("jetbrains.mps.lang.core.structure.BaseConcept").super_(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL)).parents("jetbrains.mps.lang.core.structure.BaseConcept").parentIds(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL)).childDescriptors(new ConceptDescriptorBuilder.Link(4649981497883958486L, "minor_version", MetaIdFactory.conceptId(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a47ef12L), false, false, false), new ConceptDescriptorBuilder.Link(4649981497883958491L, "major_version", MetaIdFactory.conceptId(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a47ef12L), false, false, false), new ConceptDescriptorBuilder.Link(4649981497883958509L, "access_flags", MetaIdFactory.conceptId(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a4fb665L), false, false, false), new ConceptDescriptorBuilder.Link(4649981497883958514L, "this_class", MetaIdFactory.conceptId(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a47ef12L), false, false, false), new ConceptDescriptorBuilder.Link(4649981497883958520L, "super_class", MetaIdFactory.conceptId(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a47ef12L), false, false, false), new ConceptDescriptorBuilder.Link(1627386486402095495L, "constantPool", MetaIdFactory.conceptId(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a43d37eL), true, true, false), new ConceptDescriptorBuilder.Link(1627386486402778755L, "methodInfos", MetaIdFactory.conceptId(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a4ea152L), true, true, false), new ConceptDescriptorBuilder.Link(1627386486402959909L, "attributeInfos", MetaIdFactory.conceptId(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a51ca20L), true, true, false), new ConceptDescriptorBuilder.Link(486623176541522779L, "interfaceInfos", MetaIdFactory.conceptId(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x6c0d533693aca40L), true, true, false), new ConceptDescriptorBuilder.Link(486623176541522780L, "fieldInfos", MetaIdFactory.conceptId(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x6c0d533693aca41L), true, true, false)).children(new String[]{"minor_version", "major_version", "access_flags", "this_class", "super_class", "constantPool", "methodInfos", "attributeInfos", "interfaceInfos", "fieldInfos"}, new boolean[]{false, false, false, false, false, true, true, true, true, true}).create();
+  /*package*/ final ConceptDescriptor myConceptClassFile = new ConceptDescriptorBuilder("me.tomassetti.bytecode.structure.ClassFile", MetaIdFactory.conceptId(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x40880d8921831cd4L)).super_("jetbrains.mps.lang.core.structure.BaseConcept").super_(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL)).parents("jetbrains.mps.lang.core.structure.BaseConcept", "me.tomassetti.bytecode.execution.structure.IClassProducer").parentIds(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL), MetaIdFactory.conceptId(0x9127d54020948a6L, 0x91676d3d4fb47096L, 0xd2b536b381fbafaL)).childDescriptors(new ConceptDescriptorBuilder.Link(4649981497883958486L, "minor_version", MetaIdFactory.conceptId(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a47ef12L), false, false, false), new ConceptDescriptorBuilder.Link(4649981497883958491L, "major_version", MetaIdFactory.conceptId(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a47ef12L), false, false, false), new ConceptDescriptorBuilder.Link(4649981497883958509L, "access_flags", MetaIdFactory.conceptId(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a4fb665L), false, false, false), new ConceptDescriptorBuilder.Link(4649981497883958514L, "this_class", MetaIdFactory.conceptId(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x485b06383a83ac49L), false, false, false), new ConceptDescriptorBuilder.Link(4649981497883958520L, "super_class", MetaIdFactory.conceptId(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a47ef12L), false, false, false), new ConceptDescriptorBuilder.Link(1627386486402095495L, "constantPool", MetaIdFactory.conceptId(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a43d37eL), true, true, false), new ConceptDescriptorBuilder.Link(1627386486402778755L, "methodInfos", MetaIdFactory.conceptId(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a4ea152L), true, true, false), new ConceptDescriptorBuilder.Link(1627386486402959909L, "attributeInfos", MetaIdFactory.conceptId(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a51ca20L), true, true, false), new ConceptDescriptorBuilder.Link(486623176541522779L, "interfaceInfos", MetaIdFactory.conceptId(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x485b06383a83ac49L), true, true, false), new ConceptDescriptorBuilder.Link(486623176541522780L, "fieldInfos", MetaIdFactory.conceptId(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x6c0d533693aca41L), true, true, false)).children(new String[]{"minor_version", "major_version", "access_flags", "this_class", "super_class", "constantPool", "methodInfos", "attributeInfos", "interfaceInfos", "fieldInfos"}, new boolean[]{false, false, false, false, false, true, true, true, true, true}).create();
   /*package*/ final ConceptDescriptor myConceptClassFileLoader = new ConceptDescriptorBuilder("me.tomassetti.bytecode.structure.ClassFileLoader", MetaIdFactory.conceptId(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a40c7ecL)).super_("jetbrains.mps.lang.core.structure.BaseConcept").super_(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL)).parents("jetbrains.mps.lang.core.structure.BaseConcept").parentIds(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL)).propertyDescriptors(new ConceptDescriptorBuilder.Prop(1627386486401845231L, "path")).properties("path").childDescriptors(new ConceptDescriptorBuilder.Link(1627386486401845229L, "classFile", MetaIdFactory.conceptId(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x40880d8921831cd4L), true, false, false)).children(new String[]{"classFile"}, new boolean[]{false}).create();
   /*package*/ final ConceptDescriptor myConceptCodeAttributeInfoData = new ConceptDescriptorBuilder("me.tomassetti.bytecode.structure.CodeAttributeInfoData", MetaIdFactory.conceptId(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x6c0d53369382668L)).super_("me.tomassetti.bytecode.structure.AttributeInfoData").super_(MetaIdFactory.conceptId(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x6c0d5336931d740L)).parents("me.tomassetti.bytecode.structure.AttributeInfoData").parentIds(MetaIdFactory.conceptId(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x6c0d5336931d740L)).childDescriptors(new ConceptDescriptorBuilder.Link(486623176541349490L, "maxStack", MetaIdFactory.conceptId(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a47ef12L), false, false, false), new ConceptDescriptorBuilder.Link(486623176541349488L, "maxLocals", MetaIdFactory.conceptId(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a47ef12L), false, false, false), new ConceptDescriptorBuilder.Link(486623176541349494L, "instructions", MetaIdFactory.conceptId(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x6c0d5336940e202L), true, true, false), new ConceptDescriptorBuilder.Link(486623176541349498L, "exceptionTable", MetaIdFactory.conceptId(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x6c0d53369382685L), false, false, false), new ConceptDescriptorBuilder.Link(486623176541349521L, "attributeInfos", MetaIdFactory.conceptId(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a51ca20L), true, true, false)).children(new String[]{"maxStack", "maxLocals", "instructions", "exceptionTable", "attributeInfos"}, new boolean[]{false, false, true, false, true}).create();
-  /*package*/ final ConceptDescriptor myConceptConstantPoolClass = new ConceptDescriptorBuilder("me.tomassetti.bytecode.structure.ConstantPoolClass", MetaIdFactory.conceptId(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a43d9beL)).super_("me.tomassetti.bytecode.structure.ConstantPoolElement").super_(MetaIdFactory.conceptId(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a43d37eL)).parents("me.tomassetti.bytecode.structure.ConstantPoolElement").parentIds(MetaIdFactory.conceptId(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a43d37eL)).childDescriptors(new ConceptDescriptorBuilder.Link(1627386486402314005L, "nameIndex", MetaIdFactory.conceptId(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a47ef12L), false, false, false)).children(new String[]{"nameIndex"}, new boolean[]{false}).create();
+  /*package*/ final ConceptDescriptor myConceptConstantPoolClass = new ConceptDescriptorBuilder("me.tomassetti.bytecode.structure.ConstantPoolClass", MetaIdFactory.conceptId(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a43d9beL)).super_("me.tomassetti.bytecode.structure.ConstantPoolElement").super_(MetaIdFactory.conceptId(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a43d37eL)).parents("me.tomassetti.bytecode.structure.ConstantPoolElement").parentIds(MetaIdFactory.conceptId(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a43d37eL)).childDescriptors(new ConceptDescriptorBuilder.Link(1627386486402314005L, "nameIndex", MetaIdFactory.conceptId(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0xd2b536b37df3894L), false, false, false)).children(new String[]{"nameIndex"}, new boolean[]{false}).create();
+  /*package*/ final ConceptDescriptor myConceptConstantPoolClassReference = new ConceptDescriptorBuilder("me.tomassetti.bytecode.structure.ConstantPoolClassReference", MetaIdFactory.conceptId(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x485b06383a83ac49L)).super_("me.tomassetti.bytecode.structure.ConstantPoolReference").super_(MetaIdFactory.conceptId(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0xd2b536b37df3897L)).parents("me.tomassetti.bytecode.structure.ConstantPoolReference").parentIds(MetaIdFactory.conceptId(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0xd2b536b37df3897L)).create();
   /*package*/ final ConceptDescriptor myConceptConstantPoolDouble = new ConceptDescriptorBuilder("me.tomassetti.bytecode.structure.ConstantPoolDouble", MetaIdFactory.conceptId(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x67eeae9702c66d1dL)).super_("me.tomassetti.bytecode.structure.ConstantPoolElement").super_(MetaIdFactory.conceptId(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a43d37eL)).parents("me.tomassetti.bytecode.structure.ConstantPoolElement").parentIds(MetaIdFactory.conceptId(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a43d37eL)).childDescriptors(new ConceptDescriptorBuilder.Link(7489115193973566750L, "highBytes", MetaIdFactory.conceptId(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a534bf3L), false, false, false), new ConceptDescriptorBuilder.Link(7489115193973566751L, "lowBytes", MetaIdFactory.conceptId(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a534bf3L), false, false, false)).children(new String[]{"highBytes", "lowBytes"}, new boolean[]{false, false}).create();
   /*package*/ final ConceptDescriptor myConceptConstantPoolElement = new ConceptDescriptorBuilder("me.tomassetti.bytecode.structure.ConstantPoolElement", MetaIdFactory.conceptId(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a43d37eL)).super_("jetbrains.mps.lang.core.structure.BaseConcept").super_(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL)).parents("jetbrains.mps.lang.core.structure.BaseConcept").parentIds(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL)).abstract_().create();
   /*package*/ final ConceptDescriptor myConceptConstantPoolFieldref = new ConceptDescriptorBuilder("me.tomassetti.bytecode.structure.ConstantPoolFieldref", MetaIdFactory.conceptId(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a43d9bdL)).super_("me.tomassetti.bytecode.structure.ConstantPoolElement").super_(MetaIdFactory.conceptId(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a43d37eL)).parents("me.tomassetti.bytecode.structure.ConstantPoolElement").parentIds(MetaIdFactory.conceptId(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a43d37eL)).childDescriptors(new ConceptDescriptorBuilder.Link(1627386486402314009L, "classIndex", MetaIdFactory.conceptId(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a47ef12L), false, false, false), new ConceptDescriptorBuilder.Link(1627386486402314007L, "nameAndTypeIndex", MetaIdFactory.conceptId(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a47ef12L), false, false, false)).children(new String[]{"classIndex", "nameAndTypeIndex"}, new boolean[]{false, false}).create();
@@ -55,7 +56,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptConstantPoolMethodType = new ConceptDescriptorBuilder("me.tomassetti.bytecode.structure.ConstantPoolMethodType", MetaIdFactory.conceptId(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a43d9c4L)).super_("me.tomassetti.bytecode.structure.ConstantPoolElement").super_(MetaIdFactory.conceptId(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a43d37eL)).parents("me.tomassetti.bytecode.structure.ConstantPoolElement").parentIds(MetaIdFactory.conceptId(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a43d37eL)).childDescriptors(new ConceptDescriptorBuilder.Link(7489115193973722200L, "descriptorIndex", MetaIdFactory.conceptId(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a47ef12L), false, false, false)).children(new String[]{"descriptorIndex"}, new boolean[]{false}).create();
   /*package*/ final ConceptDescriptor myConceptConstantPoolMethodref = new ConceptDescriptorBuilder("me.tomassetti.bytecode.structure.ConstantPoolMethodref", MetaIdFactory.conceptId(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a43d9bfL)).super_("me.tomassetti.bytecode.structure.ConstantPoolElement").super_(MetaIdFactory.conceptId(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a43d37eL)).parents("me.tomassetti.bytecode.structure.ConstantPoolElement").parentIds(MetaIdFactory.conceptId(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a43d37eL)).childDescriptors(new ConceptDescriptorBuilder.Link(1627386486402314017L, "classIndex", MetaIdFactory.conceptId(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a47ef12L), false, false, false), new ConceptDescriptorBuilder.Link(1627386486402314018L, "nameAndTypeIndex", MetaIdFactory.conceptId(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a47ef12L), false, false, false)).children(new String[]{"classIndex", "nameAndTypeIndex"}, new boolean[]{false, false}).create();
   /*package*/ final ConceptDescriptor myConceptConstantPoolNameAndType = new ConceptDescriptorBuilder("me.tomassetti.bytecode.structure.ConstantPoolNameAndType", MetaIdFactory.conceptId(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a43d9c0L)).super_("me.tomassetti.bytecode.structure.ConstantPoolElement").super_(MetaIdFactory.conceptId(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a43d37eL)).parents("me.tomassetti.bytecode.structure.ConstantPoolElement").parentIds(MetaIdFactory.conceptId(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a43d37eL)).childDescriptors(new ConceptDescriptorBuilder.Link(1627386486402314022L, "nameIndex", MetaIdFactory.conceptId(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a47ef12L), false, false, false), new ConceptDescriptorBuilder.Link(1627386486402314023L, "descriptorIndex", MetaIdFactory.conceptId(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a47ef12L), false, false, false)).children(new String[]{"nameIndex", "descriptorIndex"}, new boolean[]{false, false}).create();
-  /*package*/ final ConceptDescriptor myConceptConstantPoolReference = new ConceptDescriptorBuilder("me.tomassetti.bytecode.structure.ConstantPoolReference", MetaIdFactory.conceptId(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0xd2b536b37df3897L)).super_("jetbrains.mps.lang.core.structure.BaseConcept").super_(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL)).parents("jetbrains.mps.lang.core.structure.BaseConcept").parentIds(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL)).referenceDescriptors(new ConceptDescriptorBuilder.Ref(948943866455603352L, "element", MetaIdFactory.conceptId(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a43d37eL), false)).references("element").abstract_().create();
+  /*package*/ final ConceptDescriptor myConceptConstantPoolReference = new ConceptDescriptorBuilder("me.tomassetti.bytecode.structure.ConstantPoolReference", MetaIdFactory.conceptId(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0xd2b536b37df3897L)).super_("jetbrains.mps.lang.core.structure.BaseConcept").super_(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL)).parents("jetbrains.mps.lang.core.structure.BaseConcept").parentIds(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL)).propertyDescriptors(new ConceptDescriptorBuilder.Prop(5213767832181802605L, "rawIndex")).properties("rawIndex").referenceDescriptors(new ConceptDescriptorBuilder.Ref(948943866455603352L, "element", MetaIdFactory.conceptId(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a43d37eL), false)).references("element").abstract_().create();
   /*package*/ final ConceptDescriptor myConceptConstantPoolString = new ConceptDescriptorBuilder("me.tomassetti.bytecode.structure.ConstantPoolString", MetaIdFactory.conceptId(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a43d9c3L)).super_("me.tomassetti.bytecode.structure.ConstantPoolElement").super_(MetaIdFactory.conceptId(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a43d37eL)).parents("me.tomassetti.bytecode.structure.ConstantPoolElement").parentIds(MetaIdFactory.conceptId(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a43d37eL)).childDescriptors(new ConceptDescriptorBuilder.Link(1627386486402397915L, "stringIndex", MetaIdFactory.conceptId(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a47ef12L), false, false, false)).children(new String[]{"stringIndex"}, new boolean[]{false}).create();
   /*package*/ final ConceptDescriptor myConceptConstantPoolUtf8 = new ConceptDescriptorBuilder("me.tomassetti.bytecode.structure.ConstantPoolUtf8", MetaIdFactory.conceptId(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a43d9c7L)).super_("me.tomassetti.bytecode.structure.ConstantPoolElement").super_(MetaIdFactory.conceptId(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a43d37eL)).parents("me.tomassetti.bytecode.structure.ConstantPoolElement").parentIds(MetaIdFactory.conceptId(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a43d37eL)).propertyDescriptors(new ConceptDescriptorBuilder.Prop(1627386486402254906L, "value")).properties("value").create();
   /*package*/ final ConceptDescriptor myConceptConstantPoolUtf8Reference = new ConceptDescriptorBuilder("me.tomassetti.bytecode.structure.ConstantPoolUtf8Reference", MetaIdFactory.conceptId(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0xd2b536b37df3894L)).super_("me.tomassetti.bytecode.structure.ConstantPoolReference").super_(MetaIdFactory.conceptId(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0xd2b536b37df3897L)).parents("me.tomassetti.bytecode.structure.ConstantPoolReference").parentIds(MetaIdFactory.conceptId(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0xd2b536b37df3897L)).create();
@@ -175,7 +176,6 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptInstanceof = new ConceptDescriptorBuilder("me.tomassetti.bytecode.structure.Instanceof", MetaIdFactory.conceptId(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0xd2b536b381fc4c4L)).super_("me.tomassetti.bytecode.structure.Instruction").super_(MetaIdFactory.conceptId(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x6c0d5336940e202L)).parents("me.tomassetti.bytecode.structure.Instruction").parentIds(MetaIdFactory.conceptId(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x6c0d5336940e202L)).childDescriptors(new ConceptDescriptorBuilder.Link(948943866459833541L, "indexbyte1", MetaIdFactory.conceptId(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a534cdcL), false, false, false), new ConceptDescriptorBuilder.Link(948943866459833543L, "indexbyte2", MetaIdFactory.conceptId(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a534cdcL), false, false, false)).children(new String[]{"indexbyte1", "indexbyte2"}, new boolean[]{false, false}).create();
   /*package*/ final ConceptDescriptor myConceptInstruction = new ConceptDescriptorBuilder("me.tomassetti.bytecode.structure.Instruction", MetaIdFactory.conceptId(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x6c0d5336940e202L)).super_("jetbrains.mps.lang.core.structure.BaseConcept").super_(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL)).parents("jetbrains.mps.lang.core.structure.BaseConcept").parentIds(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL)).abstract_().create();
   /*package*/ final ConceptDescriptor myConceptInstructionTypeReference = new ConceptDescriptorBuilder("me.tomassetti.bytecode.structure.InstructionTypeReference", MetaIdFactory.conceptId(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x7c4483a34b599febL)).super_("jetbrains.mps.lang.core.structure.BaseConcept").super_(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL)).parents("jetbrains.mps.lang.core.structure.BaseConcept").parentIds(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL)).referenceDescriptors(new ConceptDescriptorBuilder.Ref(8954426696486461420L, "instructionType", MetaIdFactory.conceptId(0xc72da2b97cce4447L, 0x8389f407dc1158b7L, 0xf979ba0450L), false)).references("instructionType").create();
-  /*package*/ final ConceptDescriptor myConceptInterfaceInfo = new ConceptDescriptorBuilder("me.tomassetti.bytecode.structure.InterfaceInfo", MetaIdFactory.conceptId(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x6c0d533693aca40L)).super_("jetbrains.mps.lang.core.structure.BaseConcept").super_(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL)).parents("jetbrains.mps.lang.core.structure.BaseConcept").parentIds(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL)).create();
   /*package*/ final ConceptDescriptor myConceptInvokedynamic = new ConceptDescriptorBuilder("me.tomassetti.bytecode.structure.Invokedynamic", MetaIdFactory.conceptId(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0xd2b536b381fc4caL)).super_("me.tomassetti.bytecode.structure.Instruction").super_(MetaIdFactory.conceptId(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x6c0d5336940e202L)).parents("me.tomassetti.bytecode.structure.Instruction").parentIds(MetaIdFactory.conceptId(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x6c0d5336940e202L)).childDescriptors(new ConceptDescriptorBuilder.Link(948943866459833547L, "indexbyte1", MetaIdFactory.conceptId(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a534cdcL), false, false, false), new ConceptDescriptorBuilder.Link(948943866459833548L, "indexbyte2", MetaIdFactory.conceptId(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a534cdcL), false, false, false), new ConceptDescriptorBuilder.Link(948943866459833549L, "zero1", MetaIdFactory.conceptId(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a534cdcL), false, false, false), new ConceptDescriptorBuilder.Link(948943866459833550L, "zero2", MetaIdFactory.conceptId(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a534cdcL), false, false, false)).children(new String[]{"indexbyte1", "indexbyte2", "zero1", "zero2"}, new boolean[]{false, false, false, false}).create();
   /*package*/ final ConceptDescriptor myConceptInvokeinterface = new ConceptDescriptorBuilder("me.tomassetti.bytecode.structure.Invokeinterface", MetaIdFactory.conceptId(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0xd2b536b3817116dL)).super_("me.tomassetti.bytecode.structure.Instruction").super_(MetaIdFactory.conceptId(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x6c0d5336940e202L)).parents("me.tomassetti.bytecode.structure.Instruction").parentIds(MetaIdFactory.conceptId(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x6c0d5336940e202L)).childDescriptors(new ConceptDescriptorBuilder.Link(948943866459263342L, "index", MetaIdFactory.conceptId(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a47ef12L), false, false, false), new ConceptDescriptorBuilder.Link(948943866459263344L, "count", MetaIdFactory.conceptId(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a534cdcL), false, false, false), new ConceptDescriptorBuilder.Link(948943866459263348L, "zero", MetaIdFactory.conceptId(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a534cdcL), false, false, false)).children(new String[]{"index", "count", "zero"}, new boolean[]{false, false, false}).create();
   /*package*/ final ConceptDescriptor myConceptInvokespecial = new ConceptDescriptorBuilder("me.tomassetti.bytecode.structure.Invokespecial", MetaIdFactory.conceptId(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x6c0d5336946de49L)).super_("me.tomassetti.bytecode.structure.Instruction").super_(MetaIdFactory.conceptId(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x6c0d5336940e202L)).parents("me.tomassetti.bytecode.structure.Instruction").parentIds(MetaIdFactory.conceptId(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x6c0d5336940e202L)).childDescriptors(new ConceptDescriptorBuilder.Link(486623176542314058L, "index", MetaIdFactory.conceptId(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a47ef12L), false, false, false)).children(new String[]{"index"}, new boolean[]{false}).create();
@@ -261,7 +261,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptAaload, myConceptAastore, myConceptAccessFlagHolder, myConceptAccessFlags, myConceptAconstNull, myConceptAload, myConceptAload_0, myConceptAload_1, myConceptAload_2, myConceptAload_3, myConceptAnewarray, myConceptAreturn, myConceptArraylength, myConceptAstore, myConceptAstore_0, myConceptAstore_1, myConceptAstore_2, myConceptAstore_3, myConceptAthrow, myConceptAttributeInfo, myConceptAttributeInfoData, myConceptBaload, myConceptBastore, myConceptBipush, myConceptCaload, myConceptCastore, myConceptCheckcast, myConceptClassFile, myConceptClassFileLoader, myConceptCodeAttributeInfoData, myConceptConstantPoolClass, myConceptConstantPoolDouble, myConceptConstantPoolElement, myConceptConstantPoolFieldref, myConceptConstantPoolFloat, myConceptConstantPoolInteger, myConceptConstantPoolInterfaceMethodref, myConceptConstantPoolInvokeDynamic, myConceptConstantPoolLong, myConceptConstantPoolMethodHandle, myConceptConstantPoolMethodType, myConceptConstantPoolMethodref, myConceptConstantPoolNameAndType, myConceptConstantPoolReference, myConceptConstantPoolString, myConceptConstantPoolUtf8, myConceptConstantPoolUtf8Reference, myConceptD2f, myConceptD2i, myConceptD2l, myConceptDadd, myConceptDaload, myConceptDastore, myConceptDcmpg, myConceptDcmpl, myConceptDconst_0, myConceptDconst_1, myConceptDdiv, myConceptDload, myConceptDload_0, myConceptDload_1, myConceptDload_2, myConceptDload_3, myConceptDmul, myConceptDneg, myConceptDrem, myConceptDreturn, myConceptDstore, myConceptDstore_0, myConceptDstore_1, myConceptDstore_2, myConceptDstore_3, myConceptDsub, myConceptDup, myConceptDup2, myConceptDup2_x1, myConceptDup2_x2, myConceptDup_x1, myConceptDup_x2, myConceptExceptionInfo, myConceptExceptionTable, myConceptExceptionTableElement, myConceptF2d, myConceptF2i, myConceptF2l, myConceptFadd, myConceptFaload, myConceptFastore, myConceptFcmpg, myConceptFcmpl, myConceptFcmpop, myConceptFconst_0, myConceptFconst_1, myConceptFconst_2, myConceptFdiv, myConceptFieldInfo, myConceptFload, myConceptFload_0, myConceptFload_1, myConceptFload_2, myConceptFload_3, myConceptFmul, myConceptFneg, myConceptFrem, myConceptFreturn, myConceptFstore, myConceptFstore_0, myConceptFstore_1, myConceptFstore_2, myConceptFstore_3, myConceptFsub, myConceptGetfield, myConceptGetstatic, myConceptGoto, myConceptGoto_w, myConceptI2b, myConceptI2c, myConceptI2d, myConceptI2f, myConceptI2l, myConceptI2s, myConceptIadd, myConceptIaload, myConceptIand, myConceptIastore, myConceptIconst_0, myConceptIconst_1, myConceptIconst_2, myConceptIconst_3, myConceptIconst_4, myConceptIconst_5, myConceptIconst_m1, myConceptIdiv, myConceptIf_acmpeq, myConceptIf_acmpne, myConceptIf_acompcond, myConceptIf_icmpcond, myConceptIf_icmpeq, myConceptIf_icmpge, myConceptIf_icmpgt, myConceptIf_icmple, myConceptIf_icmplt, myConceptIf_icmpne, myConceptIfcond, myConceptIfeq, myConceptIfge, myConceptIfgt, myConceptIfle, myConceptIflt, myConceptIfne, myConceptIfnonnull, myConceptIfnull, myConceptIinc, myConceptIload, myConceptIload_0, myConceptIload_1, myConceptIload_2, myConceptIload_3, myConceptImul, myConceptIneg, myConceptInstanceof, myConceptInstruction, myConceptInstructionTypeReference, myConceptInterfaceInfo, myConceptInvokedynamic, myConceptInvokeinterface, myConceptInvokespecial, myConceptInvokestatic, myConceptInvokevirtual, myConceptIor, myConceptIrem, myConceptIreturn, myConceptIshl, myConceptIshr, myConceptIstore, myConceptIstore_0, myConceptIstore_1, myConceptIstore_2, myConceptIstore_3, myConceptIsub, myConceptIushr, myConceptIxor, myConceptJsr, myConceptJsr_w, myConceptL2d, myConceptL2f, myConceptL2i, myConceptLadd, myConceptLaload, myConceptLand, myConceptLastore, myConceptLcmp, myConceptLconst_0, myConceptLconst_1, myConceptLdc, myConceptLdc2_w, myConceptLdc_w, myConceptLdiv, myConceptLload, myConceptLload_0, myConceptLload_1, myConceptLload_2, myConceptLload_3, myConceptLmul, myConceptLneg, myConceptLookupswitch, myConceptLor, myConceptLrem, myConceptLreturn, myConceptLshl, myConceptLshr, myConceptLstore, myConceptLstore_0, myConceptLstore_1, myConceptLstore_2, myConceptLstore_3, myConceptLsub, myConceptLushr, myConceptLxor, myConceptMatchOffsetPair, myConceptMethodInfo, myConceptMonitorenter, myConceptMonitorexit, myConceptMultianewarray, myConceptNew, myConceptNewarray, myConceptNop, myConceptPop, myConceptPop2, myConceptPutfield, myConceptPutstatic, myConceptRawAttributeInfoData, myConceptRet, myConceptReturn, myConceptSaload, myConceptSastore, myConceptSignatureAttributeInfoData, myConceptSigned4Bytes, myConceptSipush, myConceptSwap, myConceptTableswitch, myConceptUnsigned1Byte, myConceptUnsigned1BytesArray, myConceptUnsigned2Bytes, myConceptUnsigned4Bytes, myConceptWide);
+    return Arrays.asList(myConceptAaload, myConceptAastore, myConceptAccessFlagHolder, myConceptAccessFlags, myConceptAconstNull, myConceptAload, myConceptAload_0, myConceptAload_1, myConceptAload_2, myConceptAload_3, myConceptAnewarray, myConceptAreturn, myConceptArraylength, myConceptAstore, myConceptAstore_0, myConceptAstore_1, myConceptAstore_2, myConceptAstore_3, myConceptAthrow, myConceptAttributeInfo, myConceptAttributeInfoData, myConceptBaload, myConceptBastore, myConceptBipush, myConceptCaload, myConceptCastore, myConceptCheckcast, myConceptClassFile, myConceptClassFileLoader, myConceptCodeAttributeInfoData, myConceptConstantPoolClass, myConceptConstantPoolClassReference, myConceptConstantPoolDouble, myConceptConstantPoolElement, myConceptConstantPoolFieldref, myConceptConstantPoolFloat, myConceptConstantPoolInteger, myConceptConstantPoolInterfaceMethodref, myConceptConstantPoolInvokeDynamic, myConceptConstantPoolLong, myConceptConstantPoolMethodHandle, myConceptConstantPoolMethodType, myConceptConstantPoolMethodref, myConceptConstantPoolNameAndType, myConceptConstantPoolReference, myConceptConstantPoolString, myConceptConstantPoolUtf8, myConceptConstantPoolUtf8Reference, myConceptD2f, myConceptD2i, myConceptD2l, myConceptDadd, myConceptDaload, myConceptDastore, myConceptDcmpg, myConceptDcmpl, myConceptDconst_0, myConceptDconst_1, myConceptDdiv, myConceptDload, myConceptDload_0, myConceptDload_1, myConceptDload_2, myConceptDload_3, myConceptDmul, myConceptDneg, myConceptDrem, myConceptDreturn, myConceptDstore, myConceptDstore_0, myConceptDstore_1, myConceptDstore_2, myConceptDstore_3, myConceptDsub, myConceptDup, myConceptDup2, myConceptDup2_x1, myConceptDup2_x2, myConceptDup_x1, myConceptDup_x2, myConceptExceptionInfo, myConceptExceptionTable, myConceptExceptionTableElement, myConceptF2d, myConceptF2i, myConceptF2l, myConceptFadd, myConceptFaload, myConceptFastore, myConceptFcmpg, myConceptFcmpl, myConceptFcmpop, myConceptFconst_0, myConceptFconst_1, myConceptFconst_2, myConceptFdiv, myConceptFieldInfo, myConceptFload, myConceptFload_0, myConceptFload_1, myConceptFload_2, myConceptFload_3, myConceptFmul, myConceptFneg, myConceptFrem, myConceptFreturn, myConceptFstore, myConceptFstore_0, myConceptFstore_1, myConceptFstore_2, myConceptFstore_3, myConceptFsub, myConceptGetfield, myConceptGetstatic, myConceptGoto, myConceptGoto_w, myConceptI2b, myConceptI2c, myConceptI2d, myConceptI2f, myConceptI2l, myConceptI2s, myConceptIadd, myConceptIaload, myConceptIand, myConceptIastore, myConceptIconst_0, myConceptIconst_1, myConceptIconst_2, myConceptIconst_3, myConceptIconst_4, myConceptIconst_5, myConceptIconst_m1, myConceptIdiv, myConceptIf_acmpeq, myConceptIf_acmpne, myConceptIf_acompcond, myConceptIf_icmpcond, myConceptIf_icmpeq, myConceptIf_icmpge, myConceptIf_icmpgt, myConceptIf_icmple, myConceptIf_icmplt, myConceptIf_icmpne, myConceptIfcond, myConceptIfeq, myConceptIfge, myConceptIfgt, myConceptIfle, myConceptIflt, myConceptIfne, myConceptIfnonnull, myConceptIfnull, myConceptIinc, myConceptIload, myConceptIload_0, myConceptIload_1, myConceptIload_2, myConceptIload_3, myConceptImul, myConceptIneg, myConceptInstanceof, myConceptInstruction, myConceptInstructionTypeReference, myConceptInvokedynamic, myConceptInvokeinterface, myConceptInvokespecial, myConceptInvokestatic, myConceptInvokevirtual, myConceptIor, myConceptIrem, myConceptIreturn, myConceptIshl, myConceptIshr, myConceptIstore, myConceptIstore_0, myConceptIstore_1, myConceptIstore_2, myConceptIstore_3, myConceptIsub, myConceptIushr, myConceptIxor, myConceptJsr, myConceptJsr_w, myConceptL2d, myConceptL2f, myConceptL2i, myConceptLadd, myConceptLaload, myConceptLand, myConceptLastore, myConceptLcmp, myConceptLconst_0, myConceptLconst_1, myConceptLdc, myConceptLdc2_w, myConceptLdc_w, myConceptLdiv, myConceptLload, myConceptLload_0, myConceptLload_1, myConceptLload_2, myConceptLload_3, myConceptLmul, myConceptLneg, myConceptLookupswitch, myConceptLor, myConceptLrem, myConceptLreturn, myConceptLshl, myConceptLshr, myConceptLstore, myConceptLstore_0, myConceptLstore_1, myConceptLstore_2, myConceptLstore_3, myConceptLsub, myConceptLushr, myConceptLxor, myConceptMatchOffsetPair, myConceptMethodInfo, myConceptMonitorenter, myConceptMonitorexit, myConceptMultianewarray, myConceptNew, myConceptNewarray, myConceptNop, myConceptPop, myConceptPop2, myConceptPutfield, myConceptPutstatic, myConceptRawAttributeInfoData, myConceptRet, myConceptReturn, myConceptSaload, myConceptSastore, myConceptSignatureAttributeInfoData, myConceptSigned4Bytes, myConceptSipush, myConceptSwap, myConceptTableswitch, myConceptUnsigned1Byte, myConceptUnsigned1BytesArray, myConceptUnsigned2Bytes, myConceptUnsigned4Bytes, myConceptWide);
   }
 
   @Override
@@ -331,271 +331,271 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
       case 30:
         return myConceptConstantPoolClass;
       case 31:
-        return myConceptConstantPoolDouble;
+        return myConceptConstantPoolClassReference;
       case 32:
-        return myConceptConstantPoolElement;
+        return myConceptConstantPoolDouble;
       case 33:
-        return myConceptConstantPoolFieldref;
+        return myConceptConstantPoolElement;
       case 34:
-        return myConceptConstantPoolFloat;
+        return myConceptConstantPoolFieldref;
       case 35:
-        return myConceptConstantPoolInteger;
+        return myConceptConstantPoolFloat;
       case 36:
-        return myConceptConstantPoolInterfaceMethodref;
+        return myConceptConstantPoolInteger;
       case 37:
-        return myConceptConstantPoolInvokeDynamic;
+        return myConceptConstantPoolInterfaceMethodref;
       case 38:
-        return myConceptConstantPoolLong;
+        return myConceptConstantPoolInvokeDynamic;
       case 39:
-        return myConceptConstantPoolMethodHandle;
+        return myConceptConstantPoolLong;
       case 40:
-        return myConceptConstantPoolMethodType;
+        return myConceptConstantPoolMethodHandle;
       case 41:
-        return myConceptConstantPoolMethodref;
+        return myConceptConstantPoolMethodType;
       case 42:
-        return myConceptConstantPoolNameAndType;
+        return myConceptConstantPoolMethodref;
       case 43:
-        return myConceptConstantPoolReference;
+        return myConceptConstantPoolNameAndType;
       case 44:
-        return myConceptConstantPoolString;
+        return myConceptConstantPoolReference;
       case 45:
-        return myConceptConstantPoolUtf8;
+        return myConceptConstantPoolString;
       case 46:
-        return myConceptConstantPoolUtf8Reference;
+        return myConceptConstantPoolUtf8;
       case 47:
-        return myConceptD2f;
+        return myConceptConstantPoolUtf8Reference;
       case 48:
-        return myConceptD2i;
+        return myConceptD2f;
       case 49:
-        return myConceptD2l;
+        return myConceptD2i;
       case 50:
-        return myConceptDadd;
+        return myConceptD2l;
       case 51:
-        return myConceptDaload;
+        return myConceptDadd;
       case 52:
-        return myConceptDastore;
+        return myConceptDaload;
       case 53:
-        return myConceptDcmpg;
+        return myConceptDastore;
       case 54:
-        return myConceptDcmpl;
+        return myConceptDcmpg;
       case 55:
-        return myConceptDconst_0;
+        return myConceptDcmpl;
       case 56:
-        return myConceptDconst_1;
+        return myConceptDconst_0;
       case 57:
-        return myConceptDdiv;
+        return myConceptDconst_1;
       case 58:
-        return myConceptDload;
+        return myConceptDdiv;
       case 59:
-        return myConceptDload_0;
+        return myConceptDload;
       case 60:
-        return myConceptDload_1;
+        return myConceptDload_0;
       case 61:
-        return myConceptDload_2;
+        return myConceptDload_1;
       case 62:
-        return myConceptDload_3;
+        return myConceptDload_2;
       case 63:
-        return myConceptDmul;
+        return myConceptDload_3;
       case 64:
-        return myConceptDneg;
+        return myConceptDmul;
       case 65:
-        return myConceptDrem;
+        return myConceptDneg;
       case 66:
-        return myConceptDreturn;
+        return myConceptDrem;
       case 67:
-        return myConceptDstore;
+        return myConceptDreturn;
       case 68:
-        return myConceptDstore_0;
+        return myConceptDstore;
       case 69:
-        return myConceptDstore_1;
+        return myConceptDstore_0;
       case 70:
-        return myConceptDstore_2;
+        return myConceptDstore_1;
       case 71:
-        return myConceptDstore_3;
+        return myConceptDstore_2;
       case 72:
-        return myConceptDsub;
+        return myConceptDstore_3;
       case 73:
-        return myConceptDup;
+        return myConceptDsub;
       case 74:
-        return myConceptDup2;
+        return myConceptDup;
       case 75:
-        return myConceptDup2_x1;
+        return myConceptDup2;
       case 76:
-        return myConceptDup2_x2;
+        return myConceptDup2_x1;
       case 77:
-        return myConceptDup_x1;
+        return myConceptDup2_x2;
       case 78:
-        return myConceptDup_x2;
+        return myConceptDup_x1;
       case 79:
-        return myConceptExceptionInfo;
+        return myConceptDup_x2;
       case 80:
-        return myConceptExceptionTable;
+        return myConceptExceptionInfo;
       case 81:
-        return myConceptExceptionTableElement;
+        return myConceptExceptionTable;
       case 82:
-        return myConceptF2d;
+        return myConceptExceptionTableElement;
       case 83:
-        return myConceptF2i;
+        return myConceptF2d;
       case 84:
-        return myConceptF2l;
+        return myConceptF2i;
       case 85:
-        return myConceptFadd;
+        return myConceptF2l;
       case 86:
-        return myConceptFaload;
+        return myConceptFadd;
       case 87:
-        return myConceptFastore;
+        return myConceptFaload;
       case 88:
-        return myConceptFcmpg;
+        return myConceptFastore;
       case 89:
-        return myConceptFcmpl;
+        return myConceptFcmpg;
       case 90:
-        return myConceptFcmpop;
+        return myConceptFcmpl;
       case 91:
-        return myConceptFconst_0;
+        return myConceptFcmpop;
       case 92:
-        return myConceptFconst_1;
+        return myConceptFconst_0;
       case 93:
-        return myConceptFconst_2;
+        return myConceptFconst_1;
       case 94:
-        return myConceptFdiv;
+        return myConceptFconst_2;
       case 95:
-        return myConceptFieldInfo;
+        return myConceptFdiv;
       case 96:
-        return myConceptFload;
+        return myConceptFieldInfo;
       case 97:
-        return myConceptFload_0;
+        return myConceptFload;
       case 98:
-        return myConceptFload_1;
+        return myConceptFload_0;
       case 99:
-        return myConceptFload_2;
+        return myConceptFload_1;
       case 100:
-        return myConceptFload_3;
+        return myConceptFload_2;
       case 101:
-        return myConceptFmul;
+        return myConceptFload_3;
       case 102:
-        return myConceptFneg;
+        return myConceptFmul;
       case 103:
-        return myConceptFrem;
+        return myConceptFneg;
       case 104:
-        return myConceptFreturn;
+        return myConceptFrem;
       case 105:
-        return myConceptFstore;
+        return myConceptFreturn;
       case 106:
-        return myConceptFstore_0;
+        return myConceptFstore;
       case 107:
-        return myConceptFstore_1;
+        return myConceptFstore_0;
       case 108:
-        return myConceptFstore_2;
+        return myConceptFstore_1;
       case 109:
-        return myConceptFstore_3;
+        return myConceptFstore_2;
       case 110:
-        return myConceptFsub;
+        return myConceptFstore_3;
       case 111:
-        return myConceptGetfield;
+        return myConceptFsub;
       case 112:
-        return myConceptGetstatic;
+        return myConceptGetfield;
       case 113:
-        return myConceptGoto;
+        return myConceptGetstatic;
       case 114:
-        return myConceptGoto_w;
+        return myConceptGoto;
       case 115:
-        return myConceptI2b;
+        return myConceptGoto_w;
       case 116:
-        return myConceptI2c;
+        return myConceptI2b;
       case 117:
-        return myConceptI2d;
+        return myConceptI2c;
       case 118:
-        return myConceptI2f;
+        return myConceptI2d;
       case 119:
-        return myConceptI2l;
+        return myConceptI2f;
       case 120:
-        return myConceptI2s;
+        return myConceptI2l;
       case 121:
-        return myConceptIadd;
+        return myConceptI2s;
       case 122:
-        return myConceptIaload;
+        return myConceptIadd;
       case 123:
-        return myConceptIand;
+        return myConceptIaload;
       case 124:
-        return myConceptIastore;
+        return myConceptIand;
       case 125:
-        return myConceptIconst_0;
+        return myConceptIastore;
       case 126:
-        return myConceptIconst_1;
+        return myConceptIconst_0;
       case 127:
-        return myConceptIconst_2;
+        return myConceptIconst_1;
       case 128:
-        return myConceptIconst_3;
+        return myConceptIconst_2;
       case 129:
-        return myConceptIconst_4;
+        return myConceptIconst_3;
       case 130:
-        return myConceptIconst_5;
+        return myConceptIconst_4;
       case 131:
-        return myConceptIconst_m1;
+        return myConceptIconst_5;
       case 132:
-        return myConceptIdiv;
+        return myConceptIconst_m1;
       case 133:
-        return myConceptIf_acmpeq;
+        return myConceptIdiv;
       case 134:
-        return myConceptIf_acmpne;
+        return myConceptIf_acmpeq;
       case 135:
-        return myConceptIf_acompcond;
+        return myConceptIf_acmpne;
       case 136:
-        return myConceptIf_icmpcond;
+        return myConceptIf_acompcond;
       case 137:
-        return myConceptIf_icmpeq;
+        return myConceptIf_icmpcond;
       case 138:
-        return myConceptIf_icmpge;
+        return myConceptIf_icmpeq;
       case 139:
-        return myConceptIf_icmpgt;
+        return myConceptIf_icmpge;
       case 140:
-        return myConceptIf_icmple;
+        return myConceptIf_icmpgt;
       case 141:
-        return myConceptIf_icmplt;
+        return myConceptIf_icmple;
       case 142:
-        return myConceptIf_icmpne;
+        return myConceptIf_icmplt;
       case 143:
-        return myConceptIfcond;
+        return myConceptIf_icmpne;
       case 144:
-        return myConceptIfeq;
+        return myConceptIfcond;
       case 145:
-        return myConceptIfge;
+        return myConceptIfeq;
       case 146:
-        return myConceptIfgt;
+        return myConceptIfge;
       case 147:
-        return myConceptIfle;
+        return myConceptIfgt;
       case 148:
-        return myConceptIflt;
+        return myConceptIfle;
       case 149:
-        return myConceptIfne;
+        return myConceptIflt;
       case 150:
-        return myConceptIfnonnull;
+        return myConceptIfne;
       case 151:
-        return myConceptIfnull;
+        return myConceptIfnonnull;
       case 152:
-        return myConceptIinc;
+        return myConceptIfnull;
       case 153:
-        return myConceptIload;
+        return myConceptIinc;
       case 154:
-        return myConceptIload_0;
+        return myConceptIload;
       case 155:
-        return myConceptIload_1;
+        return myConceptIload_0;
       case 156:
-        return myConceptIload_2;
+        return myConceptIload_1;
       case 157:
-        return myConceptIload_3;
+        return myConceptIload_2;
       case 158:
-        return myConceptImul;
+        return myConceptIload_3;
       case 159:
-        return myConceptIneg;
+        return myConceptImul;
       case 160:
-        return myConceptInstanceof;
+        return myConceptIneg;
       case 161:
-        return myConceptInstruction;
+        return myConceptInstanceof;
       case 162:
-        return myConceptInstructionTypeReference;
+        return myConceptInstruction;
       case 163:
-        return myConceptInterfaceInfo;
+        return myConceptInstructionTypeReference;
       case 164:
         return myConceptInvokedynamic;
       case 165:
@@ -764,5 +764,5 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
         return null;
     }
   }
-  private static String[] stringSwitchCases_1htk8d_a0a0qj = new String[]{"me.tomassetti.bytecode.structure.Aaload", "me.tomassetti.bytecode.structure.Aastore", "me.tomassetti.bytecode.structure.AccessFlagHolder", "me.tomassetti.bytecode.structure.AccessFlags", "me.tomassetti.bytecode.structure.AconstNull", "me.tomassetti.bytecode.structure.Aload", "me.tomassetti.bytecode.structure.Aload_0", "me.tomassetti.bytecode.structure.Aload_1", "me.tomassetti.bytecode.structure.Aload_2", "me.tomassetti.bytecode.structure.Aload_3", "me.tomassetti.bytecode.structure.Anewarray", "me.tomassetti.bytecode.structure.Areturn", "me.tomassetti.bytecode.structure.Arraylength", "me.tomassetti.bytecode.structure.Astore", "me.tomassetti.bytecode.structure.Astore_0", "me.tomassetti.bytecode.structure.Astore_1", "me.tomassetti.bytecode.structure.Astore_2", "me.tomassetti.bytecode.structure.Astore_3", "me.tomassetti.bytecode.structure.Athrow", "me.tomassetti.bytecode.structure.AttributeInfo", "me.tomassetti.bytecode.structure.AttributeInfoData", "me.tomassetti.bytecode.structure.Baload", "me.tomassetti.bytecode.structure.Bastore", "me.tomassetti.bytecode.structure.Bipush", "me.tomassetti.bytecode.structure.Caload", "me.tomassetti.bytecode.structure.Castore", "me.tomassetti.bytecode.structure.Checkcast", "me.tomassetti.bytecode.structure.ClassFile", "me.tomassetti.bytecode.structure.ClassFileLoader", "me.tomassetti.bytecode.structure.CodeAttributeInfoData", "me.tomassetti.bytecode.structure.ConstantPoolClass", "me.tomassetti.bytecode.structure.ConstantPoolDouble", "me.tomassetti.bytecode.structure.ConstantPoolElement", "me.tomassetti.bytecode.structure.ConstantPoolFieldref", "me.tomassetti.bytecode.structure.ConstantPoolFloat", "me.tomassetti.bytecode.structure.ConstantPoolInteger", "me.tomassetti.bytecode.structure.ConstantPoolInterfaceMethodref", "me.tomassetti.bytecode.structure.ConstantPoolInvokeDynamic", "me.tomassetti.bytecode.structure.ConstantPoolLong", "me.tomassetti.bytecode.structure.ConstantPoolMethodHandle", "me.tomassetti.bytecode.structure.ConstantPoolMethodType", "me.tomassetti.bytecode.structure.ConstantPoolMethodref", "me.tomassetti.bytecode.structure.ConstantPoolNameAndType", "me.tomassetti.bytecode.structure.ConstantPoolReference", "me.tomassetti.bytecode.structure.ConstantPoolString", "me.tomassetti.bytecode.structure.ConstantPoolUtf8", "me.tomassetti.bytecode.structure.ConstantPoolUtf8Reference", "me.tomassetti.bytecode.structure.D2f", "me.tomassetti.bytecode.structure.D2i", "me.tomassetti.bytecode.structure.D2l", "me.tomassetti.bytecode.structure.Dadd", "me.tomassetti.bytecode.structure.Daload", "me.tomassetti.bytecode.structure.Dastore", "me.tomassetti.bytecode.structure.Dcmpg", "me.tomassetti.bytecode.structure.Dcmpl", "me.tomassetti.bytecode.structure.Dconst_0", "me.tomassetti.bytecode.structure.Dconst_1", "me.tomassetti.bytecode.structure.Ddiv", "me.tomassetti.bytecode.structure.Dload", "me.tomassetti.bytecode.structure.Dload_0", "me.tomassetti.bytecode.structure.Dload_1", "me.tomassetti.bytecode.structure.Dload_2", "me.tomassetti.bytecode.structure.Dload_3", "me.tomassetti.bytecode.structure.Dmul", "me.tomassetti.bytecode.structure.Dneg", "me.tomassetti.bytecode.structure.Drem", "me.tomassetti.bytecode.structure.Dreturn", "me.tomassetti.bytecode.structure.Dstore", "me.tomassetti.bytecode.structure.Dstore_0", "me.tomassetti.bytecode.structure.Dstore_1", "me.tomassetti.bytecode.structure.Dstore_2", "me.tomassetti.bytecode.structure.Dstore_3", "me.tomassetti.bytecode.structure.Dsub", "me.tomassetti.bytecode.structure.Dup", "me.tomassetti.bytecode.structure.Dup2", "me.tomassetti.bytecode.structure.Dup2_x1", "me.tomassetti.bytecode.structure.Dup2_x2", "me.tomassetti.bytecode.structure.Dup_x1", "me.tomassetti.bytecode.structure.Dup_x2", "me.tomassetti.bytecode.structure.ExceptionInfo", "me.tomassetti.bytecode.structure.ExceptionTable", "me.tomassetti.bytecode.structure.ExceptionTableElement", "me.tomassetti.bytecode.structure.F2d", "me.tomassetti.bytecode.structure.F2i", "me.tomassetti.bytecode.structure.F2l", "me.tomassetti.bytecode.structure.Fadd", "me.tomassetti.bytecode.structure.Faload", "me.tomassetti.bytecode.structure.Fastore", "me.tomassetti.bytecode.structure.Fcmpg", "me.tomassetti.bytecode.structure.Fcmpl", "me.tomassetti.bytecode.structure.Fcmpop", "me.tomassetti.bytecode.structure.Fconst_0", "me.tomassetti.bytecode.structure.Fconst_1", "me.tomassetti.bytecode.structure.Fconst_2", "me.tomassetti.bytecode.structure.Fdiv", "me.tomassetti.bytecode.structure.FieldInfo", "me.tomassetti.bytecode.structure.Fload", "me.tomassetti.bytecode.structure.Fload_0", "me.tomassetti.bytecode.structure.Fload_1", "me.tomassetti.bytecode.structure.Fload_2", "me.tomassetti.bytecode.structure.Fload_3", "me.tomassetti.bytecode.structure.Fmul", "me.tomassetti.bytecode.structure.Fneg", "me.tomassetti.bytecode.structure.Frem", "me.tomassetti.bytecode.structure.Freturn", "me.tomassetti.bytecode.structure.Fstore", "me.tomassetti.bytecode.structure.Fstore_0", "me.tomassetti.bytecode.structure.Fstore_1", "me.tomassetti.bytecode.structure.Fstore_2", "me.tomassetti.bytecode.structure.Fstore_3", "me.tomassetti.bytecode.structure.Fsub", "me.tomassetti.bytecode.structure.Getfield", "me.tomassetti.bytecode.structure.Getstatic", "me.tomassetti.bytecode.structure.Goto", "me.tomassetti.bytecode.structure.Goto_w", "me.tomassetti.bytecode.structure.I2b", "me.tomassetti.bytecode.structure.I2c", "me.tomassetti.bytecode.structure.I2d", "me.tomassetti.bytecode.structure.I2f", "me.tomassetti.bytecode.structure.I2l", "me.tomassetti.bytecode.structure.I2s", "me.tomassetti.bytecode.structure.Iadd", "me.tomassetti.bytecode.structure.Iaload", "me.tomassetti.bytecode.structure.Iand", "me.tomassetti.bytecode.structure.Iastore", "me.tomassetti.bytecode.structure.Iconst_0", "me.tomassetti.bytecode.structure.Iconst_1", "me.tomassetti.bytecode.structure.Iconst_2", "me.tomassetti.bytecode.structure.Iconst_3", "me.tomassetti.bytecode.structure.Iconst_4", "me.tomassetti.bytecode.structure.Iconst_5", "me.tomassetti.bytecode.structure.Iconst_m1", "me.tomassetti.bytecode.structure.Idiv", "me.tomassetti.bytecode.structure.If_acmpeq", "me.tomassetti.bytecode.structure.If_acmpne", "me.tomassetti.bytecode.structure.If_acompcond", "me.tomassetti.bytecode.structure.If_icmpcond", "me.tomassetti.bytecode.structure.If_icmpeq", "me.tomassetti.bytecode.structure.If_icmpge", "me.tomassetti.bytecode.structure.If_icmpgt", "me.tomassetti.bytecode.structure.If_icmple", "me.tomassetti.bytecode.structure.If_icmplt", "me.tomassetti.bytecode.structure.If_icmpne", "me.tomassetti.bytecode.structure.Ifcond", "me.tomassetti.bytecode.structure.Ifeq", "me.tomassetti.bytecode.structure.Ifge", "me.tomassetti.bytecode.structure.Ifgt", "me.tomassetti.bytecode.structure.Ifle", "me.tomassetti.bytecode.structure.Iflt", "me.tomassetti.bytecode.structure.Ifne", "me.tomassetti.bytecode.structure.Ifnonnull", "me.tomassetti.bytecode.structure.Ifnull", "me.tomassetti.bytecode.structure.Iinc", "me.tomassetti.bytecode.structure.Iload", "me.tomassetti.bytecode.structure.Iload_0", "me.tomassetti.bytecode.structure.Iload_1", "me.tomassetti.bytecode.structure.Iload_2", "me.tomassetti.bytecode.structure.Iload_3", "me.tomassetti.bytecode.structure.Imul", "me.tomassetti.bytecode.structure.Ineg", "me.tomassetti.bytecode.structure.Instanceof", "me.tomassetti.bytecode.structure.Instruction", "me.tomassetti.bytecode.structure.InstructionTypeReference", "me.tomassetti.bytecode.structure.InterfaceInfo", "me.tomassetti.bytecode.structure.Invokedynamic", "me.tomassetti.bytecode.structure.Invokeinterface", "me.tomassetti.bytecode.structure.Invokespecial", "me.tomassetti.bytecode.structure.Invokestatic", "me.tomassetti.bytecode.structure.Invokevirtual", "me.tomassetti.bytecode.structure.Ior", "me.tomassetti.bytecode.structure.Irem", "me.tomassetti.bytecode.structure.Ireturn", "me.tomassetti.bytecode.structure.Ishl", "me.tomassetti.bytecode.structure.Ishr", "me.tomassetti.bytecode.structure.Istore", "me.tomassetti.bytecode.structure.Istore_0", "me.tomassetti.bytecode.structure.Istore_1", "me.tomassetti.bytecode.structure.Istore_2", "me.tomassetti.bytecode.structure.Istore_3", "me.tomassetti.bytecode.structure.Isub", "me.tomassetti.bytecode.structure.Iushr", "me.tomassetti.bytecode.structure.Ixor", "me.tomassetti.bytecode.structure.Jsr", "me.tomassetti.bytecode.structure.Jsr_w", "me.tomassetti.bytecode.structure.L2d", "me.tomassetti.bytecode.structure.L2f", "me.tomassetti.bytecode.structure.L2i", "me.tomassetti.bytecode.structure.Ladd", "me.tomassetti.bytecode.structure.Laload", "me.tomassetti.bytecode.structure.Land", "me.tomassetti.bytecode.structure.Lastore", "me.tomassetti.bytecode.structure.Lcmp", "me.tomassetti.bytecode.structure.Lconst_0", "me.tomassetti.bytecode.structure.Lconst_1", "me.tomassetti.bytecode.structure.Ldc", "me.tomassetti.bytecode.structure.Ldc2_w", "me.tomassetti.bytecode.structure.Ldc_w", "me.tomassetti.bytecode.structure.Ldiv", "me.tomassetti.bytecode.structure.Lload", "me.tomassetti.bytecode.structure.Lload_0", "me.tomassetti.bytecode.structure.Lload_1", "me.tomassetti.bytecode.structure.Lload_2", "me.tomassetti.bytecode.structure.Lload_3", "me.tomassetti.bytecode.structure.Lmul", "me.tomassetti.bytecode.structure.Lneg", "me.tomassetti.bytecode.structure.Lookupswitch", "me.tomassetti.bytecode.structure.Lor", "me.tomassetti.bytecode.structure.Lrem", "me.tomassetti.bytecode.structure.Lreturn", "me.tomassetti.bytecode.structure.Lshl", "me.tomassetti.bytecode.structure.Lshr", "me.tomassetti.bytecode.structure.Lstore", "me.tomassetti.bytecode.structure.Lstore_0", "me.tomassetti.bytecode.structure.Lstore_1", "me.tomassetti.bytecode.structure.Lstore_2", "me.tomassetti.bytecode.structure.Lstore_3", "me.tomassetti.bytecode.structure.Lsub", "me.tomassetti.bytecode.structure.Lushr", "me.tomassetti.bytecode.structure.Lxor", "me.tomassetti.bytecode.structure.MatchOffsetPair", "me.tomassetti.bytecode.structure.MethodInfo", "me.tomassetti.bytecode.structure.Monitorenter", "me.tomassetti.bytecode.structure.Monitorexit", "me.tomassetti.bytecode.structure.Multianewarray", "me.tomassetti.bytecode.structure.New", "me.tomassetti.bytecode.structure.Newarray", "me.tomassetti.bytecode.structure.Nop", "me.tomassetti.bytecode.structure.Pop", "me.tomassetti.bytecode.structure.Pop2", "me.tomassetti.bytecode.structure.Putfield", "me.tomassetti.bytecode.structure.Putstatic", "me.tomassetti.bytecode.structure.RawAttributeInfoData", "me.tomassetti.bytecode.structure.Ret", "me.tomassetti.bytecode.structure.Return", "me.tomassetti.bytecode.structure.Saload", "me.tomassetti.bytecode.structure.Sastore", "me.tomassetti.bytecode.structure.SignatureAttributeInfoData", "me.tomassetti.bytecode.structure.Signed4Bytes", "me.tomassetti.bytecode.structure.Sipush", "me.tomassetti.bytecode.structure.Swap", "me.tomassetti.bytecode.structure.Tableswitch", "me.tomassetti.bytecode.structure.Unsigned1Byte", "me.tomassetti.bytecode.structure.Unsigned1BytesArray", "me.tomassetti.bytecode.structure.Unsigned2Bytes", "me.tomassetti.bytecode.structure.Unsigned4Bytes", "me.tomassetti.bytecode.structure.Wide"};
+  private static String[] stringSwitchCases_1htk8d_a0a0qj = new String[]{"me.tomassetti.bytecode.structure.Aaload", "me.tomassetti.bytecode.structure.Aastore", "me.tomassetti.bytecode.structure.AccessFlagHolder", "me.tomassetti.bytecode.structure.AccessFlags", "me.tomassetti.bytecode.structure.AconstNull", "me.tomassetti.bytecode.structure.Aload", "me.tomassetti.bytecode.structure.Aload_0", "me.tomassetti.bytecode.structure.Aload_1", "me.tomassetti.bytecode.structure.Aload_2", "me.tomassetti.bytecode.structure.Aload_3", "me.tomassetti.bytecode.structure.Anewarray", "me.tomassetti.bytecode.structure.Areturn", "me.tomassetti.bytecode.structure.Arraylength", "me.tomassetti.bytecode.structure.Astore", "me.tomassetti.bytecode.structure.Astore_0", "me.tomassetti.bytecode.structure.Astore_1", "me.tomassetti.bytecode.structure.Astore_2", "me.tomassetti.bytecode.structure.Astore_3", "me.tomassetti.bytecode.structure.Athrow", "me.tomassetti.bytecode.structure.AttributeInfo", "me.tomassetti.bytecode.structure.AttributeInfoData", "me.tomassetti.bytecode.structure.Baload", "me.tomassetti.bytecode.structure.Bastore", "me.tomassetti.bytecode.structure.Bipush", "me.tomassetti.bytecode.structure.Caload", "me.tomassetti.bytecode.structure.Castore", "me.tomassetti.bytecode.structure.Checkcast", "me.tomassetti.bytecode.structure.ClassFile", "me.tomassetti.bytecode.structure.ClassFileLoader", "me.tomassetti.bytecode.structure.CodeAttributeInfoData", "me.tomassetti.bytecode.structure.ConstantPoolClass", "me.tomassetti.bytecode.structure.ConstantPoolClassReference", "me.tomassetti.bytecode.structure.ConstantPoolDouble", "me.tomassetti.bytecode.structure.ConstantPoolElement", "me.tomassetti.bytecode.structure.ConstantPoolFieldref", "me.tomassetti.bytecode.structure.ConstantPoolFloat", "me.tomassetti.bytecode.structure.ConstantPoolInteger", "me.tomassetti.bytecode.structure.ConstantPoolInterfaceMethodref", "me.tomassetti.bytecode.structure.ConstantPoolInvokeDynamic", "me.tomassetti.bytecode.structure.ConstantPoolLong", "me.tomassetti.bytecode.structure.ConstantPoolMethodHandle", "me.tomassetti.bytecode.structure.ConstantPoolMethodType", "me.tomassetti.bytecode.structure.ConstantPoolMethodref", "me.tomassetti.bytecode.structure.ConstantPoolNameAndType", "me.tomassetti.bytecode.structure.ConstantPoolReference", "me.tomassetti.bytecode.structure.ConstantPoolString", "me.tomassetti.bytecode.structure.ConstantPoolUtf8", "me.tomassetti.bytecode.structure.ConstantPoolUtf8Reference", "me.tomassetti.bytecode.structure.D2f", "me.tomassetti.bytecode.structure.D2i", "me.tomassetti.bytecode.structure.D2l", "me.tomassetti.bytecode.structure.Dadd", "me.tomassetti.bytecode.structure.Daload", "me.tomassetti.bytecode.structure.Dastore", "me.tomassetti.bytecode.structure.Dcmpg", "me.tomassetti.bytecode.structure.Dcmpl", "me.tomassetti.bytecode.structure.Dconst_0", "me.tomassetti.bytecode.structure.Dconst_1", "me.tomassetti.bytecode.structure.Ddiv", "me.tomassetti.bytecode.structure.Dload", "me.tomassetti.bytecode.structure.Dload_0", "me.tomassetti.bytecode.structure.Dload_1", "me.tomassetti.bytecode.structure.Dload_2", "me.tomassetti.bytecode.structure.Dload_3", "me.tomassetti.bytecode.structure.Dmul", "me.tomassetti.bytecode.structure.Dneg", "me.tomassetti.bytecode.structure.Drem", "me.tomassetti.bytecode.structure.Dreturn", "me.tomassetti.bytecode.structure.Dstore", "me.tomassetti.bytecode.structure.Dstore_0", "me.tomassetti.bytecode.structure.Dstore_1", "me.tomassetti.bytecode.structure.Dstore_2", "me.tomassetti.bytecode.structure.Dstore_3", "me.tomassetti.bytecode.structure.Dsub", "me.tomassetti.bytecode.structure.Dup", "me.tomassetti.bytecode.structure.Dup2", "me.tomassetti.bytecode.structure.Dup2_x1", "me.tomassetti.bytecode.structure.Dup2_x2", "me.tomassetti.bytecode.structure.Dup_x1", "me.tomassetti.bytecode.structure.Dup_x2", "me.tomassetti.bytecode.structure.ExceptionInfo", "me.tomassetti.bytecode.structure.ExceptionTable", "me.tomassetti.bytecode.structure.ExceptionTableElement", "me.tomassetti.bytecode.structure.F2d", "me.tomassetti.bytecode.structure.F2i", "me.tomassetti.bytecode.structure.F2l", "me.tomassetti.bytecode.structure.Fadd", "me.tomassetti.bytecode.structure.Faload", "me.tomassetti.bytecode.structure.Fastore", "me.tomassetti.bytecode.structure.Fcmpg", "me.tomassetti.bytecode.structure.Fcmpl", "me.tomassetti.bytecode.structure.Fcmpop", "me.tomassetti.bytecode.structure.Fconst_0", "me.tomassetti.bytecode.structure.Fconst_1", "me.tomassetti.bytecode.structure.Fconst_2", "me.tomassetti.bytecode.structure.Fdiv", "me.tomassetti.bytecode.structure.FieldInfo", "me.tomassetti.bytecode.structure.Fload", "me.tomassetti.bytecode.structure.Fload_0", "me.tomassetti.bytecode.structure.Fload_1", "me.tomassetti.bytecode.structure.Fload_2", "me.tomassetti.bytecode.structure.Fload_3", "me.tomassetti.bytecode.structure.Fmul", "me.tomassetti.bytecode.structure.Fneg", "me.tomassetti.bytecode.structure.Frem", "me.tomassetti.bytecode.structure.Freturn", "me.tomassetti.bytecode.structure.Fstore", "me.tomassetti.bytecode.structure.Fstore_0", "me.tomassetti.bytecode.structure.Fstore_1", "me.tomassetti.bytecode.structure.Fstore_2", "me.tomassetti.bytecode.structure.Fstore_3", "me.tomassetti.bytecode.structure.Fsub", "me.tomassetti.bytecode.structure.Getfield", "me.tomassetti.bytecode.structure.Getstatic", "me.tomassetti.bytecode.structure.Goto", "me.tomassetti.bytecode.structure.Goto_w", "me.tomassetti.bytecode.structure.I2b", "me.tomassetti.bytecode.structure.I2c", "me.tomassetti.bytecode.structure.I2d", "me.tomassetti.bytecode.structure.I2f", "me.tomassetti.bytecode.structure.I2l", "me.tomassetti.bytecode.structure.I2s", "me.tomassetti.bytecode.structure.Iadd", "me.tomassetti.bytecode.structure.Iaload", "me.tomassetti.bytecode.structure.Iand", "me.tomassetti.bytecode.structure.Iastore", "me.tomassetti.bytecode.structure.Iconst_0", "me.tomassetti.bytecode.structure.Iconst_1", "me.tomassetti.bytecode.structure.Iconst_2", "me.tomassetti.bytecode.structure.Iconst_3", "me.tomassetti.bytecode.structure.Iconst_4", "me.tomassetti.bytecode.structure.Iconst_5", "me.tomassetti.bytecode.structure.Iconst_m1", "me.tomassetti.bytecode.structure.Idiv", "me.tomassetti.bytecode.structure.If_acmpeq", "me.tomassetti.bytecode.structure.If_acmpne", "me.tomassetti.bytecode.structure.If_acompcond", "me.tomassetti.bytecode.structure.If_icmpcond", "me.tomassetti.bytecode.structure.If_icmpeq", "me.tomassetti.bytecode.structure.If_icmpge", "me.tomassetti.bytecode.structure.If_icmpgt", "me.tomassetti.bytecode.structure.If_icmple", "me.tomassetti.bytecode.structure.If_icmplt", "me.tomassetti.bytecode.structure.If_icmpne", "me.tomassetti.bytecode.structure.Ifcond", "me.tomassetti.bytecode.structure.Ifeq", "me.tomassetti.bytecode.structure.Ifge", "me.tomassetti.bytecode.structure.Ifgt", "me.tomassetti.bytecode.structure.Ifle", "me.tomassetti.bytecode.structure.Iflt", "me.tomassetti.bytecode.structure.Ifne", "me.tomassetti.bytecode.structure.Ifnonnull", "me.tomassetti.bytecode.structure.Ifnull", "me.tomassetti.bytecode.structure.Iinc", "me.tomassetti.bytecode.structure.Iload", "me.tomassetti.bytecode.structure.Iload_0", "me.tomassetti.bytecode.structure.Iload_1", "me.tomassetti.bytecode.structure.Iload_2", "me.tomassetti.bytecode.structure.Iload_3", "me.tomassetti.bytecode.structure.Imul", "me.tomassetti.bytecode.structure.Ineg", "me.tomassetti.bytecode.structure.Instanceof", "me.tomassetti.bytecode.structure.Instruction", "me.tomassetti.bytecode.structure.InstructionTypeReference", "me.tomassetti.bytecode.structure.Invokedynamic", "me.tomassetti.bytecode.structure.Invokeinterface", "me.tomassetti.bytecode.structure.Invokespecial", "me.tomassetti.bytecode.structure.Invokestatic", "me.tomassetti.bytecode.structure.Invokevirtual", "me.tomassetti.bytecode.structure.Ior", "me.tomassetti.bytecode.structure.Irem", "me.tomassetti.bytecode.structure.Ireturn", "me.tomassetti.bytecode.structure.Ishl", "me.tomassetti.bytecode.structure.Ishr", "me.tomassetti.bytecode.structure.Istore", "me.tomassetti.bytecode.structure.Istore_0", "me.tomassetti.bytecode.structure.Istore_1", "me.tomassetti.bytecode.structure.Istore_2", "me.tomassetti.bytecode.structure.Istore_3", "me.tomassetti.bytecode.structure.Isub", "me.tomassetti.bytecode.structure.Iushr", "me.tomassetti.bytecode.structure.Ixor", "me.tomassetti.bytecode.structure.Jsr", "me.tomassetti.bytecode.structure.Jsr_w", "me.tomassetti.bytecode.structure.L2d", "me.tomassetti.bytecode.structure.L2f", "me.tomassetti.bytecode.structure.L2i", "me.tomassetti.bytecode.structure.Ladd", "me.tomassetti.bytecode.structure.Laload", "me.tomassetti.bytecode.structure.Land", "me.tomassetti.bytecode.structure.Lastore", "me.tomassetti.bytecode.structure.Lcmp", "me.tomassetti.bytecode.structure.Lconst_0", "me.tomassetti.bytecode.structure.Lconst_1", "me.tomassetti.bytecode.structure.Ldc", "me.tomassetti.bytecode.structure.Ldc2_w", "me.tomassetti.bytecode.structure.Ldc_w", "me.tomassetti.bytecode.structure.Ldiv", "me.tomassetti.bytecode.structure.Lload", "me.tomassetti.bytecode.structure.Lload_0", "me.tomassetti.bytecode.structure.Lload_1", "me.tomassetti.bytecode.structure.Lload_2", "me.tomassetti.bytecode.structure.Lload_3", "me.tomassetti.bytecode.structure.Lmul", "me.tomassetti.bytecode.structure.Lneg", "me.tomassetti.bytecode.structure.Lookupswitch", "me.tomassetti.bytecode.structure.Lor", "me.tomassetti.bytecode.structure.Lrem", "me.tomassetti.bytecode.structure.Lreturn", "me.tomassetti.bytecode.structure.Lshl", "me.tomassetti.bytecode.structure.Lshr", "me.tomassetti.bytecode.structure.Lstore", "me.tomassetti.bytecode.structure.Lstore_0", "me.tomassetti.bytecode.structure.Lstore_1", "me.tomassetti.bytecode.structure.Lstore_2", "me.tomassetti.bytecode.structure.Lstore_3", "me.tomassetti.bytecode.structure.Lsub", "me.tomassetti.bytecode.structure.Lushr", "me.tomassetti.bytecode.structure.Lxor", "me.tomassetti.bytecode.structure.MatchOffsetPair", "me.tomassetti.bytecode.structure.MethodInfo", "me.tomassetti.bytecode.structure.Monitorenter", "me.tomassetti.bytecode.structure.Monitorexit", "me.tomassetti.bytecode.structure.Multianewarray", "me.tomassetti.bytecode.structure.New", "me.tomassetti.bytecode.structure.Newarray", "me.tomassetti.bytecode.structure.Nop", "me.tomassetti.bytecode.structure.Pop", "me.tomassetti.bytecode.structure.Pop2", "me.tomassetti.bytecode.structure.Putfield", "me.tomassetti.bytecode.structure.Putstatic", "me.tomassetti.bytecode.structure.RawAttributeInfoData", "me.tomassetti.bytecode.structure.Ret", "me.tomassetti.bytecode.structure.Return", "me.tomassetti.bytecode.structure.Saload", "me.tomassetti.bytecode.structure.Sastore", "me.tomassetti.bytecode.structure.SignatureAttributeInfoData", "me.tomassetti.bytecode.structure.Signed4Bytes", "me.tomassetti.bytecode.structure.Sipush", "me.tomassetti.bytecode.structure.Swap", "me.tomassetti.bytecode.structure.Tableswitch", "me.tomassetti.bytecode.structure.Unsigned1Byte", "me.tomassetti.bytecode.structure.Unsigned1BytesArray", "me.tomassetti.bytecode.structure.Unsigned2Bytes", "me.tomassetti.bytecode.structure.Unsigned4Bytes", "me.tomassetti.bytecode.structure.Wide"};
 }

@@ -26,6 +26,8 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
+import jetbrains.mps.internal.collections.runtime.IWhereFilter;
+import jetbrains.mps.internal.collections.runtime.IVisitor;
 import java.io.IOException;
 import jetbrains.mps.internal.collections.runtime.MapSequence;
 import java.util.HashMap;
@@ -47,23 +49,25 @@ public final class ClassFileLoader__BehaviorDescriptor extends BaseBHDescriptor 
   /*package*/ static final SMethod<Long> pow_id1qlCQcqgIKn = new SMethodBuilder<Long>(new SJavaCompoundTypeImpl(Long.TYPE)).name("pow").modifiers(SModifiersImpl.create(0, AccessPrivileges.PRIVATE)).concept(CONCEPT).id("1qlCQcqgIKn").registry(REGISTRY).build(SMethodBuilder.createJavaParameter(Integer.TYPE, ""), SMethodBuilder.createJavaParameter(Integer.TYPE, ""));
   /*package*/ static final SMethod<Long> toInteger_id1qlCQcqgEPh = new SMethodBuilder<Long>(new SJavaCompoundTypeImpl(Long.TYPE)).name("toInteger").modifiers(SModifiersImpl.create(0, AccessPrivileges.PRIVATE)).concept(CONCEPT).id("1qlCQcqgEPh").registry(REGISTRY).build(SMethodBuilder.createJavaParameter(byte[].class, ""), SMethodBuilder.createJavaParameter(Integer.TYPE, ""));
   public static final SMethod<Void> load_id1qlCQcqgn_R = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("load").modifiers(SModifiersImpl.create(0, AccessPrivileges.PUBLIC)).concept(CONCEPT).id("1qlCQcqgn_R").registry(REGISTRY).build();
-  /*package*/ static final SMethod<SNode> loadClassAccessFlags_id1qlCQcqkEDC = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("loadClassAccessFlags").modifiers(SModifiersImpl.create(0, AccessPrivileges.PRIVATE)).concept(CONCEPT).id("1qlCQcqkEDC").registry(REGISTRY).build(SMethodBuilder.createJavaParameter(MyDataStream.class, ""));
-  /*package*/ static final SMethod<SNode> loadMethodAccessFlags_id1qlCQcqkGIa = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("loadMethodAccessFlags").modifiers(SModifiersImpl.create(0, AccessPrivileges.PRIVATE)).concept(CONCEPT).id("1qlCQcqkGIa").registry(REGISTRY).build(SMethodBuilder.createJavaParameter(MyDataStream.class, ""));
-  /*package*/ static final SMethod<SNode> loadAccessFlags_id1qlCQcqjTO4 = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("loadAccessFlags").modifiers(SModifiersImpl.create(0, AccessPrivileges.PRIVATE)).concept(CONCEPT).id("1qlCQcqjTO4").registry(REGISTRY).build(SMethodBuilder.createJavaParameter(MyDataStream.class, ""), SMethodBuilder.createJavaParameter((Class<Map<Integer, String>>) ((Class) Object.class), ""));
-  public static final SMethod<SNode> loadMethodInfo_id1qlCQcqjIRa = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("loadMethodInfo").modifiers(SModifiersImpl.create(0, AccessPrivileges.PUBLIC)).concept(CONCEPT).id("1qlCQcqjIRa").registry(REGISTRY).build(SMethodBuilder.createJavaParameter(MyDataStream.class, ""));
+  /*package*/ static final SMethod<SNode> loadClassAccessFlags_id1qlCQcqkEDC = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("loadClassAccessFlags").modifiers(SModifiersImpl.create(0, AccessPrivileges.PRIVATE)).concept(CONCEPT).id("1qlCQcqkEDC").registry(REGISTRY).build(SMethodBuilder.createJavaParameter(MyDataIStream.class, ""));
+  /*package*/ static final SMethod<SNode> loadMethodAccessFlags_id1qlCQcqkGIa = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("loadMethodAccessFlags").modifiers(SModifiersImpl.create(0, AccessPrivileges.PRIVATE)).concept(CONCEPT).id("1qlCQcqkGIa").registry(REGISTRY).build(SMethodBuilder.createJavaParameter(MyDataIStream.class, ""));
+  /*package*/ static final SMethod<SNode> loadAccessFlags_id1qlCQcqjTO4 = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("loadAccessFlags").modifiers(SModifiersImpl.create(0, AccessPrivileges.PRIVATE)).concept(CONCEPT).id("1qlCQcqjTO4").registry(REGISTRY).build(SMethodBuilder.createJavaParameter(MyDataIStream.class, ""), SMethodBuilder.createJavaParameter((Class<Map<Integer, String>>) ((Class) Object.class), ""));
+  public static final SMethod<SNode> loadMethodInfo_id1qlCQcqjIRa = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("loadMethodInfo").modifiers(SModifiersImpl.create(0, AccessPrivileges.PUBLIC)).concept(CONCEPT).id("1qlCQcqjIRa").registry(REGISTRY).build(SMethodBuilder.createJavaParameter(MyDataIStream.class, ""));
   /*package*/ static final SMethod<SNode> toUtf8Reference_idOFkQGRSQa2 = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("toUtf8Reference").modifiers(SModifiersImpl.create(0, AccessPrivileges.PRIVATE)).concept(CONCEPT).id("OFkQGRSQa2").registry(REGISTRY).build(SMethodBuilder.createJavaParameter(Long.TYPE, ""));
-  public static final SMethod<SNode> loadFieldInfo_idOFkQGRSAW6 = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("loadFieldInfo").modifiers(SModifiersImpl.create(0, AccessPrivileges.PUBLIC)).concept(CONCEPT).id("OFkQGRSAW6").registry(REGISTRY).build(SMethodBuilder.createJavaParameter(MyDataStream.class, ""));
+  /*package*/ static final SMethod<SNode> toClassReference_id4xr1zwUxT4h = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("toClassReference").modifiers(SModifiersImpl.create(0, AccessPrivileges.PRIVATE)).concept(CONCEPT).id("4xr1zwUxT4h").registry(REGISTRY).build(SMethodBuilder.createJavaParameter(Long.TYPE, ""));
+  public static final SMethod<SNode> loadFieldInfo_idOFkQGRSAW6 = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("loadFieldInfo").modifiers(SModifiersImpl.create(0, AccessPrivileges.PUBLIC)).concept(CONCEPT).id("OFkQGRSAW6").registry(REGISTRY).build(SMethodBuilder.createJavaParameter(MyDataIStream.class, ""));
+  public static final SMethod<SNode> loadInterfaceInfo_id4xr1zwU$IfQ = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("loadInterfaceInfo").modifiers(SModifiersImpl.create(0, AccessPrivileges.PUBLIC)).concept(CONCEPT).id("4xr1zwU$IfQ").registry(REGISTRY).build(SMethodBuilder.createJavaParameter(MyDataIStream.class, ""));
   public static final SMethod<SNode> getConstantPoolElement_idr0PjdDds1G = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getConstantPoolElement").modifiers(SModifiersImpl.create(0, AccessPrivileges.PUBLIC)).concept(CONCEPT).id("r0PjdDds1G").registry(REGISTRY).build(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
-  public static final SMethod<SNode> loadAttributeInfo_id1qlCQcqktGl = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("loadAttributeInfo").modifiers(SModifiersImpl.create(0, AccessPrivileges.PUBLIC)).concept(CONCEPT).id("1qlCQcqktGl").registry(REGISTRY).build(SMethodBuilder.createJavaParameter(MyDataStream.class, ""));
-  public static final SMethod<SNode> readSignature_idOFkQGRUn7a = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("readSignature").modifiers(SModifiersImpl.create(0, AccessPrivileges.PUBLIC)).concept(CONCEPT).id("OFkQGRUn7a").registry(REGISTRY).build(SMethodBuilder.createJavaParameter(MyDataStream.class, ""));
-  /*package*/ static final SMethod<SNode> readCode_idr0PjdDe5KL = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("readCode").modifiers(SModifiersImpl.create(0, AccessPrivileges.PRIVATE)).concept(CONCEPT).id("r0PjdDe5KL").registry(REGISTRY).build(SMethodBuilder.createJavaParameter(MyDataStream.class, ""));
-  /*package*/ static final SMethod<SNode> readExceptionTableElement_idOFkQGS2cVz = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("readExceptionTableElement").modifiers(SModifiersImpl.create(0, AccessPrivileges.PRIVATE)).concept(CONCEPT).id("OFkQGS2cVz").registry(REGISTRY).build(SMethodBuilder.createJavaParameter(MyDataStream.class, ""));
-  /*package*/ static final SMethod<BigInteger> parse_idOFkQGRVb6M = new SMethodBuilder<BigInteger>(new SJavaCompoundTypeImpl(BigInteger.class)).name("parse").modifiers(SModifiersImpl.create(0, AccessPrivileges.PRIVATE)).concept(CONCEPT).id("OFkQGRVb6M").registry(REGISTRY).build(SMethodBuilder.createJavaParameter(MyDataStream.class, ""), SMethodBuilder.createJavaParameter(BigInteger.class, ""), SMethodBuilder.createJavaParameter((Class<SAbstractConcept>) ((Class) Object.class), ""), SMethodBuilder.createJavaParameter((Class<List<SNode>>) ((Class) Object.class), ""));
-  public static final SMethod<List<SNode>> readCodeArray_idr0PjdDggI6 = new SMethodBuilder<List<SNode>>(new SJavaCompoundTypeImpl((Class<List<SNode>>) ((Class) Object.class))).name("readCodeArray").modifiers(SModifiersImpl.create(0, AccessPrivileges.PUBLIC)).concept(CONCEPT).id("r0PjdDggI6").registry(REGISTRY).build(SMethodBuilder.createJavaParameter(MyDataStream.class, ""));
-  public static final SMethod<SNode> readArray_idr0PjdDgi$s = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("readArray").modifiers(SModifiersImpl.create(0, AccessPrivileges.PUBLIC)).concept(CONCEPT).id("r0PjdDgi$s").registry(REGISTRY).build(SMethodBuilder.createJavaParameter(MyDataStream.class, ""));
-  public static final SMethod<SNode> readArray_id1qlCQcqkYgS = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("readArray").modifiers(SModifiersImpl.create(0, AccessPrivileges.PUBLIC)).concept(CONCEPT).id("1qlCQcqkYgS").registry(REGISTRY).build(SMethodBuilder.createJavaParameter(MyDataStream.class, ""));
+  public static final SMethod<SNode> loadAttributeInfo_id1qlCQcqktGl = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("loadAttributeInfo").modifiers(SModifiersImpl.create(0, AccessPrivileges.PUBLIC)).concept(CONCEPT).id("1qlCQcqktGl").registry(REGISTRY).build(SMethodBuilder.createJavaParameter(MyDataIStream.class, ""));
+  public static final SMethod<SNode> readSignature_idOFkQGRUn7a = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("readSignature").modifiers(SModifiersImpl.create(0, AccessPrivileges.PUBLIC)).concept(CONCEPT).id("OFkQGRUn7a").registry(REGISTRY).build(SMethodBuilder.createJavaParameter(MyDataIStream.class, ""));
+  /*package*/ static final SMethod<SNode> readCode_idr0PjdDe5KL = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("readCode").modifiers(SModifiersImpl.create(0, AccessPrivileges.PRIVATE)).concept(CONCEPT).id("r0PjdDe5KL").registry(REGISTRY).build(SMethodBuilder.createJavaParameter(MyDataIStream.class, ""));
+  /*package*/ static final SMethod<SNode> readExceptionTableElement_idOFkQGS2cVz = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("readExceptionTableElement").modifiers(SModifiersImpl.create(0, AccessPrivileges.PRIVATE)).concept(CONCEPT).id("OFkQGS2cVz").registry(REGISTRY).build(SMethodBuilder.createJavaParameter(MyDataIStream.class, ""));
+  /*package*/ static final SMethod<BigInteger> parse_idOFkQGRVb6M = new SMethodBuilder<BigInteger>(new SJavaCompoundTypeImpl(BigInteger.class)).name("parse").modifiers(SModifiersImpl.create(0, AccessPrivileges.PRIVATE)).concept(CONCEPT).id("OFkQGRVb6M").registry(REGISTRY).build(SMethodBuilder.createJavaParameter(MyDataIStream.class, ""), SMethodBuilder.createJavaParameter(BigInteger.class, ""), SMethodBuilder.createJavaParameter((Class<SAbstractConcept>) ((Class) Object.class), ""), SMethodBuilder.createJavaParameter((Class<List<SNode>>) ((Class) Object.class), ""));
+  public static final SMethod<List<SNode>> readCodeArray_idr0PjdDggI6 = new SMethodBuilder<List<SNode>>(new SJavaCompoundTypeImpl((Class<List<SNode>>) ((Class) Object.class))).name("readCodeArray").modifiers(SModifiersImpl.create(0, AccessPrivileges.PUBLIC)).concept(CONCEPT).id("r0PjdDggI6").registry(REGISTRY).build(SMethodBuilder.createJavaParameter(MyDataIStream.class, ""));
+  public static final SMethod<SNode> readArray_idr0PjdDgi$s = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("readArray").modifiers(SModifiersImpl.create(0, AccessPrivileges.PUBLIC)).concept(CONCEPT).id("r0PjdDgi$s").registry(REGISTRY).build(SMethodBuilder.createJavaParameter(MyDataIStream.class, ""));
+  public static final SMethod<SNode> readArray_id1qlCQcqkYgS = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("readArray").modifiers(SModifiersImpl.create(0, AccessPrivileges.PUBLIC)).concept(CONCEPT).id("1qlCQcqkYgS").registry(REGISTRY).build(SMethodBuilder.createJavaParameter(MyDataIStream.class, ""));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(asHexadecimal_id1qlCQcqguFh, toInteger_id1qlCQcqgEyg, pow_id1qlCQcqgIKn, toInteger_id1qlCQcqgEPh, load_id1qlCQcqgn_R, loadClassAccessFlags_id1qlCQcqkEDC, loadMethodAccessFlags_id1qlCQcqkGIa, loadAccessFlags_id1qlCQcqjTO4, loadMethodInfo_id1qlCQcqjIRa, toUtf8Reference_idOFkQGRSQa2, loadFieldInfo_idOFkQGRSAW6, getConstantPoolElement_idr0PjdDds1G, loadAttributeInfo_id1qlCQcqktGl, readSignature_idOFkQGRUn7a, readCode_idr0PjdDe5KL, readExceptionTableElement_idOFkQGS2cVz, parse_idOFkQGRVb6M, readCodeArray_idr0PjdDggI6, readArray_idr0PjdDgi$s, readArray_id1qlCQcqkYgS);
+  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(asHexadecimal_id1qlCQcqguFh, toInteger_id1qlCQcqgEyg, pow_id1qlCQcqgIKn, toInteger_id1qlCQcqgEPh, load_id1qlCQcqgn_R, loadClassAccessFlags_id1qlCQcqkEDC, loadMethodAccessFlags_id1qlCQcqkGIa, loadAccessFlags_id1qlCQcqjTO4, loadMethodInfo_id1qlCQcqjIRa, toUtf8Reference_idOFkQGRSQa2, toClassReference_id4xr1zwUxT4h, loadFieldInfo_idOFkQGRSAW6, loadInterfaceInfo_id4xr1zwU$IfQ, getConstantPoolElement_idr0PjdDds1G, loadAttributeInfo_id1qlCQcqktGl, readSignature_idOFkQGRUn7a, readCode_idr0PjdDe5KL, readExceptionTableElement_idOFkQGS2cVz, parse_idOFkQGRVb6M, readCodeArray_idr0PjdDggI6, readArray_idr0PjdDgi$s, readArray_id1qlCQcqkYgS);
 
   private static void ___init___(@NotNull SNode __thisNode__) {
   }
@@ -99,13 +103,13 @@ public final class ClassFileLoader__BehaviorDescriptor extends BaseBHDescriptor 
       return ((long) ClassFileLoader__BehaviorDescriptor.pow_id1qlCQcqgIKn.invoke(__thisNode__, ((int) 256), ((int) exp))) * b[index] + ((long) ClassFileLoader__BehaviorDescriptor.toInteger_id1qlCQcqgEPh.invoke(__thisNode__, b, ((int) (index + 1))));
     }
   }
-  /*package*/ static void load_id1qlCQcqgn_R(@NotNull SNode __thisNode__) {
+  /*package*/ static void load_id1qlCQcqgn_R(@NotNull final SNode __thisNode__) {
     File file = new File(SPropertyOperations.getString(__thisNode__, MetaAdapterFactory.getProperty(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a40c7ecL, 0x1695a3631a40c7efL, "path")));
     byte[] u1 = new byte[1];
     byte[] u4 = new byte[4];
     try {
       DataInputStream dis = new DataInputStream(new FileInputStream(file));
-      MyDataStream mds = new MyDataStream(dis);
+      MyDataIStream mds = new MyDataIStream(dis);
 
       // Read magic signature 
       // it should be -54, -2, -70, -66 
@@ -169,7 +173,7 @@ public final class ClassFileLoader__BehaviorDescriptor extends BaseBHDescriptor 
           case 7:
             {
               SNode cp = SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a43d9beL, "me.tomassetti.bytecode.structure.ConstantPoolClass")));
-              SLinkOperations.setTarget(cp, MetaAdapterFactory.getContainmentLink(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a43d9beL, 0x1695a3631a47ef15L, "nameIndex"), mds.readInt2AsNode());
+              SLinkOperations.setTarget(cp, MetaAdapterFactory.getContainmentLink(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a43d9beL, 0x1695a3631a47ef15L, "nameIndex"), ClassFileLoader__BehaviorDescriptor.toUtf8Reference_idOFkQGRSQa2.invoke(__thisNode__, ((long) mds.readInt2AsLong())));
               ListSequence.fromList(SLinkOperations.getChildren(SLinkOperations.getTarget(__thisNode__, MetaAdapterFactory.getContainmentLink(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a40c7ecL, 0x1695a3631a40c7edL, "classFile")), MetaAdapterFactory.getContainmentLink(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x40880d8921831cd4L, 0x1695a3631a449987L, "constantPool"))).addElement(cp);
             }
             break;
@@ -240,15 +244,32 @@ public final class ClassFileLoader__BehaviorDescriptor extends BaseBHDescriptor 
         }
       }
 
+      // solve all raw references: they were forward references that could not be solved before 
+      ListSequence.fromList(SNodeOperations.getNodeDescendants(SLinkOperations.getTarget(__thisNode__, MetaAdapterFactory.getContainmentLink(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a40c7ecL, 0x1695a3631a40c7edL, "classFile")), MetaAdapterFactory.getConcept(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0xd2b536b37df3897L, "me.tomassetti.bytecode.structure.ConstantPoolReference"), false, new SAbstractConcept[]{})).where(new IWhereFilter<SNode>() {
+        public boolean accept(SNode it) {
+          return (SLinkOperations.getTarget(SNodeOperations.cast(it, MetaAdapterFactory.getConcept(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0xd2b536b37df3897L, "me.tomassetti.bytecode.structure.ConstantPoolReference")), MetaAdapterFactory.getReferenceLink(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0xd2b536b37df3897L, 0xd2b536b37df3898L, "element")) == null);
+        }
+      }).visitAll(new IVisitor<SNode>() {
+        public void visit(SNode it) {
+          if (SNodeOperations.isInstanceOf(it, MetaAdapterFactory.getConcept(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0xd2b536b37df3894L, "me.tomassetti.bytecode.structure.ConstantPoolUtf8Reference"))) {
+            SLinkOperations.setTarget(SNodeOperations.cast(it, MetaAdapterFactory.getConcept(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0xd2b536b37df3894L, "me.tomassetti.bytecode.structure.ConstantPoolUtf8Reference")), MetaAdapterFactory.getReferenceLink(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0xd2b536b37df3897L, 0xd2b536b37df3898L, "element"), SNodeOperations.cast(ClassFile__BehaviorDescriptor.getConstantPoolElement_idOFkQGRSVg7.invoke(SLinkOperations.getTarget(__thisNode__, MetaAdapterFactory.getContainmentLink(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a40c7ecL, 0x1695a3631a40c7edL, "classFile")), ((long) SPropertyOperations.getInteger(it, MetaAdapterFactory.getProperty(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0xd2b536b37df3897L, 0x485b06383a8e066dL, "rawIndex")))), MetaAdapterFactory.getConcept(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a43d9c7L, "me.tomassetti.bytecode.structure.ConstantPoolUtf8")));
+          } else if (SNodeOperations.isInstanceOf(it, MetaAdapterFactory.getConcept(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x485b06383a83ac49L, "me.tomassetti.bytecode.structure.ConstantPoolClassReference"))) {
+            SLinkOperations.setTarget(SNodeOperations.cast(it, MetaAdapterFactory.getConcept(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x485b06383a83ac49L, "me.tomassetti.bytecode.structure.ConstantPoolClassReference")), MetaAdapterFactory.getReferenceLink(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0xd2b536b37df3897L, 0xd2b536b37df3898L, "element"), SNodeOperations.cast(ClassFile__BehaviorDescriptor.getConstantPoolElement_idOFkQGRSVg7.invoke(SLinkOperations.getTarget(__thisNode__, MetaAdapterFactory.getContainmentLink(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a40c7ecL, 0x1695a3631a40c7edL, "classFile")), ((long) SPropertyOperations.getInteger(it, MetaAdapterFactory.getProperty(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0xd2b536b37df3897L, 0x485b06383a8e066dL, "rawIndex")))), MetaAdapterFactory.getConcept(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a43d9beL, "me.tomassetti.bytecode.structure.ConstantPoolClass")));
+          } else {
+            throw new RuntimeException();
+          }
+        }
+      });
+
       // access flags 
       SLinkOperations.setTarget(SLinkOperations.getTarget(__thisNode__, MetaAdapterFactory.getContainmentLink(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a40c7ecL, 0x1695a3631a40c7edL, "classFile")), MetaAdapterFactory.getContainmentLink(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x40880d8921831cd4L, 0x40880d8921831cedL, "access_flags"), ClassFileLoader__BehaviorDescriptor.loadClassAccessFlags_id1qlCQcqkEDC.invoke(__thisNode__, mds));
 
-      SLinkOperations.setTarget(SLinkOperations.getTarget(__thisNode__, MetaAdapterFactory.getContainmentLink(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a40c7ecL, 0x1695a3631a40c7edL, "classFile")), MetaAdapterFactory.getContainmentLink(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x40880d8921831cd4L, 0x40880d8921831cf2L, "this_class"), mds.readInt2AsNode());
+      SLinkOperations.setTarget(SLinkOperations.getTarget(__thisNode__, MetaAdapterFactory.getContainmentLink(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a40c7ecL, 0x1695a3631a40c7edL, "classFile")), MetaAdapterFactory.getContainmentLink(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x40880d8921831cd4L, 0x40880d8921831cf2L, "this_class"), ClassFileLoader__BehaviorDescriptor.toClassReference_id4xr1zwUxT4h.invoke(__thisNode__, ((long) mds.readInt2AsLong())));
       SLinkOperations.setTarget(SLinkOperations.getTarget(__thisNode__, MetaAdapterFactory.getContainmentLink(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a40c7ecL, 0x1695a3631a40c7edL, "classFile")), MetaAdapterFactory.getContainmentLink(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x40880d8921831cd4L, 0x40880d8921831cf8L, "super_class"), mds.readInt2AsNode());
 
       long numberOfInterfaces = mds.readInt2AsLong();
-      if (numberOfInterfaces > 0) {
-        throw new RuntimeException("Not implemented: interfaces");
+      for (int i = 0; i < numberOfInterfaces; i++) {
+        ListSequence.fromList(SLinkOperations.getChildren(SLinkOperations.getTarget(__thisNode__, MetaAdapterFactory.getContainmentLink(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a40c7ecL, 0x1695a3631a40c7edL, "classFile")), MetaAdapterFactory.getContainmentLink(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x40880d8921831cd4L, 0x6c0d533693acb5bL, "interfaceInfos"))).addElement(ClassFileLoader__BehaviorDescriptor.loadInterfaceInfo_id4xr1zwU$IfQ.invoke(__thisNode__, mds));
       }
 
       long numberOfFields = mds.readInt2AsLong();
@@ -271,13 +292,13 @@ public final class ClassFileLoader__BehaviorDescriptor extends BaseBHDescriptor 
       e.printStackTrace();
     }
   }
-  /*package*/ static SNode loadClassAccessFlags_id1qlCQcqkEDC(@NotNull SNode __thisNode__, MyDataStream mds) {
+  /*package*/ static SNode loadClassAccessFlags_id1qlCQcqkEDC(@NotNull SNode __thisNode__, MyDataIStream mds) {
     return ((SNode) ClassFileLoader__BehaviorDescriptor.loadAccessFlags_id1qlCQcqjTO4.invoke(__thisNode__, mds, MapSequence.<Integer, String>fromMapAndKeysArray(new HashMap<Integer, String>(), 1, 16, 32, 512, 1024, 4096, 8192, 16384).withValues("public", "final", "super", "interface", "abstract", "synthetic", "annotation", "enum")));
   }
-  /*package*/ static SNode loadMethodAccessFlags_id1qlCQcqkGIa(@NotNull SNode __thisNode__, MyDataStream mds) {
+  /*package*/ static SNode loadMethodAccessFlags_id1qlCQcqkGIa(@NotNull SNode __thisNode__, MyDataIStream mds) {
     return ((SNode) ClassFileLoader__BehaviorDescriptor.loadAccessFlags_id1qlCQcqjTO4.invoke(__thisNode__, mds, MapSequence.<Integer, String>fromMapAndKeysArray(new HashMap<Integer, String>(), 1, 2, 4, 8, 16, 32, 64, 128, 256, 1024, 2048, 4096).withValues("public", "private", "protected", "static", "final", "synchronized", "bridge", "varargs", "native", "abstract", "strict", "synthetic")));
   }
-  /*package*/ static SNode loadAccessFlags_id1qlCQcqjTO4(@NotNull SNode __thisNode__, MyDataStream mds, Map<Integer, String> mapping) {
+  /*package*/ static SNode loadAccessFlags_id1qlCQcqjTO4(@NotNull SNode __thisNode__, MyDataIStream mds, Map<Integer, String> mapping) {
     try {
       SNode accessFlags = SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a4fb665L, "me.tomassetti.bytecode.structure.AccessFlags")));
       long value = mds.readInt2AsLong();
@@ -294,7 +315,7 @@ public final class ClassFileLoader__BehaviorDescriptor extends BaseBHDescriptor 
       throw new RuntimeException(e);
     }
   }
-  /*package*/ static SNode loadMethodInfo_id1qlCQcqjIRa(@NotNull SNode __thisNode__, MyDataStream mds) {
+  /*package*/ static SNode loadMethodInfo_id1qlCQcqjIRa(@NotNull SNode __thisNode__, MyDataIStream mds) {
     try {
       SNode methodInfo = SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a4ea152L, "me.tomassetti.bytecode.structure.MethodInfo")));
       SLinkOperations.setTarget(methodInfo, MetaAdapterFactory.getContainmentLink(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a4ea152L, 0x1695a3631a4ea153L, "accessFlags"), ClassFileLoader__BehaviorDescriptor.loadMethodAccessFlags_id1qlCQcqkGIa.invoke(__thisNode__, mds));
@@ -312,12 +333,26 @@ public final class ClassFileLoader__BehaviorDescriptor extends BaseBHDescriptor 
     }
   }
   /*package*/ static SNode toUtf8Reference_idOFkQGRSQa2(@NotNull SNode __thisNode__, long index) {
-    SNode element = ClassFile__BehaviorDescriptor.getConstantPoolElement_idOFkQGRSVg7.invoke(SLinkOperations.getTarget(__thisNode__, MetaAdapterFactory.getContainmentLink(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a40c7ecL, 0x1695a3631a40c7edL, "classFile")), ((long) index));
     SNode ref = SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0xd2b536b37df3894L, "me.tomassetti.bytecode.structure.ConstantPoolUtf8Reference")));
-    SLinkOperations.setTarget(ref, MetaAdapterFactory.getReferenceLink(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0xd2b536b37df3897L, 0xd2b536b37df3898L, "element"), SNodeOperations.cast(element, MetaAdapterFactory.getConcept(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a43d9c7L, "me.tomassetti.bytecode.structure.ConstantPoolUtf8")));
+    if ((boolean) ClassFile__BehaviorDescriptor.hasConstantPoolElement_id4xr1zwUzAuU.invoke(SLinkOperations.getTarget(__thisNode__, MetaAdapterFactory.getContainmentLink(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a40c7ecL, 0x1695a3631a40c7edL, "classFile")), ((long) index))) {
+      SNode element = ClassFile__BehaviorDescriptor.getConstantPoolElement_idOFkQGRSVg7.invoke(SLinkOperations.getTarget(__thisNode__, MetaAdapterFactory.getContainmentLink(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a40c7ecL, 0x1695a3631a40c7edL, "classFile")), ((long) index));
+      SLinkOperations.setTarget(ref, MetaAdapterFactory.getReferenceLink(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0xd2b536b37df3897L, 0xd2b536b37df3898L, "element"), SNodeOperations.cast(element, MetaAdapterFactory.getConcept(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a43d9c7L, "me.tomassetti.bytecode.structure.ConstantPoolUtf8")));
+    } else {
+      SPropertyOperations.set(ref, MetaAdapterFactory.getProperty(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0xd2b536b37df3897L, 0x485b06383a8e066dL, "rawIndex"), "" + (((int) index)));
+    }
     return ref;
   }
-  /*package*/ static SNode loadFieldInfo_idOFkQGRSAW6(@NotNull SNode __thisNode__, MyDataStream mds) {
+  /*package*/ static SNode toClassReference_id4xr1zwUxT4h(@NotNull SNode __thisNode__, long index) {
+    SNode ref = SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x485b06383a83ac49L, "me.tomassetti.bytecode.structure.ConstantPoolClassReference")));
+    if ((boolean) ClassFile__BehaviorDescriptor.hasConstantPoolElement_id4xr1zwUzAuU.invoke(SLinkOperations.getTarget(__thisNode__, MetaAdapterFactory.getContainmentLink(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a40c7ecL, 0x1695a3631a40c7edL, "classFile")), ((long) index))) {
+      SNode element = ClassFile__BehaviorDescriptor.getConstantPoolElement_idOFkQGRSVg7.invoke(SLinkOperations.getTarget(__thisNode__, MetaAdapterFactory.getContainmentLink(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a40c7ecL, 0x1695a3631a40c7edL, "classFile")), ((long) index));
+      SLinkOperations.setTarget(ref, MetaAdapterFactory.getReferenceLink(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0xd2b536b37df3897L, 0xd2b536b37df3898L, "element"), SNodeOperations.cast(element, MetaAdapterFactory.getConcept(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a43d9beL, "me.tomassetti.bytecode.structure.ConstantPoolClass")));
+    } else {
+      SPropertyOperations.set(ref, MetaAdapterFactory.getProperty(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0xd2b536b37df3897L, 0x485b06383a8e066dL, "rawIndex"), "" + (((int) index)));
+    }
+    return ref;
+  }
+  /*package*/ static SNode loadFieldInfo_idOFkQGRSAW6(@NotNull SNode __thisNode__, MyDataIStream mds) {
     try {
       SNode fieldInfo = SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x6c0d533693aca41L, "me.tomassetti.bytecode.structure.FieldInfo")));
       SLinkOperations.setTarget(fieldInfo, MetaAdapterFactory.getContainmentLink(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x6c0d533693aca41L, 0xd2b536b37e34ac9L, "accessFlags"), ClassFileLoader__BehaviorDescriptor.loadMethodAccessFlags_id1qlCQcqkGIa.invoke(__thisNode__, mds));
@@ -334,6 +369,13 @@ public final class ClassFileLoader__BehaviorDescriptor extends BaseBHDescriptor 
       throw new RuntimeException(e);
     }
   }
+  /*package*/ static SNode loadInterfaceInfo_id4xr1zwU$IfQ(@NotNull SNode __thisNode__, MyDataIStream mds) {
+    try {
+      return ClassFileLoader__BehaviorDescriptor.toClassReference_id4xr1zwUxT4h.invoke(__thisNode__, ((long) mds.readInt2AsLong()));
+    } catch (IOException e) {
+      throw new RuntimeException(e);
+    }
+  }
   /*package*/ static SNode getConstantPoolElement_idr0PjdDds1G(@NotNull SNode __thisNode__, SNode index) {
     int indexFromZero = ((int) ((long) Unsigned2Bytes__BehaviorDescriptor.toLong_id1qlCQcqjgik.invoke(index) - 1));
     if (indexFromZero < 0) {
@@ -344,7 +386,7 @@ public final class ClassFileLoader__BehaviorDescriptor extends BaseBHDescriptor 
     }
     return ListSequence.fromList(SLinkOperations.getChildren(SLinkOperations.getTarget(__thisNode__, MetaAdapterFactory.getContainmentLink(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a40c7ecL, 0x1695a3631a40c7edL, "classFile")), MetaAdapterFactory.getContainmentLink(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x40880d8921831cd4L, 0x1695a3631a449987L, "constantPool"))).getElement(indexFromZero);
   }
-  /*package*/ static SNode loadAttributeInfo_id1qlCQcqktGl(@NotNull SNode __thisNode__, MyDataStream mds) {
+  /*package*/ static SNode loadAttributeInfo_id1qlCQcqktGl(@NotNull SNode __thisNode__, MyDataIStream mds) {
     try {
       SNode attributeInfo = SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a51ca20L, "me.tomassetti.bytecode.structure.AttributeInfo")));
       SLinkOperations.setTarget(attributeInfo, MetaAdapterFactory.getContainmentLink(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a51ca20L, 0x1695a3631a52669cL, "nameIndex"), ClassFileLoader__BehaviorDescriptor.toUtf8Reference_idOFkQGRSQa2.invoke(__thisNode__, ((long) mds.readInt2AsLong())));
@@ -363,7 +405,7 @@ public final class ClassFileLoader__BehaviorDescriptor extends BaseBHDescriptor 
       throw new RuntimeException(e);
     }
   }
-  /*package*/ static SNode readSignature_idOFkQGRUn7a(@NotNull SNode __thisNode__, MyDataStream mds) {
+  /*package*/ static SNode readSignature_idOFkQGRUn7a(@NotNull SNode __thisNode__, MyDataIStream mds) {
     try {
       BigInteger length = mds.readInt4AsBigInteger();
       SNode data = SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0xd2b536b37e91620L, "me.tomassetti.bytecode.structure.SignatureAttributeInfoData")));
@@ -373,7 +415,7 @@ public final class ClassFileLoader__BehaviorDescriptor extends BaseBHDescriptor 
       throw new RuntimeException(e);
     }
   }
-  /*package*/ static SNode readCode_idr0PjdDe5KL(@NotNull SNode __thisNode__, MyDataStream mds) {
+  /*package*/ static SNode readCode_idr0PjdDe5KL(@NotNull SNode __thisNode__, MyDataIStream mds) {
     try {
       BigInteger length = mds.readInt4AsBigInteger();
       SNode data = SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x6c0d53369382668L, "me.tomassetti.bytecode.structure.CodeAttributeInfoData")));
@@ -399,7 +441,7 @@ public final class ClassFileLoader__BehaviorDescriptor extends BaseBHDescriptor 
       throw new RuntimeException(e);
     }
   }
-  /*package*/ static SNode readExceptionTableElement_idOFkQGS2cVz(@NotNull SNode __thisNode__, MyDataStream mds) {
+  /*package*/ static SNode readExceptionTableElement_idOFkQGS2cVz(@NotNull SNode __thisNode__, MyDataIStream mds) {
     try {
       SNode element = SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x6c0d53369382686L, "me.tomassetti.bytecode.structure.ExceptionTableElement")));
       SLinkOperations.setTarget(element, MetaAdapterFactory.getContainmentLink(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x6c0d53369382686L, 0xd2b536b38085facL, "startPc"), mds.readInt2AsNode());
@@ -411,7 +453,7 @@ public final class ClassFileLoader__BehaviorDescriptor extends BaseBHDescriptor 
       throw new RuntimeException(e);
     }
   }
-  /*package*/ static BigInteger parse_idOFkQGRVb6M(@NotNull SNode __thisNode__, MyDataStream mds, BigInteger i, SAbstractConcept concept, List<SNode> instructions) {
+  /*package*/ static BigInteger parse_idOFkQGRVb6M(@NotNull SNode __thisNode__, MyDataIStream mds, BigInteger i, SAbstractConcept concept, List<SNode> instructions) {
     SNode instruction = SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(concept));
     try {
       for (SContainmentLink link : CollectionSequence.fromCollection(concept.getContainmentLinks())) {
@@ -447,7 +489,7 @@ public final class ClassFileLoader__BehaviorDescriptor extends BaseBHDescriptor 
       throw new RuntimeException(e);
     }
   }
-  /*package*/ static List<SNode> readCodeArray_idr0PjdDggI6(@NotNull SNode __thisNode__, MyDataStream mds) {
+  /*package*/ static List<SNode> readCodeArray_idr0PjdDggI6(@NotNull SNode __thisNode__, MyDataIStream mds) {
     try {
       SNode array = SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a534cdeL, "me.tomassetti.bytecode.structure.Unsigned1BytesArray")));
       List<SNode> instructions = new ArrayList<SNode>();
@@ -542,7 +584,7 @@ public final class ClassFileLoader__BehaviorDescriptor extends BaseBHDescriptor 
       throw new RuntimeException(e);
     }
   }
-  /*package*/ static SNode readArray_idr0PjdDgi$s(@NotNull SNode __thisNode__, MyDataStream mds) {
+  /*package*/ static SNode readArray_idr0PjdDgi$s(@NotNull SNode __thisNode__, MyDataIStream mds) {
     try {
       SNode array = SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a534cdeL, "me.tomassetti.bytecode.structure.Unsigned1BytesArray")));
       BigInteger length = mds.readInt4AsBigInteger();
@@ -555,7 +597,7 @@ public final class ClassFileLoader__BehaviorDescriptor extends BaseBHDescriptor 
       throw new RuntimeException(e);
     }
   }
-  /*package*/ static SNode readArray_id1qlCQcqkYgS(@NotNull SNode __thisNode__, MyDataStream mds) {
+  /*package*/ static SNode readArray_id1qlCQcqkYgS(@NotNull SNode __thisNode__, MyDataIStream mds) {
     try {
       SNode array = SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a534cdeL, "me.tomassetti.bytecode.structure.Unsigned1BytesArray")));
       BigInteger length = mds.readInt4AsBigInteger();
@@ -597,35 +639,39 @@ public final class ClassFileLoader__BehaviorDescriptor extends BaseBHDescriptor 
         load_id1qlCQcqgn_R(node);
         return null;
       case 5:
-        return (T) ((SNode) loadClassAccessFlags_id1qlCQcqkEDC(node, (MyDataStream) parameters[0]));
+        return (T) ((SNode) loadClassAccessFlags_id1qlCQcqkEDC(node, (MyDataIStream) parameters[0]));
       case 6:
-        return (T) ((SNode) loadMethodAccessFlags_id1qlCQcqkGIa(node, (MyDataStream) parameters[0]));
+        return (T) ((SNode) loadMethodAccessFlags_id1qlCQcqkGIa(node, (MyDataIStream) parameters[0]));
       case 7:
-        return (T) ((SNode) loadAccessFlags_id1qlCQcqjTO4(node, (MyDataStream) parameters[0], (Map<Integer, String>) parameters[1]));
+        return (T) ((SNode) loadAccessFlags_id1qlCQcqjTO4(node, (MyDataIStream) parameters[0], (Map<Integer, String>) parameters[1]));
       case 8:
-        return (T) ((SNode) loadMethodInfo_id1qlCQcqjIRa(node, (MyDataStream) parameters[0]));
+        return (T) ((SNode) loadMethodInfo_id1qlCQcqjIRa(node, (MyDataIStream) parameters[0]));
       case 9:
         return (T) ((SNode) toUtf8Reference_idOFkQGRSQa2(node, ((long) (Long) parameters[0])));
       case 10:
-        return (T) ((SNode) loadFieldInfo_idOFkQGRSAW6(node, (MyDataStream) parameters[0]));
+        return (T) ((SNode) toClassReference_id4xr1zwUxT4h(node, ((long) (Long) parameters[0])));
       case 11:
-        return (T) ((SNode) getConstantPoolElement_idr0PjdDds1G(node, (SNode) parameters[0]));
+        return (T) ((SNode) loadFieldInfo_idOFkQGRSAW6(node, (MyDataIStream) parameters[0]));
       case 12:
-        return (T) ((SNode) loadAttributeInfo_id1qlCQcqktGl(node, (MyDataStream) parameters[0]));
+        return (T) ((SNode) loadInterfaceInfo_id4xr1zwU$IfQ(node, (MyDataIStream) parameters[0]));
       case 13:
-        return (T) ((SNode) readSignature_idOFkQGRUn7a(node, (MyDataStream) parameters[0]));
+        return (T) ((SNode) getConstantPoolElement_idr0PjdDds1G(node, (SNode) parameters[0]));
       case 14:
-        return (T) ((SNode) readCode_idr0PjdDe5KL(node, (MyDataStream) parameters[0]));
+        return (T) ((SNode) loadAttributeInfo_id1qlCQcqktGl(node, (MyDataIStream) parameters[0]));
       case 15:
-        return (T) ((SNode) readExceptionTableElement_idOFkQGS2cVz(node, (MyDataStream) parameters[0]));
+        return (T) ((SNode) readSignature_idOFkQGRUn7a(node, (MyDataIStream) parameters[0]));
       case 16:
-        return (T) ((BigInteger) parse_idOFkQGRVb6M(node, (MyDataStream) parameters[0], (BigInteger) parameters[1], (SAbstractConcept) parameters[2], (List<SNode>) parameters[3]));
+        return (T) ((SNode) readCode_idr0PjdDe5KL(node, (MyDataIStream) parameters[0]));
       case 17:
-        return (T) ((List<SNode>) readCodeArray_idr0PjdDggI6(node, (MyDataStream) parameters[0]));
+        return (T) ((SNode) readExceptionTableElement_idOFkQGS2cVz(node, (MyDataIStream) parameters[0]));
       case 18:
-        return (T) ((SNode) readArray_idr0PjdDgi$s(node, (MyDataStream) parameters[0]));
+        return (T) ((BigInteger) parse_idOFkQGRVb6M(node, (MyDataIStream) parameters[0], (BigInteger) parameters[1], (SAbstractConcept) parameters[2], (List<SNode>) parameters[3]));
       case 19:
-        return (T) ((SNode) readArray_id1qlCQcqkYgS(node, (MyDataStream) parameters[0]));
+        return (T) ((List<SNode>) readCodeArray_idr0PjdDggI6(node, (MyDataIStream) parameters[0]));
+      case 20:
+        return (T) ((SNode) readArray_idr0PjdDgi$s(node, (MyDataIStream) parameters[0]));
+      case 21:
+        return (T) ((SNode) readArray_id1qlCQcqkYgS(node, (MyDataIStream) parameters[0]));
       default:
         throw new BHMethodNotFoundException(this, method);
     }

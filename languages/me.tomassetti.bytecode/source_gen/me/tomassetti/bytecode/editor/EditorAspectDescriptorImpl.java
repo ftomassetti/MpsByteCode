@@ -37,6 +37,9 @@ public class EditorAspectDescriptorImpl extends EditorAspectDescriptorBase {
       if (SConceptOperations.isExactly(SNodeOperations.asSConcept(cncpt), MetaAdapterFactory.getConcept(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a43d9beL, "me.tomassetti.bytecode.structure.ConstantPoolClass"))) {
         return Collections.<ConceptEditor>singletonList(new ConstantPoolClass_Editor());
       }
+      if (SConceptOperations.isExactly(SNodeOperations.asSConcept(cncpt), MetaAdapterFactory.getConcept(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x485b06383a83ac49L, "me.tomassetti.bytecode.structure.ConstantPoolClassReference"))) {
+        return Collections.<ConceptEditor>singletonList(new ConstantPoolClassReference_Editor());
+      }
       if (SConceptOperations.isExactly(SNodeOperations.asSConcept(cncpt), MetaAdapterFactory.getConcept(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x67eeae9702c66d1dL, "me.tomassetti.bytecode.structure.ConstantPoolDouble"))) {
         return Collections.<ConceptEditor>singletonList(new ConstantPoolDouble_Editor());
       }

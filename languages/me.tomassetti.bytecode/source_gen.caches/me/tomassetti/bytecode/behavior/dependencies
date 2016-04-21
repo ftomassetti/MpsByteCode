@@ -133,12 +133,46 @@
     <classNode dependClassName="me.tomassetti.bytecode.behavior.Instruction_BehaviorDescriptor" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
   </dependency>
+  <dependency className="me.tomassetti.bytecode.behavior.AttributeInfoData_Behavior" file="AttributeInfoData_Behavior.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+  </dependency>
   <dependency className="me.tomassetti.bytecode.behavior.AttributeInfoData_BehaviorDescriptor" file="AttributeInfoData_BehaviorDescriptor.java">
     <classNode dependClassName="java.lang.Deprecated" />
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="jetbrains.mps.lang.core.behavior.BaseConcept_BehaviorDescriptor" />
+    <classNode dependClassName="me.tomassetti.bytecode.behavior.MyDataOStream" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
+  </dependency>
+  <dependency className="me.tomassetti.bytecode.behavior.AttributeInfoData__BehaviorDescriptor" file="AttributeInfoData__BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Object" />
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.lang.Void" />
+    <classNode dependClassName="java.util.Arrays" />
+    <classNode dependClassName="java.util.List" />
+    <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.AccessPrivileges" />
+    <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl" />
+    <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.SMethodBuilder" />
+    <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.SModifiersImpl" />
+    <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException" />
+    <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.api.BehaviorRegistry" />
+    <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.api.SConstructor" />
+    <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.api.SMethod" />
+    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
+    <classNode dependClassName="jetbrains.mps.smodel.language.ConceptRegistry" />
+    <classNode dependClassName="me.tomassetti.bytecode.behavior.MyDataOStream" />
+    <classNode dependClassName="org.jetbrains.annotations.NotNull" />
+    <classNode dependClassName="org.jetbrains.annotations.Nullable" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.language.SAbstractConcept" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+    <classNode extendsClassName="jetbrains.mps.core.aspects.behaviour.BaseBHDescriptor" />
+  </dependency>
+  <dependency className="me.tomassetti.bytecode.behavior.AttributeInfo_Behavior" file="AttributeInfo_Behavior.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="me.tomassetti.bytecode.behavior.AttributeInfo__BehaviorDescriptor" />
+    <classNode dependClassName="me.tomassetti.bytecode.behavior.MyDataOStream" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
   </dependency>
   <dependency className="me.tomassetti.bytecode.behavior.AttributeInfo_BehaviorDescriptor" file="AttributeInfo_BehaviorDescriptor.java">
     <classNode dependClassName="java.lang.Deprecated" />
@@ -146,6 +180,32 @@
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="jetbrains.mps.lang.core.behavior.BaseConcept_BehaviorDescriptor" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
+  </dependency>
+  <dependency className="me.tomassetti.bytecode.behavior.AttributeInfo__BehaviorDescriptor" file="AttributeInfo__BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Object" />
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.lang.Void" />
+    <classNode dependClassName="java.util.Arrays" />
+    <classNode dependClassName="java.util.List" />
+    <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.AccessPrivileges" />
+    <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl" />
+    <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.SMethodBuilder" />
+    <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.SModifiersImpl" />
+    <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException" />
+    <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.api.BehaviorRegistry" />
+    <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.api.SConstructor" />
+    <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.api.SMethod" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
+    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
+    <classNode dependClassName="jetbrains.mps.smodel.language.ConceptRegistry" />
+    <classNode dependClassName="me.tomassetti.bytecode.behavior.AttributeInfoData__BehaviorDescriptor" />
+    <classNode dependClassName="me.tomassetti.bytecode.behavior.ConstantPoolElement__BehaviorDescriptor" />
+    <classNode dependClassName="me.tomassetti.bytecode.behavior.MyDataOStream" />
+    <classNode dependClassName="org.jetbrains.annotations.NotNull" />
+    <classNode dependClassName="org.jetbrains.annotations.Nullable" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.language.SAbstractConcept" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+    <classNode extendsClassName="jetbrains.mps.core.aspects.behaviour.BaseBHDescriptor" />
   </dependency>
   <dependency className="me.tomassetti.bytecode.behavior.Baload_BehaviorDescriptor" file="Baload_BehaviorDescriptor.java">
     <classNode dependClassName="java.lang.Deprecated" />
@@ -170,8 +230,11 @@
     <classNode dependClassName="jetbrains.mps.smodel.adapter.ids.SConceptId" />
     <classNode dependClassName="jetbrains.mps.smodel.runtime.BehaviorDescriptor" />
     <classNode dependClassName="jetbrains.mps.smodel.runtime.interpreted.BehaviorAspectInterpreted" />
+    <classNode dependClassName="me.tomassetti.bytecode.behavior.AttributeInfoData__BehaviorDescriptor" />
+    <classNode dependClassName="me.tomassetti.bytecode.behavior.AttributeInfo__BehaviorDescriptor" />
     <classNode dependClassName="me.tomassetti.bytecode.behavior.ClassFileLoader__BehaviorDescriptor" />
     <classNode dependClassName="me.tomassetti.bytecode.behavior.ClassFile__BehaviorDescriptor" />
+    <classNode dependClassName="me.tomassetti.bytecode.behavior.CodeAttributeInfoData__BehaviorDescriptor" />
     <classNode dependClassName="me.tomassetti.bytecode.behavior.ConstantPoolClass__BehaviorDescriptor" />
     <classNode dependClassName="me.tomassetti.bytecode.behavior.ConstantPoolDouble__BehaviorDescriptor" />
     <classNode dependClassName="me.tomassetti.bytecode.behavior.ConstantPoolElement__BehaviorDescriptor" />
@@ -185,12 +248,19 @@
     <classNode dependClassName="me.tomassetti.bytecode.behavior.ConstantPoolMethodType__BehaviorDescriptor" />
     <classNode dependClassName="me.tomassetti.bytecode.behavior.ConstantPoolMethodref__BehaviorDescriptor" />
     <classNode dependClassName="me.tomassetti.bytecode.behavior.ConstantPoolNameAndType__BehaviorDescriptor" />
+    <classNode dependClassName="me.tomassetti.bytecode.behavior.ConstantPoolReference__BehaviorDescriptor" />
     <classNode dependClassName="me.tomassetti.bytecode.behavior.ConstantPoolString__BehaviorDescriptor" />
     <classNode dependClassName="me.tomassetti.bytecode.behavior.ConstantPoolUtf8__BehaviorDescriptor" />
+    <classNode dependClassName="me.tomassetti.bytecode.behavior.FieldInfo__BehaviorDescriptor" />
     <classNode dependClassName="me.tomassetti.bytecode.behavior.Instruction__BehaviorDescriptor" />
     <classNode dependClassName="me.tomassetti.bytecode.behavior.Lookupswitch__BehaviorDescriptor" />
+    <classNode dependClassName="me.tomassetti.bytecode.behavior.MethodInfo__BehaviorDescriptor" />
+    <classNode dependClassName="me.tomassetti.bytecode.behavior.RawAttributeInfoData__BehaviorDescriptor" />
+    <classNode dependClassName="me.tomassetti.bytecode.behavior.SignatureAttributeInfoData__BehaviorDescriptor" />
     <classNode dependClassName="me.tomassetti.bytecode.behavior.Signed4Bytes__BehaviorDescriptor" />
     <classNode dependClassName="me.tomassetti.bytecode.behavior.Tableswitch__BehaviorDescriptor" />
+    <classNode dependClassName="me.tomassetti.bytecode.behavior.Unsigned1Byte__BehaviorDescriptor" />
+    <classNode dependClassName="me.tomassetti.bytecode.behavior.Unsigned1BytesArray__BehaviorDescriptor" />
     <classNode dependClassName="me.tomassetti.bytecode.behavior.Unsigned2Bytes__BehaviorDescriptor" />
     <classNode dependClassName="me.tomassetti.bytecode.behavior.Unsigned4Bytes__BehaviorDescriptor" />
     <classNode dependClassName="me.tomassetti.bytecode.behavior.Wide__BehaviorDescriptor" />
@@ -234,7 +304,7 @@
     <classNode dependClassName="java.util.List" />
     <classNode dependClassName="java.util.Map" />
     <classNode dependClassName="me.tomassetti.bytecode.behavior.ClassFileLoader__BehaviorDescriptor" />
-    <classNode dependClassName="me.tomassetti.bytecode.behavior.MyDataStream" />
+    <classNode dependClassName="me.tomassetti.bytecode.behavior.MyDataIStream" />
     <classNode dependClassName="org.jetbrains.mps.openapi.language.SAbstractConcept" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
   </dependency>
@@ -278,6 +348,8 @@
     <classNode dependClassName="jetbrains.mps.internal.collections.runtime.CollectionSequence" />
     <classNode dependClassName="jetbrains.mps.internal.collections.runtime.IMapping" />
     <classNode dependClassName="jetbrains.mps.internal.collections.runtime.IRightCombinator" />
+    <classNode dependClassName="jetbrains.mps.internal.collections.runtime.IVisitor" />
+    <classNode dependClassName="jetbrains.mps.internal.collections.runtime.IWhereFilter" />
     <classNode dependClassName="jetbrains.mps.internal.collections.runtime.ListSequence" />
     <classNode dependClassName="jetbrains.mps.internal.collections.runtime.MapSequence" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations" />
@@ -288,7 +360,7 @@
     <classNode dependClassName="jetbrains.mps.smodel.language.ConceptRegistry" />
     <classNode dependClassName="me.tomassetti.bytecode.behavior.ClassFile__BehaviorDescriptor" />
     <classNode dependClassName="me.tomassetti.bytecode.behavior.Instruction__BehaviorDescriptor" />
-    <classNode dependClassName="me.tomassetti.bytecode.behavior.MyDataStream" />
+    <classNode dependClassName="me.tomassetti.bytecode.behavior.MyDataIStream" />
     <classNode dependClassName="me.tomassetti.bytecode.behavior.OpCodeToInstructionMapping" />
     <classNode dependClassName="me.tomassetti.bytecode.behavior.Unsigned2Bytes__BehaviorDescriptor" />
     <classNode dependClassName="org.jetbrains.annotations.NotNull" />
@@ -302,6 +374,7 @@
     <classNode dependClassName="java.io.File" />
     <classNode dependClassName="java.lang.Deprecated" />
     <classNode dependClassName="me.tomassetti.bytecode.behavior.ClassFile__BehaviorDescriptor" />
+    <classNode dependClassName="me.tomassetti.bytecode.behavior.MyDataOStream" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
   </dependency>
   <dependency className="me.tomassetti.bytecode.behavior.ClassFile_BehaviorDescriptor" file="ClassFile_BehaviorDescriptor.java">
@@ -309,15 +382,76 @@
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="jetbrains.mps.lang.core.behavior.BaseConcept_BehaviorDescriptor" />
+    <classNode dependClassName="me.tomassetti.bytecode.execution.behavior.IClassProducer_BehaviorDescriptor" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+    <classNode extendsClassName="java.lang.Cloneable" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
   </dependency>
   <dependency className="me.tomassetti.bytecode.behavior.ClassFile__BehaviorDescriptor" file="ClassFile__BehaviorDescriptor.java">
+    <classNode dependClassName="java.io.DataOutputStream" />
     <classNode dependClassName="java.io.File" />
+    <classNode dependClassName="java.io.FileOutputStream" />
+    <classNode dependClassName="java.io.IOException" />
+    <classNode dependClassName="java.lang.Boolean" />
     <classNode dependClassName="java.lang.Class" />
+    <classNode dependClassName="java.lang.Integer" />
     <classNode dependClassName="java.lang.Long" />
     <classNode dependClassName="java.lang.Object" />
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.RuntimeException" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="java.lang.Void" />
+    <classNode dependClassName="java.util.Arrays" />
+    <classNode dependClassName="java.util.HashMap" />
+    <classNode dependClassName="java.util.List" />
+    <classNode dependClassName="java.util.Map" />
+    <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.AccessPrivileges" />
+    <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl" />
+    <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.SMethodBuilder" />
+    <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.SModifiersImpl" />
+    <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException" />
+    <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.api.BehaviorRegistry" />
+    <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.api.SConstructor" />
+    <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.api.SMethod" />
+    <classNode dependClassName="jetbrains.mps.internal.collections.runtime.IMapping" />
+    <classNode dependClassName="jetbrains.mps.internal.collections.runtime.ISelector" />
+    <classNode dependClassName="jetbrains.mps.internal.collections.runtime.IVisitor" />
+    <classNode dependClassName="jetbrains.mps.internal.collections.runtime.IWhereFilter" />
+    <classNode dependClassName="jetbrains.mps.internal.collections.runtime.ListSequence" />
+    <classNode dependClassName="jetbrains.mps.internal.collections.runtime.MapSequence" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations" />
+    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
+    <classNode dependClassName="jetbrains.mps.smodel.language.ConceptRegistry" />
+    <classNode dependClassName="me.tomassetti.bytecode.behavior.AttributeInfo__BehaviorDescriptor" />
+    <classNode dependClassName="me.tomassetti.bytecode.behavior.ConstantPoolElement__BehaviorDescriptor" />
+    <classNode dependClassName="me.tomassetti.bytecode.behavior.FieldInfo__BehaviorDescriptor" />
+    <classNode dependClassName="me.tomassetti.bytecode.behavior.MyDataOStream" />
+    <classNode dependClassName="me.tomassetti.bytecode.behavior.Unsigned2Bytes__BehaviorDescriptor" />
+    <classNode dependClassName="me.tomassetti.bytecode.execution.behavior.IClassProducer__BehaviorDescriptor" />
+    <classNode dependClassName="org.jetbrains.annotations.NotNull" />
+    <classNode dependClassName="org.jetbrains.annotations.Nullable" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.language.SAbstractConcept" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+    <classNode extendsClassName="jetbrains.mps.core.aspects.behaviour.BaseBHDescriptor" />
+  </dependency>
+  <dependency className="me.tomassetti.bytecode.behavior.CodeAttributeInfoData_Behavior" file="CodeAttributeInfoData_Behavior.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+  </dependency>
+  <dependency className="me.tomassetti.bytecode.behavior.CodeAttributeInfoData_BehaviorDescriptor" file="CodeAttributeInfoData_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="me.tomassetti.bytecode.behavior.AttributeInfoData_BehaviorDescriptor" />
+    <classNode dependClassName="me.tomassetti.bytecode.behavior.MyDataOStream" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+    <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
+  </dependency>
+  <dependency className="me.tomassetti.bytecode.behavior.CodeAttributeInfoData__BehaviorDescriptor" file="CodeAttributeInfoData__BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Object" />
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.lang.RuntimeException" />
+    <classNode dependClassName="java.lang.Void" />
     <classNode dependClassName="java.util.Arrays" />
     <classNode dependClassName="java.util.List" />
     <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.AccessPrivileges" />
@@ -328,26 +462,20 @@
     <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.api.BehaviorRegistry" />
     <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.api.SConstructor" />
     <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.api.SMethod" />
-    <classNode dependClassName="jetbrains.mps.internal.collections.runtime.IWhereFilter" />
-    <classNode dependClassName="jetbrains.mps.internal.collections.runtime.ListSequence" />
-    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
-    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations" />
-    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations" />
     <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
     <classNode dependClassName="jetbrains.mps.smodel.language.ConceptRegistry" />
-    <classNode dependClassName="me.tomassetti.bytecode.behavior.ConstantPoolElement__BehaviorDescriptor" />
-    <classNode dependClassName="me.tomassetti.bytecode.behavior.Unsigned2Bytes__BehaviorDescriptor" />
+    <classNode dependClassName="me.tomassetti.bytecode.behavior.MyDataOStream" />
     <classNode dependClassName="org.jetbrains.annotations.NotNull" />
     <classNode dependClassName="org.jetbrains.annotations.Nullable" />
     <classNode dependClassName="org.jetbrains.mps.openapi.language.SAbstractConcept" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.core.aspects.behaviour.BaseBHDescriptor" />
   </dependency>
-  <dependency className="me.tomassetti.bytecode.behavior.CodeAttributeInfoData_BehaviorDescriptor" file="CodeAttributeInfoData_BehaviorDescriptor.java">
+  <dependency className="me.tomassetti.bytecode.behavior.ConstantPoolClassReference_BehaviorDescriptor" file="ConstantPoolClassReference_BehaviorDescriptor.java">
     <classNode dependClassName="java.lang.Deprecated" />
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />
-    <classNode dependClassName="me.tomassetti.bytecode.behavior.AttributeInfoData_BehaviorDescriptor" />
+    <classNode dependClassName="me.tomassetti.bytecode.behavior.ConstantPoolReference_BehaviorDescriptor" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
   </dependency>
   <dependency className="me.tomassetti.bytecode.behavior.ConstantPoolClass_Behavior" file="ConstantPoolClass_Behavior.java">
@@ -359,12 +487,14 @@
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="me.tomassetti.bytecode.behavior.ConstantPoolElementType" />
     <classNode dependClassName="me.tomassetti.bytecode.behavior.ConstantPoolElement_BehaviorDescriptor" />
+    <classNode dependClassName="me.tomassetti.bytecode.behavior.MyDataOStream" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
   </dependency>
   <dependency className="me.tomassetti.bytecode.behavior.ConstantPoolClass__BehaviorDescriptor" file="ConstantPoolClass__BehaviorDescriptor.java">
     <classNode dependClassName="java.lang.Object" />
     <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.lang.Void" />
     <classNode dependClassName="java.util.Arrays" />
     <classNode dependClassName="java.util.List" />
     <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.AccessPrivileges" />
@@ -375,9 +505,12 @@
     <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.api.BehaviorRegistry" />
     <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.api.SConstructor" />
     <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.api.SMethod" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
     <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
     <classNode dependClassName="jetbrains.mps.smodel.language.ConceptRegistry" />
     <classNode dependClassName="me.tomassetti.bytecode.behavior.ConstantPoolElementType" />
+    <classNode dependClassName="me.tomassetti.bytecode.behavior.ConstantPoolElement__BehaviorDescriptor" />
+    <classNode dependClassName="me.tomassetti.bytecode.behavior.MyDataOStream" />
     <classNode dependClassName="org.jetbrains.annotations.NotNull" />
     <classNode dependClassName="org.jetbrains.annotations.Nullable" />
     <classNode dependClassName="org.jetbrains.mps.openapi.language.SAbstractConcept" />
@@ -395,6 +528,7 @@
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="me.tomassetti.bytecode.behavior.ConstantPoolElementType" />
     <classNode dependClassName="me.tomassetti.bytecode.behavior.ConstantPoolElement_BehaviorDescriptor" />
+    <classNode dependClassName="me.tomassetti.bytecode.behavior.MyDataOStream" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
   </dependency>
@@ -402,6 +536,7 @@
     <classNode dependClassName="java.lang.Boolean" />
     <classNode dependClassName="java.lang.Object" />
     <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.lang.Void" />
     <classNode dependClassName="java.util.Arrays" />
     <classNode dependClassName="java.util.List" />
     <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.AccessPrivileges" />
@@ -412,9 +547,12 @@
     <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.api.BehaviorRegistry" />
     <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.api.SConstructor" />
     <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.api.SMethod" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
     <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
     <classNode dependClassName="jetbrains.mps.smodel.language.ConceptRegistry" />
     <classNode dependClassName="me.tomassetti.bytecode.behavior.ConstantPoolElementType" />
+    <classNode dependClassName="me.tomassetti.bytecode.behavior.MyDataOStream" />
+    <classNode dependClassName="me.tomassetti.bytecode.behavior.Unsigned4Bytes__BehaviorDescriptor" />
     <classNode dependClassName="org.jetbrains.annotations.NotNull" />
     <classNode dependClassName="org.jetbrains.annotations.Nullable" />
     <classNode dependClassName="org.jetbrains.mps.openapi.language.SAbstractConcept" />
@@ -425,6 +563,7 @@
   <dependency className="me.tomassetti.bytecode.behavior.ConstantPoolElement_Behavior" file="ConstantPoolElement_Behavior.java">
     <classNode dependClassName="java.lang.Deprecated" />
     <classNode dependClassName="me.tomassetti.bytecode.behavior.ConstantPoolElement__BehaviorDescriptor" />
+    <classNode dependClassName="me.tomassetti.bytecode.behavior.MyDataOStream" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
   </dependency>
   <dependency className="me.tomassetti.bytecode.behavior.ConstantPoolElement_BehaviorDescriptor" file="ConstantPoolElement_BehaviorDescriptor.java">
@@ -433,6 +572,7 @@
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="jetbrains.mps.lang.core.behavior.BaseConcept_BehaviorDescriptor" />
     <classNode dependClassName="me.tomassetti.bytecode.behavior.ConstantPoolElementType" />
+    <classNode dependClassName="me.tomassetti.bytecode.behavior.MyDataOStream" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
   </dependency>
@@ -441,6 +581,7 @@
     <classNode dependClassName="java.lang.Long" />
     <classNode dependClassName="java.lang.Object" />
     <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.lang.Void" />
     <classNode dependClassName="java.util.Arrays" />
     <classNode dependClassName="java.util.List" />
     <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.AccessPrivileges" />
@@ -457,6 +598,7 @@
     <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
     <classNode dependClassName="jetbrains.mps.smodel.language.ConceptRegistry" />
     <classNode dependClassName="me.tomassetti.bytecode.behavior.ConstantPoolElementType" />
+    <classNode dependClassName="me.tomassetti.bytecode.behavior.MyDataOStream" />
     <classNode dependClassName="org.jetbrains.annotations.NotNull" />
     <classNode dependClassName="org.jetbrains.annotations.Nullable" />
     <classNode dependClassName="org.jetbrains.mps.openapi.language.SAbstractConcept" />
@@ -472,12 +614,14 @@
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="me.tomassetti.bytecode.behavior.ConstantPoolElementType" />
     <classNode dependClassName="me.tomassetti.bytecode.behavior.ConstantPoolElement_BehaviorDescriptor" />
+    <classNode dependClassName="me.tomassetti.bytecode.behavior.MyDataOStream" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
   </dependency>
   <dependency className="me.tomassetti.bytecode.behavior.ConstantPoolFieldref__BehaviorDescriptor" file="ConstantPoolFieldref__BehaviorDescriptor.java">
     <classNode dependClassName="java.lang.Object" />
     <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.lang.Void" />
     <classNode dependClassName="java.util.Arrays" />
     <classNode dependClassName="java.util.List" />
     <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.AccessPrivileges" />
@@ -488,9 +632,12 @@
     <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.api.BehaviorRegistry" />
     <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.api.SConstructor" />
     <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.api.SMethod" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
     <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
     <classNode dependClassName="jetbrains.mps.smodel.language.ConceptRegistry" />
     <classNode dependClassName="me.tomassetti.bytecode.behavior.ConstantPoolElementType" />
+    <classNode dependClassName="me.tomassetti.bytecode.behavior.MyDataOStream" />
+    <classNode dependClassName="me.tomassetti.bytecode.behavior.Unsigned2Bytes__BehaviorDescriptor" />
     <classNode dependClassName="org.jetbrains.annotations.NotNull" />
     <classNode dependClassName="org.jetbrains.annotations.Nullable" />
     <classNode dependClassName="org.jetbrains.mps.openapi.language.SAbstractConcept" />
@@ -506,12 +653,14 @@
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="me.tomassetti.bytecode.behavior.ConstantPoolElementType" />
     <classNode dependClassName="me.tomassetti.bytecode.behavior.ConstantPoolElement_BehaviorDescriptor" />
+    <classNode dependClassName="me.tomassetti.bytecode.behavior.MyDataOStream" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
   </dependency>
   <dependency className="me.tomassetti.bytecode.behavior.ConstantPoolFloat__BehaviorDescriptor" file="ConstantPoolFloat__BehaviorDescriptor.java">
     <classNode dependClassName="java.lang.Object" />
     <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.lang.Void" />
     <classNode dependClassName="java.util.Arrays" />
     <classNode dependClassName="java.util.List" />
     <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.AccessPrivileges" />
@@ -522,9 +671,12 @@
     <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.api.BehaviorRegistry" />
     <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.api.SConstructor" />
     <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.api.SMethod" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
     <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
     <classNode dependClassName="jetbrains.mps.smodel.language.ConceptRegistry" />
     <classNode dependClassName="me.tomassetti.bytecode.behavior.ConstantPoolElementType" />
+    <classNode dependClassName="me.tomassetti.bytecode.behavior.MyDataOStream" />
+    <classNode dependClassName="me.tomassetti.bytecode.behavior.Unsigned4Bytes__BehaviorDescriptor" />
     <classNode dependClassName="org.jetbrains.annotations.NotNull" />
     <classNode dependClassName="org.jetbrains.annotations.Nullable" />
     <classNode dependClassName="org.jetbrains.mps.openapi.language.SAbstractConcept" />
@@ -540,12 +692,14 @@
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="me.tomassetti.bytecode.behavior.ConstantPoolElementType" />
     <classNode dependClassName="me.tomassetti.bytecode.behavior.ConstantPoolElement_BehaviorDescriptor" />
+    <classNode dependClassName="me.tomassetti.bytecode.behavior.MyDataOStream" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
   </dependency>
   <dependency className="me.tomassetti.bytecode.behavior.ConstantPoolInteger__BehaviorDescriptor" file="ConstantPoolInteger__BehaviorDescriptor.java">
     <classNode dependClassName="java.lang.Object" />
     <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.lang.Void" />
     <classNode dependClassName="java.util.Arrays" />
     <classNode dependClassName="java.util.List" />
     <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.AccessPrivileges" />
@@ -556,9 +710,12 @@
     <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.api.BehaviorRegistry" />
     <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.api.SConstructor" />
     <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.api.SMethod" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
     <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
     <classNode dependClassName="jetbrains.mps.smodel.language.ConceptRegistry" />
     <classNode dependClassName="me.tomassetti.bytecode.behavior.ConstantPoolElementType" />
+    <classNode dependClassName="me.tomassetti.bytecode.behavior.MyDataOStream" />
+    <classNode dependClassName="me.tomassetti.bytecode.behavior.Unsigned4Bytes__BehaviorDescriptor" />
     <classNode dependClassName="org.jetbrains.annotations.NotNull" />
     <classNode dependClassName="org.jetbrains.annotations.Nullable" />
     <classNode dependClassName="org.jetbrains.mps.openapi.language.SAbstractConcept" />
@@ -574,12 +731,14 @@
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="me.tomassetti.bytecode.behavior.ConstantPoolElementType" />
     <classNode dependClassName="me.tomassetti.bytecode.behavior.ConstantPoolElement_BehaviorDescriptor" />
+    <classNode dependClassName="me.tomassetti.bytecode.behavior.MyDataOStream" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
   </dependency>
   <dependency className="me.tomassetti.bytecode.behavior.ConstantPoolInterfaceMethodref__BehaviorDescriptor" file="ConstantPoolInterfaceMethodref__BehaviorDescriptor.java">
     <classNode dependClassName="java.lang.Object" />
     <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.lang.Void" />
     <classNode dependClassName="java.util.Arrays" />
     <classNode dependClassName="java.util.List" />
     <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.AccessPrivileges" />
@@ -590,9 +749,12 @@
     <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.api.BehaviorRegistry" />
     <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.api.SConstructor" />
     <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.api.SMethod" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
     <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
     <classNode dependClassName="jetbrains.mps.smodel.language.ConceptRegistry" />
     <classNode dependClassName="me.tomassetti.bytecode.behavior.ConstantPoolElementType" />
+    <classNode dependClassName="me.tomassetti.bytecode.behavior.MyDataOStream" />
+    <classNode dependClassName="me.tomassetti.bytecode.behavior.Unsigned2Bytes__BehaviorDescriptor" />
     <classNode dependClassName="org.jetbrains.annotations.NotNull" />
     <classNode dependClassName="org.jetbrains.annotations.Nullable" />
     <classNode dependClassName="org.jetbrains.mps.openapi.language.SAbstractConcept" />
@@ -608,12 +770,14 @@
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="me.tomassetti.bytecode.behavior.ConstantPoolElementType" />
     <classNode dependClassName="me.tomassetti.bytecode.behavior.ConstantPoolElement_BehaviorDescriptor" />
+    <classNode dependClassName="me.tomassetti.bytecode.behavior.MyDataOStream" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
   </dependency>
   <dependency className="me.tomassetti.bytecode.behavior.ConstantPoolInvokeDynamic__BehaviorDescriptor" file="ConstantPoolInvokeDynamic__BehaviorDescriptor.java">
     <classNode dependClassName="java.lang.Object" />
     <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.lang.Void" />
     <classNode dependClassName="java.util.Arrays" />
     <classNode dependClassName="java.util.List" />
     <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.AccessPrivileges" />
@@ -624,9 +788,12 @@
     <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.api.BehaviorRegistry" />
     <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.api.SConstructor" />
     <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.api.SMethod" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
     <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
     <classNode dependClassName="jetbrains.mps.smodel.language.ConceptRegistry" />
     <classNode dependClassName="me.tomassetti.bytecode.behavior.ConstantPoolElementType" />
+    <classNode dependClassName="me.tomassetti.bytecode.behavior.MyDataOStream" />
+    <classNode dependClassName="me.tomassetti.bytecode.behavior.Unsigned2Bytes__BehaviorDescriptor" />
     <classNode dependClassName="org.jetbrains.annotations.NotNull" />
     <classNode dependClassName="org.jetbrains.annotations.Nullable" />
     <classNode dependClassName="org.jetbrains.mps.openapi.language.SAbstractConcept" />
@@ -644,6 +811,7 @@
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="me.tomassetti.bytecode.behavior.ConstantPoolElementType" />
     <classNode dependClassName="me.tomassetti.bytecode.behavior.ConstantPoolElement_BehaviorDescriptor" />
+    <classNode dependClassName="me.tomassetti.bytecode.behavior.MyDataOStream" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
   </dependency>
@@ -651,6 +819,7 @@
     <classNode dependClassName="java.lang.Boolean" />
     <classNode dependClassName="java.lang.Object" />
     <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.lang.Void" />
     <classNode dependClassName="java.util.Arrays" />
     <classNode dependClassName="java.util.List" />
     <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.AccessPrivileges" />
@@ -661,9 +830,12 @@
     <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.api.BehaviorRegistry" />
     <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.api.SConstructor" />
     <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.api.SMethod" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
     <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
     <classNode dependClassName="jetbrains.mps.smodel.language.ConceptRegistry" />
     <classNode dependClassName="me.tomassetti.bytecode.behavior.ConstantPoolElementType" />
+    <classNode dependClassName="me.tomassetti.bytecode.behavior.MyDataOStream" />
+    <classNode dependClassName="me.tomassetti.bytecode.behavior.Unsigned4Bytes__BehaviorDescriptor" />
     <classNode dependClassName="org.jetbrains.annotations.NotNull" />
     <classNode dependClassName="org.jetbrains.annotations.Nullable" />
     <classNode dependClassName="org.jetbrains.mps.openapi.language.SAbstractConcept" />
@@ -679,12 +851,14 @@
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="me.tomassetti.bytecode.behavior.ConstantPoolElementType" />
     <classNode dependClassName="me.tomassetti.bytecode.behavior.ConstantPoolElement_BehaviorDescriptor" />
+    <classNode dependClassName="me.tomassetti.bytecode.behavior.MyDataOStream" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
   </dependency>
   <dependency className="me.tomassetti.bytecode.behavior.ConstantPoolMethodHandle__BehaviorDescriptor" file="ConstantPoolMethodHandle__BehaviorDescriptor.java">
     <classNode dependClassName="java.lang.Object" />
     <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.lang.Void" />
     <classNode dependClassName="java.util.Arrays" />
     <classNode dependClassName="java.util.List" />
     <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.AccessPrivileges" />
@@ -695,9 +869,13 @@
     <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.api.BehaviorRegistry" />
     <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.api.SConstructor" />
     <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.api.SMethod" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
     <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
     <classNode dependClassName="jetbrains.mps.smodel.language.ConceptRegistry" />
     <classNode dependClassName="me.tomassetti.bytecode.behavior.ConstantPoolElementType" />
+    <classNode dependClassName="me.tomassetti.bytecode.behavior.MyDataOStream" />
+    <classNode dependClassName="me.tomassetti.bytecode.behavior.Unsigned1Byte__BehaviorDescriptor" />
+    <classNode dependClassName="me.tomassetti.bytecode.behavior.Unsigned2Bytes__BehaviorDescriptor" />
     <classNode dependClassName="org.jetbrains.annotations.NotNull" />
     <classNode dependClassName="org.jetbrains.annotations.Nullable" />
     <classNode dependClassName="org.jetbrains.mps.openapi.language.SAbstractConcept" />
@@ -713,12 +891,14 @@
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="me.tomassetti.bytecode.behavior.ConstantPoolElementType" />
     <classNode dependClassName="me.tomassetti.bytecode.behavior.ConstantPoolElement_BehaviorDescriptor" />
+    <classNode dependClassName="me.tomassetti.bytecode.behavior.MyDataOStream" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
   </dependency>
   <dependency className="me.tomassetti.bytecode.behavior.ConstantPoolMethodType__BehaviorDescriptor" file="ConstantPoolMethodType__BehaviorDescriptor.java">
     <classNode dependClassName="java.lang.Object" />
     <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.lang.Void" />
     <classNode dependClassName="java.util.Arrays" />
     <classNode dependClassName="java.util.List" />
     <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.AccessPrivileges" />
@@ -729,9 +909,12 @@
     <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.api.BehaviorRegistry" />
     <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.api.SConstructor" />
     <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.api.SMethod" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
     <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
     <classNode dependClassName="jetbrains.mps.smodel.language.ConceptRegistry" />
     <classNode dependClassName="me.tomassetti.bytecode.behavior.ConstantPoolElementType" />
+    <classNode dependClassName="me.tomassetti.bytecode.behavior.MyDataOStream" />
+    <classNode dependClassName="me.tomassetti.bytecode.behavior.Unsigned2Bytes__BehaviorDescriptor" />
     <classNode dependClassName="org.jetbrains.annotations.NotNull" />
     <classNode dependClassName="org.jetbrains.annotations.Nullable" />
     <classNode dependClassName="org.jetbrains.mps.openapi.language.SAbstractConcept" />
@@ -747,12 +930,14 @@
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="me.tomassetti.bytecode.behavior.ConstantPoolElementType" />
     <classNode dependClassName="me.tomassetti.bytecode.behavior.ConstantPoolElement_BehaviorDescriptor" />
+    <classNode dependClassName="me.tomassetti.bytecode.behavior.MyDataOStream" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
   </dependency>
   <dependency className="me.tomassetti.bytecode.behavior.ConstantPoolMethodref__BehaviorDescriptor" file="ConstantPoolMethodref__BehaviorDescriptor.java">
     <classNode dependClassName="java.lang.Object" />
     <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.lang.Void" />
     <classNode dependClassName="java.util.Arrays" />
     <classNode dependClassName="java.util.List" />
     <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.AccessPrivileges" />
@@ -763,9 +948,12 @@
     <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.api.BehaviorRegistry" />
     <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.api.SConstructor" />
     <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.api.SMethod" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
     <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
     <classNode dependClassName="jetbrains.mps.smodel.language.ConceptRegistry" />
     <classNode dependClassName="me.tomassetti.bytecode.behavior.ConstantPoolElementType" />
+    <classNode dependClassName="me.tomassetti.bytecode.behavior.MyDataOStream" />
+    <classNode dependClassName="me.tomassetti.bytecode.behavior.Unsigned2Bytes__BehaviorDescriptor" />
     <classNode dependClassName="org.jetbrains.annotations.NotNull" />
     <classNode dependClassName="org.jetbrains.annotations.Nullable" />
     <classNode dependClassName="org.jetbrains.mps.openapi.language.SAbstractConcept" />
@@ -781,12 +969,14 @@
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="me.tomassetti.bytecode.behavior.ConstantPoolElementType" />
     <classNode dependClassName="me.tomassetti.bytecode.behavior.ConstantPoolElement_BehaviorDescriptor" />
+    <classNode dependClassName="me.tomassetti.bytecode.behavior.MyDataOStream" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
   </dependency>
   <dependency className="me.tomassetti.bytecode.behavior.ConstantPoolNameAndType__BehaviorDescriptor" file="ConstantPoolNameAndType__BehaviorDescriptor.java">
     <classNode dependClassName="java.lang.Object" />
     <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.lang.Void" />
     <classNode dependClassName="java.util.Arrays" />
     <classNode dependClassName="java.util.List" />
     <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.AccessPrivileges" />
@@ -797,14 +987,20 @@
     <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.api.BehaviorRegistry" />
     <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.api.SConstructor" />
     <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.api.SMethod" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
     <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
     <classNode dependClassName="jetbrains.mps.smodel.language.ConceptRegistry" />
     <classNode dependClassName="me.tomassetti.bytecode.behavior.ConstantPoolElementType" />
+    <classNode dependClassName="me.tomassetti.bytecode.behavior.MyDataOStream" />
+    <classNode dependClassName="me.tomassetti.bytecode.behavior.Unsigned2Bytes__BehaviorDescriptor" />
     <classNode dependClassName="org.jetbrains.annotations.NotNull" />
     <classNode dependClassName="org.jetbrains.annotations.Nullable" />
     <classNode dependClassName="org.jetbrains.mps.openapi.language.SAbstractConcept" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.core.aspects.behaviour.BaseBHDescriptor" />
+  </dependency>
+  <dependency className="me.tomassetti.bytecode.behavior.ConstantPoolReference_Behavior" file="ConstantPoolReference_Behavior.java">
+    <classNode dependClassName="java.lang.Deprecated" />
   </dependency>
   <dependency className="me.tomassetti.bytecode.behavior.ConstantPoolReference_BehaviorDescriptor" file="ConstantPoolReference_BehaviorDescriptor.java">
     <classNode dependClassName="java.lang.Deprecated" />
@@ -812,6 +1008,23 @@
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="jetbrains.mps.lang.core.behavior.BaseConcept_BehaviorDescriptor" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
+  </dependency>
+  <dependency className="me.tomassetti.bytecode.behavior.ConstantPoolReference__BehaviorDescriptor" file="ConstantPoolReference__BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Object" />
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.util.Arrays" />
+    <classNode dependClassName="java.util.List" />
+    <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException" />
+    <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.api.BehaviorRegistry" />
+    <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.api.SConstructor" />
+    <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.api.SMethod" />
+    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
+    <classNode dependClassName="jetbrains.mps.smodel.language.ConceptRegistry" />
+    <classNode dependClassName="org.jetbrains.annotations.NotNull" />
+    <classNode dependClassName="org.jetbrains.annotations.Nullable" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.language.SAbstractConcept" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+    <classNode extendsClassName="jetbrains.mps.core.aspects.behaviour.BaseBHDescriptor" />
   </dependency>
   <dependency className="me.tomassetti.bytecode.behavior.ConstantPoolString_Behavior" file="ConstantPoolString_Behavior.java">
     <classNode dependClassName="java.lang.Deprecated" />
@@ -822,12 +1035,14 @@
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="me.tomassetti.bytecode.behavior.ConstantPoolElementType" />
     <classNode dependClassName="me.tomassetti.bytecode.behavior.ConstantPoolElement_BehaviorDescriptor" />
+    <classNode dependClassName="me.tomassetti.bytecode.behavior.MyDataOStream" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
   </dependency>
   <dependency className="me.tomassetti.bytecode.behavior.ConstantPoolString__BehaviorDescriptor" file="ConstantPoolString__BehaviorDescriptor.java">
     <classNode dependClassName="java.lang.Object" />
     <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.lang.Void" />
     <classNode dependClassName="java.util.Arrays" />
     <classNode dependClassName="java.util.List" />
     <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.AccessPrivileges" />
@@ -838,9 +1053,12 @@
     <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.api.BehaviorRegistry" />
     <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.api.SConstructor" />
     <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.api.SMethod" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
     <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
     <classNode dependClassName="jetbrains.mps.smodel.language.ConceptRegistry" />
     <classNode dependClassName="me.tomassetti.bytecode.behavior.ConstantPoolElementType" />
+    <classNode dependClassName="me.tomassetti.bytecode.behavior.MyDataOStream" />
+    <classNode dependClassName="me.tomassetti.bytecode.behavior.Unsigned2Bytes__BehaviorDescriptor" />
     <classNode dependClassName="org.jetbrains.annotations.NotNull" />
     <classNode dependClassName="org.jetbrains.annotations.Nullable" />
     <classNode dependClassName="org.jetbrains.mps.openapi.language.SAbstractConcept" />
@@ -863,12 +1081,14 @@
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="me.tomassetti.bytecode.behavior.ConstantPoolElementType" />
     <classNode dependClassName="me.tomassetti.bytecode.behavior.ConstantPoolElement_BehaviorDescriptor" />
+    <classNode dependClassName="me.tomassetti.bytecode.behavior.MyDataOStream" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
   </dependency>
   <dependency className="me.tomassetti.bytecode.behavior.ConstantPoolUtf8__BehaviorDescriptor" file="ConstantPoolUtf8__BehaviorDescriptor.java">
     <classNode dependClassName="java.lang.Object" />
     <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.lang.Void" />
     <classNode dependClassName="java.util.Arrays" />
     <classNode dependClassName="java.util.List" />
     <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.AccessPrivileges" />
@@ -879,9 +1099,11 @@
     <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.api.BehaviorRegistry" />
     <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.api.SConstructor" />
     <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.api.SMethod" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations" />
     <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
     <classNode dependClassName="jetbrains.mps.smodel.language.ConceptRegistry" />
     <classNode dependClassName="me.tomassetti.bytecode.behavior.ConstantPoolElementType" />
+    <classNode dependClassName="me.tomassetti.bytecode.behavior.MyDataOStream" />
     <classNode dependClassName="org.jetbrains.annotations.NotNull" />
     <classNode dependClassName="org.jetbrains.annotations.Nullable" />
     <classNode dependClassName="org.jetbrains.mps.openapi.language.SAbstractConcept" />
@@ -1224,12 +1446,42 @@
     <classNode dependClassName="me.tomassetti.bytecode.behavior.Instruction_BehaviorDescriptor" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
   </dependency>
+  <dependency className="me.tomassetti.bytecode.behavior.FieldInfo_Behavior" file="FieldInfo_Behavior.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="me.tomassetti.bytecode.behavior.FieldInfo__BehaviorDescriptor" />
+    <classNode dependClassName="me.tomassetti.bytecode.behavior.MyDataOStream" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+  </dependency>
   <dependency className="me.tomassetti.bytecode.behavior.FieldInfo_BehaviorDescriptor" file="FieldInfo_BehaviorDescriptor.java">
     <classNode dependClassName="java.lang.Deprecated" />
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="jetbrains.mps.lang.core.behavior.BaseConcept_BehaviorDescriptor" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
+  </dependency>
+  <dependency className="me.tomassetti.bytecode.behavior.FieldInfo__BehaviorDescriptor" file="FieldInfo__BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Object" />
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.lang.RuntimeException" />
+    <classNode dependClassName="java.lang.Void" />
+    <classNode dependClassName="java.util.Arrays" />
+    <classNode dependClassName="java.util.List" />
+    <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.AccessPrivileges" />
+    <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl" />
+    <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.SMethodBuilder" />
+    <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.SModifiersImpl" />
+    <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException" />
+    <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.api.BehaviorRegistry" />
+    <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.api.SConstructor" />
+    <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.api.SMethod" />
+    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
+    <classNode dependClassName="jetbrains.mps.smodel.language.ConceptRegistry" />
+    <classNode dependClassName="me.tomassetti.bytecode.behavior.MyDataOStream" />
+    <classNode dependClassName="org.jetbrains.annotations.NotNull" />
+    <classNode dependClassName="org.jetbrains.annotations.Nullable" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.language.SAbstractConcept" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+    <classNode extendsClassName="jetbrains.mps.core.aspects.behaviour.BaseBHDescriptor" />
   </dependency>
   <dependency className="me.tomassetti.bytecode.behavior.Fload_0_BehaviorDescriptor" file="Fload_0_BehaviorDescriptor.java">
     <classNode dependClassName="java.lang.Deprecated" />
@@ -1737,13 +1989,6 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.core.aspects.behaviour.BaseBHDescriptor" />
   </dependency>
-  <dependency className="me.tomassetti.bytecode.behavior.InterfaceInfo_BehaviorDescriptor" file="InterfaceInfo_BehaviorDescriptor.java">
-    <classNode dependClassName="java.lang.Deprecated" />
-    <classNode dependClassName="java.lang.Override" />
-    <classNode dependClassName="java.lang.String" />
-    <classNode dependClassName="jetbrains.mps.lang.core.behavior.BaseConcept_BehaviorDescriptor" />
-    <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
-  </dependency>
   <dependency className="me.tomassetti.bytecode.behavior.Invokedynamic_BehaviorDescriptor" file="Invokedynamic_BehaviorDescriptor.java">
     <classNode dependClassName="java.lang.Deprecated" />
     <classNode dependClassName="java.lang.Override" />
@@ -2169,12 +2414,32 @@
     <classNode dependClassName="jetbrains.mps.lang.core.behavior.BaseConcept_BehaviorDescriptor" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
   </dependency>
+  <dependency className="me.tomassetti.bytecode.behavior.MethodInfo_Behavior" file="MethodInfo_Behavior.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+  </dependency>
   <dependency className="me.tomassetti.bytecode.behavior.MethodInfo_BehaviorDescriptor" file="MethodInfo_BehaviorDescriptor.java">
     <classNode dependClassName="java.lang.Deprecated" />
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="jetbrains.mps.lang.core.behavior.BaseConcept_BehaviorDescriptor" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
+  </dependency>
+  <dependency className="me.tomassetti.bytecode.behavior.MethodInfo__BehaviorDescriptor" file="MethodInfo__BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Object" />
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.util.Arrays" />
+    <classNode dependClassName="java.util.List" />
+    <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException" />
+    <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.api.BehaviorRegistry" />
+    <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.api.SConstructor" />
+    <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.api.SMethod" />
+    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
+    <classNode dependClassName="jetbrains.mps.smodel.language.ConceptRegistry" />
+    <classNode dependClassName="org.jetbrains.annotations.NotNull" />
+    <classNode dependClassName="org.jetbrains.annotations.Nullable" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.language.SAbstractConcept" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+    <classNode extendsClassName="jetbrains.mps.core.aspects.behaviour.BaseBHDescriptor" />
   </dependency>
   <dependency className="me.tomassetti.bytecode.behavior.Monitorenter_BehaviorDescriptor" file="Monitorenter_BehaviorDescriptor.java">
     <classNode dependClassName="java.lang.Deprecated" />
@@ -2197,7 +2462,7 @@
     <classNode dependClassName="me.tomassetti.bytecode.behavior.Instruction_BehaviorDescriptor" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
   </dependency>
-  <dependency className="me.tomassetti.bytecode.behavior.MyDataStream" file="MyDataStream.java">
+  <dependency className="me.tomassetti.bytecode.behavior.MyDataIStream" file="MyDataIStream.java">
     <classNode dependClassName="java.io.DataInputStream" />
     <classNode dependClassName="java.io.IOException" />
     <classNode dependClassName="java.lang.Integer" />
@@ -2212,6 +2477,13 @@
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations" />
     <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+  </dependency>
+  <dependency className="me.tomassetti.bytecode.behavior.MyDataOStream" file="MyDataOStream.java">
+    <classNode dependClassName="java.io.DataOutputStream" />
+    <classNode dependClassName="java.io.IOException" />
+    <classNode dependClassName="java.lang.RuntimeException" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="java.math.BigInteger" />
   </dependency>
   <dependency className="me.tomassetti.bytecode.behavior.New_BehaviorDescriptor" file="New_BehaviorDescriptor.java">
     <classNode dependClassName="java.lang.Deprecated" />
@@ -2270,12 +2542,45 @@
     <classNode dependClassName="me.tomassetti.bytecode.behavior.Instruction_BehaviorDescriptor" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
   </dependency>
+  <dependency className="me.tomassetti.bytecode.behavior.RawAttributeInfoData_Behavior" file="RawAttributeInfoData_Behavior.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+  </dependency>
   <dependency className="me.tomassetti.bytecode.behavior.RawAttributeInfoData_BehaviorDescriptor" file="RawAttributeInfoData_BehaviorDescriptor.java">
     <classNode dependClassName="java.lang.Deprecated" />
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="me.tomassetti.bytecode.behavior.AttributeInfoData_BehaviorDescriptor" />
+    <classNode dependClassName="me.tomassetti.bytecode.behavior.MyDataOStream" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
+  </dependency>
+  <dependency className="me.tomassetti.bytecode.behavior.RawAttributeInfoData__BehaviorDescriptor" file="RawAttributeInfoData__BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Object" />
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.lang.Void" />
+    <classNode dependClassName="java.math.BigInteger" />
+    <classNode dependClassName="java.util.Arrays" />
+    <classNode dependClassName="java.util.List" />
+    <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.AccessPrivileges" />
+    <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl" />
+    <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.SMethodBuilder" />
+    <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.SModifiersImpl" />
+    <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException" />
+    <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.api.BehaviorRegistry" />
+    <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.api.SConstructor" />
+    <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.api.SMethod" />
+    <classNode dependClassName="jetbrains.mps.internal.collections.runtime.IVisitor" />
+    <classNode dependClassName="jetbrains.mps.internal.collections.runtime.ListSequence" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
+    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
+    <classNode dependClassName="jetbrains.mps.smodel.language.ConceptRegistry" />
+    <classNode dependClassName="me.tomassetti.bytecode.behavior.MyDataOStream" />
+    <classNode dependClassName="me.tomassetti.bytecode.behavior.Unsigned1Byte__BehaviorDescriptor" />
+    <classNode dependClassName="org.jetbrains.annotations.NotNull" />
+    <classNode dependClassName="org.jetbrains.annotations.Nullable" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.language.SAbstractConcept" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+    <classNode extendsClassName="jetbrains.mps.core.aspects.behaviour.BaseBHDescriptor" />
   </dependency>
   <dependency className="me.tomassetti.bytecode.behavior.Ret_BehaviorDescriptor" file="Ret_BehaviorDescriptor.java">
     <classNode dependClassName="java.lang.Deprecated" />
@@ -2305,12 +2610,41 @@
     <classNode dependClassName="me.tomassetti.bytecode.behavior.Instruction_BehaviorDescriptor" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
   </dependency>
+  <dependency className="me.tomassetti.bytecode.behavior.SignatureAttributeInfoData_Behavior" file="SignatureAttributeInfoData_Behavior.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+  </dependency>
   <dependency className="me.tomassetti.bytecode.behavior.SignatureAttributeInfoData_BehaviorDescriptor" file="SignatureAttributeInfoData_BehaviorDescriptor.java">
     <classNode dependClassName="java.lang.Deprecated" />
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="me.tomassetti.bytecode.behavior.AttributeInfoData_BehaviorDescriptor" />
+    <classNode dependClassName="me.tomassetti.bytecode.behavior.MyDataOStream" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
+  </dependency>
+  <dependency className="me.tomassetti.bytecode.behavior.SignatureAttributeInfoData__BehaviorDescriptor" file="SignatureAttributeInfoData__BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Object" />
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.lang.RuntimeException" />
+    <classNode dependClassName="java.lang.Void" />
+    <classNode dependClassName="java.util.Arrays" />
+    <classNode dependClassName="java.util.List" />
+    <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.AccessPrivileges" />
+    <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl" />
+    <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.SMethodBuilder" />
+    <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.SModifiersImpl" />
+    <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException" />
+    <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.api.BehaviorRegistry" />
+    <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.api.SConstructor" />
+    <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.api.SMethod" />
+    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
+    <classNode dependClassName="jetbrains.mps.smodel.language.ConceptRegistry" />
+    <classNode dependClassName="me.tomassetti.bytecode.behavior.MyDataOStream" />
+    <classNode dependClassName="org.jetbrains.annotations.NotNull" />
+    <classNode dependClassName="org.jetbrains.annotations.Nullable" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.language.SAbstractConcept" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+    <classNode extendsClassName="jetbrains.mps.core.aspects.behaviour.BaseBHDescriptor" />
   </dependency>
   <dependency className="me.tomassetti.bytecode.behavior.Signed4Bytes_Behavior" file="Signed4Bytes_Behavior.java">
     <classNode dependClassName="java.lang.Deprecated" />
@@ -2393,6 +2727,11 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.core.aspects.behaviour.BaseBHDescriptor" />
   </dependency>
+  <dependency className="me.tomassetti.bytecode.behavior.Unsigned1Byte_Behavior" file="Unsigned1Byte_Behavior.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="me.tomassetti.bytecode.behavior.Unsigned1Byte__BehaviorDescriptor" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+  </dependency>
   <dependency className="me.tomassetti.bytecode.behavior.Unsigned1Byte_BehaviorDescriptor" file="Unsigned1Byte_BehaviorDescriptor.java">
     <classNode dependClassName="java.lang.Deprecated" />
     <classNode dependClassName="java.lang.Override" />
@@ -2400,12 +2739,55 @@
     <classNode dependClassName="jetbrains.mps.lang.core.behavior.BaseConcept_BehaviorDescriptor" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
   </dependency>
+  <dependency className="me.tomassetti.bytecode.behavior.Unsigned1Byte__BehaviorDescriptor" file="Unsigned1Byte__BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Long" />
+    <classNode dependClassName="java.lang.Object" />
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.util.Arrays" />
+    <classNode dependClassName="java.util.List" />
+    <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.AccessPrivileges" />
+    <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl" />
+    <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.SMethodBuilder" />
+    <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.SModifiersImpl" />
+    <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException" />
+    <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.api.BehaviorRegistry" />
+    <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.api.SConstructor" />
+    <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.api.SMethod" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations" />
+    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
+    <classNode dependClassName="jetbrains.mps.smodel.language.ConceptRegistry" />
+    <classNode dependClassName="org.jetbrains.annotations.NotNull" />
+    <classNode dependClassName="org.jetbrains.annotations.Nullable" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.language.SAbstractConcept" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+    <classNode extendsClassName="jetbrains.mps.core.aspects.behaviour.BaseBHDescriptor" />
+  </dependency>
+  <dependency className="me.tomassetti.bytecode.behavior.Unsigned1BytesArray_Behavior" file="Unsigned1BytesArray_Behavior.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+  </dependency>
   <dependency className="me.tomassetti.bytecode.behavior.Unsigned1BytesArray_BehaviorDescriptor" file="Unsigned1BytesArray_BehaviorDescriptor.java">
     <classNode dependClassName="java.lang.Deprecated" />
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="jetbrains.mps.lang.core.behavior.BaseConcept_BehaviorDescriptor" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
+  </dependency>
+  <dependency className="me.tomassetti.bytecode.behavior.Unsigned1BytesArray__BehaviorDescriptor" file="Unsigned1BytesArray__BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Object" />
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.util.Arrays" />
+    <classNode dependClassName="java.util.List" />
+    <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException" />
+    <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.api.BehaviorRegistry" />
+    <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.api.SConstructor" />
+    <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.api.SMethod" />
+    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
+    <classNode dependClassName="jetbrains.mps.smodel.language.ConceptRegistry" />
+    <classNode dependClassName="org.jetbrains.annotations.NotNull" />
+    <classNode dependClassName="org.jetbrains.annotations.Nullable" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.language.SAbstractConcept" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+    <classNode extendsClassName="jetbrains.mps.core.aspects.behaviour.BaseBHDescriptor" />
   </dependency>
   <dependency className="me.tomassetti.bytecode.behavior.Unsigned2Bytes_Behavior" file="Unsigned2Bytes_Behavior.java">
     <classNode dependClassName="java.lang.Deprecated" />

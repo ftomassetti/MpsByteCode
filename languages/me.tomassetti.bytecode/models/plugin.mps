@@ -27,6 +27,7 @@
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
     <import index="z1c3" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.project(MPS.Core/)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
+    <import index="4v74" ref="r:e58babd4-6c06-4cce-b3cb-4ee34687bd09(me.tomassetti.bytecode.execution.behavior)" implicit="true" />
     <import index="juvg" ref="r:52cba171-eedf-4a77-80f4-8d9827029f92(me.tomassetti.bytecode.behavior)" implicit="true" />
   </imports>
   <registry>
@@ -370,7 +371,143 @@
                                           <node concept="2GrKxI" id="r0PjdDm7PK" role="2Gsz3X">
                                             <property role="TrG5h" value="classFile" />
                                           </node>
-                                          <node concept="3clFbS" id="r0PjdDm7PM" role="2LFqv$" />
+                                          <node concept="3clFbS" id="r0PjdDm7PM" role="2LFqv$">
+                                            <node concept="1daRAt" id="5V_iSBkvwny" role="3cqZAp">
+                                              <property role="1daRAr" value="INFO" />
+                                              <node concept="3cpWs3" id="5V_iSBkvwnz" role="1daK9t">
+                                                <node concept="Xl_RD" id="5V_iSBkvwn$" role="3uHU7w">
+                                                  <property role="Xl_RC" value="]" />
+                                                </node>
+                                                <node concept="3cpWs3" id="5V_iSBkvwn_" role="3uHU7B">
+                                                  <node concept="Xl_RD" id="5V_iSBkvwnA" role="3uHU7B">
+                                                    <property role="Xl_RC" value="  [ClassFile " />
+                                                  </node>
+                                                  <node concept="2OqwBi" id="5V_iSBkvwnB" role="3uHU7w">
+                                                    <node concept="2GrUjf" id="5V_iSBkvwI1" role="2Oq$k0">
+                                                      <ref role="2Gs0qQ" node="r0PjdDm7PK" resolve="classFile" />
+                                                    </node>
+                                                    <node concept="2qgKlT" id="5V_iSBkvwTy" role="2OqNvi">
+                                                      <ref role="37wK5l" to="4v74:4xr1zwUwUkO" resolve="qualifiedClassName" />
+                                                    </node>
+                                                  </node>
+                                                </node>
+                                              </node>
+                                            </node>
+                                            <node concept="3cpWs8" id="5V_iSBkvwnE" role="3cqZAp">
+                                              <node concept="3cpWsn" id="5V_iSBkvwnF" role="3cpWs9">
+                                                <property role="TrG5h" value="rootDir" />
+                                                <node concept="17QB3L" id="5V_iSBkvwnG" role="1tU5fm" />
+                                                <node concept="2OqwBi" id="5V_iSBkvwnH" role="33vP2m">
+                                                  <node concept="2OqwBi" id="5V_iSBkvwnI" role="2Oq$k0">
+                                                    <node concept="2OqwBi" id="5V_iSBkvwnJ" role="2Oq$k0">
+                                                      <node concept="37vLTw" id="5V_iSBkvwnK" role="2Oq$k0">
+                                                        <ref role="3cqZAo" node="r0PjdDmyMh" resolve="solution" />
+                                                      </node>
+                                                      <node concept="liA8E" id="5V_iSBkvwnL" role="2OqNvi">
+                                                        <ref role="37wK5l" to="z1c3:~AbstractModule.getOutputPath():jetbrains.mps.vfs.IFile" resolve="getOutputPath" />
+                                                      </node>
+                                                    </node>
+                                                    <node concept="liA8E" id="5V_iSBkvwnM" role="2OqNvi">
+                                                      <ref role="37wK5l" to="3ju5:~IFile.getParent():jetbrains.mps.vfs.IFile" resolve="getParent" />
+                                                    </node>
+                                                  </node>
+                                                  <node concept="liA8E" id="5V_iSBkvwnN" role="2OqNvi">
+                                                    <ref role="37wK5l" to="3ju5:~IFile.getPath():java.lang.String" resolve="getPath" />
+                                                  </node>
+                                                </node>
+                                              </node>
+                                            </node>
+                                            <node concept="3cpWs8" id="5V_iSBkvwnO" role="3cqZAp">
+                                              <node concept="3cpWsn" id="5V_iSBkvwnP" role="3cpWs9">
+                                                <property role="TrG5h" value="genDir" />
+                                                <node concept="3uibUv" id="5V_iSBkvwnQ" role="1tU5fm">
+                                                  <ref role="3uigEE" to="guwi:~File" resolve="File" />
+                                                </node>
+                                                <node concept="2ShNRf" id="5V_iSBkvwnR" role="33vP2m">
+                                                  <node concept="1pGfFk" id="5V_iSBkvwnS" role="2ShVmc">
+                                                    <ref role="37wK5l" to="guwi:~File.&lt;init&gt;(java.lang.String)" resolve="File" />
+                                                    <node concept="3cpWs3" id="5V_iSBkvwnT" role="37wK5m">
+                                                      <node concept="Xl_RD" id="5V_iSBkvwnU" role="3uHU7w">
+                                                        <property role="Xl_RC" value="class_gen" />
+                                                      </node>
+                                                      <node concept="3cpWs3" id="5V_iSBkvwnV" role="3uHU7B">
+                                                        <node concept="37vLTw" id="5V_iSBkvwnW" role="3uHU7B">
+                                                          <ref role="3cqZAo" node="5V_iSBkvwnF" resolve="rootDir" />
+                                                        </node>
+                                                        <node concept="10M0yZ" id="5V_iSBkvwnX" role="3uHU7w">
+                                                          <ref role="3cqZAo" to="guwi:~File.separator" resolve="separator" />
+                                                          <ref role="1PxDUh" to="guwi:~File" resolve="File" />
+                                                        </node>
+                                                      </node>
+                                                    </node>
+                                                  </node>
+                                                </node>
+                                              </node>
+                                            </node>
+                                            <node concept="3cpWs8" id="5V_iSBkvwo1" role="3cqZAp">
+                                              <node concept="3cpWsn" id="5V_iSBkvwo2" role="3cpWs9">
+                                                <property role="TrG5h" value="modelGenFile" />
+                                                <node concept="3uibUv" id="5V_iSBkvwo3" role="1tU5fm">
+                                                  <ref role="3uigEE" to="guwi:~File" resolve="File" />
+                                                </node>
+                                                <node concept="2OqwBi" id="5V_iSBkvwo4" role="33vP2m">
+                                                  <node concept="2GrUjf" id="5V_iSBkvwEa" role="2Oq$k0">
+                                                    <ref role="2Gs0qQ" node="r0PjdDm7PK" resolve="classFile" />
+                                                  </node>
+                                                  <node concept="2qgKlT" id="5V_iSBkvwo8" role="2OqNvi">
+                                                    <ref role="37wK5l" to="juvg:r0PjdDn03b" resolve="generationFile" />
+                                                    <node concept="37vLTw" id="5V_iSBkvwo9" role="37wK5m">
+                                                      <ref role="3cqZAo" node="5V_iSBkvwnP" resolve="genDir" />
+                                                    </node>
+                                                  </node>
+                                                </node>
+                                              </node>
+                                            </node>
+                                            <node concept="3clFbF" id="6cFMhcmEJGr" role="3cqZAp">
+                                              <node concept="2OqwBi" id="6cFMhcmEJ_T" role="3clFbG">
+                                                <node concept="2OqwBi" id="6cFMhcmEJqm" role="2Oq$k0">
+                                                  <node concept="37vLTw" id="6cFMhcmEJ1Y" role="2Oq$k0">
+                                                    <ref role="3cqZAo" node="5V_iSBkvwo2" resolve="modelGenFile" />
+                                                  </node>
+                                                  <node concept="liA8E" id="6cFMhcmEJzX" role="2OqNvi">
+                                                    <ref role="37wK5l" to="guwi:~File.getParentFile():java.io.File" resolve="getParentFile" />
+                                                  </node>
+                                                </node>
+                                                <node concept="liA8E" id="6cFMhcmEJFj" role="2OqNvi">
+                                                  <ref role="37wK5l" to="guwi:~File.mkdirs():boolean" resolve="mkdirs" />
+                                                </node>
+                                              </node>
+                                            </node>
+                                            <node concept="1daRAt" id="5V_iSBkvwoa" role="3cqZAp">
+                                              <property role="1daRAr" value="INFO" />
+                                              <node concept="3cpWs3" id="5V_iSBkvwob" role="1daK9t">
+                                                <node concept="Xl_RD" id="5V_iSBkvwoc" role="3uHU7B">
+                                                  <property role="Xl_RC" value="  -&gt;  " />
+                                                </node>
+                                                <node concept="2OqwBi" id="5V_iSBkvwod" role="3uHU7w">
+                                                  <node concept="37vLTw" id="5V_iSBkvwoe" role="2Oq$k0">
+                                                    <ref role="3cqZAo" node="5V_iSBkvwo2" resolve="modelGenFile" />
+                                                  </node>
+                                                  <node concept="liA8E" id="5V_iSBkvwof" role="2OqNvi">
+                                                    <ref role="37wK5l" to="guwi:~File.getPath():java.lang.String" resolve="getPath" />
+                                                  </node>
+                                                </node>
+                                              </node>
+                                            </node>
+                                            <node concept="3clFbF" id="5V_iSBkvxmf" role="3cqZAp">
+                                              <node concept="2OqwBi" id="5V_iSBkvxtf" role="3clFbG">
+                                                <node concept="2GrUjf" id="5V_iSBkvxmd" role="2Oq$k0">
+                                                  <ref role="2Gs0qQ" node="r0PjdDm7PK" resolve="classFile" />
+                                                </node>
+                                                <node concept="2qgKlT" id="5V_iSBkvyny" role="2OqNvi">
+                                                  <ref role="37wK5l" to="juvg:5V_iSBkvxCf" resolve="saveTo" />
+                                                  <node concept="37vLTw" id="5V_iSBkvypr" role="37wK5m">
+                                                    <ref role="3cqZAo" node="5V_iSBkvwo2" resolve="modelGenFile" />
+                                                  </node>
+                                                </node>
+                                              </node>
+                                            </node>
+                                          </node>
                                           <node concept="2OqwBi" id="r0PjdDm7UC" role="2GsD0m">
                                             <node concept="37vLTw" id="r0PjdDmg$C" role="2Oq$k0">
                                               <ref role="3cqZAo" node="r0PjdDmfpq" resolve="model" />
@@ -393,7 +530,7 @@
                                                 </node>
                                                 <node concept="3cpWs3" id="r0PjdDmhJm" role="3uHU7B">
                                                   <node concept="Xl_RD" id="r0PjdDmhJn" role="3uHU7B">
-                                                    <property role="Xl_RC" value="  [root " />
+                                                    <property role="Xl_RC" value="  [ClassFileLoader " />
                                                   </node>
                                                   <node concept="2OqwBi" id="r0PjdDmhJo" role="3uHU7w">
                                                     <node concept="2GrUjf" id="r0PjdDmhJq" role="2Oq$k0">

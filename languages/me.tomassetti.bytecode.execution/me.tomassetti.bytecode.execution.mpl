@@ -48,6 +48,9 @@
     </generator>
   </generators>
   <sourcePath />
+  <dependencies>
+    <dependency reexport="false">1392eb99-581d-482b-aa28-19e40eaffbe2(me.tomassetti.bytecode)</dependency>
+  </dependencies>
   <usedDevKits>
     <usedDevKit>2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)</usedDevKit>
   </usedDevKits>
@@ -80,6 +83,7 @@
     <module reference="ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)" version="0" />
     <module reference="d7eb0a2a-bd50-4576-beae-e4a89db35f20(jetbrains.mps.lang.scopes.runtime)" version="0" />
     <module reference="c72da2b9-7cce-4447-8389-f407dc1158b7(jetbrains.mps.lang.structure)" version="0" />
+    <module reference="1392eb99-581d-482b-aa28-19e40eaffbe2(me.tomassetti.bytecode)" version="0" />
     <module reference="09127d54-0209-48a6-9167-6d3d4fb47096(me.tomassetti.bytecode.execution)" version="0" />
   </dependencyVersions>
   <extendedLanguages />

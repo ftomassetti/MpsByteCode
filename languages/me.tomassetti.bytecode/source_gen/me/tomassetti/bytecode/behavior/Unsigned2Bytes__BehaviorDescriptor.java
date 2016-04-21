@@ -26,14 +26,20 @@ public final class Unsigned2Bytes__BehaviorDescriptor extends BaseBHDescriptor {
   private static final BehaviorRegistry REGISTRY = ConceptRegistry.getInstance().getBehaviorRegistry();
 
   public static final SMethod<Long> toLong_id1qlCQcqjgik = new SMethodBuilder<Long>(new SJavaCompoundTypeImpl(Long.TYPE)).name("toLong").modifiers(SModifiersImpl.create(0, AccessPrivileges.PUBLIC)).concept(CONCEPT).id("1qlCQcqjgik").registry(REGISTRY).build();
+  public static final SMethod<byte[]> toBytes_id5V_iSBkwh5t = new SMethodBuilder<byte[]>(new SJavaCompoundTypeImpl(byte[].class)).name("toBytes").modifiers(SModifiersImpl.create(0, AccessPrivileges.PUBLIC)).concept(CONCEPT).id("5V_iSBkwh5t").registry(REGISTRY).build();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(toLong_id1qlCQcqjgik);
+  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(toLong_id1qlCQcqjgik, toBytes_id5V_iSBkwh5t);
 
   private static void ___init___(@NotNull SNode __thisNode__) {
   }
 
   /*package*/ static long toLong_id1qlCQcqjgik(@NotNull SNode __thisNode__) {
     return Long.parseLong(SPropertyOperations.getString(__thisNode__, MetaAdapterFactory.getProperty(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a47ef12L, 0x1695a3631a47ef13L, "value")));
+  }
+  /*package*/ static byte[] toBytes_id5V_iSBkwh5t(@NotNull SNode __thisNode__) {
+    byte highByte = ((byte) (((long) Unsigned2Bytes__BehaviorDescriptor.toLong_id1qlCQcqjgik.invoke(__thisNode__)) & 0xFF00));
+    byte lowByte = ((byte) (((long) Unsigned2Bytes__BehaviorDescriptor.toLong_id1qlCQcqjgik.invoke(__thisNode__)) & 0xFF));
+    return new byte[]{highByte, lowByte};
   }
 
   /*package*/ Unsigned2Bytes__BehaviorDescriptor() {
@@ -54,6 +60,8 @@ public final class Unsigned2Bytes__BehaviorDescriptor extends BaseBHDescriptor {
     switch (methodIndex) {
       case 0:
         return (T) ((Long) toLong_id1qlCQcqjgik(node));
+      case 1:
+        return (T) ((byte[]) toBytes_id5V_iSBkwh5t(node));
       default:
         throw new BHMethodNotFoundException(this, method);
     }

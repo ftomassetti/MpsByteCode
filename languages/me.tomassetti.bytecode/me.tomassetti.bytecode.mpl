@@ -32,6 +32,7 @@
         <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" fqName="jetbrains.mps.lang.smodel" version="2" />
         <language id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" fqName="jetbrains.mps.lang.traceable" version="0" />
         <language id="1392eb99-581d-482b-aa28-19e40eaffbe2" fqName="me.tomassetti.bytecode" version="-1" />
+        <language id="09127d54-0209-48a6-9167-6d3d4fb47096" fqName="me.tomassetti.bytecode.execution" version="0" />
       </languageVersions>
       <dependencyVersions>
         <module reference="3f233e7f-b8a6-46d2-a57f-795d56775243(Annotations)" version="0" />
@@ -43,6 +44,7 @@
         <module reference="c72da2b9-7cce-4447-8389-f407dc1158b7(jetbrains.mps.lang.structure)" version="0" />
         <module reference="1392eb99-581d-482b-aa28-19e40eaffbe2(me.tomassetti.bytecode)" version="0" />
         <module reference="fa455b1a-4bc7-4ac7-b944-dc066712b750(me.tomassetti.bytecode#4649981497883958479)" version="0" />
+        <module reference="09127d54-0209-48a6-9167-6d3d4fb47096(me.tomassetti.bytecode.execution)" version="0" />
         <module reference="659e3f5d-ddcf-48cb-91d9-69ebf8e280f9(me.tomassetti.bytecode.runtime)" version="0" />
       </dependencyVersions>
       <mapping-priorities />
@@ -59,6 +61,7 @@
     <dependency reexport="false">411cfb96-468d-4c3f-accc-a13ad135b216(sampleFacet)</dependency>
     <dependency reexport="false">1ed103c3-3aa6-49b7-9c21-6765ee11f224(MPS.Editor)</dependency>
     <dependency reexport="false">2d3c70e9-aab2-4870-8d8d-6036800e4103(jetbrains.mps.kernel)</dependency>
+    <dependency reexport="false">6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)</dependency>
   </dependencies>
   <usedDevKits>
     <usedDevKit>2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)</usedDevKit>
@@ -110,11 +113,14 @@
     <module reference="a1250a4d-c090-42c3-ad7c-d298a3357dd4(jetbrains.mps.make.runtime)" version="0" />
     <module reference="df9d410f-2ebb-43f7-893a-483a4f085250(jetbrains.mps.smodel.resources)" version="0" />
     <module reference="1392eb99-581d-482b-aa28-19e40eaffbe2(me.tomassetti.bytecode)" version="0" />
+    <module reference="09127d54-0209-48a6-9167-6d3d4fb47096(me.tomassetti.bytecode.execution)" version="0" />
     <module reference="411cfb96-468d-4c3f-accc-a13ad135b216(sampleFacet)" version="0" />
   </dependencyVersions>
   <runtime>
     <dependency reexport="false">659e3f5d-ddcf-48cb-91d9-69ebf8e280f9(me.tomassetti.bytecode.runtime)</dependency>
   </runtime>
-  <extendedLanguages />
+  <extendedLanguages>
+    <extendedLanguage>09127d54-0209-48a6-9167-6d3d4fb47096(me.tomassetti.bytecode.execution)</extendedLanguage>
+  </extendedLanguages>
 </language>
 

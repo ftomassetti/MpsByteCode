@@ -7,6 +7,7 @@
   </languages>
   <imports>
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="t9ub" ref="r:23ad6c88-5f85-4859-b6cd-a8e0b55c3e22(me.tomassetti.bytecode.execution.structure)" implicit="true" />
     <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" implicit="true" />
   </imports>
   <registry>
@@ -27,9 +28,13 @@
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
+      <concept id="1169127622168" name="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" flags="ig" index="PrWs8">
+        <reference id="1169127628841" name="intfc" index="PrY4T" />
+      </concept>
       <concept id="1071489090640" name="jetbrains.mps.lang.structure.structure.ConceptDeclaration" flags="ig" index="1TIwiD">
         <property id="1096454100552" name="rootable" index="19KtqR" />
         <reference id="1071489389519" name="extends" index="1TJDcQ" />
+        <child id="1169129564478" name="implements" index="PzmwI" />
       </concept>
       <concept id="1071489288299" name="jetbrains.mps.lang.structure.structure.PropertyDeclaration" flags="ig" index="1TJgyi">
         <reference id="1082985295845" name="dataType" index="AX2Wp" />
@@ -78,7 +83,7 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="this_class" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="1qlCQcqhYWi" resolve="Unsigned2Bytes" />
+      <ref role="20lvS9" node="4xr1zwUwUL9" resolve="ConstantPoolClassReference" />
     </node>
     <node concept="1TJgyj" id="4283o$xwLNS" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -108,13 +113,16 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="interfaceInfos" />
       <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" node="r0PjdDeGD0" resolve="InterfaceInfo" />
+      <ref role="20lvS9" node="4xr1zwUwUL9" resolve="ConstantPoolClassReference" />
     </node>
     <node concept="1TJgyj" id="r0PjdDeGHs" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="fieldInfos" />
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="r0PjdDeGD1" resolve="FieldInfo" />
+    </node>
+    <node concept="PrWs8" id="4xr1zwUwUkJ" role="PzmwI">
+      <ref role="PrY4T" to="t9ub:OFkQGS7VFU" resolve="IClassProducer" />
     </node>
   </node>
   <node concept="1TIwiD" id="1qlCQcqgcvG">
@@ -185,7 +193,7 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="nameIndex" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="1qlCQcqhYWi" resolve="Unsigned2Bytes" />
+      <ref role="20lvS9" node="OFkQGRRNyk" resolve="ConstantPoolUtf8Reference" />
     </node>
   </node>
   <node concept="1TIwiD" id="1qlCQcqgXAZ">
@@ -611,11 +619,6 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="1qlCQcqhYWi" resolve="Unsigned2Bytes" />
     </node>
-  </node>
-  <node concept="1TIwiD" id="r0PjdDeGD0">
-    <property role="1pbfSe" value="1878761331" />
-    <property role="TrG5h" value="InterfaceInfo" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
   <node concept="1TIwiD" id="r0PjdDeGD1">
     <property role="1pbfSe" value="1878761332" />
@@ -1106,6 +1109,10 @@
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="4xr1zwUzwpH" role="1TKVEl">
+      <property role="TrG5h" value="rawIndex" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
     <node concept="1TJgyj" id="OFkQGRRNyo" role="1TKVEi">
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="element" />
@@ -2476,6 +2483,19 @@
       <property role="20kJfa" value="instructionType" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" to="tpce:f_TIwhg" resolve="ConceptDeclaration" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="4xr1zwUwUL9">
+    <property role="1pbfSe" value="2099334527" />
+    <property role="3GE5qa" value="constantPool.references" />
+    <property role="TrG5h" value="ConstantPoolClassReference" />
+    <ref role="1TJDcQ" node="OFkQGRRNyn" resolve="ConstantPoolReference" />
+    <node concept="1TJgyj" id="4xr1zwUwULa" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="clazz" />
+      <property role="20lbJX" value="1" />
+      <ref role="20ksaX" node="OFkQGRRNyo" />
+      <ref role="20lvS9" node="1qlCQcqgXAY" resolve="ConstantPoolClass" />
     </node>
   </node>
 </model>

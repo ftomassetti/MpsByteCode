@@ -13,4 +13,7 @@ public class Unsigned2Bytes_Behavior {
   public static long call_toLong_1627386486402647188(SNode __thisNode__) {
     return Unsigned2Bytes__BehaviorDescriptor.toLong_id1qlCQcqjgik(__thisNode__);
   }
+  public static byte[] call_toBytes_6837954664579797341(SNode __thisNode__) {
+    return Unsigned2Bytes__BehaviorDescriptor.toBytes_id5V_iSBkwh5t(__thisNode__);
+  }
 }

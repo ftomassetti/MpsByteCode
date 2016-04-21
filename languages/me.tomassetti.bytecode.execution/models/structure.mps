@@ -74,5 +74,9 @@
     <property role="R5$K2" value="false" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
+  <node concept="PlHQZ" id="4xr1zwUwUlg">
+    <property role="1pbfSe" value="2099336312" />
+    <property role="TrG5h" value="IClasspathContributor" />
+  </node>
 </model>
 
