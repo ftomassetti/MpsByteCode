@@ -14,6 +14,9 @@ public class ConstraintsAspectDescriptor implements jetbrains.mps.smodel.runtime
     if (id == 0x1695a3631a534cdcL) {
       return new Unsigned1Byte_Constraints();
     }
+    if (id == 0x7c4483a34b599febL) {
+      return new InstructionTypeReference_Constraints();
+    }
     return new BaseConstraintsDescriptor(conceptId);
   }
 }

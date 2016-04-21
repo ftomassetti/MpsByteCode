@@ -90,7 +90,7 @@
       <unit at="12,0,21,0" name="me.tomassetti.bytecode.behavior.Bastore_BehaviorDescriptor" />
     </file>
     <file name="BehaviorAspectDescriptor.java">
-      <unit at="14,0,130,0" name="me.tomassetti.bytecode.behavior.BehaviorAspectDescriptor" />
+      <unit at="14,0,134,0" name="me.tomassetti.bytecode.behavior.BehaviorAspectDescriptor" />
     </file>
     <file name="Bipush_BehaviorDescriptor.java">
       <unit at="11,0,20,0" name="me.tomassetti.bytecode.behavior.Bipush_BehaviorDescriptor" />
@@ -506,6 +506,9 @@
     <file name="Instanceof_BehaviorDescriptor.java">
       <unit at="11,0,20,0" name="me.tomassetti.bytecode.behavior.Instanceof_BehaviorDescriptor" />
     </file>
+    <file name="InstructionTypeReference_BehaviorDescriptor.java">
+      <unit at="12,0,21,0" name="me.tomassetti.bytecode.behavior.InstructionTypeReference_BehaviorDescriptor" />
+    </file>
     <file name="Instruction_BehaviorDescriptor.java">
       <unit at="14,0,26,0" name="me.tomassetti.bytecode.behavior.Instruction_BehaviorDescriptor" />
     </file>
@@ -755,11 +758,8 @@
     <file name="Unsigned4Bytes_BehaviorDescriptor.java">
       <unit at="12,0,21,0" name="me.tomassetti.bytecode.behavior.Unsigned4Bytes_BehaviorDescriptor" />
     </file>
-    <file name="WideFormat1_BehaviorDescriptor.java">
-      <unit at="12,0,21,0" name="me.tomassetti.bytecode.behavior.WideFormat1_BehaviorDescriptor" />
-    </file>
-    <file name="WideFormat2_BehaviorDescriptor.java">
-      <unit at="12,0,21,0" name="me.tomassetti.bytecode.behavior.WideFormat2_BehaviorDescriptor" />
+    <file name="Wide_BehaviorDescriptor.java">
+      <unit at="13,0,25,0" name="me.tomassetti.bytecode.behavior.Wide_BehaviorDescriptor" />
     </file>
   </root>
   <root nodeRef="r:52cba171-eedf-4a77-80f4-8d9827029f92(me.tomassetti.bytecode.behavior)/1530027263845228620">
@@ -3757,6 +3757,85 @@
       </scope>
       <unit id="948943866455897112" at="49,238,53,5" name="me.tomassetti.bytecode.behavior.ClassFile__BehaviorDescriptor$1" />
       <unit id="486623176543699144" at="29,0,111,0" name="me.tomassetti.bytecode.behavior.ClassFile__BehaviorDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="r:52cba171-eedf-4a77-80f4-8d9827029f92(me.tomassetti.bytecode.behavior)/5213767832180756324">
+    <file name="Wide_Behavior.java">
+      <unit id="5213767832180756324" at="10,0,13,0" name="me.tomassetti.bytecode.behavior.Wide_Behavior" />
+    </file>
+    <file name="Wide__BehaviorDescriptor.java">
+      <node id="5213767832180756324" at="27,0,28,0" concept="13" trace="CONCEPT" />
+      <node id="5213767832180756324" at="28,0,29,0" concept="13" trace="REGISTRY" />
+      <node id="5213767832180756324" at="30,0,31,0" concept="13" trace="length_id1kVJV2A9Wse" />
+      <node id="5213767832180756324" at="32,0,33,0" concept="13" trace="BH_METHODS" />
+      <node id="5213767832180765000" at="34,63,35,413" concept="3" />
+      <node id="5213767832180837442" at="35,413,36,514" concept="3" />
+      <node id="5213767832181049231" at="39,76,40,210" concept="10" />
+      <node id="5213767832180756324" at="43,42,44,20" concept="15" />
+      <node id="5213767832180756324" at="48,114,49,21" concept="3" />
+      <node id="5213767832180756324" at="53,114,54,49" concept="9" />
+      <node id="5213767832180756324" at="55,26,56,56" concept="17" />
+      <node id="5213767832180756324" at="59,13,60,58" concept="10" />
+      <node id="5213767832180756324" at="61,14,62,58" concept="17" />
+      <node id="5213767832180756324" at="67,128,68,49" concept="9" />
+      <node id="5213767832180756324" at="69,26,70,56" concept="17" />
+      <node id="5213767832180756324" at="73,14,74,58" concept="17" />
+      <node id="5213767832180756324" at="80,48,81,22" concept="10" />
+      <node id="5213767832180756324" at="86,40,87,19" concept="10" />
+      <node id="5213767832180756324" at="39,0,42,0" concept="14" trace="length_id1kVJV2A9Wse#(Lorg/jetbrains/mps/openapi/model/SNode;)I" />
+      <node id="5213767832180756324" at="43,0,46,0" concept="2" trace="Wide__BehaviorDescriptor#()V" />
+      <node id="5213767832180756324" at="54,49,57,5" concept="7" />
+      <node id="5213767832180756324" at="68,49,71,5" concept="7" />
+      <node id="5213767832180756324" at="34,0,38,0" concept="14" trace="___init___#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="5213767832180756324" at="47,0,51,0" concept="8" trace="initNode#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/core/aspects/behaviour/api/SConstructor;[Ljava/lang/Object;)V" />
+      <node id="5213767832180756324" at="71,5,75,5" concept="16" />
+      <node id="5213767832180756324" at="78,0,83,0" concept="8" trace="getDeclaredMethods#()Ljava/util/List;" />
+      <node id="5213767832180756324" at="84,0,89,0" concept="8" trace="getConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="5213767832180756324" at="57,5,63,5" concept="16" />
+      <node id="5213767832180756324" at="66,0,77,0" concept="8" trace="invokeSpecial0#(Lorg/jetbrains/mps/openapi/language/SAbstractConcept;Ljetbrains/mps/core/aspects/behaviour/api/SMethod;[Ljava/lang/Object;)null" />
+      <node id="5213767832180756324" at="52,0,65,0" concept="8" trace="invokeSpecial0#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/core/aspects/behaviour/api/SMethod;[Ljava/lang/Object;)null" />
+      <scope id="5213767832181049226" at="39,76,40,210" />
+      <scope id="5213767832180756324" at="43,42,44,20" />
+      <scope id="5213767832180756324" at="48,114,49,21" />
+      <scope id="5213767832180756324" at="55,26,56,56" />
+      <scope id="5213767832180756324" at="59,13,60,58" />
+      <scope id="5213767832180756324" at="61,14,62,58" />
+      <scope id="5213767832180756324" at="69,26,70,56" />
+      <scope id="5213767832180756324" at="73,14,74,58" />
+      <scope id="5213767832180756324" at="80,48,81,22" />
+      <scope id="5213767832180756324" at="86,40,87,19" />
+      <scope id="5213767832180756324" at="34,63,36,514" />
+      <scope id="5213767832180756324" at="39,0,42,0">
+        <var name="__thisNode__" id="5213767832180756324" />
+      </scope>
+      <scope id="5213767832180756324" at="43,0,46,0" />
+      <scope id="5213767832180756324" at="34,0,38,0">
+        <var name="__thisNode__" id="5213767832180756324" />
+      </scope>
+      <scope id="5213767832180756324" at="47,0,51,0">
+        <var name="constructor" id="5213767832180756324" />
+        <var name="node" id="5213767832180756324" />
+        <var name="parameters" id="5213767832180756324" />
+      </scope>
+      <scope id="5213767832180756324" at="78,0,83,0" />
+      <scope id="5213767832180756324" at="84,0,89,0" />
+      <scope id="5213767832180756324" at="67,128,75,5">
+        <var name="methodIndex" id="5213767832180756324" />
+      </scope>
+      <scope id="5213767832180756324" at="53,114,63,5">
+        <var name="methodIndex" id="5213767832180756324" />
+      </scope>
+      <scope id="5213767832180756324" at="66,0,77,0">
+        <var name="concept" id="5213767832180756324" />
+        <var name="method" id="5213767832180756324" />
+        <var name="parameters" id="5213767832180756324" />
+      </scope>
+      <scope id="5213767832180756324" at="52,0,65,0">
+        <var name="method" id="5213767832180756324" />
+        <var name="node" id="5213767832180756324" />
+        <var name="parameters" id="5213767832180756324" />
+      </scope>
+      <unit id="5213767832180756324" at="26,0,90,0" name="me.tomassetti.bytecode.behavior.Wide__BehaviorDescriptor" />
     </file>
   </root>
   <root nodeRef="r:52cba171-eedf-4a77-80f4-8d9827029f92(me.tomassetti.bytecode.behavior)/7489115193973413511">

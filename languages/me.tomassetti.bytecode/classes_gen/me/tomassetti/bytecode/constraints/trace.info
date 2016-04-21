@@ -6,15 +6,16 @@
   <concept fqn="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
   <concept fqn="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
   <concept fqn="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
   <concept fqn="jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
   <root>
     <file name="ConstraintsAspectDescriptor.java">
-      <unit at="9,0,20,0" name="me.tomassetti.bytecode.constraints.ConstraintsAspectDescriptor" />
+      <unit at="9,0,23,0" name="me.tomassetti.bytecode.constraints.ConstraintsAspectDescriptor" />
     </file>
   </root>
   <root nodeRef="r:9555cae9-d142-4f3a-bdb4-1f6bc4b47530(me.tomassetti.bytecode.constraints)/1627386486403338134">
     <file name="Unsigned1Byte_Constraints.java">
-      <node id="1627386486403338134" at="16,38,17,98" concept="6" />
+      <node id="1627386486403338134" at="16,38,17,98" concept="7" />
       <node id="1627386486403338134" at="20,88,21,123" concept="4" />
       <node id="1627386486403338134" at="24,40,25,20" concept="5" />
       <node id="1627386486403338134" at="28,70,29,38" concept="4" />
@@ -44,6 +45,47 @@
       <scope id="1627386486403338134" at="19,0,35,0" />
       <unit id="1627386486403338134" at="22,129,32,5" name="me.tomassetti.bytecode.constraints.Unsigned1Byte_Constraints$1" />
       <unit id="1627386486403338134" at="15,0,36,0" name="me.tomassetti.bytecode.constraints.Unsigned1Byte_Constraints" />
+    </file>
+  </root>
+  <root nodeRef="r:9555cae9-d142-4f3a-bdb4-1f6bc4b47530(me.tomassetti.bytecode.constraints)/8954426696486461422">
+    <file name="InstructionTypeReference_Constraints.java">
+      <node id="8954426696486461422" at="28,49,29,98" concept="7" />
+      <node id="8954426696486461422" at="32,98,33,135" concept="4" />
+      <node id="8954426696486461422" at="36,44,37,20" concept="5" />
+      <node id="8954426696486461422" at="44,63,45,58" concept="5" />
+      <node id="8954426696486461422" at="48,122,49,2018" concept="0" />
+      <node id="8954426696486462060" at="48,122,49,2018" concept="5" />
+      <node id="8954426696486461422" at="53,7,54,22" concept="5" />
+      <node id="8954426696486461422" at="56,0,57,0" concept="6" trace="breakingNode_78ejrx_a0a0a0a0a1a0b0a1a1" />
+      <node id="8954426696486461422" at="28,0,31,0" concept="1" trace="InstructionTypeReference_Constraints#()V" />
+      <node id="8954426696486461422" at="35,0,39,0" concept="3" trace="hasOwnScopeProvider#()Z" />
+      <node id="8954426696486461422" at="43,0,47,0" concept="3" trace="getSearchScopeValidatorNode#()Lorg/jetbrains/mps/openapi/model/SNodeReference;" />
+      <node id="8954426696486461422" at="47,0,51,0" concept="3" trace="createScope#(Ljetbrains/mps/smodel/IOperationContext;Ljetbrains/mps/smodel/runtime/ReferenceConstraintsContext;)Ljetbrains/mps/scope/Scope;" />
+      <node id="8954426696486461422" at="41,56,51,10" concept="5" />
+      <node id="8954426696486461422" at="39,0,53,0" concept="3" trace="getScopeProvider#()Ljetbrains/mps/smodel/runtime/ReferenceScopeProvider;" />
+      <node id="8954426696486461422" at="33,135,53,7" concept="2" />
+      <node id="8954426696486461422" at="31,0,56,0" concept="3" trace="getNotDefaultSReferenceLinks#()Ljava/util/Map;" />
+      <scope id="8954426696486461422" at="28,49,29,98" />
+      <scope id="8954426696486461422" at="36,44,37,20" />
+      <scope id="8954426696486461422" at="44,63,45,58" />
+      <scope id="8954426696486461422" at="48,122,49,2018" />
+      <scope id="8954426696486461443" at="48,122,49,2018" />
+      <scope id="8954426696486461422" at="28,0,31,0" />
+      <scope id="8954426696486461422" at="35,0,39,0" />
+      <scope id="8954426696486461422" at="43,0,47,0" />
+      <scope id="8954426696486461422" at="47,0,51,0">
+        <var name="_context" id="8954426696486461422" />
+        <var name="operationContext" id="8954426696486461422" />
+      </scope>
+      <scope id="8954426696486461422" at="41,56,51,10" />
+      <scope id="8954426696486461422" at="39,0,53,0" />
+      <scope id="8954426696486461422" at="32,98,54,22">
+        <var name="references" id="8954426696486461422" />
+      </scope>
+      <scope id="8954426696486461422" at="31,0,56,0" />
+      <unit id="8954426696486461422" at="42,19,51,9" name="me.tomassetti.bytecode.constraints.InstructionTypeReference_Constraints$2" />
+      <unit id="8954426696486461422" at="34,128,53,5" name="me.tomassetti.bytecode.constraints.InstructionTypeReference_Constraints$1" />
+      <unit id="8954426696486461422" at="27,0,58,0" name="me.tomassetti.bytecode.constraints.InstructionTypeReference_Constraints" />
     </file>
   </root>
 </debug-info>

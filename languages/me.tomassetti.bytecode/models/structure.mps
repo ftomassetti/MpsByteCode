@@ -7,6 +7,7 @@
   </languages>
   <imports>
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
@@ -2384,48 +2385,6 @@
       <ref role="20lvS9" node="1qlCQcqkOJN" resolve="Unsigned4Bytes" />
     </node>
   </node>
-  <node concept="1TIwiD" id="1kVJV2A62Yf">
-    <property role="1pbfSe" value="1152127169" />
-    <property role="3GE5qa" value="instruction" />
-    <property role="TrG5h" value="WideFormat1" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyj" id="1kVJV2A62Yg" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="opcode" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="1qlCQcqkONs" resolve="Unsigned1Byte" />
-    </node>
-    <node concept="1TJgyj" id="1kVJV2A62Yi" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="index" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="1qlCQcqhYWi" resolve="Unsigned2Bytes" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="1kVJV2A62Yl">
-    <property role="1pbfSe" value="1152127163" />
-    <property role="3GE5qa" value="instruction" />
-    <property role="TrG5h" value="WideFormat2" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyj" id="1kVJV2A62Ym" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="iinc" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="1qlCQcqkONs" resolve="Unsigned1Byte" />
-    </node>
-    <node concept="1TJgyj" id="1kVJV2A62Yo" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="index" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="1qlCQcqhYWi" resolve="Unsigned2Bytes" />
-    </node>
-    <node concept="1TJgyj" id="1kVJV2A62Yn" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="const_" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="1qlCQcqhYWi" resolve="Unsigned2Bytes" />
-    </node>
-  </node>
   <node concept="1TIwiD" id="1kVJV2A72TV">
     <property role="1pbfSe" value="1151865301" />
     <property role="3GE5qa" value="instruction.load" />
@@ -2481,6 +2440,42 @@
       <property role="20kJfa" value="offset" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="1kVJV2AfMl0" resolve="Signed4Bytes" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7L4wUdbmpZE">
+    <property role="1pbfSe" value="945937523" />
+    <property role="3GE5qa" value="instruction" />
+    <property role="TrG5h" value="Wide" />
+    <ref role="1TJDcQ" node="r0PjdDge82" resolve="Instruction" />
+    <node concept="1TJgyj" id="7L4wUdbnGHJ" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="widenedInstruction" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="7L4wUdbmpZF" resolve="InstructionTypeReference" />
+    </node>
+    <node concept="1TJgyj" id="7L4wUdbnGHK" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="index" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="1qlCQcqhYWi" resolve="Unsigned2Bytes" />
+    </node>
+    <node concept="1TJgyj" id="7L4wUdbnGHL" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="const_" />
+      <property role="20lbJX" value="0..1" />
+      <ref role="20lvS9" node="1qlCQcqhYWi" resolve="Unsigned2Bytes" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7L4wUdbmpZF">
+    <property role="1pbfSe" value="945937522" />
+    <property role="3GE5qa" value="instruction" />
+    <property role="TrG5h" value="InstructionTypeReference" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="7L4wUdbmpZG" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="instructionType" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="tpce:f_TIwhg" resolve="ConceptDeclaration" />
     </node>
   </node>
 </model>
