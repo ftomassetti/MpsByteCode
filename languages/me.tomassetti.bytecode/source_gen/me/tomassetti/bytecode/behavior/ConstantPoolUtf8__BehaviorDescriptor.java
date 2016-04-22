@@ -37,7 +37,6 @@ public final class ConstantPoolUtf8__BehaviorDescriptor extends BaseBHDescriptor
     return ConstantPoolElementType.CONSTANT_Utf8;
   }
   /*package*/ static void serializeInfo_id6cFMhcmFVC0(@NotNull SNode __thisNode__, MyDataOStream mds) {
-    mds.write2Bytes(SPropertyOperations.getString(__thisNode__, MetaAdapterFactory.getProperty(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a43d9c7L, 0x1695a3631a47083aL, "value")).length());
     mds.writeString(SPropertyOperations.getString(__thisNode__, MetaAdapterFactory.getProperty(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a43d9c7L, 0x1695a3631a47083aL, "value")));
   }
 

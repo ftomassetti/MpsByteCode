@@ -7,6 +7,7 @@
       <modulePath path="$PROJECT_DIR$/languages/me.tomassetti.bytecode/runtime/me.tomassetti.bytecode.runtime.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/me.tomassetti.bytecode/sandbox/me.tomassetti.bytecode.sandbox.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/me.tomassetti.bytecode.ide/me.tomassetti.bytecode.ide.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/me.tomassetti.bytecode.tests/me.tomassetti.bytecode.tests.msd" folder="" />
       <modulePath path="$USER_HOME$/MPSSamples.3.3.4/sampleFacet/sampleFacet.mpl" folder="" />
     </projectModules>
   </component>

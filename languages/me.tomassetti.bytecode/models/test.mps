@@ -6,16 +6,21 @@
     <use id="ed6d7656-532c-4bc2-81d1-af945aeb8280" name="jetbrains.mps.baseLanguage.blTypes" version="0" />
     <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="0" />
     <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="0" />
+    <use id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
     <import index="juvg" ref="r:52cba171-eedf-4a77-80f4-8d9827029f92(me.tomassetti.bytecode.behavior)" />
     <import index="xlxw" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.math(JDK/)" />
+    <import index="uwnb" ref="r:94eb28e2-16c0-487a-a9c5-75573ddbe808(me.tomassetti.bytecode.structure)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
       <concept id="1145552977093" name="jetbrains.mps.baseLanguage.structure.GenericNewExpression" flags="nn" index="2ShNRf">
         <child id="1145553007750" name="creator" index="2ShVmc" />
+      </concept>
+      <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
+        <property id="1070475926801" name="value" index="Xl_RC" />
       </concept>
       <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
         <reference id="1144433194310" name="classConcept" index="1Pybhc" />
@@ -24,6 +29,10 @@
       <concept id="1070534934090" name="jetbrains.mps.baseLanguage.structure.CastExpression" flags="nn" index="10QFUN">
         <child id="1070534934091" name="type" index="10QFUM" />
         <child id="1070534934092" name="expression" index="10QFUP" />
+      </concept>
+      <concept id="1225271177708" name="jetbrains.mps.baseLanguage.structure.StringType" flags="in" index="17QB3L" />
+      <concept id="4269842503726207156" name="jetbrains.mps.baseLanguage.structure.LongLiteral" flags="nn" index="1adDum">
+        <property id="4269842503726207157" name="value" index="1adDun" />
       </concept>
       <concept id="1068580123132" name="jetbrains.mps.baseLanguage.structure.BaseMethodDeclaration" flags="ng" index="3clF44">
         <child id="1068580123133" name="returnType" index="3clF45" />
@@ -66,6 +75,13 @@
       </concept>
       <concept id="1171978097730" name="jetbrains.mps.baseLanguage.unitTest.structure.AssertEquals" flags="nn" index="3vlDli" />
     </language>
+    <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
+      <concept id="1237721394592" name="jetbrains.mps.baseLanguage.collections.structure.AbstractContainerCreator" flags="nn" index="HWqM0">
+        <child id="1237721435808" name="initValue" index="HW$Y0" />
+        <child id="1237721435807" name="elementType" index="HW$YZ" />
+      </concept>
+      <concept id="1227008614712" name="jetbrains.mps.baseLanguage.collections.structure.LinkedListCreator" flags="nn" index="2Jqq0_" />
+    </language>
   </registry>
   <node concept="3s_ewN" id="1kVJV2ApDtm">
     <property role="3s_ewP" value="MyDataStream" />
@@ -86,7 +102,7 @@
             </node>
             <node concept="2YIFZM" id="1kVJV2ApGbr" role="3tpDZA">
               <ref role="37wK5l" to="juvg:1qlCQcqkRvg" resolve="toBigInteger" />
-              <ref role="1Pybhc" to="juvg:1qlCQcqhf3O" resolve="MyDataStream" />
+              <ref role="1Pybhc" to="juvg:1qlCQcqhf3O" resolve="MyDataIStream" />
               <node concept="2ShNRf" id="1kVJV2ApGbs" role="37wK5m">
                 <node concept="3g6Rrh" id="1kVJV2ApGbt" role="2ShVmc">
                   <node concept="10PrrI" id="1kVJV2ApGbu" role="3g7fb8" />
@@ -121,7 +137,7 @@
           <node concept="3vlDli" id="1kVJV2ApGhi" role="3cqZAp">
             <node concept="2YIFZM" id="1kVJV2ApGhk" role="3tpDZA">
               <ref role="37wK5l" to="juvg:1qlCQcqkRvg" resolve="toBigInteger" />
-              <ref role="1Pybhc" to="juvg:1qlCQcqhf3O" resolve="MyDataStream" />
+              <ref role="1Pybhc" to="juvg:1qlCQcqhf3O" resolve="MyDataIStream" />
               <node concept="2ShNRf" id="1kVJV2ApGhl" role="37wK5m">
                 <node concept="3g6Rrh" id="1kVJV2ApGhm" role="2ShVmc">
                   <node concept="10PrrI" id="1kVJV2ApGhn" role="3g7fb8" />
@@ -170,7 +186,7 @@
             </node>
             <node concept="2YIFZM" id="1kVJV2ApF5y" role="3tpDZA">
               <ref role="37wK5l" to="juvg:1qlCQcqkRvg" resolve="toBigInteger" />
-              <ref role="1Pybhc" to="juvg:1qlCQcqhf3O" resolve="MyDataStream" />
+              <ref role="1Pybhc" to="juvg:1qlCQcqhf3O" resolve="MyDataIStream" />
               <node concept="2ShNRf" id="1kVJV2ApFeB" role="37wK5m">
                 <node concept="3g6Rrh" id="1kVJV2ApFeC" role="2ShVmc">
                   <node concept="10PrrI" id="1kVJV2ApFeD" role="3g7fb8" />
@@ -212,7 +228,7 @@
             </node>
             <node concept="2YIFZM" id="1kVJV2ApF6t" role="3tpDZA">
               <ref role="37wK5l" to="juvg:1qlCQcqkRvg" resolve="toBigInteger" />
-              <ref role="1Pybhc" to="juvg:1qlCQcqhf3O" resolve="MyDataStream" />
+              <ref role="1Pybhc" to="juvg:1qlCQcqhf3O" resolve="MyDataIStream" />
               <node concept="2ShNRf" id="1kVJV2ApFlC" role="37wK5m">
                 <node concept="3g6Rrh" id="1kVJV2ApFlD" role="2ShVmc">
                   <node concept="10PrrI" id="1kVJV2ApFlE" role="3g7fb8" />
@@ -239,6 +255,39 @@
                     <node concept="3cmrfG" id="1kVJV2ApFlQ" role="10QFUP">
                       <property role="3cmrfH" value="222" />
                     </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="3s_ewN" id="72io6NhFPY5">
+    <property role="3s_ewP" value="AccessFlagSerializationTest" />
+    <node concept="3Tm1VV" id="72io6NhFPY6" role="1B3o_S" />
+    <node concept="3s_gsd" id="72io6NhFPY7" role="3s_ewO">
+      <node concept="3s$Bmu" id="72io6NhFPY8" role="3s_gse">
+        <property role="3s$Bm0" value="testSerialize" />
+        <node concept="3cqZAl" id="72io6NhFPY9" role="3clF45" />
+        <node concept="3Tm1VV" id="72io6NhFPYa" role="1B3o_S" />
+        <node concept="3clFbS" id="72io6NhFPYb" role="3clF47">
+          <node concept="3vlDli" id="72io6NhFQwE" role="3cqZAp">
+            <node concept="1adDum" id="72io6NhFQy_" role="3tpDZB">
+              <property role="1adDun" value="33L" />
+            </node>
+            <node concept="2YIFZM" id="72io6NhFQ$s" role="3tpDZA">
+              <ref role="37wK5l" to="juvg:72io6NhFMLA" resolve="serialize" />
+              <ref role="1Pybhc" to="juvg:72io6NhFMEF" resolve="AccessFlagsSerialization" />
+              <node concept="2ShNRf" id="72io6NhGiHF" role="37wK5m">
+                <node concept="2Jqq0_" id="72io6NhGiQg" role="2ShVmc">
+                  <node concept="17QB3L" id="72io6NhGiUB" role="HW$YZ" />
+                  <node concept="Xl_RD" id="72io6NhGiWn" role="HW$Y0">
+                    <property role="Xl_RC" value="public" />
+                  </node>
+                  <node concept="Xl_RD" id="72io6NhGiZS" role="HW$Y0">
+                    <property role="Xl_RC" value="super" />
                   </node>
                 </node>
               </node>

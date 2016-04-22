@@ -49,7 +49,7 @@ public final class ConstantPoolElement__BehaviorDescriptor extends BaseBHDescrip
     }).count();
   }
   /*package*/ static void serialize_id6cFMhcmFUNm(@NotNull SNode __thisNode__, MyDataOStream mds) {
-    mds.write2Bytes(ConstantPoolElement__BehaviorDescriptor.tag_id1qlCQcqgXe2.invoke(__thisNode__).getTagValue());
+    mds.write1Byte(ConstantPoolElement__BehaviorDescriptor.tag_id1qlCQcqgXe2.invoke(__thisNode__).getTagValue());
     ConstantPoolElement__BehaviorDescriptor.serializeInfo_id6cFMhcmFVC0.invoke(__thisNode__, mds);
   }
 
