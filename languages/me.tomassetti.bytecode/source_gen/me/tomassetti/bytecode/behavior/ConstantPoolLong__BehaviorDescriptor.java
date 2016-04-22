@@ -16,6 +16,7 @@ import java.util.List;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.mps.openapi.model.SNode;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
@@ -26,8 +27,9 @@ public final class ConstantPoolLong__BehaviorDescriptor extends BaseBHDescriptor
 
   public static final SMethod<ConstantPoolElementType> tag_id1qlCQcqgXe2 = new SMethodBuilder<ConstantPoolElementType>(new SJavaCompoundTypeImpl(ConstantPoolElementType.class)).name("tag").modifiers(SModifiersImpl.create(8, AccessPrivileges.PUBLIC)).concept(CONCEPT).id("1qlCQcqgXe2").registry(REGISTRY).build();
   public static final SMethod<Boolean> isDoubleElement_id6vIFDs2N3Ak = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isDoubleElement").modifiers(SModifiersImpl.create(0, AccessPrivileges.PUBLIC)).concept(CONCEPT).id("6vIFDs2N3Ak").registry(REGISTRY).build();
+  public static final SMethod<Void> serializeInfo_id6cFMhcmFVC0 = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("serializeInfo").modifiers(SModifiersImpl.create(8, AccessPrivileges.PUBLIC)).concept(CONCEPT).id("6cFMhcmFVC0").registry(REGISTRY).build(SMethodBuilder.createJavaParameter(MyDataOStream.class, ""));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(tag_id1qlCQcqgXe2, isDoubleElement_id6vIFDs2N3Ak);
+  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(tag_id1qlCQcqgXe2, isDoubleElement_id6vIFDs2N3Ak, serializeInfo_id6cFMhcmFVC0);
 
   private static void ___init___(@NotNull SNode __thisNode__) {
   }
@@ -37,6 +39,10 @@ public final class ConstantPoolLong__BehaviorDescriptor extends BaseBHDescriptor
   }
   /*package*/ static boolean isDoubleElement_id6vIFDs2N3Ak(@NotNull SNode __thisNode__) {
     return true;
+  }
+  /*package*/ static void serializeInfo_id6cFMhcmFVC0(@NotNull SNode __thisNode__, MyDataOStream mds) {
+    mds.write4Bytes(Unsigned4Bytes__BehaviorDescriptor.asBigInteger_id1kVJV2AbFR5.invoke(SLinkOperations.getTarget(__thisNode__, MetaAdapterFactory.getContainmentLink(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a43d9bcL, 0x67eeae9702c652dfL, "highBytes"))));
+    mds.write4Bytes(Unsigned4Bytes__BehaviorDescriptor.asBigInteger_id1kVJV2AbFR5.invoke(SLinkOperations.getTarget(__thisNode__, MetaAdapterFactory.getContainmentLink(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a43d9bcL, 0x67eeae9702c652e0L, "lowBytes"))));
   }
 
   /*package*/ ConstantPoolLong__BehaviorDescriptor() {
@@ -59,6 +65,9 @@ public final class ConstantPoolLong__BehaviorDescriptor extends BaseBHDescriptor
         return (T) ((ConstantPoolElementType) tag_id1qlCQcqgXe2(node));
       case 1:
         return (T) ((Boolean) isDoubleElement_id6vIFDs2N3Ak(node));
+      case 2:
+        serializeInfo_id6cFMhcmFVC0(node, (MyDataOStream) parameters[0]);
+        return null;
       default:
         throw new BHMethodNotFoundException(this, method);
     }

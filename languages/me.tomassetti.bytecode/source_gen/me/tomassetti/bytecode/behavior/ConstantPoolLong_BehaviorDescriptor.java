@@ -11,6 +11,8 @@ import org.jetbrains.mps.openapi.model.SNode;
  */
 @Deprecated
 public class ConstantPoolLong_BehaviorDescriptor extends ConstantPoolElement_BehaviorDescriptor {
+  public void virtual_serializeInfo_7146026317575600640(SNode __thisNode__, MyDataOStream mds) {
+  }
   public ConstantPoolElementType virtual_tag_1627386486402044802(SNode __thisNode__) {
     return null;
   }

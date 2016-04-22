@@ -16,6 +16,7 @@ import java.util.List;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.mps.openapi.model.SNode;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
@@ -25,14 +26,18 @@ public final class ConstantPoolMethodType__BehaviorDescriptor extends BaseBHDesc
   private static final BehaviorRegistry REGISTRY = ConceptRegistry.getInstance().getBehaviorRegistry();
 
   public static final SMethod<ConstantPoolElementType> tag_id1qlCQcqgXe2 = new SMethodBuilder<ConstantPoolElementType>(new SJavaCompoundTypeImpl(ConstantPoolElementType.class)).name("tag").modifiers(SModifiersImpl.create(8, AccessPrivileges.PUBLIC)).concept(CONCEPT).id("1qlCQcqgXe2").registry(REGISTRY).build();
+  public static final SMethod<Void> serializeInfo_id6cFMhcmFVC0 = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("serializeInfo").modifiers(SModifiersImpl.create(8, AccessPrivileges.PUBLIC)).concept(CONCEPT).id("6cFMhcmFVC0").registry(REGISTRY).build(SMethodBuilder.createJavaParameter(MyDataOStream.class, ""));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(tag_id1qlCQcqgXe2);
+  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(tag_id1qlCQcqgXe2, serializeInfo_id6cFMhcmFVC0);
 
   private static void ___init___(@NotNull SNode __thisNode__) {
   }
 
   /*package*/ static ConstantPoolElementType tag_id1qlCQcqgXe2(@NotNull SNode __thisNode__) {
     return ConstantPoolElementType.CONSTANT_MethodType;
+  }
+  /*package*/ static void serializeInfo_id6cFMhcmFVC0(@NotNull SNode __thisNode__, MyDataOStream mds) {
+    mds.write2Bytes((long) Unsigned2Bytes__BehaviorDescriptor.toLong_id1qlCQcqjgik.invoke(SLinkOperations.getTarget(__thisNode__, MetaAdapterFactory.getContainmentLink(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a43d9c4L, 0x67eeae9702c8cc58L, "descriptorIndex"))));
   }
 
   /*package*/ ConstantPoolMethodType__BehaviorDescriptor() {
@@ -53,6 +58,9 @@ public final class ConstantPoolMethodType__BehaviorDescriptor extends BaseBHDesc
     switch (methodIndex) {
       case 0:
         return (T) ((ConstantPoolElementType) tag_id1qlCQcqgXe2(node));
+      case 1:
+        serializeInfo_id6cFMhcmFVC0(node, (MyDataOStream) parameters[0]);
+        return null;
       default:
         throw new BHMethodNotFoundException(this, method);
     }

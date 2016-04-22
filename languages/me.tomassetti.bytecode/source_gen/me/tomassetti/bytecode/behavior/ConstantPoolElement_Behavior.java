@@ -16,4 +16,7 @@ public class ConstantPoolElement_Behavior {
   public static long call_index_948943866455367871(SNode __thisNode__) {
     return ConstantPoolElement__BehaviorDescriptor.index_idOFkQGRQU2Z(__thisNode__);
   }
+  public static void call_serialize_7146026317575597270(SNode __thisNode__, MyDataOStream mds) {
+    ConstantPoolElement__BehaviorDescriptor.serialize_id6cFMhcmFUNm(__thisNode__, mds);
+  }
 }

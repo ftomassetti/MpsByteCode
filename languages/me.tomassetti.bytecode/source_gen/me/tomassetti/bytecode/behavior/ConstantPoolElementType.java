@@ -19,6 +19,12 @@ public enum ConstantPoolElementType {
   CONSTANT_MethodType(16),
   CONSTANT_InvokeDynamic(18);
 
-  ConstantPoolElementType(int tagValue) {
+  private ConstantPoolElementType(int tagValue) {
+    this.tagValue = tagValue;
+  }
+  private int tagValue;
+
+  public int getTagValue() {
+    return tagValue;
   }
 }

@@ -19,4 +19,5 @@ public abstract class ConstantPoolElement_BehaviorDescriptor extends BaseConcept
   }
 
   public abstract ConstantPoolElementType virtual_tag_1627386486402044802(SNode __thisNode__);
+  public abstract void virtual_serializeInfo_7146026317575600640(SNode __thisNode__, MyDataOStream mds);
 }

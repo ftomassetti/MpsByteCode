@@ -16,6 +16,8 @@ public abstract class Instruction_BehaviorDescriptor extends BaseConcept_Behavio
   public int virtual_length_1530027263845189390(SNode __thisNode__) {
     return DefaultValuesHolder.defaultValue(Integer.TYPE);
   }
+  public void virtual_serialize_8111651899336990316(SNode __thisNode__, MyDataOStream mds) {
+  }
 
   @Override
   public String getConceptFqName() {
