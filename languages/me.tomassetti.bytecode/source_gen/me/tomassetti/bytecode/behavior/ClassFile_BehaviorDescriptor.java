@@ -4,6 +4,7 @@ package me.tomassetti.bytecode.behavior;
 
 import jetbrains.mps.lang.core.behavior.BaseConcept_BehaviorDescriptor;
 import me.tomassetti.bytecode.execution.behavior.IClassProducer_BehaviorDescriptor;
+import jetbrains.mps.lang.core.behavior.INamedConcept_BehaviorDescriptor;
 import org.jetbrains.mps.openapi.model.SNode;
 
 /**
@@ -12,7 +13,10 @@ import org.jetbrains.mps.openapi.model.SNode;
  * This class is not involved in the actual method invocation
  */
 @Deprecated
-public class ClassFile_BehaviorDescriptor extends BaseConcept_BehaviorDescriptor implements IClassProducer_BehaviorDescriptor {
+public class ClassFile_BehaviorDescriptor extends BaseConcept_BehaviorDescriptor implements IClassProducer_BehaviorDescriptor, INamedConcept_BehaviorDescriptor {
+  public String virtual_getFqName_1213877404258(SNode __thisNode__) {
+    return null;
+  }
   public String virtual_getPresentation_1213877396640(SNode __thisNode__) {
     return null;
   }

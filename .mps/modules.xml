@@ -6,9 +6,11 @@
       <modulePath path="$PROJECT_DIR$/languages/me.tomassetti.bytecode/me.tomassetti.bytecode.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/me.tomassetti.bytecode/runtime/me.tomassetti.bytecode.runtime.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/me.tomassetti.bytecode/sandbox/me.tomassetti.bytecode.sandbox.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/me.tomassetti.generic/me.tomassetti.generic.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/me.tomassetti.poliscript/me.tomassetti.poliscript.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/me.tomassetti.poliscript/sandbox/me.tomassetti.poliscript.sandbox.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/me.tomassetti.bytecode.ide/me.tomassetti.bytecode.ide.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/me.tomassetti.bytecode.tests/me.tomassetti.bytecode.tests.msd" folder="" />
-      <modulePath path="$USER_HOME$/MPSSamples.3.3.4/sampleFacet/sampleFacet.mpl" folder="" />
     </projectModules>
   </component>
 </project>

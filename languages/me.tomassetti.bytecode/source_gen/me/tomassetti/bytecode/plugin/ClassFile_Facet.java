@@ -117,13 +117,13 @@ public class ClassFile_Facet extends IFacet.Stub {
       return null;
     }
     public Iterable<ITarget.Name> after() {
-      return null;
+      return Sequence.fromArray(new ITarget.Name[]{new ITarget.Name("jetbrains.mps.lang.core.Generate.generate")});
     }
     public Iterable<ITarget.Name> notBefore() {
       return null;
     }
     public Iterable<ITarget.Name> before() {
-      return Sequence.fromArray(new ITarget.Name[]{new ITarget.Name("jetbrains.mps.make.facets.Make.make"), new ITarget.Name("jetbrains.mps.make.facets.Make.reconcile")});
+      return null;
     }
     public ITarget.Name getName() {
       return name;

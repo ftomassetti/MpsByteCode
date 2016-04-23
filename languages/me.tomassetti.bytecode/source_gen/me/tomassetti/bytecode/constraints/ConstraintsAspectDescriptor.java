@@ -17,6 +17,15 @@ public class ConstraintsAspectDescriptor implements jetbrains.mps.smodel.runtime
     if (id == 0x7c4483a34b599febL) {
       return new InstructionTypeReference_Constraints();
     }
+    if (id == 0x40880d8921831cd4L) {
+      return new ClassFile_Constraints();
+    }
+    if (id == 0x6586c93ddfed7abfL) {
+      return new LdcPointer_Constraints();
+    }
+    if (id == 0x1695a3631a43d37eL) {
+      return new ConstantPoolElement_Constraints();
+    }
     return new BaseConstraintsDescriptor(conceptId);
   }
 }

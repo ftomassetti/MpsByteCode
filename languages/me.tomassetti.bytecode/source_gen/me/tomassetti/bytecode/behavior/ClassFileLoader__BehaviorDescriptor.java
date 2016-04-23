@@ -180,7 +180,7 @@ public final class ClassFileLoader__BehaviorDescriptor extends BaseBHDescriptor 
           case 8:
             {
               SNode cp = SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a43d9c3L, "me.tomassetti.bytecode.structure.ConstantPoolString")));
-              SLinkOperations.setTarget(cp, MetaAdapterFactory.getContainmentLink(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a43d9c3L, 0x1695a3631a4936dbL, "stringIndex"), mds.readInt2AsNode());
+              SLinkOperations.setTarget(cp, MetaAdapterFactory.getContainmentLink(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a43d9c3L, 0x1695a3631a4936dbL, "utf8string"), ClassFileLoader__BehaviorDescriptor.toUtf8Reference_idOFkQGRSQa2.invoke(__thisNode__, ((long) mds.readInt2AsLong())));
               ListSequence.fromList(SLinkOperations.getChildren(SLinkOperations.getTarget(__thisNode__, MetaAdapterFactory.getContainmentLink(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a40c7ecL, 0x1695a3631a40c7edL, "classFile")), MetaAdapterFactory.getContainmentLink(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x40880d8921831cd4L, 0x1695a3631a449987L, "constantPool"))).addElement(cp);
             }
             break;

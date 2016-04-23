@@ -45,13 +45,15 @@ public final class BehaviorAspectDescriptor extends BaseBehaviorAspectDescriptor
   private final BHDescriptor myUnsigned1Byte__BehaviorDescriptor = new Unsigned1Byte__BehaviorDescriptor();
   private final BHDescriptor myUnsigned1BytesArray__BehaviorDescriptor = new Unsigned1BytesArray__BehaviorDescriptor();
   private final BHDescriptor myClassFile__BehaviorDescriptor = new ClassFile__BehaviorDescriptor();
+  private final BHDescriptor mySequenceInstruction__BehaviorDescriptor = new SequenceInstruction__BehaviorDescriptor();
+  private final BHDescriptor myConstantPoolSequence__BehaviorDescriptor = new ConstantPoolSequence__BehaviorDescriptor();
   private final BHDescriptor myConstantPoolDouble__BehaviorDescriptor = new ConstantPoolDouble__BehaviorDescriptor();
   private final BHDescriptor myWide__BehaviorDescriptor = new Wide__BehaviorDescriptor();
 
   private final long[] myConceptBehaviorIds;
 
   public BehaviorAspectDescriptor() {
-    myConceptBehaviorIds = new long[35];
+    myConceptBehaviorIds = new long[37];
     myConceptBehaviorIds[0] = 0x6c0d5336931d740L;
     myConceptBehaviorIds[1] = 0x6c0d5336931d741L;
     myConceptBehaviorIds[2] = 0x6c0d53369382668L;
@@ -85,8 +87,10 @@ public final class BehaviorAspectDescriptor extends BaseBehaviorAspectDescriptor
     myConceptBehaviorIds[30] = 0x1695a3631a534cdcL;
     myConceptBehaviorIds[31] = 0x1695a3631a534cdeL;
     myConceptBehaviorIds[32] = 0x40880d8921831cd4L;
-    myConceptBehaviorIds[33] = 0x67eeae9702c66d1dL;
-    myConceptBehaviorIds[34] = 0x7c4483a34b599feaL;
+    myConceptBehaviorIds[33] = 0x6586c93ddfdc7edcL;
+    myConceptBehaviorIds[34] = 0x6586c93ddfdf9d67L;
+    myConceptBehaviorIds[35] = 0x67eeae9702c66d1dL;
+    myConceptBehaviorIds[36] = 0x7c4483a34b599feaL;
   }
 
   @Deprecated
@@ -167,8 +171,12 @@ public final class BehaviorAspectDescriptor extends BaseBehaviorAspectDescriptor
       case 32:
         return myClassFile__BehaviorDescriptor;
       case 33:
-        return myConstantPoolDouble__BehaviorDescriptor;
+        return mySequenceInstruction__BehaviorDescriptor;
       case 34:
+        return myConstantPoolSequence__BehaviorDescriptor;
+      case 35:
+        return myConstantPoolDouble__BehaviorDescriptor;
+      case 36:
         return myWide__BehaviorDescriptor;
       default:
         return null;

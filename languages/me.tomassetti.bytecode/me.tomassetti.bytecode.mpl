@@ -58,10 +58,10 @@
     <dependency reexport="false">6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)</dependency>
     <dependency reexport="false">ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)</dependency>
     <dependency reexport="false">f8e20673-3f65-44e9-84c0-c4a4b6ede37e(jetbrains.mps.make.facets)</dependency>
-    <dependency reexport="false">411cfb96-468d-4c3f-accc-a13ad135b216(sampleFacet)</dependency>
     <dependency reexport="false">1ed103c3-3aa6-49b7-9c21-6765ee11f224(MPS.Editor)</dependency>
     <dependency reexport="false">2d3c70e9-aab2-4870-8d8d-6036800e4103(jetbrains.mps.kernel)</dependency>
     <dependency reexport="false">6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)</dependency>
+    <dependency reexport="false">fbd0e765-0e28-4d0d-a58f-00598f0b1f2f(me.tomassetti.poliscript)</dependency>
   </dependencies>
   <usedDevKits>
     <usedDevKit>2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)</usedDevKit>
@@ -114,7 +114,7 @@
     <module reference="df9d410f-2ebb-43f7-893a-483a4f085250(jetbrains.mps.smodel.resources)" version="0" />
     <module reference="1392eb99-581d-482b-aa28-19e40eaffbe2(me.tomassetti.bytecode)" version="0" />
     <module reference="09127d54-0209-48a6-9167-6d3d4fb47096(me.tomassetti.bytecode.execution)" version="0" />
-    <module reference="411cfb96-468d-4c3f-accc-a13ad135b216(sampleFacet)" version="0" />
+    <module reference="fbd0e765-0e28-4d0d-a58f-00598f0b1f2f(me.tomassetti.poliscript)" version="0" />
   </dependencyVersions>
   <runtime>
     <dependency reexport="false">659e3f5d-ddcf-48cb-91d9-69ebf8e280f9(me.tomassetti.bytecode.runtime)</dependency>

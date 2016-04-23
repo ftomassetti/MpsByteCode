@@ -19,6 +19,7 @@ import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.internal.collections.runtime.IWhereFilter;
+import jetbrains.mps.internal.collections.runtime.IRightCombinator;
 import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
@@ -32,8 +33,9 @@ public final class ConstantPoolElement__BehaviorDescriptor extends BaseBHDescrip
   public static final SMethod<Long> index_idOFkQGRQU2Z = new SMethodBuilder<Long>(new SJavaCompoundTypeImpl(Long.TYPE)).name("index").modifiers(SModifiersImpl.create(0, AccessPrivileges.PUBLIC)).concept(CONCEPT).id("OFkQGRQU2Z").registry(REGISTRY).build();
   public static final SMethod<Void> serialize_id6cFMhcmFUNm = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("serialize").modifiers(SModifiersImpl.create(0, AccessPrivileges.PUBLIC)).concept(CONCEPT).id("6cFMhcmFUNm").registry(REGISTRY).build(SMethodBuilder.createJavaParameter(MyDataOStream.class, ""));
   public static final SMethod<Void> serializeInfo_id6cFMhcmFVC0 = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("serializeInfo").modifiers(SModifiersImpl.create(12, AccessPrivileges.PUBLIC)).concept(CONCEPT).id("6cFMhcmFVC0").registry(REGISTRY).build(SMethodBuilder.createJavaParameter(MyDataOStream.class, ""));
+  public static final SMethod<Integer> length_id6m6MjRvRYRD = new SMethodBuilder<Integer>(new SJavaCompoundTypeImpl(Integer.TYPE)).name("length").modifiers(SModifiersImpl.create(8, AccessPrivileges.PUBLIC)).concept(CONCEPT).id("6m6MjRvRYRD").registry(REGISTRY).build();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(tag_id1qlCQcqgXe2, isDoubleElement_id6vIFDs2N3yE, index_idOFkQGRQU2Z, serialize_id6cFMhcmFUNm, serializeInfo_id6cFMhcmFVC0);
+  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(tag_id1qlCQcqgXe2, isDoubleElement_id6vIFDs2N3yE, index_idOFkQGRQU2Z, serialize_id6cFMhcmFUNm, serializeInfo_id6cFMhcmFVC0, length_id6m6MjRvRYRD);
 
   private static void ___init___(@NotNull SNode __thisNode__) {
   }
@@ -46,11 +48,22 @@ public final class ConstantPoolElement__BehaviorDescriptor extends BaseBHDescrip
       public boolean accept(SNode it) {
         return SNodeOperations.isInstanceOf(it, MetaAdapterFactory.getConcept(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x67eeae9702c66d1dL, "me.tomassetti.bytecode.structure.ConstantPoolDouble")) || SNodeOperations.isInstanceOf(it, MetaAdapterFactory.getConcept(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a43d9bcL, "me.tomassetti.bytecode.structure.ConstantPoolLong"));
       }
-    }).count();
+    }).count() + ListSequence.fromList(SNodeOperations.getPrevSiblings(__thisNode__, false)).where(new IWhereFilter<SNode>() {
+      public boolean accept(SNode it) {
+        return SNodeOperations.isInstanceOf(it, MetaAdapterFactory.getConcept(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x6586c93ddfdf9d67L, "me.tomassetti.bytecode.structure.ConstantPoolSequence"));
+      }
+    }).foldRight(0, new IRightCombinator<SNode, Integer>() {
+      public Integer combine(SNode it, Integer s) {
+        return (int) ConstantPoolElement__BehaviorDescriptor.length_id6m6MjRvRYRD.invoke(SNodeOperations.cast(it, MetaAdapterFactory.getConcept(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x6586c93ddfdf9d67L, "me.tomassetti.bytecode.structure.ConstantPoolSequence"))) - 1 + s;
+      }
+    });
   }
   /*package*/ static void serialize_id6cFMhcmFUNm(@NotNull SNode __thisNode__, MyDataOStream mds) {
     mds.write1Byte(ConstantPoolElement__BehaviorDescriptor.tag_id1qlCQcqgXe2.invoke(__thisNode__).getTagValue());
     ConstantPoolElement__BehaviorDescriptor.serializeInfo_id6cFMhcmFVC0.invoke(__thisNode__, mds);
+  }
+  /*package*/ static int length_id6m6MjRvRYRD(@NotNull SNode __thisNode__) {
+    return 1;
   }
 
   /*package*/ ConstantPoolElement__BehaviorDescriptor() {
@@ -76,6 +89,8 @@ public final class ConstantPoolElement__BehaviorDescriptor extends BaseBHDescrip
       case 3:
         serialize_id6cFMhcmFUNm(node, (MyDataOStream) parameters[0]);
         return null;
+      case 5:
+        return (T) ((Integer) length_id6m6MjRvRYRD(node));
       default:
         throw new BHMethodNotFoundException(this, method);
     }
