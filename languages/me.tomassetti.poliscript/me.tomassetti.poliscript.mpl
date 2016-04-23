@@ -58,7 +58,22 @@
         <module reference="fbd0e765-0e28-4d0d-a58f-00598f0b1f2f(me.tomassetti.poliscript)" version="0" />
         <module reference="43236065-cb2c-44d4-bd2b-d82789bb9417(me.tomassetti.poliscript#3039657378320965498)" version="0" />
       </dependencyVersions>
-      <mapping-priorities />
+      <mapping-priorities>
+        <mapping-priority-rule kind="strictly_before">
+          <greater-priority-mapping>
+            <generator generatorUID="43236065-cb2c-44d4-bd2b-d82789bb9417(me.tomassetti.poliscript#3039657378320965498)" />
+            <external-mapping>
+              <mapping-node modelUID="r:c894b815-adde-4291-8ab7-75cb525ec8ee(me.tomassetti.poliscript.generator.template.main@generator)" nodeID="3039657378320965499" />
+            </external-mapping>
+          </greater-priority-mapping>
+          <lesser-priority-mapping>
+            <generator generatorUID="43236065-cb2c-44d4-bd2b-d82789bb9417(me.tomassetti.poliscript#3039657378320965498)" />
+            <external-mapping>
+              <mapping-node modelUID="r:c894b815-adde-4291-8ab7-75cb525ec8ee(me.tomassetti.poliscript.generator.template.main@generator)" nodeID="7315755912298104281" />
+            </external-mapping>
+          </lesser-priority-mapping>
+        </mapping-priority-rule>
+      </mapping-priorities>
     </generator>
   </generators>
   <sourcePath />

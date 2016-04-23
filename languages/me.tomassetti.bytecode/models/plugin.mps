@@ -153,7 +153,6 @@
         <child id="6447445394688422656" name="required" index="1Mm5TH" />
       </concept>
       <concept id="6418371274763029600" name="jetbrains.mps.make.facet.structure.TargetDependency" flags="ng" index="15KeVb">
-        <property id="8351679702044326377" name="qualifier" index="3HPxAp" />
         <reference id="6418371274763029603" name="dependsOn" index="15KeV8" />
       </concept>
       <concept id="119022571402207412" name="jetbrains.mps.make.facet.structure.ResourceClassifierType" flags="in" index="3D27Fh" />
@@ -195,18 +194,8 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
-      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
-        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
-      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
-      </concept>
-      <concept id="709746936026466394" name="jetbrains.mps.lang.core.structure.ChildAttribute" flags="ng" index="3VBwX9">
-        <property id="709746936026609031" name="linkId" index="3V$3ak" />
-        <property id="709746936026609029" name="linkRole" index="3V$3am" />
-      </concept>
-      <concept id="4452961908202556907" name="jetbrains.mps.lang.core.structure.BaseCommentAttribute" flags="ng" index="1X3_iC">
-        <child id="3078666699043039389" name="commentedNode" index="8Wnug" />
       </concept>
     </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
@@ -231,16 +220,8 @@
     <node concept="15KeUm" id="r0PjdDkkLu" role="15LFul">
       <property role="TrG5h" value="GenerateClassFiles" />
       <property role="1xVfUM" value="1" />
-      <node concept="1X3_iC" id="6m6MjRvOitU" role="lGtFl">
-        <property role="3V$3am" value="dependency" />
-        <property role="3V$3ak" value="696c1165-4a59-463b-bc5d-902caab85dd0/6418371274763029565/6418371274763146553" />
-        <node concept="15KeVb" id="r0PjdDllP9" role="8Wnug">
-          <ref role="15KeV8" to="fy8e:taepSZ9rBr" resolve="make" />
-        </node>
-      </node>
-      <node concept="15KeVb" id="6m6MjRvOjMW" role="15LFui">
-        <property role="3HPxAp" value="AFTER" />
-        <ref role="15KeV8" to="tpcq:5L5h3brvzcf" resolve="generate" />
+      <node concept="15KeVb" id="r0PjdDllP9" role="15LFui">
+        <ref role="15KeV8" to="fy8e:taepSZ9rBr" resolve="make" />
       </node>
       <node concept="2aLE7I" id="r0PjdDkkLv" role="ElM8M">
         <node concept="ElOhj" id="r0PjdDkkLw" role="2aLE7H">
