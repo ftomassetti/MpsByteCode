@@ -83,7 +83,7 @@ public class ClassFile_Facet extends IFacet.Stub {
                         for (SNode classFile : ListSequence.fromList(SModelOperations.roots(model, MetaAdapterFactory.getConcept(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x40880d8921831cd4L, "me.tomassetti.bytecode.structure.ClassFile")))) {
                           monitor.reportFeedback(new IFeedback.INFORMATION(String.valueOf("  [ClassFile " + IClassProducer__BehaviorDescriptor.qualifiedClassName_id4xr1zwUwUkO.invoke(classFile) + "]")));
                           String rootDir = solution.getOutputPath().getParent().getPath();
-                          File genDir = new File(rootDir + File.separator + "class_gen");
+                          File genDir = new File(rootDir + File.separator + "classes_gen");
                           File modelGenFile = ClassFile__BehaviorDescriptor.generationFile_idr0PjdDn03b.invoke(classFile, genDir);
                           modelGenFile.getParentFile().mkdirs();
                           monitor.reportFeedback(new IFeedback.INFORMATION(String.valueOf("  ->  " + modelGenFile.getPath())));
@@ -92,7 +92,7 @@ public class ClassFile_Facet extends IFacet.Stub {
                         for (SNode classFileLoader : ListSequence.fromList(SModelOperations.roots(model, MetaAdapterFactory.getConcept(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a40c7ecL, "me.tomassetti.bytecode.structure.ClassFileLoader")))) {
                           monitor.reportFeedback(new IFeedback.INFORMATION(String.valueOf("  [ClassFileLoader " + SPropertyOperations.getString(classFileLoader, MetaAdapterFactory.getProperty(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a40c7ecL, 0x1695a3631a40c7efL, "path")) + "]")));
                           String rootDir = solution.getOutputPath().getParent().getPath();
-                          File genDir = new File(rootDir + File.separator + "class_gen");
+                          File genDir = new File(rootDir + File.separator + "classes_gen");
                           File modelGenFile = ClassFile__BehaviorDescriptor.generationFile_idr0PjdDn03b.invoke(SLinkOperations.getTarget(classFileLoader, MetaAdapterFactory.getContainmentLink(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a40c7ecL, 0x1695a3631a40c7edL, "classFile")), genDir);
                           monitor.reportFeedback(new IFeedback.INFORMATION(String.valueOf("  ->  " + modelGenFile.getPath())));
 

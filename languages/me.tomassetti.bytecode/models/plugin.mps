@@ -428,7 +428,7 @@
                                                     <ref role="37wK5l" to="guwi:~File.&lt;init&gt;(java.lang.String)" resolve="File" />
                                                     <node concept="3cpWs3" id="5V_iSBkvwnT" role="37wK5m">
                                                       <node concept="Xl_RD" id="5V_iSBkvwnU" role="3uHU7w">
-                                                        <property role="Xl_RC" value="class_gen" />
+                                                        <property role="Xl_RC" value="classes_gen" />
                                                       </node>
                                                       <node concept="3cpWs3" id="5V_iSBkvwnV" role="3uHU7B">
                                                         <node concept="37vLTw" id="5V_iSBkvwnW" role="3uHU7B">
@@ -578,7 +578,7 @@
                                                     <ref role="37wK5l" to="guwi:~File.&lt;init&gt;(java.lang.String)" resolve="File" />
                                                     <node concept="3cpWs3" id="r0PjdDmLpD" role="37wK5m">
                                                       <node concept="Xl_RD" id="r0PjdDmLvK" role="3uHU7w">
-                                                        <property role="Xl_RC" value="class_gen" />
+                                                        <property role="Xl_RC" value="classes_gen" />
                                                       </node>
                                                       <node concept="3cpWs3" id="r0PjdDmLiv" role="3uHU7B">
                                                         <node concept="37vLTw" id="r0PjdDmLa_" role="3uHU7B">

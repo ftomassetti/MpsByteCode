@@ -203,7 +203,7 @@
       </node>
     </node>
     <node concept="cPBE$" id="4xr1zwU_LmQ" role="cOjF$">
-      <property role="cOEHp" value="Ciaozzo" />
+      <property role="cOEHp" value="Ciao Mondo!" />
     </node>
     <node concept="cPBFt" id="4xr1zwU_LmR" role="cOjF$">
       <node concept="UX6JZ" id="4xr1zwU_LmS" role="cO$LQ">
