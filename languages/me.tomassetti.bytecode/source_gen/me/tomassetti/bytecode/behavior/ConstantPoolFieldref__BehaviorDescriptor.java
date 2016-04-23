@@ -37,8 +37,8 @@ public final class ConstantPoolFieldref__BehaviorDescriptor extends BaseBHDescri
     return ConstantPoolElementType.CONSTANT_Fieldref;
   }
   /*package*/ static void serializeInfo_id6cFMhcmFVC0(@NotNull SNode __thisNode__, MyDataOStream mds) {
-    mds.write2Bytes((long) Unsigned2Bytes__BehaviorDescriptor.toLong_id1qlCQcqjgik.invoke(SLinkOperations.getTarget(__thisNode__, MetaAdapterFactory.getContainmentLink(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a43d9bdL, 0x1695a3631a47ef19L, "classIndex"))));
-    mds.write2Bytes((long) Unsigned2Bytes__BehaviorDescriptor.toLong_id1qlCQcqjgik.invoke(SLinkOperations.getTarget(__thisNode__, MetaAdapterFactory.getContainmentLink(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a43d9bdL, 0x1695a3631a47ef17L, "nameAndTypeIndex"))));
+    mds.write2Bytes((long) ConstantPoolElement__BehaviorDescriptor.index_idOFkQGRQU2Z.invoke(SLinkOperations.getTarget(SLinkOperations.getTarget(__thisNode__, MetaAdapterFactory.getContainmentLink(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a43d9bdL, 0x1695a3631a47ef19L, "classIndex")), MetaAdapterFactory.getReferenceLink(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0xd2b536b37df3897L, 0xd2b536b37df3898L, "element"))));
+    mds.write2Bytes((long) ConstantPoolElement__BehaviorDescriptor.index_idOFkQGRQU2Z.invoke(SLinkOperations.getTarget(SLinkOperations.getTarget(__thisNode__, MetaAdapterFactory.getContainmentLink(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a43d9bdL, 0x1695a3631a47ef17L, "nameAndTypeIndex")), MetaAdapterFactory.getReferenceLink(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0xd2b536b37df3897L, 0xd2b536b37df3898L, "element"))));
   }
 
   /*package*/ ConstantPoolFieldref__BehaviorDescriptor() {

@@ -55,6 +55,7 @@ public final class ClassFileLoader__BehaviorDescriptor extends BaseBHDescriptor 
   public static final SMethod<SNode> loadMethodInfo_id1qlCQcqjIRa = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("loadMethodInfo").modifiers(SModifiersImpl.create(0, AccessPrivileges.PUBLIC)).concept(CONCEPT).id("1qlCQcqjIRa").registry(REGISTRY).build(SMethodBuilder.createJavaParameter(MyDataIStream.class, ""));
   /*package*/ static final SMethod<SNode> toUtf8Reference_idOFkQGRSQa2 = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("toUtf8Reference").modifiers(SModifiersImpl.create(0, AccessPrivileges.PRIVATE)).concept(CONCEPT).id("OFkQGRSQa2").registry(REGISTRY).build(SMethodBuilder.createJavaParameter(Long.TYPE, ""));
   /*package*/ static final SMethod<SNode> toClassReference_id4xr1zwUxT4h = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("toClassReference").modifiers(SModifiersImpl.create(0, AccessPrivileges.PRIVATE)).concept(CONCEPT).id("4xr1zwUxT4h").registry(REGISTRY).build(SMethodBuilder.createJavaParameter(Long.TYPE, ""));
+  /*package*/ static final SMethod<SNode> toNameAndTypeReference_id3zLhk7ob2LD = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("toNameAndTypeReference").modifiers(SModifiersImpl.create(0, AccessPrivileges.PRIVATE)).concept(CONCEPT).id("3zLhk7ob2LD").registry(REGISTRY).build(SMethodBuilder.createJavaParameter(Long.TYPE, ""));
   public static final SMethod<SNode> loadFieldInfo_idOFkQGRSAW6 = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("loadFieldInfo").modifiers(SModifiersImpl.create(0, AccessPrivileges.PUBLIC)).concept(CONCEPT).id("OFkQGRSAW6").registry(REGISTRY).build(SMethodBuilder.createJavaParameter(MyDataIStream.class, ""));
   public static final SMethod<SNode> loadInterfaceInfo_id4xr1zwU$IfQ = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("loadInterfaceInfo").modifiers(SModifiersImpl.create(0, AccessPrivileges.PUBLIC)).concept(CONCEPT).id("4xr1zwU$IfQ").registry(REGISTRY).build(SMethodBuilder.createJavaParameter(MyDataIStream.class, ""));
   public static final SMethod<SNode> getConstantPoolElement_idr0PjdDds1G = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getConstantPoolElement").modifiers(SModifiersImpl.create(0, AccessPrivileges.PUBLIC)).concept(CONCEPT).id("r0PjdDds1G").registry(REGISTRY).build(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
@@ -67,7 +68,7 @@ public final class ClassFileLoader__BehaviorDescriptor extends BaseBHDescriptor 
   public static final SMethod<SNode> readArray_idr0PjdDgi$s = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("readArray").modifiers(SModifiersImpl.create(0, AccessPrivileges.PUBLIC)).concept(CONCEPT).id("r0PjdDgi$s").registry(REGISTRY).build(SMethodBuilder.createJavaParameter(MyDataIStream.class, ""));
   public static final SMethod<SNode> readArray_id1qlCQcqkYgS = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("readArray").modifiers(SModifiersImpl.create(0, AccessPrivileges.PUBLIC)).concept(CONCEPT).id("1qlCQcqkYgS").registry(REGISTRY).build(SMethodBuilder.createJavaParameter(MyDataIStream.class, ""));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(asHexadecimal_id1qlCQcqguFh, toInteger_id1qlCQcqgEyg, pow_id1qlCQcqgIKn, toInteger_id1qlCQcqgEPh, load_id1qlCQcqgn_R, loadClassAccessFlags_id1qlCQcqkEDC, loadMethodAccessFlags_id1qlCQcqkGIa, loadAccessFlags_id1qlCQcqjTO4, loadMethodInfo_id1qlCQcqjIRa, toUtf8Reference_idOFkQGRSQa2, toClassReference_id4xr1zwUxT4h, loadFieldInfo_idOFkQGRSAW6, loadInterfaceInfo_id4xr1zwU$IfQ, getConstantPoolElement_idr0PjdDds1G, loadAttributeInfo_id1qlCQcqktGl, readSignature_idOFkQGRUn7a, readCode_idr0PjdDe5KL, readExceptionTableElement_idOFkQGS2cVz, parse_idOFkQGRVb6M, readCodeArray_idr0PjdDggI6, readArray_idr0PjdDgi$s, readArray_id1qlCQcqkYgS);
+  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(asHexadecimal_id1qlCQcqguFh, toInteger_id1qlCQcqgEyg, pow_id1qlCQcqgIKn, toInteger_id1qlCQcqgEPh, load_id1qlCQcqgn_R, loadClassAccessFlags_id1qlCQcqkEDC, loadMethodAccessFlags_id1qlCQcqkGIa, loadAccessFlags_id1qlCQcqjTO4, loadMethodInfo_id1qlCQcqjIRa, toUtf8Reference_idOFkQGRSQa2, toClassReference_id4xr1zwUxT4h, toNameAndTypeReference_id3zLhk7ob2LD, loadFieldInfo_idOFkQGRSAW6, loadInterfaceInfo_id4xr1zwU$IfQ, getConstantPoolElement_idr0PjdDds1G, loadAttributeInfo_id1qlCQcqktGl, readSignature_idOFkQGRUn7a, readCode_idr0PjdDe5KL, readExceptionTableElement_idOFkQGS2cVz, parse_idOFkQGRVb6M, readCodeArray_idr0PjdDggI6, readArray_idr0PjdDgi$s, readArray_id1qlCQcqkYgS);
 
   private static void ___init___(@NotNull SNode __thisNode__) {
   }
@@ -187,32 +188,32 @@ public final class ClassFileLoader__BehaviorDescriptor extends BaseBHDescriptor 
           case 9:
             {
               SNode cp = SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a43d9bdL, "me.tomassetti.bytecode.structure.ConstantPoolFieldref")));
-              SLinkOperations.setTarget(cp, MetaAdapterFactory.getContainmentLink(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a43d9bdL, 0x1695a3631a47ef19L, "classIndex"), mds.readInt2AsNode());
-              SLinkOperations.setTarget(cp, MetaAdapterFactory.getContainmentLink(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a43d9bdL, 0x1695a3631a47ef17L, "nameAndTypeIndex"), mds.readInt2AsNode());
+              SLinkOperations.setTarget(cp, MetaAdapterFactory.getContainmentLink(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a43d9bdL, 0x1695a3631a47ef19L, "classIndex"), ClassFileLoader__BehaviorDescriptor.toClassReference_id4xr1zwUxT4h.invoke(__thisNode__, ((long) mds.readInt2AsLong())));
+              SLinkOperations.setTarget(cp, MetaAdapterFactory.getContainmentLink(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a43d9bdL, 0x1695a3631a47ef17L, "nameAndTypeIndex"), ClassFileLoader__BehaviorDescriptor.toNameAndTypeReference_id3zLhk7ob2LD.invoke(__thisNode__, ((long) mds.readInt2AsLong())));
               ListSequence.fromList(SLinkOperations.getChildren(SLinkOperations.getTarget(__thisNode__, MetaAdapterFactory.getContainmentLink(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a40c7ecL, 0x1695a3631a40c7edL, "classFile")), MetaAdapterFactory.getContainmentLink(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x40880d8921831cd4L, 0x1695a3631a449987L, "constantPool"))).addElement(cp);
             }
             break;
           case 10:
             {
               SNode cp = SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a43d9bfL, "me.tomassetti.bytecode.structure.ConstantPoolMethodref")));
-              SLinkOperations.setTarget(cp, MetaAdapterFactory.getContainmentLink(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a43d9bfL, 0x1695a3631a47ef21L, "classIndex"), mds.readInt2AsNode());
-              SLinkOperations.setTarget(cp, MetaAdapterFactory.getContainmentLink(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a43d9bfL, 0x1695a3631a47ef22L, "nameAndTypeIndex"), mds.readInt2AsNode());
+              SLinkOperations.setTarget(cp, MetaAdapterFactory.getContainmentLink(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a43d9bfL, 0x1695a3631a47ef21L, "classIndex"), ClassFileLoader__BehaviorDescriptor.toClassReference_id4xr1zwUxT4h.invoke(__thisNode__, ((long) mds.readInt2AsLong())));
+              SLinkOperations.setTarget(cp, MetaAdapterFactory.getContainmentLink(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a43d9bfL, 0x1695a3631a47ef22L, "nameAndTypeIndex"), ClassFileLoader__BehaviorDescriptor.toNameAndTypeReference_id3zLhk7ob2LD.invoke(__thisNode__, ((long) mds.readInt2AsLong())));
               ListSequence.fromList(SLinkOperations.getChildren(SLinkOperations.getTarget(__thisNode__, MetaAdapterFactory.getContainmentLink(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a40c7ecL, 0x1695a3631a40c7edL, "classFile")), MetaAdapterFactory.getContainmentLink(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x40880d8921831cd4L, 0x1695a3631a449987L, "constantPool"))).addElement(cp);
             }
             break;
           case 11:
             {
               SNode cp = SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a43d9c1L, "me.tomassetti.bytecode.structure.ConstantPoolInterfaceMethodref")));
-              SLinkOperations.setTarget(cp, MetaAdapterFactory.getContainmentLink(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a43d9c1L, 0x1695a3631a47ef1dL, "classIndex"), mds.readInt2AsNode());
-              SLinkOperations.setTarget(cp, MetaAdapterFactory.getContainmentLink(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a43d9c1L, 0x1695a3631a47ef1eL, "nameAndTypeIndex"), mds.readInt2AsNode());
+              SLinkOperations.setTarget(cp, MetaAdapterFactory.getContainmentLink(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a43d9c1L, 0x1695a3631a47ef1dL, "classIndex"), ClassFileLoader__BehaviorDescriptor.toClassReference_id4xr1zwUxT4h.invoke(__thisNode__, ((long) mds.readInt2AsLong())));
+              SLinkOperations.setTarget(cp, MetaAdapterFactory.getContainmentLink(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a43d9c1L, 0x1695a3631a47ef1eL, "nameAndTypeIndex"), ClassFileLoader__BehaviorDescriptor.toNameAndTypeReference_id3zLhk7ob2LD.invoke(__thisNode__, ((long) mds.readInt2AsLong())));
               ListSequence.fromList(SLinkOperations.getChildren(SLinkOperations.getTarget(__thisNode__, MetaAdapterFactory.getContainmentLink(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a40c7ecL, 0x1695a3631a40c7edL, "classFile")), MetaAdapterFactory.getContainmentLink(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x40880d8921831cd4L, 0x1695a3631a449987L, "constantPool"))).addElement(cp);
             }
             break;
           case 12:
             {
               SNode cp = SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a43d9c0L, "me.tomassetti.bytecode.structure.ConstantPoolNameAndType")));
-              SLinkOperations.setTarget(cp, MetaAdapterFactory.getContainmentLink(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a43d9c0L, 0x1695a3631a47ef26L, "nameIndex"), mds.readInt2AsNode());
-              SLinkOperations.setTarget(cp, MetaAdapterFactory.getContainmentLink(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a43d9c0L, 0x1695a3631a47ef27L, "descriptorIndex"), mds.readInt2AsNode());
+              SLinkOperations.setTarget(cp, MetaAdapterFactory.getContainmentLink(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a43d9c0L, 0x1695a3631a47ef26L, "nameIndex"), ClassFileLoader__BehaviorDescriptor.toUtf8Reference_idOFkQGRSQa2.invoke(__thisNode__, ((long) mds.readInt2AsLong())));
+              SLinkOperations.setTarget(cp, MetaAdapterFactory.getContainmentLink(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a43d9c0L, 0x1695a3631a47ef27L, "descriptorIndex"), ClassFileLoader__BehaviorDescriptor.toUtf8Reference_idOFkQGRSQa2.invoke(__thisNode__, ((long) mds.readInt2AsLong())));
               ListSequence.fromList(SLinkOperations.getChildren(SLinkOperations.getTarget(__thisNode__, MetaAdapterFactory.getContainmentLink(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a40c7ecL, 0x1695a3631a40c7edL, "classFile")), MetaAdapterFactory.getContainmentLink(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x40880d8921831cd4L, 0x1695a3631a449987L, "constantPool"))).addElement(cp);
             }
             break;
@@ -227,7 +228,7 @@ public final class ClassFileLoader__BehaviorDescriptor extends BaseBHDescriptor 
           case 16:
             {
               SNode cp = SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a43d9c4L, "me.tomassetti.bytecode.structure.ConstantPoolMethodType")));
-              SLinkOperations.setTarget(cp, MetaAdapterFactory.getContainmentLink(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a43d9c4L, 0x67eeae9702c8cc58L, "descriptorIndex"), mds.readInt2AsNode());
+              SLinkOperations.setTarget(cp, MetaAdapterFactory.getContainmentLink(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a43d9c4L, 0x67eeae9702c8cc58L, "descriptorIndex"), ClassFileLoader__BehaviorDescriptor.toUtf8Reference_idOFkQGRSQa2.invoke(__thisNode__, ((long) mds.readInt2AsLong())));
               ListSequence.fromList(SLinkOperations.getChildren(SLinkOperations.getTarget(__thisNode__, MetaAdapterFactory.getContainmentLink(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a40c7ecL, 0x1695a3631a40c7edL, "classFile")), MetaAdapterFactory.getContainmentLink(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x40880d8921831cd4L, 0x1695a3631a449987L, "constantPool"))).addElement(cp);
             }
             break;
@@ -235,7 +236,7 @@ public final class ClassFileLoader__BehaviorDescriptor extends BaseBHDescriptor 
             {
               SNode cp = SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a43d9c2L, "me.tomassetti.bytecode.structure.ConstantPoolInvokeDynamic")));
               SLinkOperations.setTarget(cp, MetaAdapterFactory.getContainmentLink(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a43d9c2L, 0x67eeae9702c8ee0dL, "bootstrapMethodAttrIndex"), mds.readInt2AsNode());
-              SLinkOperations.setTarget(cp, MetaAdapterFactory.getContainmentLink(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a43d9c2L, 0x67eeae9702c8ee0fL, "nameAndTypeIndex"), mds.readInt2AsNode());
+              SLinkOperations.setTarget(cp, MetaAdapterFactory.getContainmentLink(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a43d9c2L, 0x67eeae9702c8ee0fL, "nameAndTypeIndex"), ClassFileLoader__BehaviorDescriptor.toNameAndTypeReference_id3zLhk7ob2LD.invoke(__thisNode__, ((long) mds.readInt2AsLong())));
               ListSequence.fromList(SLinkOperations.getChildren(SLinkOperations.getTarget(__thisNode__, MetaAdapterFactory.getContainmentLink(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a40c7ecL, 0x1695a3631a40c7edL, "classFile")), MetaAdapterFactory.getContainmentLink(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x40880d8921831cd4L, 0x1695a3631a449987L, "constantPool"))).addElement(cp);
             }
             break;
@@ -255,8 +256,12 @@ public final class ClassFileLoader__BehaviorDescriptor extends BaseBHDescriptor 
             SLinkOperations.setTarget(SNodeOperations.cast(it, MetaAdapterFactory.getConcept(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0xd2b536b37df3894L, "me.tomassetti.bytecode.structure.ConstantPoolUtf8Reference")), MetaAdapterFactory.getReferenceLink(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0xd2b536b37df3897L, 0xd2b536b37df3898L, "element"), SNodeOperations.cast(ClassFile__BehaviorDescriptor.getConstantPoolElement_idOFkQGRSVg7.invoke(SLinkOperations.getTarget(__thisNode__, MetaAdapterFactory.getContainmentLink(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a40c7ecL, 0x1695a3631a40c7edL, "classFile")), ((long) SPropertyOperations.getInteger(it, MetaAdapterFactory.getProperty(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0xd2b536b37df3897L, 0x485b06383a8e066dL, "rawIndex")))), MetaAdapterFactory.getConcept(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a43d9c7L, "me.tomassetti.bytecode.structure.ConstantPoolUtf8")));
           } else if (SNodeOperations.isInstanceOf(it, MetaAdapterFactory.getConcept(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x485b06383a83ac49L, "me.tomassetti.bytecode.structure.ConstantPoolClassReference"))) {
             SLinkOperations.setTarget(SNodeOperations.cast(it, MetaAdapterFactory.getConcept(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x485b06383a83ac49L, "me.tomassetti.bytecode.structure.ConstantPoolClassReference")), MetaAdapterFactory.getReferenceLink(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0xd2b536b37df3897L, 0xd2b536b37df3898L, "element"), SNodeOperations.cast(ClassFile__BehaviorDescriptor.getConstantPoolElement_idOFkQGRSVg7.invoke(SLinkOperations.getTarget(__thisNode__, MetaAdapterFactory.getContainmentLink(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a40c7ecL, 0x1695a3631a40c7edL, "classFile")), ((long) SPropertyOperations.getInteger(it, MetaAdapterFactory.getProperty(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0xd2b536b37df3897L, 0x485b06383a8e066dL, "rawIndex")))), MetaAdapterFactory.getConcept(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a43d9beL, "me.tomassetti.bytecode.structure.ConstantPoolClass")));
+          } else if (SNodeOperations.isInstanceOf(it, MetaAdapterFactory.getConcept(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x6586c93de00249acL, "me.tomassetti.bytecode.structure.ConstantPoolMethodrefReference"))) {
+            SLinkOperations.setTarget(SNodeOperations.cast(it, MetaAdapterFactory.getConcept(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x6586c93de00249acL, "me.tomassetti.bytecode.structure.ConstantPoolMethodrefReference")), MetaAdapterFactory.getReferenceLink(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0xd2b536b37df3897L, 0xd2b536b37df3898L, "element"), SNodeOperations.cast(ClassFile__BehaviorDescriptor.getConstantPoolElement_idOFkQGRSVg7.invoke(SLinkOperations.getTarget(__thisNode__, MetaAdapterFactory.getContainmentLink(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a40c7ecL, 0x1695a3631a40c7edL, "classFile")), ((long) SPropertyOperations.getInteger(it, MetaAdapterFactory.getProperty(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0xd2b536b37df3897L, 0x485b06383a8e066dL, "rawIndex")))), MetaAdapterFactory.getConcept(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a43d9bfL, "me.tomassetti.bytecode.structure.ConstantPoolMethodref")));
+          } else if (SNodeOperations.isInstanceOf(it, MetaAdapterFactory.getConcept(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x38f14541d82c0c42L, "me.tomassetti.bytecode.structure.ConstantPoolNameandtypeReference"))) {
+            SLinkOperations.setTarget(SNodeOperations.cast(it, MetaAdapterFactory.getConcept(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x38f14541d82c0c42L, "me.tomassetti.bytecode.structure.ConstantPoolNameandtypeReference")), MetaAdapterFactory.getReferenceLink(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0xd2b536b37df3897L, 0xd2b536b37df3898L, "element"), SNodeOperations.cast(ClassFile__BehaviorDescriptor.getConstantPoolElement_idOFkQGRSVg7.invoke(SLinkOperations.getTarget(__thisNode__, MetaAdapterFactory.getContainmentLink(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a40c7ecL, 0x1695a3631a40c7edL, "classFile")), ((long) SPropertyOperations.getInteger(it, MetaAdapterFactory.getProperty(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0xd2b536b37df3897L, 0x485b06383a8e066dL, "rawIndex")))), MetaAdapterFactory.getConcept(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a43d9c0L, "me.tomassetti.bytecode.structure.ConstantPoolNameAndType")));
           } else {
-            throw new RuntimeException();
+            throw new RuntimeException(SNodeOperations.getConcept(it).getQualifiedName());
           }
         }
       });
@@ -265,7 +270,7 @@ public final class ClassFileLoader__BehaviorDescriptor extends BaseBHDescriptor 
       SLinkOperations.setTarget(SLinkOperations.getTarget(__thisNode__, MetaAdapterFactory.getContainmentLink(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a40c7ecL, 0x1695a3631a40c7edL, "classFile")), MetaAdapterFactory.getContainmentLink(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x40880d8921831cd4L, 0x40880d8921831cedL, "access_flags"), ClassFileLoader__BehaviorDescriptor.loadClassAccessFlags_id1qlCQcqkEDC.invoke(__thisNode__, mds));
 
       SLinkOperations.setTarget(SLinkOperations.getTarget(__thisNode__, MetaAdapterFactory.getContainmentLink(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a40c7ecL, 0x1695a3631a40c7edL, "classFile")), MetaAdapterFactory.getContainmentLink(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x40880d8921831cd4L, 0x40880d8921831cf2L, "this_class"), ClassFileLoader__BehaviorDescriptor.toClassReference_id4xr1zwUxT4h.invoke(__thisNode__, ((long) mds.readInt2AsLong())));
-      SLinkOperations.setTarget(SLinkOperations.getTarget(__thisNode__, MetaAdapterFactory.getContainmentLink(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a40c7ecL, 0x1695a3631a40c7edL, "classFile")), MetaAdapterFactory.getContainmentLink(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x40880d8921831cd4L, 0x40880d8921831cf8L, "super_class"), mds.readInt2AsNode());
+      SLinkOperations.setTarget(SLinkOperations.getTarget(__thisNode__, MetaAdapterFactory.getContainmentLink(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a40c7ecL, 0x1695a3631a40c7edL, "classFile")), MetaAdapterFactory.getContainmentLink(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x40880d8921831cd4L, 0x40880d8921831cf8L, "super_class"), ClassFileLoader__BehaviorDescriptor.toClassReference_id4xr1zwUxT4h.invoke(__thisNode__, ((long) mds.readInt2AsLong())));
 
       long numberOfInterfaces = mds.readInt2AsLong();
       for (int i = 0; i < numberOfInterfaces; i++) {
@@ -347,6 +352,16 @@ public final class ClassFileLoader__BehaviorDescriptor extends BaseBHDescriptor 
     if ((boolean) ClassFile__BehaviorDescriptor.hasConstantPoolElement_id4xr1zwUzAuU.invoke(SLinkOperations.getTarget(__thisNode__, MetaAdapterFactory.getContainmentLink(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a40c7ecL, 0x1695a3631a40c7edL, "classFile")), ((long) index))) {
       SNode element = ClassFile__BehaviorDescriptor.getConstantPoolElement_idOFkQGRSVg7.invoke(SLinkOperations.getTarget(__thisNode__, MetaAdapterFactory.getContainmentLink(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a40c7ecL, 0x1695a3631a40c7edL, "classFile")), ((long) index));
       SLinkOperations.setTarget(ref, MetaAdapterFactory.getReferenceLink(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0xd2b536b37df3897L, 0xd2b536b37df3898L, "element"), SNodeOperations.cast(element, MetaAdapterFactory.getConcept(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a43d9beL, "me.tomassetti.bytecode.structure.ConstantPoolClass")));
+    } else {
+      SPropertyOperations.set(ref, MetaAdapterFactory.getProperty(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0xd2b536b37df3897L, 0x485b06383a8e066dL, "rawIndex"), "" + (((int) index)));
+    }
+    return ref;
+  }
+  /*package*/ static SNode toNameAndTypeReference_id3zLhk7ob2LD(@NotNull SNode __thisNode__, long index) {
+    SNode ref = SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x38f14541d82c0c42L, "me.tomassetti.bytecode.structure.ConstantPoolNameandtypeReference")));
+    if ((boolean) ClassFile__BehaviorDescriptor.hasConstantPoolElement_id4xr1zwUzAuU.invoke(SLinkOperations.getTarget(__thisNode__, MetaAdapterFactory.getContainmentLink(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a40c7ecL, 0x1695a3631a40c7edL, "classFile")), ((long) index))) {
+      SNode element = ClassFile__BehaviorDescriptor.getConstantPoolElement_idOFkQGRSVg7.invoke(SLinkOperations.getTarget(__thisNode__, MetaAdapterFactory.getContainmentLink(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a40c7ecL, 0x1695a3631a40c7edL, "classFile")), ((long) index));
+      SLinkOperations.setTarget(ref, MetaAdapterFactory.getReferenceLink(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0xd2b536b37df3897L, 0xd2b536b37df3898L, "element"), SNodeOperations.cast(element, MetaAdapterFactory.getConcept(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a43d9c0L, "me.tomassetti.bytecode.structure.ConstantPoolNameAndType")));
     } else {
       SPropertyOperations.set(ref, MetaAdapterFactory.getProperty(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0xd2b536b37df3897L, 0x485b06383a8e066dL, "rawIndex"), "" + (((int) index)));
     }
@@ -470,6 +485,13 @@ public final class ClassFileLoader__BehaviorDescriptor extends BaseBHDescriptor 
             instruction.addChild(link, param);
             i = i.add(BigInteger.ONE);
             i = i.add(BigInteger.ONE);
+          } else if (link.getTargetConcept().equals(MetaAdapterFactory.getConcept(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x6586c93de00249acL, "me.tomassetti.bytecode.structure.ConstantPoolMethodrefReference"))) {
+            long index = mds.readInt2AsLong();
+            SNode ref = SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x6586c93de00249acL, "me.tomassetti.bytecode.structure.ConstantPoolMethodrefReference")));
+            SLinkOperations.setTarget(ref, MetaAdapterFactory.getReferenceLink(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0xd2b536b37df3897L, 0xd2b536b37df3898L, "element"), SNodeOperations.cast(ClassFile__BehaviorDescriptor.getConstantPoolElement_idOFkQGRSVg7.invoke(SLinkOperations.getTarget(__thisNode__, MetaAdapterFactory.getContainmentLink(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a40c7ecL, 0x1695a3631a40c7edL, "classFile")), ((long) index)), MetaAdapterFactory.getConcept(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a43d9bfL, "me.tomassetti.bytecode.structure.ConstantPoolMethodref")));
+            instruction.addChild(link, ref);
+            i = i.add(BigInteger.ONE);
+            i = i.add(BigInteger.ONE);
           } else if (link.getTargetConcept().equals(MetaAdapterFactory.getConcept(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a534bf3L, "me.tomassetti.bytecode.structure.Unsigned4Bytes"))) {
             SNode param = mds.readInt4AsNode();
             instruction.addChild(link, param);
@@ -478,7 +500,7 @@ public final class ClassFileLoader__BehaviorDescriptor extends BaseBHDescriptor 
             i = i.add(BigInteger.ONE);
             i = i.add(BigInteger.ONE);
           } else {
-            throw new RuntimeException("Type " + link.getTargetConcept().getQualifiedName() + " for link " + link.getName());
+            throw new RuntimeException("Unexpected type " + link.getTargetConcept().getQualifiedName() + " for link " + link.getName());
           }
         }
       }
@@ -651,26 +673,28 @@ public final class ClassFileLoader__BehaviorDescriptor extends BaseBHDescriptor 
       case 10:
         return (T) ((SNode) toClassReference_id4xr1zwUxT4h(node, ((long) (Long) parameters[0])));
       case 11:
-        return (T) ((SNode) loadFieldInfo_idOFkQGRSAW6(node, (MyDataIStream) parameters[0]));
+        return (T) ((SNode) toNameAndTypeReference_id3zLhk7ob2LD(node, ((long) (Long) parameters[0])));
       case 12:
-        return (T) ((SNode) loadInterfaceInfo_id4xr1zwU$IfQ(node, (MyDataIStream) parameters[0]));
+        return (T) ((SNode) loadFieldInfo_idOFkQGRSAW6(node, (MyDataIStream) parameters[0]));
       case 13:
-        return (T) ((SNode) getConstantPoolElement_idr0PjdDds1G(node, (SNode) parameters[0]));
+        return (T) ((SNode) loadInterfaceInfo_id4xr1zwU$IfQ(node, (MyDataIStream) parameters[0]));
       case 14:
-        return (T) ((SNode) loadAttributeInfo_id1qlCQcqktGl(node, (MyDataIStream) parameters[0]));
+        return (T) ((SNode) getConstantPoolElement_idr0PjdDds1G(node, (SNode) parameters[0]));
       case 15:
-        return (T) ((SNode) readSignature_idOFkQGRUn7a(node, (MyDataIStream) parameters[0]));
+        return (T) ((SNode) loadAttributeInfo_id1qlCQcqktGl(node, (MyDataIStream) parameters[0]));
       case 16:
-        return (T) ((SNode) readCode_idr0PjdDe5KL(node, (MyDataIStream) parameters[0]));
+        return (T) ((SNode) readSignature_idOFkQGRUn7a(node, (MyDataIStream) parameters[0]));
       case 17:
-        return (T) ((SNode) readExceptionTableElement_idOFkQGS2cVz(node, (MyDataIStream) parameters[0]));
+        return (T) ((SNode) readCode_idr0PjdDe5KL(node, (MyDataIStream) parameters[0]));
       case 18:
-        return (T) ((BigInteger) parse_idOFkQGRVb6M(node, (MyDataIStream) parameters[0], (BigInteger) parameters[1], (SAbstractConcept) parameters[2], (List<SNode>) parameters[3]));
+        return (T) ((SNode) readExceptionTableElement_idOFkQGS2cVz(node, (MyDataIStream) parameters[0]));
       case 19:
-        return (T) ((List<SNode>) readCodeArray_idr0PjdDggI6(node, (MyDataIStream) parameters[0]));
+        return (T) ((BigInteger) parse_idOFkQGRVb6M(node, (MyDataIStream) parameters[0], (BigInteger) parameters[1], (SAbstractConcept) parameters[2], (List<SNode>) parameters[3]));
       case 20:
-        return (T) ((SNode) readArray_idr0PjdDgi$s(node, (MyDataIStream) parameters[0]));
+        return (T) ((List<SNode>) readCodeArray_idr0PjdDggI6(node, (MyDataIStream) parameters[0]));
       case 21:
+        return (T) ((SNode) readArray_idr0PjdDgi$s(node, (MyDataIStream) parameters[0]));
+      case 22:
         return (T) ((SNode) readArray_id1qlCQcqkYgS(node, (MyDataIStream) parameters[0]));
       default:
         throw new BHMethodNotFoundException(this, method);

@@ -44,6 +44,10 @@ public final class BehaviorAspectDescriptor extends BaseBehaviorAspectDescriptor
   private final BHDescriptor myUnsigned4Bytes__BehaviorDescriptor = new Unsigned4Bytes__BehaviorDescriptor();
   private final BHDescriptor myUnsigned1Byte__BehaviorDescriptor = new Unsigned1Byte__BehaviorDescriptor();
   private final BHDescriptor myUnsigned1BytesArray__BehaviorDescriptor = new Unsigned1BytesArray__BehaviorDescriptor();
+  private final BHDescriptor myConstantPoolMethodrefRaw__BehaviorDescriptor = new ConstantPoolMethodrefRaw__BehaviorDescriptor();
+  private final BHDescriptor myConstantPoolClassRaw__BehaviorDescriptor = new ConstantPoolClassRaw__BehaviorDescriptor();
+  private final BHDescriptor myConstantPoolNameAndTypeRaw__BehaviorDescriptor = new ConstantPoolNameAndTypeRaw__BehaviorDescriptor();
+  private final BHDescriptor myConstantPoolFieldrefRaw__BehaviorDescriptor = new ConstantPoolFieldrefRaw__BehaviorDescriptor();
   private final BHDescriptor myClassFile__BehaviorDescriptor = new ClassFile__BehaviorDescriptor();
   private final BHDescriptor mySequenceInstruction__BehaviorDescriptor = new SequenceInstruction__BehaviorDescriptor();
   private final BHDescriptor myConstantPoolSequence__BehaviorDescriptor = new ConstantPoolSequence__BehaviorDescriptor();
@@ -55,7 +59,7 @@ public final class BehaviorAspectDescriptor extends BaseBehaviorAspectDescriptor
   private final long[] myConceptBehaviorIds;
 
   public BehaviorAspectDescriptor() {
-    myConceptBehaviorIds = new long[39];
+    myConceptBehaviorIds = new long[43];
     myConceptBehaviorIds[0] = 0x6c0d5336931d740L;
     myConceptBehaviorIds[1] = 0x6c0d5336931d741L;
     myConceptBehaviorIds[2] = 0x6c0d53369382668L;
@@ -88,13 +92,17 @@ public final class BehaviorAspectDescriptor extends BaseBehaviorAspectDescriptor
     myConceptBehaviorIds[29] = 0x1695a3631a534bf3L;
     myConceptBehaviorIds[30] = 0x1695a3631a534cdcL;
     myConceptBehaviorIds[31] = 0x1695a3631a534cdeL;
-    myConceptBehaviorIds[32] = 0x40880d8921831cd4L;
-    myConceptBehaviorIds[33] = 0x6586c93ddfdc7edcL;
-    myConceptBehaviorIds[34] = 0x6586c93ddfdf9d67L;
-    myConceptBehaviorIds[35] = 0x6586c93ddffa6efaL;
-    myConceptBehaviorIds[36] = 0x6586c93ddffe066aL;
-    myConceptBehaviorIds[37] = 0x67eeae9702c66d1dL;
-    myConceptBehaviorIds[38] = 0x7c4483a34b599feaL;
+    myConceptBehaviorIds[32] = 0x38f14541d84ffdb6L;
+    myConceptBehaviorIds[33] = 0x38f14541d851695fL;
+    myConceptBehaviorIds[34] = 0x38f14541d851a575L;
+    myConceptBehaviorIds[35] = 0x38f14541d8578d79L;
+    myConceptBehaviorIds[36] = 0x40880d8921831cd4L;
+    myConceptBehaviorIds[37] = 0x6586c93ddfdc7edcL;
+    myConceptBehaviorIds[38] = 0x6586c93ddfdf9d67L;
+    myConceptBehaviorIds[39] = 0x6586c93ddffa6efaL;
+    myConceptBehaviorIds[40] = 0x6586c93ddffe066aL;
+    myConceptBehaviorIds[41] = 0x67eeae9702c66d1dL;
+    myConceptBehaviorIds[42] = 0x7c4483a34b599feaL;
   }
 
   @Deprecated
@@ -173,18 +181,26 @@ public final class BehaviorAspectDescriptor extends BaseBehaviorAspectDescriptor
       case 31:
         return myUnsigned1BytesArray__BehaviorDescriptor;
       case 32:
-        return myClassFile__BehaviorDescriptor;
+        return myConstantPoolMethodrefRaw__BehaviorDescriptor;
       case 33:
-        return mySequenceInstruction__BehaviorDescriptor;
+        return myConstantPoolClassRaw__BehaviorDescriptor;
       case 34:
-        return myConstantPoolSequence__BehaviorDescriptor;
+        return myConstantPoolNameAndTypeRaw__BehaviorDescriptor;
       case 35:
-        return myConstantPoolStringRaw__BehaviorDescriptor;
+        return myConstantPoolFieldrefRaw__BehaviorDescriptor;
       case 36:
-        return myConstantPoolElementsPlaceholder__BehaviorDescriptor;
+        return myClassFile__BehaviorDescriptor;
       case 37:
-        return myConstantPoolDouble__BehaviorDescriptor;
+        return mySequenceInstruction__BehaviorDescriptor;
       case 38:
+        return myConstantPoolSequence__BehaviorDescriptor;
+      case 39:
+        return myConstantPoolStringRaw__BehaviorDescriptor;
+      case 40:
+        return myConstantPoolElementsPlaceholder__BehaviorDescriptor;
+      case 41:
+        return myConstantPoolDouble__BehaviorDescriptor;
+      case 42:
         return myWide__BehaviorDescriptor;
       default:
         return null;

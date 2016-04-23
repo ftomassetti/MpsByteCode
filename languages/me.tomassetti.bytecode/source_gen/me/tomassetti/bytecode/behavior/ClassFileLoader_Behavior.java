@@ -47,6 +47,9 @@ public class ClassFileLoader_Behavior {
   public static SNode call_toClassReference_5213767832181379345(SNode __thisNode__, long index) {
     return ClassFileLoader__BehaviorDescriptor.toClassReference_id4xr1zwUxT4h(__thisNode__, index);
   }
+  public static SNode call_toNameAndTypeReference_4103136884613196905(SNode __thisNode__, long index) {
+    return ClassFileLoader__BehaviorDescriptor.toNameAndTypeReference_id3zLhk7ob2LD(__thisNode__, index);
+  }
   public static SNode call_loadFieldInfo_948943866455813894(SNode __thisNode__, MyDataIStream mds) {
     return ClassFileLoader__BehaviorDescriptor.loadFieldInfo_idOFkQGRSAW6(__thisNode__, mds);
   }

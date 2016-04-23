@@ -34,7 +34,12 @@
     <property role="TrG5h" value="MyProgram" />
     <node concept="2UiBS6" id="6m6MjRvO3mm" role="2UiBTV">
       <node concept="2UiBS2" id="6m6MjRvO3ms" role="2UiBTZ">
-        <property role="2UiBTX" value="Hi!" />
+        <property role="2UiBTX" value="Hi!\n" />
+      </node>
+    </node>
+    <node concept="2UiBS6" id="3zLhk7opfOL" role="2UiBTV">
+      <node concept="2UiBS2" id="3zLhk7opfOT" role="2UiBTZ">
+        <property role="2UiBTX" value="CIAOOOZZ" />
       </node>
     </node>
   </node>

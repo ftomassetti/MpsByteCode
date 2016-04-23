@@ -37,7 +37,7 @@ public final class ConstantPoolMethodType__BehaviorDescriptor extends BaseBHDesc
     return ConstantPoolElementType.CONSTANT_MethodType;
   }
   /*package*/ static void serializeInfo_id6cFMhcmFVC0(@NotNull SNode __thisNode__, MyDataOStream mds) {
-    mds.write2Bytes((long) Unsigned2Bytes__BehaviorDescriptor.toLong_id1qlCQcqjgik.invoke(SLinkOperations.getTarget(__thisNode__, MetaAdapterFactory.getContainmentLink(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a43d9c4L, 0x67eeae9702c8cc58L, "descriptorIndex"))));
+    mds.write2Bytes((long) ConstantPoolElement__BehaviorDescriptor.index_idOFkQGRQU2Z.invoke(SLinkOperations.getTarget(SLinkOperations.getTarget(__thisNode__, MetaAdapterFactory.getContainmentLink(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0x1695a3631a43d9c4L, 0x67eeae9702c8cc58L, "descriptorIndex")), MetaAdapterFactory.getReferenceLink(0x1392eb99581d482bL, 0xaa2819e40eaffbe2L, 0xd2b536b37df3897L, 0xd2b536b37df3898L, "element"))));
   }
 
   /*package*/ ConstantPoolMethodType__BehaviorDescriptor() {
