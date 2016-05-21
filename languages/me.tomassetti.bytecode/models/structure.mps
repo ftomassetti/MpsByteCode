@@ -836,6 +836,7 @@
     <property role="1pbfSe" value="1790100803" />
     <property role="3GE5qa" value="instruction" />
     <property role="TrG5h" value="Bipush" />
+    <property role="34LRSv" value="bipush" />
     <ref role="1TJDcQ" node="r0PjdDge82" resolve="Instruction" />
     <node concept="1TJgyj" id="6vIFDs2L1qH" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -1155,18 +1156,13 @@
     <property role="1pbfSe" value="1159885951" />
     <property role="3GE5qa" value="instruction" />
     <property role="TrG5h" value="Invokestatic" />
+    <property role="34LRSv" value="invokestatic" />
     <ref role="1TJDcQ" node="r0PjdDge82" resolve="Instruction" />
     <node concept="1TJgyj" id="OFkQGRXM4l" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="indexbyte1" />
+      <property role="20kJfa" value="index" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="1qlCQcqkONs" resolve="Unsigned1Byte" />
-    </node>
-    <node concept="1TJgyj" id="OFkQGRXM4n" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="indexbyte2" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="1qlCQcqkONs" resolve="Unsigned1Byte" />
+      <ref role="20lvS9" node="1qlCQcqhYWi" resolve="Unsigned2Bytes" />
     </node>
   </node>
   <node concept="1TIwiD" id="OFkQGRZ10z">
