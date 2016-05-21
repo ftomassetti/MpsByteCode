@@ -179,6 +179,11 @@
         <property id="7077360340906447918" name="result" index="3D7k6l" />
       </concept>
     </language>
+    <language id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging">
+      <concept id="1168401810208" name="jetbrains.mps.baseLanguage.logging.structure.PrintStatement" flags="nn" index="abc8K">
+        <child id="1168401864803" name="textExpression" index="abp_N" />
+      </concept>
+    </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="1143226024141" name="jetbrains.mps.lang.smodel.structure.SModelType" flags="in" index="H_c77" />
@@ -382,7 +387,7 @@
                                                     <ref role="37wK5l" to="guwi:~File.&lt;init&gt;(java.lang.String)" resolve="File" />
                                                     <node concept="3cpWs3" id="5V_iSBkvwnT" role="37wK5m">
                                                       <node concept="Xl_RD" id="5V_iSBkvwnU" role="3uHU7w">
-                                                        <property role="Xl_RC" value="classes_gen" />
+                                                        <property role="Xl_RC" value="classes_gen_bytecode" />
                                                       </node>
                                                       <node concept="3cpWs3" id="5V_iSBkvwnV" role="3uHU7B">
                                                         <node concept="37vLTw" id="5V_iSBkvwnW" role="3uHU7B">
@@ -461,6 +466,20 @@
                                                 </node>
                                               </node>
                                             </node>
+                                            <node concept="abc8K" id="MYgR9jiKhA" role="3cqZAp">
+                                              <node concept="Xl_RD" id="MYgR9jiKol" role="abp_N">
+                                                <property role="Xl_RC" value="SAVED BYTECODE " />
+                                              </node>
+                                              <node concept="2OqwBi" id="MYgR9jiKqu" role="abp_N">
+                                                <node concept="37vLTw" id="MYgR9jiKoM" role="2Oq$k0">
+                                                  <ref role="3cqZAo" node="5V_iSBkvwo2" resolve="modelGenFile" />
+                                                </node>
+                                                <node concept="liA8E" id="MYgR9jiKO2" role="2OqNvi">
+                                                  <ref role="37wK5l" to="guwi:~File.exists():boolean" resolve="exists" />
+                                                </node>
+                                              </node>
+                                            </node>
+                                            <node concept="3clFbH" id="MYgR9jiMJp" role="3cqZAp" />
                                           </node>
                                           <node concept="2OqwBi" id="r0PjdDm7UC" role="2GsD0m">
                                             <node concept="37vLTw" id="r0PjdDmg$C" role="2Oq$k0">

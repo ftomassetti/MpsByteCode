@@ -19,7 +19,6 @@
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
         <property id="1587916991969465369" name="conceptId" index="1pbfSe" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
-        <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
       <concept id="1169125989551" name="jetbrains.mps.lang.structure.structure.InterfaceConceptDeclaration" flags="ig" index="PlHQZ" />
       <concept id="1169127622168" name="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" flags="ig" index="PrWs8">
@@ -29,9 +28,6 @@
         <property id="1096454100552" name="rootable" index="19KtqR" />
         <reference id="1071489389519" name="extends" index="1TJDcQ" />
         <child id="1169129564478" name="implements" index="PzmwI" />
-      </concept>
-      <concept id="1071489288299" name="jetbrains.mps.lang.structure.structure.PropertyDeclaration" flags="ig" index="1TJgyi">
-        <reference id="1082985295845" name="dataType" index="AX2Wp" />
       </concept>
       <concept id="1071489288298" name="jetbrains.mps.lang.structure.structure.LinkDeclaration" flags="ig" index="1TJgyj">
         <property id="1071599776563" name="role" index="20kJfa" />
@@ -80,26 +76,7 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="message" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="6m6MjRvNbsY" resolve="Expression" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="6m6MjRvNbsY">
-    <property role="1pbfSe" value="1163100283" />
-    <property role="TrG5h" value="Expression" />
-    <property role="R5$K7" value="true" />
-    <property role="R5$K2" value="false" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-  </node>
-  <node concept="1TIwiD" id="6m6MjRvNbsZ">
-    <property role="1pbfSe" value="1163100284" />
-    <property role="TrG5h" value="StringLiteral" />
-    <ref role="1TJDcQ" node="6m6MjRvNbsY" resolve="Expression" />
-    <node concept="1TJgyi" id="6m6MjRvNbt0" role="1TKVEl">
-      <property role="TrG5h" value="value" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
-    </node>
-    <node concept="PrWs8" id="6m6MjRvVke$" role="PzmwI">
-      <ref role="PrY4T" node="6m6MjRvVkez" resolve="IConstantPoolProvider" />
+      <ref role="20lvS9" to="hm2y:6sdnDbSla17" resolve="Expression" />
     </node>
   </node>
   <node concept="PlHQZ" id="6m6MjRvVkez">
@@ -110,18 +87,7 @@
     <property role="1pbfSe" value="1608192755" />
     <property role="TrG5h" value="Newline" />
     <property role="34LRSv" value="NL" />
-    <ref role="1TJDcQ" node="6m6MjRvNbsY" resolve="Expression" />
-  </node>
-  <node concept="1TIwiD" id="MYgR9j9WZx">
-    <property role="1pbfSe" value="1608913747" />
-    <property role="TrG5h" value="IETSExpression" />
-    <ref role="1TJDcQ" node="6m6MjRvNbsY" resolve="Expression" />
-    <node concept="1TJgyj" id="MYgR9j9WZy" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="wrapped" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" to="hm2y:6sdnDbSla17" resolve="Expression" />
-    </node>
+    <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
   </node>
 </model>
 

@@ -25,7 +25,6 @@
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" fqName="jetbrains.mps.lang.structure" version="1" />
     <language id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" fqName="jetbrains.mps.lang.traceable" version="0" />
     <language id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" fqName="jetbrains.mps.lang.typesystem" version="0" />
-    <language id="1392eb99-581d-482b-aa28-19e40eaffbe2" fqName="me.tomassetti.bytecode" version="0" />
     <language id="09127d54-0209-48a6-9167-6d3d4fb47096" fqName="me.tomassetti.bytecode.execution" version="0" />
     <language id="fbd0e765-0e28-4d0d-a58f-00598f0b1f2f" fqName="me.tomassetti.poliscript" version="-1" />
     <language id="cfaa4966-b7d5-4b69-b66a-309a6e1a7290" fqName="org.iets3.core.expr.base" version="0" />

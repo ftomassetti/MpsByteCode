@@ -44,13 +44,12 @@
         <language id="b401a680-8325-4110-8fd3-84331ff25bef" fqName="jetbrains.mps.lang.generator" version="0" />
         <language id="d7706f63-9be2-479c-a3da-ae92af1e64d5" fqName="jetbrains.mps.lang.generator.generationContext" version="0" />
         <language id="3a13115c-633c-4c5c-bbcc-75c4219e9555" fqName="jetbrains.mps.lang.quotation" version="0" />
+        <language id="13744753-c81f-424a-9c1b-cf8943bf4e86" fqName="jetbrains.mps.lang.sharedConcepts" version="0" />
         <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" fqName="jetbrains.mps.lang.smodel" version="2" />
         <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" fqName="jetbrains.mps.lang.structure" version="1" />
         <language id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" fqName="jetbrains.mps.lang.traceable" version="0" />
         <language id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" fqName="jetbrains.mps.lang.typesystem" version="0" />
         <language id="95f8a3e6-f994-4ca0-a65e-763c9bae2d3b" fqName="jetbrains.mps.make.script" version="0" />
-        <language id="1392eb99-581d-482b-aa28-19e40eaffbe2" fqName="me.tomassetti.bytecode" version="0" />
-        <language id="09127d54-0209-48a6-9167-6d3d4fb47096" fqName="me.tomassetti.bytecode.execution" version="0" />
         <language id="fbd0e765-0e28-4d0d-a58f-00598f0b1f2f" fqName="me.tomassetti.poliscript" version="-1" />
         <language id="cfaa4966-b7d5-4b69-b66a-309a6e1a7290" fqName="org.iets3.core.expr.base" version="0" />
         <language id="6b277d9a-d52d-416f-a209-1919bd737f50" fqName="org.iets3.core.expr.simpleTypes" version="0" />
@@ -116,6 +115,7 @@
     <dependency reexport="false">1ed103c3-3aa6-49b7-9c21-6765ee11f224(MPS.Editor)</dependency>
     <dependency reexport="false">09127d54-0209-48a6-9167-6d3d4fb47096(me.tomassetti.bytecode.execution)</dependency>
     <dependency reexport="false">1392eb99-581d-482b-aa28-19e40eaffbe2(me.tomassetti.bytecode)</dependency>
+    <dependency reexport="false" scope="generate-into">1392eb99-581d-482b-aa28-19e40eaffbe2(me.tomassetti.bytecode)</dependency>
   </dependencies>
   <usedDevKits>
     <usedDevKit>2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)</usedDevKit>
@@ -179,7 +179,6 @@
   </dependencyVersions>
   <extendedLanguages>
     <extendedLanguage>cfaa4966-b7d5-4b69-b66a-309a6e1a7290(org.iets3.core.expr.base)</extendedLanguage>
-    <extendedLanguage>1392eb99-581d-482b-aa28-19e40eaffbe2(me.tomassetti.bytecode)</extendedLanguage>
     <extendedLanguage>6b277d9a-d52d-416f-a209-1919bd737f50(org.iets3.core.expr.simpleTypes)</extendedLanguage>
   </extendedLanguages>
 </language>
