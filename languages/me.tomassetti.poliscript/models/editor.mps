@@ -14,6 +14,7 @@
     <import index="dhqn" ref="r:23d96f06-f257-4f72-a398-e2a2bb85b9d9(me.tomassetti.bytecode.editor)" />
     <import index="mad6" ref="r:4cd50e39-5c56-419b-8c06-588876539ed0(me.tomassetti.poliscript.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="tpco" ref="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" implicit="true" />
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
@@ -29,6 +30,9 @@
       <concept id="1142886811589" name="jetbrains.mps.lang.editor.structure.ConceptFunctionParameter_node" flags="nn" index="pncrf" />
       <concept id="1080736578640" name="jetbrains.mps.lang.editor.structure.BaseEditorComponent" flags="ig" index="2wURMF">
         <child id="1080736633877" name="cellModel" index="2wV5jI" />
+      </concept>
+      <concept id="1078939183254" name="jetbrains.mps.lang.editor.structure.CellModel_Component" flags="sg" stub="3162947552742194261" index="PMmxH">
+        <reference id="1078939183255" name="editorComponent" index="PMmxG" />
       </concept>
       <concept id="1186403694788" name="jetbrains.mps.lang.editor.structure.ColorStyleClassItem" flags="ln" index="VaVBg">
         <child id="1186403803051" name="query" index="VblUZ" />
@@ -168,6 +172,18 @@
           </node>
         </node>
       </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="MYgR9j7cY7">
+    <ref role="1XX52x" to="mad6:MYgR9j7cY1" resolve="Newline" />
+    <node concept="PMmxH" id="MYgR9j7cY9" role="2wV5jI">
+      <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="MYgR9j9WZP">
+    <ref role="1XX52x" to="mad6:MYgR9j9WZx" resolve="IETSExpression" />
+    <node concept="3F1sOY" id="MYgR9j9WZR" role="2wV5jI">
+      <ref role="1NtTu8" to="mad6:MYgR9j9WZy" />
     </node>
   </node>
 </model>
